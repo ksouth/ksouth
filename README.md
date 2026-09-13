@@ -12,11 +12,15 @@ YouTube: [@KrystalSouth](https://www.youtube.com/@KrystalSouth)<br>
 <br>
 I've been on GitHub since 2013 but I am only now learning how to use it!!!! I love to fork and star, I consider this zone to be the only good social network. I love to see what people are creating with code and data. I'm a Mac OSX/iOS user and only really know html and css but I am exploring new languages with AI, for better or worse.<br>
 
+## Please reach out if you have any questions, inquiries, opportunities, ideas, whatever. 
+
+<!-- also LET ME KNOW IF YOU CAN HELP ME GET THOSE CUTE LIL STAT THINGS TO WORK ON MY PROFILE README PLEASE !! 
+
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ksouth&show_icons=true&theme=radical&v=2)
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=ksouth)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ksouth&layout=compact&theme=radical&v=2)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ksouth&layout=compact&theme=radical&v=2) --!>
 
 ## Please reach out if you have any questions, inquiries, opportunities, ideas, whatever. 
 
