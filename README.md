@@ -22,7 +22,6 @@ I've been on GitHub since 2013 but I am only now learning how to use it!!!! I lo
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ksouth&layout=compact&theme=radical&v=2) --!>
 
-## Please reach out if you have any questions, inquiries, opportunities, ideas, whatever. 
 
 <!--
 **ksouth/ksouth** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
