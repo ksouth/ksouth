@@ -1,4 +1,24 @@
-## Hi there 👋
+# Hi, I’m Krystal AKA @ksouth. 
+Artist, writer, mum, nerd, autodidact, animal and plant enthusiast, jack of many trades, master of none. 
+From Portland, Oregon, USA. Now in Melbourne, Victoria, Australia.<br>
+
+Portfolio? Site: [krystalsouth.com](https://krystalsouth.com)<br>
+IDYRSELF (2013): [idyrself.com](https://idyrself.com)<br>
+It will always be Twitter: [@ksouth](https://x.com/ksouth)<br>
+Substack: [krystalsouth.substack.com](https://krystalsouth.substack.com/)<br>
+Instagram: [@KrystalSouth](https://www.instagram.com/Krystalsouth)<br>
+LinkedIn: [krystalsouth](https://www.linkedin.com/in/krystalsouth/)<br>
+YouTube: [@KrystalSouth](https://www.youtube.com/@KrystalSouth)<br>
+<br>
+I've been on GitHub since 2013 but I am only now learning how to use it!!!! I love to fork and star, I consider this zone to be the only good social network. I love to see what people are creating with code and data. I'm a Mac OSX/iOS user and only really know html and css but I am exploring new languages with AI, for better or worse.<br>
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ksouth&show_icons=true&theme=default)
+
+![GitHub Streak](https://streak-stats.demolab.com?user=ksouth)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ksouth&layout=compact&theme=default)
+
+## Please reach out if you have any questions, inquiries, opportunities, ideas, whatever. 
 
 <!--
 **ksouth/ksouth** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
