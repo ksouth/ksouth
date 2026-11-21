@@ -184,16 +184,10 @@ async function main() {
   const repos = await fetchPublicRepos();
   log(`Read ${repos.length} public repositories.`);
 
-  let followed = [];
-  let follows = [];
-  try {
-    follows = await fetchFollows();
-    if (!token) throw new Error('no token available for GraphQL');
-    followed = await fetchFollowedRepos(follows, now - FOLLOWED_WINDOW_DAYS * DAY);
-    log(`Read ${followed.length} repositories created in the last ${FOLLOWED_WINDOW_DAYS} days by ${follows.length} followed accounts.`);
-  } catch (error) {
-    log(`::warning::Could not read followed accounts (${error.message}); the page will list your repositories without that section.`);
-  }
+  const follows = await fetchFollows();
+  if (!token) throw new Error('no token available for GraphQL');
+  const followed = await fetchFollowedRepos(follows, now - FOLLOWED_WINDOW_DAYS * DAY);
+  log(`Read ${followed.length} repositories created in the last ${FOLLOWED_WINDOW_DAYS} days by ${follows.length} followed accounts.`);
 
   const rows = repos.map((repo) => ({
     n: repo.name,
