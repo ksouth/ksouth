@@ -24,7 +24,7 @@ const FOLLOWED_WINDOW_DAYS = 30;
 const DAY = 86_400_000;
 const TZ = 'Australia/Melbourne';
 
-const TOKEN = (process.env.GH_TOKEN || process.env.GITHUB_TOKEN || '').trim();
+let token = (process.env.GH_TOKEN || process.env.GITHUB_TOKEN || '').trim();
 
 function log(message) {
   console.log(message);
@@ -39,7 +39,7 @@ function headers(extra = {}) {
     'User-Agent': 'ksouth-dashboard',
     ...extra,
   };
-  if (TOKEN) base.Authorization = `Bearer ${TOKEN}`;
+  if (token) base.Authorization = `Bearer ${token}`;
   return base;
 }
 
@@ -54,6 +54,13 @@ async function api(href, options = {}) {
     const text = await res.text();
     const rateLimited =
       (res.status === 403 || res.status === 429) && /secondary rate limit|abuse|rate limit/i.test(text);
+
+    if ((res.status === 401 || res.status === 403) && !rateLimited && token && attempt === 1) {
+      log(`  Authenticated ${options.method || 'GET'} ${href} returned HTTP ${res.status}; retrying without a token for public data.`);
+      token = '';
+      attempt += 1;
+      continue;
+    }
 
     if (rateLimited && attempt <= 3) {
       const retryAfter = Number(res.headers.get('retry-after'));
