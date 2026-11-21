@@ -188,7 +188,7 @@ async function main() {
   let follows = [];
   try {
     follows = await fetchFollows();
-    if (!TOKEN) throw new Error('no token available for GraphQL');
+    if (!token) throw new Error('no token available for GraphQL');
     followed = await fetchFollowedRepos(follows, now - FOLLOWED_WINDOW_DAYS * DAY);
     log(`Read ${followed.length} repositories created in the last ${FOLLOWED_WINDOW_DAYS} days by ${follows.length} followed accounts.`);
   } catch (error) {
