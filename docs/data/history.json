@@ -1,7 +1,7 @@
 [
   {
     "date": "2026-11-21",
-    "generated_at": "2026-11-21T09:26:02.315Z",
+    "generated_at": "2026-11-21T09:39:01.719Z",
     "items": [
       {
         "owner": "9QIX",
@@ -408,6 +408,17 @@
         "language": "PHP",
         "stars": 0,
         "description": "",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "forrestchang",
+        "name": "multica-theme-fathom",
+        "url": "https://github.com/forrestchang/multica-theme-fathom",
+        "type": "source",
+        "parent": null,
+        "language": "CSS",
+        "stars": 0,
+        "description": "Fathom: a deep-ocean blue Multica theme with a pixel-art sea, white pages and a night sea in dark mode.",
         "first_seen": "2026-11-21"
       },
       {
