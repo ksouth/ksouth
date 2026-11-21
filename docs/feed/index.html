@@ -97,17 +97,18 @@
 <main>
   <header>
     <a class="back" href="../index.html">← Dashboard</a>
-    <h1>New repos from people you follow</h1>
+    <h1>Things people I follow make and star</h1>
     <p class="meta">A public-only, day-by-day log. Newest day first.</p>
   </header>
 
   <section class="stats" aria-label="History totals">
-    <div class="stat"><div class="label">Repos logged</div><div class="value" id="total-items">—</div></div>
+    <div class="stat"><div class="label" id="total-label">Repos logged</div><div class="value" id="total-items">—</div></div>
     <div class="stat"><div class="label">People</div><div class="value" id="total-people">—</div></div>
     <div class="stat"><div class="label">Days with news</div><div class="value" id="total-days">—</div></div>
   </section>
 
   <section class="controls" aria-label="Filter the history">
+    <div class="chips" id="stream-chips" role="group" aria-label="Choose the activity stream"></div>
     <div class="row">
       <input type="search" id="search" placeholder="Search repo names and descriptions" aria-label="Search repo names and descriptions">
       <select id="person" aria-label="Filter by person"><option value="">All people</option></select>
@@ -123,12 +124,13 @@
   <div id="days"></div>
 
   <footer>
-    History is append-only and listed newest day first. A day is added only when new repositories appear; rerunning that day updates its existing entry. The collector sees the five newest owned repositories per followed account, and only public repositories are visible. <a href="../index.html">Back to the public dashboard</a>.
+    History is append-only and listed newest day first. A day is added only when new repositories or stars appear; rerunning that day updates its existing entry. The collector sees the five newest owned repos and five newest stars per followed account. Stars older than someone's five most recent are invisible; private stars aren't visible either. This page includes public data only. <a href="../index.html">Back to the public dashboard</a>.
   </footer>
 </main>
 <script>
 (function () {
-  var history = [];
+  var histories = { repos: [], stars: [] };
+  var stream = "repos";
   var filters = { search: "", person: "", type: "all" };
   var status = document.getElementById("status");
   var daysNode = document.getElementById("days");
@@ -140,6 +142,7 @@
   var search = document.getElementById("search");
   var count = document.getElementById("result-count");
   var chips = document.getElementById("type-chips");
+  var streamChips = document.getElementById("stream-chips");
 
   function esc(value) {
     return String(value == null ? "" : value).replace(/[&<>\"]/g, function (ch) {
@@ -147,50 +150,73 @@
     });
   }
 
-  function itemKey(item) { return item.owner + "/" + item.name; }
+  function historyForStream() { return histories[stream]; }
+  function ownerOf(item) { return stream === "repos" ? item.owner : item.starred_by; }
+  function repoName(item) { return stream === "repos" ? item.name : item.nameWithOwner; }
+
+  function updatePeople() {
+    var items = historyForStream().flatMap(function (day) { return day.items; });
+    var names = Array.from(new Set(items.map(ownerOf))).sort(function (a, b) { return a.localeCompare(b); });
+    people.innerHTML = '<option value="">All people</option>' + names.map(function (name) { return '<option value="' + esc(name) + '">' + esc(name) + '</option>'; }).join("");
+    people.value = filters.person;
+  }
 
   function passes(item) {
-    if (filters.person && item.owner !== filters.person) return false;
-    if (filters.type === "source" && item.type !== "source") return false;
-    if (filters.type === "fork" && item.type !== "fork") return false;
+    if (filters.person && ownerOf(item) !== filters.person) return false;
+    if (stream === "repos" && filters.type === "source" && item.type !== "source") return false;
+    if (stream === "repos" && filters.type === "fork" && item.type !== "fork") return false;
     if (filters.search) {
-      var hay = (item.name + " " + (item.description || "")).toLowerCase();
+      var hay = (repoName(item) + " " + (item.description || "")).toLowerCase();
       if (hay.indexOf(filters.search) < 0) return false;
     }
     return true;
   }
 
   function render() {
+    var history = historyForStream();
     var allItems = history.flatMap(function (day) { return day.items; });
     var visibleCount = allItems.filter(passes).length;
-    count.textContent = visibleCount + " of " + allItems.length + " repos";
+    total.textContent = allItems.length;
+    peopleTotal.textContent = new Set(allItems.map(ownerOf)).size;
+    dayTotal.textContent = history.length;
+    count.textContent = visibleCount + " of " + allItems.length + (stream === "repos" ? " repos" : " stars");
     empty.hidden = visibleCount !== 0;
 
-    var typeCounts = {
-      all: allItems.filter(function (item) { return (!filters.person || item.owner === filters.person) && (!filters.search || (item.name + " " + (item.description || "")).toLowerCase().indexOf(filters.search) >= 0); }).length,
-      source: allItems.filter(function (item) { return item.type === "source" && (!filters.person || item.owner === filters.person) && (!filters.search || (item.name + " " + (item.description || "")).toLowerCase().indexOf(filters.search) >= 0); }).length,
-      fork: allItems.filter(function (item) { return item.type === "fork" && (!filters.person || item.owner === filters.person) && (!filters.search || (item.name + " " + (item.description || "")).toLowerCase().indexOf(filters.search) >= 0); }).length
-    };
-    chips.innerHTML = [
-      ["all", "All"], ["source", "New repos"], ["fork", "Forks"]
-    ].map(function (entry) {
-      return '<button type="button" class="chip" data-type="' + entry[0] + '" aria-pressed="' + (filters.type === entry[0]) + '">' +
-        entry[1] + '<span class="count">' + typeCounts[entry[0]] + "</span></button>";
+    var streamCounts = { repos: histories.repos.reduce(function (sum, day) { return sum + day.items.length; }, 0), stars: histories.stars.reduce(function (sum, day) { return sum + day.items.length; }, 0) };
+    streamChips.innerHTML = [["repos", "New repos", streamCounts.repos], ["stars", "New stars", streamCounts.stars]].map(function (entry) {
+      return '<button type="button" class="chip" data-stream="' + entry[0] + '" aria-pressed="' + (stream === entry[0]) + '">' + entry[1] + '<span class="count">' + entry[2] + "</span></button>";
     }).join("");
+
+    var typeCounts = {
+      all: allItems.filter(function (item) { return (!filters.person || ownerOf(item) === filters.person) && (!filters.search || (repoName(item) + " " + (item.description || "")).toLowerCase().indexOf(filters.search) >= 0); }).length,
+      source: allItems.filter(function (item) { return item.type === "source" && (!filters.person || ownerOf(item) === filters.person) && (!filters.search || (repoName(item) + " " + (item.description || "")).toLowerCase().indexOf(filters.search) >= 0); }).length,
+      fork: allItems.filter(function (item) { return item.type === "fork" && (!filters.person || ownerOf(item) === filters.person) && (!filters.search || (repoName(item) + " " + (item.description || "")).toLowerCase().indexOf(filters.search) >= 0); }).length
+    };
+    chips.hidden = stream !== "repos";
+    if (stream === "repos") {
+      chips.innerHTML = [
+        ["all", "All"], ["source", "New repos"], ["fork", "Forks"]
+      ].map(function (entry) {
+        return '<button type="button" class="chip" data-type="' + entry[0] + '" aria-pressed="' + (filters.type === entry[0]) + '">' +
+          entry[1] + '<span class="count">' + typeCounts[entry[0]] + "</span></button>";
+      }).join("");
+    }
 
     daysNode.innerHTML = history.map(function (day) {
       var items = day.items.filter(passes);
       if (!items.length) return '<section class="day" id="day-' + esc(day.date) + '" hidden></section>';
-      var nPeople = new Set(items.map(function (item) { return item.owner; })).size;
+      var nPeople = new Set(items.map(ownerOf)).size;
+      var itemLabel = stream === "repos" ? "new repo" : "new star";
       return '<section class="day" id="day-' + esc(day.date) + '">' +
-        '<div class="day-head"><h2>' + esc(day.date) + '</h2><span class="day-count">' + items.length + ' new repo' + (items.length === 1 ? '' : 's') + ' from ' + nPeople + ' people</span></div>' +
+        '<div class="day-head"><h2>' + esc(day.date) + '</h2><span class="day-count">' + items.length + ' ' + itemLabel + (items.length === 1 ? '' : 's') + (stream === "repos" ? ' from ' : ' by ') + nPeople + ' people</span></div>' +
         '<ul>' + items.map(function (item) {
-          var kind = item.type === "fork" ? 'fork of ' + (item.parent || 'another repo') : 'new repo';
-          var facts = ['<span class="type">' + esc(kind) + '</span>'];
+          var facts = [];
+          if (stream === "repos") facts.push('<span class="type">' + esc(item.type === "fork" ? 'fork of ' + (item.parent || 'another repo') : 'new repo') + '</span>');
+          else facts.push('<span class="type">starred</span>');
           if (item.language) facts.push(esc(item.language));
           facts.push((item.stars || 0) + ' star' + (item.stars === 1 ? '' : 's'));
-          return '<li data-key="' + esc(itemKey(item)) + '">' +
-            '<div class="repo"><span class="owner">' + esc(item.owner) + ' / </span><a href="' + esc(item.url) + '" target="_blank" rel="noopener">' + esc(item.name) + '</a></div>' +
+          return '<li data-key="' + esc((stream === "repos" ? item.owner : item.starred_by) + '/' + repoName(item)) + '">' +
+            '<div class="repo"><span class="owner">' + esc(ownerOf(item)) + ' / </span><a href="' + esc(item.url) + '" target="_blank" rel="noopener">' + esc(repoName(item)) + '</a></div>' +
             '<div class="facts">' + facts.join(' · ') + '</div>' +
             (item.description ? '<div class="description">' + esc(item.description.replace(/\s+/g, ' ').trim()) + '</div>' : '') +
             '</li>';
@@ -198,22 +224,19 @@
     }).join("");
   }
 
-  fetch("../data/history.json", { cache: "no-cache" })
-    .then(function (response) {
-      if (!response.ok) throw new Error("HTTP " + response.status);
+  Promise.all(["history.json", "star-history.json"].map(function (file) {
+    return fetch("../data/" + file, { cache: "no-cache" }).then(function (response) {
+      if (!response.ok) throw new Error(file + " HTTP " + response.status);
       return response.json();
-    })
+    });
+  }))
     .then(function (data) {
-      if (!Array.isArray(data)) throw new Error("History data is not a list");
-      history = data.slice().sort(function (a, b) { return b.date.localeCompare(a.date); });
-      var allItems = history.flatMap(function (day) { return day.items; });
-      var personNames = Array.from(new Set(allItems.map(function (item) { return item.owner; }))).sort(function (a, b) { return a.localeCompare(b); });
-      total.textContent = allItems.length;
-      peopleTotal.textContent = personNames.length;
-      dayTotal.textContent = history.length;
-      people.innerHTML = '<option value="">All people</option>' + personNames.map(function (name) { return '<option value="' + esc(name) + '">' + esc(name) + '</option>'; }).join("");
-      status.hidden = true;
+      if (!Array.isArray(data[0]) || !Array.isArray(data[1])) throw new Error("History data is not a list");
+      histories.repos = data[0].slice().sort(function (a, b) { return b.date.localeCompare(a.date); });
+      histories.stars = data[1].slice().sort(function (a, b) { return b.date.localeCompare(a.date); });
+      updatePeople();
       render();
+      status.hidden = true;
     })
     .catch(function (error) {
       status.textContent = "The history could not be loaded. Check your connection and try again. (" + error.message + ")";
@@ -221,6 +244,20 @@
 
   search.addEventListener("input", function (event) { filters.search = event.target.value.trim().toLowerCase(); render(); });
   people.addEventListener("change", function (event) { filters.person = event.target.value; render(); });
+  streamChips.addEventListener("click", function (event) {
+    var button = event.target.closest("[data-stream]");
+    if (!button) return;
+    stream = button.getAttribute("data-stream");
+    filters.person = "";
+    filters.type = "all";
+    filters.search = "";
+    search.value = "";
+    updatePeople();
+    document.getElementById("total-label").textContent = stream === "repos" ? "Repos logged" : "Stars logged";
+    search.placeholder = stream === "repos" ? "Search repo names and descriptions" : "Search repo names and descriptions";
+    search.setAttribute("aria-label", search.placeholder);
+    render();
+  });
   chips.addEventListener("click", function (event) {
     var button = event.target.closest("[data-type]");
     if (!button) return;

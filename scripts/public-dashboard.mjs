@@ -5,8 +5,8 @@
 //
 //   node scripts/public-dashboard.mjs
 //
-// Writes docs/index.html and docs/data/summary.json, and writes nothing at all
-// if collection fails, so a bad run leaves the last good page in place.
+// Writes the dashboard, repo/star histories, and a top-five star state index.
+// If collection fails, outputs aren't written so the last good pages remain.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -16,6 +16,8 @@ const ROOT = path.resolve(import.meta.dirname, '..');
 const OUT_HTML = path.join(ROOT, 'docs', 'index.html');
 const OUT_SUMMARY = path.join(ROOT, 'docs', 'data', 'summary.json');
 const OUT_HISTORY = path.join(ROOT, 'docs', 'data', 'history.json');
+const OUT_STAR_HISTORY = path.join(ROOT, 'docs', 'data', 'star-history.json');
+const OUT_STAR_STATE = path.join(ROOT, 'state', 'stars.json');
 const TEMPLATE = path.join(ROOT, 'scripts', 'dashboard.template.html');
 
 const BATCH_SIZE = 40;
@@ -24,6 +26,7 @@ const BATCH_PAUSE_MS = 900;
 const FOLLOWED_WINDOW_DAYS = 30;
 const HISTORY_LOOKBACK_DAYS = 7;
 const HISTORY_MAX_ITEMS = 20_000;
+const STARS_PER_PERSON = 5;
 const DAY = 86_400_000;
 const TZ = 'Australia/Melbourne';
 
@@ -113,30 +116,45 @@ async function fetchFollows() {
 }
 
 function buildQuery(logins) {
-  const fields = 'nameWithOwner name url description stargazerCount primaryLanguage { name } createdAt isFork parent { nameWithOwner }';
+  const fields = 'nameWithOwner name url description stargazerCount primaryLanguage { name } createdAt isFork parent { nameWithOwner } visibility';
+  const starFields = 'nameWithOwner name url description stargazerCount primaryLanguage { name } visibility';
   const aliases = logins.map(
     (login, index) =>
-      `u${index}: user(login: ${JSON.stringify(login)}) { login repositories(first: ${REPOS_PER_USER}, ownerAffiliations: OWNER, orderBy: {field: CREATED_AT, direction: DESC}) { nodes { ${fields} } } }`,
+      `u${index}: repositoryOwner(login: ${JSON.stringify(login)}) { __typename login ` +
+      `... on User { repositories(first: ${REPOS_PER_USER}, ownerAffiliations: OWNER, orderBy: {field: CREATED_AT, direction: DESC}) { nodes { ${fields} } } ` +
+      `starredRepositories(first: ${STARS_PER_PERSON}, orderBy: {field: STARRED_AT, direction: DESC}) { edges { starredAt node { ${starFields} } } } } ` +
+      `... on Organization { repositories(first: ${REPOS_PER_USER}, affiliations: OWNER, orderBy: {field: CREATED_AT, direction: DESC}) { nodes { ${fields} } } } }`,
   );
   return `{ rateLimit { remaining resetAt } ${aliases.join('\n')} }`;
 }
 
-async function fetchFollowedRepos(follows, since) {
+async function fetchFollowedData(follows, since) {
   const batches = [];
   for (let i = 0; i < follows.length; i += BATCH_SIZE) batches.push(follows.slice(i, i + BATCH_SIZE));
 
-  const items = [];
+  const repos = [];
+  const stars = [];
+  const resolvedLogins = [];
+  const ownersWithRepos = [];
+  const unresolvedLogins = [];
   for (const [index, batch] of batches.entries()) {
     const res = await api('https://api.github.com/graphql', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ query: buildQuery(batch) }),
     });
-    for (const [key, value] of Object.entries(res.body.data || {})) {
-      if (key === 'rateLimit' || !value?.repositories) continue;
+    const data = res.body.data || {};
+    for (const [accountIndex, requestedLogin] of batch.entries()) {
+      const value = data[`u${accountIndex}`];
+      if (!value?.repositories || !Array.isArray(value.repositories.nodes)) {
+        unresolvedLogins.push(requestedLogin);
+        continue;
+      }
+      resolvedLogins.push(value.login);
+      if (value.repositories.nodes.length) ownersWithRepos.push(value.login);
       for (const node of value.repositories.nodes) {
-        if (!node || Date.parse(node.createdAt) < since) continue;
-        items.push({
+        if (!node || node.visibility !== 'PUBLIC' || Date.parse(node.createdAt) < since) continue;
+        repos.push({
           o: value.login,
           n: node.name,
           u: node.url,
@@ -149,10 +167,29 @@ async function fetchFollowedRepos(follows, since) {
           c: node.createdAt.slice(0, 10),
         });
       }
+      for (const edge of value.starredRepositories?.edges ?? []) {
+        const node = edge.node;
+        if (!node || node.visibility !== 'PUBLIC') continue;
+        stars.push({
+          starred_by: value.login,
+          nameWithOwner: node.nameWithOwner,
+          url: node.url,
+          language: node.primaryLanguage?.name ?? '',
+          stars: node.stargazerCount ?? 0,
+          description: node.description ?? '',
+          starredAt: edge.starredAt,
+        });
+      }
     }
     if (index < batches.length - 1) await sleep(BATCH_PAUSE_MS);
   }
-  return items.sort((a, b) => b.fs.localeCompare(a.fs) || a.n.localeCompare(b.n));
+  return {
+    repos: repos.sort((a, b) => b.fs.localeCompare(a.fs) || a.n.localeCompare(b.n)),
+    stars: stars.sort((a, b) => b.starredAt.localeCompare(a.starredAt) || a.nameWithOwner.localeCompare(b.nameWithOwner)),
+    resolvedLogins,
+    ownersWithRepos,
+    unresolvedLogins,
+  };
 }
 
 const melbourneDate = (date) =>
@@ -223,6 +260,64 @@ function appendHistory(history, followed, startedAt) {
   return { history: next, changed: true, newCount: newItems.length };
 }
 
+function readStarState() {
+  if (!fs.existsSync(OUT_STAR_STATE)) return {};
+  const state = JSON.parse(fs.readFileSync(OUT_STAR_STATE, 'utf8'));
+  if (!state || typeof state !== 'object' || Array.isArray(state)) throw new Error('state/stars.json is not a valid star state.');
+  return state;
+}
+
+function readStarHistory() {
+  if (!fs.existsSync(OUT_STAR_HISTORY)) return [];
+  const history = JSON.parse(fs.readFileSync(OUT_STAR_HISTORY, 'utf8'));
+  if (!Array.isArray(history) || history.some((entry) => !entry.date || !Array.isArray(entry.items))) {
+    throw new Error('docs/data/star-history.json is not a valid daily star history.');
+  }
+  return history;
+}
+
+function appendStarHistory(history, stars, state, startedAt) {
+  const today = melbourneDate(startedAt);
+  const firstRun = Object.keys(state).length === 0;
+  const newStars = [];
+  for (const star of stars) {
+    const key = `${star.starred_by}/${star.nameWithOwner}`;
+    if (state[key]?.starred_at === star.starredAt) continue;
+    state[key] = {
+      first_seen: state[key]?.first_seen ?? (firstRun ? star.starredAt.slice(0, 10) : today),
+      starred_by: star.starred_by,
+      starred_at: star.starredAt,
+    };
+    if (!firstRun || startedAt.getTime() - Date.parse(star.starredAt) <= HISTORY_LOOKBACK_DAYS * DAY) {
+      newStars.push({
+        starred_by: star.starred_by,
+        nameWithOwner: star.nameWithOwner,
+        url: star.url,
+        language: star.language,
+        stars: star.stars,
+        description: star.description,
+        first_seen: today,
+      });
+    }
+  }
+
+  if (!newStars.length) return { history, changed: false, newCount: 0, state };
+
+  const todayIndex = history.findIndex((entry) => entry.date === today);
+  const current = todayIndex >= 0 ? history[todayIndex].items : [];
+  const merged = new Map(current.map((item) => [`${item.starred_by}/${item.nameWithOwner}`, item]));
+  for (const item of newStars) merged.set(`${item.starred_by}/${item.nameWithOwner}`, item);
+  const entry = {
+    date: today,
+    generated_at: startedAt.toISOString(),
+    items: [...merged.values()].sort((a, b) => a.starred_by.localeCompare(b.starred_by) || a.nameWithOwner.localeCompare(b.nameWithOwner)),
+  };
+  const next = [entry, ...history.filter((day) => day.date !== today)].sort((a, b) => b.date.localeCompare(a.date));
+  let count = next.reduce((sum, day) => sum + day.items.length, 0);
+  while (count > HISTORY_MAX_ITEMS && next.length) count -= next.pop().items.length;
+  return { history: next, changed: true, newCount: newStars.length, state };
+}
+
 async function main() {
   const startedAt = new Date();
   const now = startedAt.getTime();
@@ -232,10 +327,16 @@ async function main() {
 
   const follows = await fetchFollows();
   if (!token) throw new Error('no token available for GraphQL');
-  const followed = await fetchFollowedRepos(follows, now - FOLLOWED_WINDOW_DAYS * DAY);
-  log(`Read ${followed.length} repositories created in the last ${FOLLOWED_WINDOW_DAYS} days by ${follows.length} followed accounts.`);
+  const followed = await fetchFollowedData(follows, now - FOLLOWED_WINDOW_DAYS * DAY);
+  const resolved = new Set(followed.resolvedLogins.map((login) => login.toLowerCase()));
+  const ownersWithRepos = new Set(followed.ownersWithRepos.map((login) => login.toLowerCase()));
+  const unresolved = follows.filter((login) => !resolved.has(login.toLowerCase()));
+  log(`Checked ${follows.length} followed accounts: ${resolved.size} profiles resolved, ${ownersWithRepos.size} with public repos, ${unresolved.length} unresolved.`);
+  if (unresolved.length) throw new Error(`Could not query followed accounts: ${unresolved.join(', ')}`);
+  log(`Read ${followed.repos.length} public repos created in the last ${FOLLOWED_WINDOW_DAYS} days and ${followed.stars.length} recent stars.`);
 
-  const historyUpdate = appendHistory(readHistory(), followed, startedAt);
+  const historyUpdate = appendHistory(readHistory(), followed.repos, startedAt);
+  const starUpdate = appendStarHistory(readStarHistory(), followed.stars, readStarState(), startedAt);
 
   const rows = repos.map((repo) => ({
     n: repo.name,
@@ -280,6 +381,7 @@ async function main() {
       'Public repositories only — everything here is what anyone can see on GitHub. ' +
       'Rebuilt every morning from the GitHub API by scripts/public-dashboard.mjs.',
     followedCount: follows.length,
+    resolvedCount: resolved.size,
     followingWindow: FOLLOWED_WINDOW_DAYS,
   };
 
@@ -288,19 +390,24 @@ async function main() {
   const html = fs
     .readFileSync(TEMPLATE, 'utf8')
     .split('__META__').join(literal(meta))
-    .split('__DATA__').join(literal({ repos: rows, following: followed }));
+    .split('__DATA__').join(literal({ repos: rows, following: followed.repos }));
 
   fs.mkdirSync(path.dirname(OUT_SUMMARY), { recursive: true });
+  fs.mkdirSync(path.dirname(OUT_STAR_STATE), { recursive: true });
   fs.writeFileSync(OUT_SUMMARY, `${JSON.stringify(summary, null, 2)}\n`);
   if (historyUpdate.changed) {
     fs.writeFileSync(OUT_HISTORY, `${JSON.stringify(historyUpdate.history, null, 2)}\n`);
   }
+  fs.writeFileSync(OUT_STAR_HISTORY, `${JSON.stringify(starUpdate.history, null, 2)}\n`);
+  fs.writeFileSync(OUT_STAR_STATE, `${JSON.stringify(Object.fromEntries(Object.entries(starUpdate.state).sort((a, b) => a[0].localeCompare(b[0]))), null, 2)}\n`);
   fs.writeFileSync(OUT_HTML, html);
 
   log(
-    `Wrote docs/index.html (${rows.length} repos, ${followed.length} followed), docs/data/summary.json, ` +
+    `Wrote docs/index.html (${rows.length} repos, ${follows.length} followed), docs/data/summary.json, ` +
       `and docs/data/history.json (${historyUpdate.history.reduce((sum, day) => sum + day.items.length, 0)} logged, ` +
-      `${historyUpdate.newCount} new today${historyUpdate.changed ? '' : ', unchanged'}).`,
+      `${historyUpdate.newCount} new today${historyUpdate.changed ? '' : ', unchanged'}); ` +
+      `docs/data/star-history.json (${starUpdate.history.reduce((sum, day) => sum + day.items.length, 0)} logged, ` +
+      `${starUpdate.newCount} new today).`,
   );
 }
 
