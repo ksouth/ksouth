@@ -20,7 +20,7 @@ const OUT_STAR_HISTORY = path.join(ROOT, 'docs', 'data', 'star-history.json');
 const OUT_STAR_STATE = path.join(ROOT, 'state', 'stars.json');
 const TEMPLATE = path.join(ROOT, 'scripts', 'dashboard.template.html');
 
-const BATCH_SIZE = 40;
+const BATCH_SIZE = 20;
 const REPOS_PER_USER = 5;
 const BATCH_PAUSE_MS = 900;
 const FOLLOWED_WINDOW_DAYS = 30;
