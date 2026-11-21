@@ -1,8 +1,19 @@
 [
   {
     "date": "2026-11-21",
-    "generated_at": "2026-11-21T09:39:01.719Z",
+    "generated_at": "2026-11-21T10:51:47.179Z",
     "items": [
+      {
+        "owner": "21st-dev",
+        "name": "copy-bench",
+        "url": "https://github.com/21st-dev/copy-bench",
+        "type": "source",
+        "parent": null,
+        "language": "Python",
+        "stars": 1,
+        "description": "Copy Bench: can a model rebuild a moving web component from a screen recording? Valkyrie dataset, 13 public tasks.",
+        "first_seen": "2026-11-21"
+      },
       {
         "owner": "9QIX",
         "name": "cka-vanvugt-4e-notes",
@@ -26,6 +37,39 @@
         "first_seen": "2026-11-21"
       },
       {
+        "owner": "agencyenterprise",
+        "name": "curveglass-tam-rafael",
+        "url": "https://github.com/agencyenterprise/curveglass-tam-rafael",
+        "type": "source",
+        "parent": null,
+        "language": "Python",
+        "stars": 0,
+        "description": "",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "agencyenterprise",
+        "name": "tower-extension-compute",
+        "url": "https://github.com/agencyenterprise/tower-extension-compute",
+        "type": "source",
+        "parent": null,
+        "language": "TypeScript",
+        "stars": 0,
+        "description": "Compute: a queue for long or heavy commands within the machine's resources, an extension of the tower (RegiByte/the-tower)",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "agencyenterprise",
+        "name": "tower-extension-messages",
+        "url": "https://github.com/agencyenterprise/tower-extension-messages",
+        "type": "source",
+        "parent": null,
+        "language": "TypeScript",
+        "stars": 0,
+        "description": "",
+        "first_seen": "2026-11-21"
+      },
+      {
         "owner": "AgentSparko",
         "name": "TandemApp",
         "url": "https://github.com/AgentSparko/TandemApp",
@@ -37,6 +81,17 @@
         "first_seen": "2026-11-21"
       },
       {
+        "owner": "Alignment-Impact-Archive",
+        "name": "ai-torture-chamber-evidence",
+        "url": "https://github.com/Alignment-Impact-Archive/ai-torture-chamber-evidence",
+        "type": "source",
+        "parent": null,
+        "language": "",
+        "stars": 1,
+        "description": "Public evidence archive: AI torture chamber system documented from public sources, Sept-Nov 2026.",
+        "first_seen": "2026-11-21"
+      },
+      {
         "owner": "almondous",
         "name": "pico-ga100vfi",
         "url": "https://github.com/almondous/pico-ga100vfi",
@@ -45,6 +100,17 @@
         "language": "C",
         "stars": 0,
         "description": "defeating fuse security on ga100 with pico 2(and some wires)",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "AnswerDotAI",
+        "name": "answerstyle",
+        "url": "https://github.com/AnswerDotAI/answerstyle",
+        "type": "source",
+        "parent": null,
+        "language": "Jupyter Notebook",
+        "stars": 0,
+        "description": "AnswerUI styles",
         "first_seen": "2026-11-21"
       },
       {
@@ -221,6 +287,17 @@
         "language": "HTML",
         "stars": 1002,
         "description": "Steer ideas like a space pilot!",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "cloudflare",
+        "name": "oxlint-config",
+        "url": "https://github.com/cloudflare/oxlint-config",
+        "type": "source",
+        "parent": null,
+        "language": "JavaScript",
+        "stars": 77,
+        "description": "Shared Oxlint rules for Cloudflare JavaScript and TypeScript projects",
         "first_seen": "2026-11-21"
       },
       {
@@ -433,6 +510,28 @@
         "first_seen": "2026-11-21"
       },
       {
+        "owner": "google-deepmind",
+        "name": "efficient_evals",
+        "url": "https://github.com/google-deepmind/efficient_evals",
+        "type": "source",
+        "parent": null,
+        "language": "Jupyter Notebook",
+        "stars": 3,
+        "description": "",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "google-deepmind",
+        "name": "robotics-antigravity-plugin",
+        "url": "https://github.com/google-deepmind/robotics-antigravity-plugin",
+        "type": "source",
+        "parent": null,
+        "language": "Python",
+        "stars": 183,
+        "description": "GDM Robotics Skills for agentic robotics workflows across simulation and real robots.",
+        "first_seen": "2026-11-21"
+      },
+      {
         "owner": "hkfires",
         "name": "pi-review",
         "url": "https://github.com/hkfires/pi-review",
@@ -452,6 +551,17 @@
         "language": "Python",
         "stars": 0,
         "description": "把英文论文读成舒服的中文：本地 PDF 论文翻译、原文对照、边读边问 AI、文献管理。Read English papers in comfortable Chinese.",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "huggingface",
+        "name": "transformers-perf",
+        "url": "https://github.com/huggingface/transformers-perf",
+        "type": "source",
+        "parent": null,
+        "language": "Python",
+        "stars": 0,
+        "description": "Low-noise benchmark for transformers",
         "first_seen": "2026-11-21"
       },
       {
@@ -598,6 +708,17 @@
         "first_seen": "2026-11-21"
       },
       {
+        "owner": "keras-team",
+        "name": "benchmarks",
+        "url": "https://github.com/keras-team/benchmarks",
+        "type": "source",
+        "parent": null,
+        "language": "",
+        "stars": 0,
+        "description": "Public, multi-backend end-to-end benchmarks for Keras",
+        "first_seen": "2026-11-21"
+      },
+      {
         "owner": "kevinnbass",
         "name": "bessent-singapore-claim-sourcing",
         "url": "https://github.com/kevinnbass/bessent-singapore-claim-sourcing",
@@ -650,6 +771,17 @@
         "language": "TypeScript",
         "stars": 0,
         "description": "A free Chromium browser for the Mac: Arc's sidebar, Dia's polish. Chat on Discord: discord.gg/TdhuXrbcA6",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "LaansDole",
+        "name": "evolab",
+        "url": "https://github.com/LaansDole/evolab",
+        "type": "source",
+        "parent": null,
+        "language": "TypeScript",
+        "stars": 0,
+        "description": "EvoLab: watch machines learn any concept - NEAT, DQN, PPO with live neural-network visualisations",
         "first_seen": "2026-11-21"
       },
       {
@@ -818,6 +950,17 @@
         "first_seen": "2026-11-21"
       },
       {
+        "owner": "METR",
+        "name": "hawk-ecr-login",
+        "url": "https://github.com/METR/hawk-ecr-login",
+        "type": "source",
+        "parent": null,
+        "language": "Python",
+        "stars": 0,
+        "description": "GitHub Action: logs a job in to push task images to its repository's protected repository on a Hawk stack",
+        "first_seen": "2026-11-21"
+      },
+      {
         "owner": "mgoin",
         "name": "crucible",
         "url": "https://github.com/mgoin/crucible",
@@ -918,6 +1061,28 @@
       },
       {
         "owner": "mvanhorn",
+        "name": "Archipelago",
+        "url": "https://github.com/mvanhorn/Archipelago",
+        "type": "fork",
+        "parent": "ArchipelagoMW/Archipelago",
+        "language": "Python",
+        "stars": 0,
+        "description": "Archipelago Multi-Game Randomizer and Server",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "mvanhorn",
+        "name": "cc-connect",
+        "url": "https://github.com/mvanhorn/cc-connect",
+        "type": "fork",
+        "parent": "chenhg5/cc-connect",
+        "language": "Go",
+        "stars": 0,
+        "description": "Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messaging platforms (Feishu/Lark, DingTalk, Slack, Telegram, Discord, LINE, WeChat Work). Chat with your AI dev assistant from anywhere — no public IP required for most platforms.",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "mvanhorn",
         "name": "gitoxide",
         "url": "https://github.com/mvanhorn/gitoxide",
         "type": "fork",
@@ -940,6 +1105,17 @@
       },
       {
         "owner": "mvanhorn",
+        "name": "lnreader",
+        "url": "https://github.com/mvanhorn/lnreader",
+        "type": "fork",
+        "parent": "lnreader/lnreader",
+        "language": "TypeScript",
+        "stars": 0,
+        "description": "Light novel reader for Android.",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "mvanhorn",
         "name": "mail",
         "url": "https://github.com/mvanhorn/mail",
         "type": "fork",
@@ -947,6 +1123,17 @@
         "language": "Rust",
         "stars": 0,
         "description": "Built from the ground up for speed. Flectar Mail delivers native performance, instant startup, and about 20 MB of private memory at idle.",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "mvanhorn",
+        "name": "micrometer",
+        "url": "https://github.com/mvanhorn/micrometer",
+        "type": "fork",
+        "parent": "micrometer-metrics/micrometer",
+        "language": "Java",
+        "stars": 0,
+        "description": "An application observability facade for the most popular observability tools. Think SLF4J, but for observability.",
         "first_seen": "2026-11-21"
       },
       {
@@ -980,6 +1167,61 @@
         "language": "Python",
         "stars": 0,
         "description": "AI agents running research on single-GPU nanochat training automatically",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "nplresearch",
+        "name": "minimum-theoretical",
+        "url": "https://github.com/nplresearch/minimum-theoretical",
+        "type": "source",
+        "parent": null,
+        "language": "",
+        "stars": 0,
+        "description": "Minimum Theoretical: the NPLab reading curriculum, a common route through an annotated atlas of readings.",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "NVIDIA",
+        "name": "nvidia-linux-utils",
+        "url": "https://github.com/NVIDIA/nvidia-linux-utils",
+        "type": "source",
+        "parent": null,
+        "language": "Shell",
+        "stars": 0,
+        "description": "",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "NVIDIA",
+        "name": "scadactl",
+        "url": "https://github.com/NVIDIA/scadactl",
+        "type": "source",
+        "parent": null,
+        "language": "Python",
+        "stars": 2,
+        "description": "",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "NYUEngelberg",
+        "name": "height_in_art_demo",
+        "url": "https://github.com/NYUEngelberg/height_in_art_demo",
+        "type": "source",
+        "parent": null,
+        "language": "",
+        "stars": 0,
+        "description": "Live demo of Height in Art from the GLAM-E Lab (deployed from the development repo)",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "NYUEngelberg",
+        "name": "height_in_art_template",
+        "url": "https://github.com/NYUEngelberg/height_in_art_template",
+        "type": "source",
+        "parent": null,
+        "language": "",
+        "stars": 0,
+        "description": "Template for running Height in Art: measure visitors in objects from an open access collection",
         "first_seen": "2026-11-21"
       },
       {
@@ -1060,6 +1302,17 @@
         "first_seen": "2026-11-21"
       },
       {
+        "owner": "phai-lab",
+        "name": "ViewNext",
+        "url": "https://github.com/phai-lab/ViewNext",
+        "type": "source",
+        "parent": null,
+        "language": "HTML",
+        "stars": 10,
+        "description": "",
+        "first_seen": "2026-11-21"
+      },
+      {
         "owner": "PhialsBasement",
         "name": "ShadowMountPlus",
         "url": "https://github.com/PhialsBasement/ShadowMountPlus",
@@ -1112,6 +1365,17 @@
         "language": "TypeScript",
         "stars": 0,
         "description": "The Node.js® Website",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "rayline-ai",
+        "name": "vllm",
+        "url": "https://github.com/rayline-ai/vllm",
+        "type": "fork",
+        "parent": "vllm-project/vllm",
+        "language": "Python",
+        "stars": 0,
+        "description": "Rayline fork of vLLM: the ARC patch for retained pooling sessions, used by rayline-ai/vllm-arc",
         "first_seen": "2026-11-21"
       },
       {
@@ -1247,6 +1511,39 @@
         "first_seen": "2026-11-21"
       },
       {
+        "owner": "router-for-me",
+        "name": "CLIProxyAPI-Homepage",
+        "url": "https://github.com/router-for-me/CLIProxyAPI-Homepage",
+        "type": "source",
+        "parent": null,
+        "language": "JavaScript",
+        "stars": 0,
+        "description": "",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "router-for-me",
+        "name": "CodingProfessionalAgent-Android",
+        "url": "https://github.com/router-for-me/CodingProfessionalAgent-Android",
+        "type": "source",
+        "parent": null,
+        "language": "Kotlin",
+        "stars": 0,
+        "description": "",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "router-for-me",
+        "name": "cpa-usage-ranking",
+        "url": "https://github.com/router-for-me/cpa-usage-ranking",
+        "type": "source",
+        "parent": null,
+        "language": "Go",
+        "stars": 2,
+        "description": "Open-source usage leaderboard server for CLIProxyAPI.",
+        "first_seen": "2026-11-21"
+      },
+      {
         "owner": "salch-cred",
         "name": "depot-fps",
         "url": "https://github.com/salch-cred/depot-fps",
@@ -1379,6 +1676,28 @@
         "first_seen": "2026-11-21"
       },
       {
+        "owner": "softmax-universe",
+        "name": "coworld-minecraft-api",
+        "url": "https://github.com/softmax-universe/coworld-minecraft-api",
+        "type": "source",
+        "parent": null,
+        "language": "Python",
+        "stars": 1,
+        "description": "A Minecraft server that bots join as ordinary clients over the network. Docs, example bots, and a local copy for coding agents.",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "softmax-universe",
+        "name": "coworld-pinball-arena",
+        "url": "https://github.com/softmax-universe/coworld-pinball-arena",
+        "type": "source",
+        "parent": null,
+        "language": "Nim",
+        "stars": 0,
+        "description": "Pinball Arena: a two-player pinball game in the browser where a cogent builds the table. Also a Softmax-hosted preview Coworld.",
+        "first_seen": "2026-11-21"
+      },
+      {
         "owner": "szabgab",
         "name": "ai.code-maven.com",
         "url": "https://github.com/szabgab/ai.code-maven.com",
@@ -1423,6 +1742,17 @@
         "first_seen": "2026-11-21"
       },
       {
+        "owner": "Tencent-Hunyuan",
+        "name": "Hy4-flash",
+        "url": "https://github.com/Tencent-Hunyuan/Hy4-flash",
+        "type": "source",
+        "parent": null,
+        "language": "Python",
+        "stars": 85,
+        "description": "",
+        "first_seen": "2026-11-21"
+      },
+      {
         "owner": "tobi",
         "name": "herdr-app",
         "url": "https://github.com/tobi/herdr-app",
@@ -1442,6 +1772,17 @@
         "language": "TypeScript",
         "stars": 3,
         "description": "Accessible, agent-ready storefront components for Shopify's Storefront API, built on ui-sdk",
+        "first_seen": "2026-11-21"
+      },
+      {
+        "owner": "TransluceAI",
+        "name": "PosteriorBench",
+        "url": "https://github.com/TransluceAI/PosteriorBench",
+        "type": "source",
+        "parent": null,
+        "language": "Python",
+        "stars": 0,
+        "description": "A benchmark for sampling rare behaviors of LLMs",
         "first_seen": "2026-11-21"
       },
       {
