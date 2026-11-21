@@ -28,8 +28,8 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Regenerate the dashboard
-        # Writes nothing if collection fails, so a bad run leaves the last good page.
+      - name: Regenerate dashboard and append the daily feed
+        # Writes nothing if collection fails, so a bad run leaves the last good page and history.
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/public-dashboard.mjs

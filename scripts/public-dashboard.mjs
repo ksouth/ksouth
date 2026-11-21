@@ -15,12 +15,15 @@ const OWNER = 'ksouth';
 const ROOT = path.resolve(import.meta.dirname, '..');
 const OUT_HTML = path.join(ROOT, 'docs', 'index.html');
 const OUT_SUMMARY = path.join(ROOT, 'docs', 'data', 'summary.json');
+const OUT_HISTORY = path.join(ROOT, 'docs', 'data', 'history.json');
 const TEMPLATE = path.join(ROOT, 'scripts', 'dashboard.template.html');
 
 const BATCH_SIZE = 40;
 const REPOS_PER_USER = 5;
 const BATCH_PAUSE_MS = 900;
 const FOLLOWED_WINDOW_DAYS = 30;
+const HISTORY_LOOKBACK_DAYS = 7;
+const HISTORY_MAX_ITEMS = 20_000;
 const DAY = 86_400_000;
 const TZ = 'Australia/Melbourne';
 
@@ -177,6 +180,49 @@ function activityFor(repo, now) {
   return 'Idle';
 }
 
+function readHistory() {
+  if (!fs.existsSync(OUT_HISTORY)) return [];
+  const history = JSON.parse(fs.readFileSync(OUT_HISTORY, 'utf8'));
+  if (!Array.isArray(history) || history.some((entry) => !entry.date || !Array.isArray(entry.items))) {
+    throw new Error('docs/data/history.json is not a valid daily history.');
+  }
+  return history;
+}
+
+function appendHistory(history, followed, startedAt) {
+  const today = melbourneDate(startedAt);
+  const seen = new Set(history.flatMap((entry) => entry.items.map((item) => `${item.owner}/${item.name}`)));
+  const newItems = followed
+    .filter((repo) => startedAt.getTime() - Date.parse(repo.c) <= HISTORY_LOOKBACK_DAYS * DAY && !seen.has(`${repo.o}/${repo.n}`))
+    .map((repo) => ({
+      owner: repo.o,
+      name: repo.n,
+      url: repo.u,
+      type: repo.f ? 'fork' : 'source',
+      parent: repo.p || null,
+      language: repo.l,
+      stars: repo.s,
+      description: repo.d,
+      first_seen: today,
+    }));
+
+  if (!newItems.length) return { history, changed: false, newCount: 0 };
+
+  const existingIndex = history.findIndex((entry) => entry.date === today);
+  const existingItems = existingIndex >= 0 ? history[existingIndex].items : [];
+  const merged = new Map(existingItems.map((item) => [`${item.owner}/${item.name}`, item]));
+  for (const item of newItems) merged.set(`${item.owner}/${item.name}`, item);
+  const entry = {
+    date: today,
+    generated_at: startedAt.toISOString(),
+    items: [...merged.values()].sort((a, b) => a.owner.localeCompare(b.owner) || a.name.localeCompare(b.name)),
+  };
+  const next = [entry, ...history.filter((item) => item.date !== today)].sort((a, b) => b.date.localeCompare(a.date));
+  let itemCount = next.reduce((sum, day) => sum + day.items.length, 0);
+  while (itemCount > HISTORY_MAX_ITEMS && next.length) itemCount -= next.pop().items.length;
+  return { history: next, changed: true, newCount: newItems.length };
+}
+
 async function main() {
   const startedAt = new Date();
   const now = startedAt.getTime();
@@ -188,6 +234,8 @@ async function main() {
   if (!token) throw new Error('no token available for GraphQL');
   const followed = await fetchFollowedRepos(follows, now - FOLLOWED_WINDOW_DAYS * DAY);
   log(`Read ${followed.length} repositories created in the last ${FOLLOWED_WINDOW_DAYS} days by ${follows.length} followed accounts.`);
+
+  const historyUpdate = appendHistory(readHistory(), followed, startedAt);
 
   const rows = repos.map((repo) => ({
     n: repo.name,
@@ -223,6 +271,7 @@ async function main() {
 
   const meta = {
     generatedAt: melbourneDate(startedAt),
+    generatedAtISO: startedAt.toISOString(),
     generatedAtLocal: melbourneStamp(startedAt),
     owner: OWNER,
     privateIncluded: false,
@@ -243,9 +292,16 @@ async function main() {
 
   fs.mkdirSync(path.dirname(OUT_SUMMARY), { recursive: true });
   fs.writeFileSync(OUT_SUMMARY, `${JSON.stringify(summary, null, 2)}\n`);
+  if (historyUpdate.changed) {
+    fs.writeFileSync(OUT_HISTORY, `${JSON.stringify(historyUpdate.history, null, 2)}\n`);
+  }
   fs.writeFileSync(OUT_HTML, html);
 
-  log(`Wrote docs/index.html (${rows.length} repos, ${followed.length} followed) and docs/data/summary.json.`);
+  log(
+    `Wrote docs/index.html (${rows.length} repos, ${followed.length} followed), docs/data/summary.json, ` +
+      `and docs/data/history.json (${historyUpdate.history.reduce((sum, day) => sum + day.items.length, 0)} logged, ` +
+      `${historyUpdate.newCount} new today${historyUpdate.changed ? '' : ', unchanged'}).`,
+  );
 }
 
 main().catch((error) => {

@@ -175,10 +175,11 @@
     </div>
   </section>
 
-  <section class="block" id="following-section" aria-label="New repos from people you follow" hidden>
+  <section class="block" id="following-section" aria-label="New repos from people you follow in the last seven days" hidden>
     <div class="section-head">
-      <h2>New from people you follow <span class="h2-note" id="following-note"></span></h2>
+      <h2>New from people you follow — last 7 days <span class="h2-note" id="following-note"></span></h2>
       <p class="meta">Public repositories only — a private repo belonging to someone you follow is never visible here.</p>
+      <p class="meta"><a href="feed/">Open the ongoing daily log →</a></p>
     </div>
     <div class="controls">
       <div class="search-row">
@@ -207,7 +208,9 @@ const DATA = __DATA__;
 (function () {
   var DAY = 86400000;
   var rows = DATA.repos;
-  var following = DATA.following || [];
+  var following = (DATA.following || []).filter(function (r) {
+    return Date.parse(META.generatedAtISO) - Date.parse(r.c) <= 7 * DAY;
+  });
   var total = rows.length;
   var generatedDay = META.generatedAt.slice(0, 10);
   var generatedMs = Date.parse(generatedDay + "T00:00:00Z");
@@ -512,7 +515,7 @@ const DATA = __DATA__;
     if (following.length) {
       document.getElementById("following-section").hidden = false;
       document.getElementById("following-note").textContent =
-        following.length + " repo" + (following.length === 1 ? "" : "s") + " first seen in the last " + META.followingWindow + " days, from " + (META.followedCount || 0) + " followed accounts";
+        following.length + " new repo" + (following.length === 1 ? "" : "s") + " in the last 7 days, from " + (META.followedCount || 0) + " followed accounts";
       followingTable.draw();
     }
   }
