@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repo inventory — ksouth</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #111111;
+    --muted: #6b6b6b;
+    --rule: #e3e3e3;
+    --rule-strong: #c9c9c9;
+    --accent: #b3261e;
+    --chip-on-bg: #111111;
+    --chip-on-fg: #ffffff;
+    --bar: #5c5c5c;
+    --field-bg: #fafafa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0e;
+      --fg: #e9e9e9;
+      --muted: #9b9b9b;
+      --rule: #2b2b2b;
+      --rule-strong: #3a3a3a;
+      --accent: #f0736a;
+      --chip-on-bg: #e9e9e9;
+      --chip-on-fg: #111111;
+      --bar: #8c8c8c;
+      --field-bg: #161616;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 13px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-variant-numeric: tabular-nums;
+  }
+  main { max-width: 1080px; margin: 0 auto; padding: 28px 20px 56px; }
+  h1 { font-size: 15px; font-weight: 600; margin: 0 0 3px; letter-spacing: 0.01em; }
+  h2 { font-size: 12px; font-weight: 600; margin: 0 0 2px; text-transform: uppercase; letter-spacing: 0.06em; }
+  h2 .h2-note { color: var(--muted); font-weight: 400; text-transform: none; letter-spacing: 0; margin-left: 6px; }
+  .meta { margin: 0; color: var(--muted); font-size: 12px; }
+  header { padding-bottom: 16px; border-bottom: 1px solid var(--rule-strong); }
+
+  .tiles { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--rule-strong); }
+  .tile { padding: 14px 14px 14px 0; }
+  .tile + .tile { border-left: 1px solid var(--rule); padding-left: 14px; }
+  .tile .label { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .tile .value { font-size: 22px; font-weight: 500; margin-top: 2px; }
+
+  .charts { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; padding: 18px 0; border-bottom: 1px solid var(--rule-strong); }
+  figure { margin: 0; min-width: 0; }
+  figcaption { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
+  .chart svg { display: block; width: 100%; height: auto; }
+  .chart text { fill: var(--muted); font-size: 10px; }
+  .chart .value-text { fill: var(--fg); }
+
+  section.block { padding: 20px 0 0; }
+  section.block + section.block { margin-top: 22px; border-top: 1px solid var(--rule-strong); }
+  .section-head { margin-bottom: 12px; }
+
+  .controls { display: grid; gap: 10px; }
+  .search-row { display: flex; gap: 10px; flex-wrap: wrap; }
+  input[type="search"], select {
+    font: inherit; font-size: 12.5px; color: var(--fg); background: var(--field-bg);
+    border: 1px solid var(--rule-strong); border-radius: 3px; padding: 5px 7px;
+  }
+  input[type="search"] { flex: 1 1 260px; min-width: 0; }
+  input[type="search"]:focus, select:focus, button:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 1px;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    font: inherit; font-size: 12px; line-height: 1; padding: 6px 10px; cursor: pointer;
+    color: var(--fg); background: transparent; border: 1px solid var(--rule-strong); border-radius: 999px;
+  }
+  .chip[aria-pressed="true"] { background: var(--chip-on-bg); color: var(--chip-on-fg); border-color: var(--chip-on-bg); }
+  .chip .n { color: inherit; opacity: 0.65; margin-left: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  label.toggle { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; cursor: pointer; color: var(--fg); }
+  .count { margin: 10px 0 0; color: var(--muted); font-size: 12px; }
+
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 12px; }
+  th, td { text-align: left; padding: 7px 10px 7px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); border-bottom: 1px solid var(--rule-strong); white-space: nowrap; }
+  th button {
+    font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer;
+    text-transform: inherit; letter-spacing: inherit; white-space: nowrap;
+  }
+  th button .arrow { opacity: 0.85; margin-left: 4px; }
+  th button:hover { color: var(--fg); }
+  td.num, th.num { text-align: right; }
+  .name { font-weight: 500; word-break: break-word; }
+  .name a { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--rule-strong); }
+  .name a:hover { border-bottom-color: var(--fg); }
+  .sub { color: var(--muted); font-size: 11.5px; margin-top: 2px; overflow-wrap: anywhere; }
+  .badge {
+    font-size: 9.5px; font-weight: 600; letter-spacing: 0.06em; color: var(--accent);
+    border: 1px solid var(--accent); border-radius: 2px; padding: 0 3px; margin-left: 6px; vertical-align: 1px;
+  }
+  tr.is-new td:first-child { border-left: 2px solid var(--accent); padding-left: 8px; }
+  .muted { color: var(--muted); }
+  .empty { padding: 20px 0; color: var(--muted); }
+  .empty button { font: inherit; color: var(--fg); background: none; border: 0; border-bottom: 1px solid var(--rule-strong); cursor: pointer; padding: 0; }
+  footer { margin-top: 26px; padding-top: 12px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11.5px; }
+
+  @media (max-width: 720px) {
+    main { padding: 20px 14px 44px; }
+    .tiles { grid-template-columns: 1fr 1fr; }
+    .tile { padding: 12px 12px 12px 0; border-left: 0 !important; }
+    .tile:nth-child(even) { border-left: 1px solid var(--rule) !important; padding-left: 12px; }
+    .tile:nth-child(n+3) { border-top: 1px solid var(--rule); }
+    .charts { grid-template-columns: 1fr; gap: 20px; }
+    .col-lang, .col-stars { display: none; }
+    th, td { padding-right: 8px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Repo inventory — ksouth</h1>
+    <p class="meta">Generated <span id="generated">…</span> (Australia/Melbourne)</p>
+  </header>
+
+  <section class="tiles" aria-label="Totals">
+    <div class="tile"><div class="label">Total repos</div><div class="value" id="t-total">—</div></div>
+    <div class="tile"><div class="label">Private</div><div class="value" id="t-private">—</div></div>
+    <div class="tile"><div class="label">New in last 7 days</div><div class="value" id="t-new">—</div></div>
+    <div class="tile"><div class="label">Pushed to, last 30 days</div><div class="value" id="t-active">—</div></div>
+  </section>
+
+  <section class="charts" aria-label="Charts">
+    <figure>
+      <figcaption>Repositories created per year</figcaption>
+      <div class="chart" id="chart-years"></div>
+    </figure>
+    <figure>
+      <figcaption>Top 10 languages</figcaption>
+      <div class="chart" id="chart-languages"></div>
+    </figure>
+  </section>
+
+  <section class="block" aria-label="All repositories">
+    <div class="controls">
+      <div class="search-row">
+        <input type="search" id="q" placeholder="Search name, description or topics" aria-label="Search repositories">
+      </div>
+      <div class="chips" role="group" aria-label="Repository kind" id="chips"></div>
+      <div class="tools">
+        <select id="activity" aria-label="Activity">
+          <option value="any">Any activity</option>
+          <option value="Active">Active</option>
+          <option value="Quiet">Quiet</option>
+          <option value="Idle">Idle</option>
+          <option value="Archived">Archived</option>
+        </select>
+        <select id="language" aria-label="Language"></select>
+        <label class="toggle"><input type="checkbox" id="newonly"> New only (7 days)</label>
+      </div>
+      <p class="count" id="count"></p>
+    </div>
+    <div class="table-wrap">
+      <table id="repos-table">
+        <thead></thead>
+        <tbody id="rows"></tbody>
+      </table>
+      <p class="empty" id="empty" hidden>No repositories match these filters. <button type="button" id="clear">Clear filters</button></p>
+    </div>
+  </section>
+
+  <section class="block" id="following-section" aria-label="New repos from people you follow" hidden>
+    <div class="section-head">
+      <h2>New from people you follow <span class="h2-note" id="following-note"></span></h2>
+      <p class="meta">Public repositories only — a private repo belonging to someone you follow is never visible here.</p>
+    </div>
+    <div class="controls">
+      <div class="search-row">
+        <input type="search" id="f-q" placeholder="Search owner, repo or description" aria-label="Search new repos from people you follow">
+      </div>
+      <div class="chips" role="group" aria-label="Repo type" id="f-chips"></div>
+      <p class="count" id="f-count"></p>
+    </div>
+    <div class="table-wrap">
+      <table id="following-table">
+        <thead></thead>
+        <tbody id="f-rows"></tbody>
+      </table>
+      <p class="empty" id="f-empty" hidden>Nothing new from the accounts you follow in this window.</p>
+    </div>
+  </section>
+
+  <footer id="footer-note"></footer>
+</main>
+
+<script>
+const META = __META__;
+const DATA = __DATA__;
+</script>
+<script>
+(function () {
+  var DAY = 86400000;
+  var rows = DATA.repos;
+  var following = DATA.following || [];
+  var total = rows.length;
+  var generatedDay = META.generatedAt.slice(0, 10);
+  var generatedMs = Date.parse(generatedDay + "T00:00:00Z");
+
+  rows.forEach(function (r) {
+    r.createdMs = r.c ? Date.parse(r.c) : 0;
+    r.pushedMs = r.p ? Date.parse(r.p) : 0;
+    r.isNew = Boolean(r.fs) && generatedMs - Date.parse(r.fs) <= 7 * DAY;
+  });
+  following.forEach(function (r) {
+    r.firstSeenMs = r.fs ? Date.parse(r.fs) : 0;
+  });
+
+  var ACTIVITY_RANK = { Active: 0, Quiet: 1, Idle: 2, Archived: 3 };
+
+  function esc(text) {
+    return String(text).replace(/[&<>"]/g, function (ch) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch];
+    });
+  }
+
+  function makeTable(config) {
+    var state = { q: "", chip: "all", sort: config.defaultSort, dir: config.defaultDir || "desc" };
+    var cols = config.columns;
+    var els = config.els;
+
+    els.thead.innerHTML = "<tr>" + cols.map(function (c) {
+      return '<th scope="col" class="' + (c.cls || "") + '" data-sort="' + c.key + '">' +
+        '<button type="button">' + c.label + '<span class="arrow"></span></button></th>';
+    }).join("") + "</tr>";
+
+    function chipOk(row, key) {
+      return !config.chipPred || key === "all" || config.chipPred(row, key);
+    }
+
+    function passes(row, ignoreChip) {
+      if (!ignoreChip && !chipOk(row, state.chip)) return false;
+      if (config.extraFilter && !config.extraFilter(row)) return false;
+      if (state.q && config.searchText(row).indexOf(state.q) === -1) return false;
+      return true;
+    }
+
+    function compare(a, b) {
+      var dir = state.dir === "asc" ? 1 : -1;
+      var col = cols.filter(function (c) { return c.key === state.sort; })[0] || cols[0];
+      var av = col.value(a);
+      var bv = col.value(b);
+      if (av < bv) return -dir;
+      if (av > bv) return dir;
+      return a.n.toLowerCase() < b.n.toLowerCase() ? -1 : 1;
+    }
+
+    function render() {
+      var visible = config.rows.filter(function (r) { return passes(r, false); }).sort(compare);
+
+      els.count.textContent = visible.length + " of " + config.rows.length + " " + config.countNoun;
+      els.empty.hidden = visible.length !== 0;
+
+      els.tbody.innerHTML = visible.map(function (row) {
+        return "<tr" + (config.rowClass && config.rowClass(row) ? ' class="' + config.rowClass(row) + '"' : "") + ">" +
+          cols.map(function (c) { return '<td class="' + (c.cls || "") + '">' + c.render(row) + "</td>"; }).join("") +
+          "</tr>";
+      }).join("");
+
+      Array.prototype.forEach.call(els.thead.querySelectorAll("th[data-sort]"), function (th) {
+        var key = th.getAttribute("data-sort");
+        var arrow = th.querySelector(".arrow");
+        arrow.textContent = key === state.sort ? (state.dir === "asc" ? "↑" : "↓") : "";
+        th.setAttribute("aria-sort", key === state.sort ? (state.dir === "asc" ? "ascending" : "descending") : "none");
+      });
+    }
+
+    function renderChips() {
+      if (!config.chips) return;
+      els.chips.innerHTML = config.chips.map(function (chip) {
+        var n = config.rows.filter(function (r) { return chipOk(r, chip.key) && passes(r, true); }).length;
+        return '<button type="button" class="chip" data-kind="' + chip.key + '" aria-pressed="' + (state.chip === chip.key) + '">' +
+          chip.label + '<span class="n">' + n + "</span></button>";
+      }).join("");
+    }
+
+    function draw() { renderChips(); render(); }
+
+    els.q.addEventListener("input", function (e) { state.q = e.target.value.trim().toLowerCase(); draw(); });
+    if (els.chips) {
+      els.chips.addEventListener("click", function (e) {
+        var chip = e.target.closest("[data-kind]");
+        if (!chip) return;
+        state.chip = chip.getAttribute("data-kind");
+        draw();
+      });
+    }
+    els.thead.addEventListener("click", function (e) {
+      var th = e.target.closest("th[data-sort]");
+      if (!th) return;
+      var key = th.getAttribute("data-sort");
+      if (state.sort === key) {
+        state.dir = state.dir === "asc" ? "desc" : "asc";
+      } else {
+        state.sort = key;
+        var col = cols.filter(function (c) { return c.key === key; })[0];
+        state.dir = col && col.text ? "asc" : "desc";
+      }
+      render();
+    });
+
+    return { draw: draw, render: render, state: state, passes: passes, count: function () {
+      return config.rows.filter(function (r) { return passes(r, false); }).length;
+    } };
+  }
+
+  var repoCols = [
+    {
+      key: "name", label: "Name", text: true, value: function (r) { return r.n.toLowerCase(); },
+      render: function (r) {
+        var sub = [];
+        if (r.d) sub.push(esc(r.d));
+        if (r.t) sub.push('<span class="muted">' + esc(r.t) + "</span>");
+        return '<div class="name"><a href="' + esc(r.u) + '" target="_blank" rel="noopener">' + esc(r.n) + "</a>" +
+          (r.isNew ? '<span class="badge">NEW</span>' : "") + "</div>" +
+          (sub.length ? '<div class="sub">' + sub.join(" · ") + "</div>" : "");
+      }
+    },
+    { key: "visibility", label: "Visibility", text: true, value: function (r) { return r.v; },
+      render: function (r) { return esc(r.v) + (r.f ? " · fork" : ""); } },
+    { key: "language", label: "Language", cls: "col-lang", text: true, value: function (r) { return r.l || ""; },
+      render: function (r) { return esc(r.l || "—"); } },
+    { key: "stars", label: "Stars", cls: "num col-stars", value: function (r) { return r.s || 0; },
+      render: function (r) { return String(r.s || 0); } },
+    { key: "created", label: "Created", value: function (r) { return r.createdMs; },
+      render: function (r) { return esc(r.c || "—"); } },
+    { key: "pushed", label: "Last push", value: function (r) { return r.pushedMs; },
+      render: function (r) { return esc(r.p || "—"); } },
+    { key: "activity", label: "Activity", text: true, value: function (r) { return ACTIVITY_RANK[r.act]; },
+      render: function (r) { return esc(r.act); } }
+  ];
+
+  var reposTable = makeTable({
+    rows: rows,
+    columns: repoCols,
+    defaultSort: "created",
+    defaultDir: "desc",
+    countNoun: "repositories",
+    chips: [
+      { key: "all", label: "All" },
+      { key: "public", label: "Public" }
+    ].concat(META.showPrivate ? [{ key: "private", label: "Private" }] : []).concat([
+      { key: "forks", label: "Forks" },
+      { key: "archived", label: "Archived" }
+    ]),
+    chipPred: function (r, key) {
+      if (key === "public") return r.v === "Public";
+      if (key === "private") return r.v === "Private";
+      if (key === "forks") return r.f === true;
+      if (key === "archived") return r.a === true;
+      return true;
+    },
+    searchText: function (r) { return (r.n + " " + (r.d || "") + " " + (r.t || "")).toLowerCase(); },
+    extraFilter: function (r) {
+      if (filters.activity !== "any" && r.act !== filters.activity) return false;
+      if (filters.language !== "any" && (r.l || "(no language)") !== filters.language) return false;
+      if (filters.newOnly && !r.isNew) return false;
+      return true;
+    },
+    rowClass: function (r) { return r.isNew ? "is-new" : ""; },
+    els: {
+      thead: document.querySelector("#repos-table thead"),
+      tbody: document.getElementById("rows"),
+      count: document.getElementById("count"),
+      empty: document.getElementById("empty"),
+      q: document.getElementById("q"),
+      chips: document.getElementById("chips")
+    }
+  });
+
+  var followingTable = makeTable({
+    rows: following,
+    defaultSort: "firstSeen",
+    defaultDir: "desc",
+    countNoun: "new repos",
+    columns: [
+      { key: "owner", label: "Owner", text: true, value: function (r) { return r.o.toLowerCase(); },
+        render: function (r) { return '<a href="https://github.com/' + esc(r.o) + '" target="_blank" rel="noopener" class="name" style="border:0">' + esc(r.o) + "</a>"; } },
+      { key: "name", label: "Repo", text: true, value: function (r) { return r.n.toLowerCase(); },
+        render: function (r) {
+          return '<div class="name"><a href="' + esc(r.u) + '" target="_blank" rel="noopener">' + esc(r.n) + "</a></div>" +
+            (r.d ? '<div class="sub">' + esc(r.d) + "</div>" : "");
+        } },
+      { key: "kind", label: "Made / Forked", text: true, value: function (r) { return r.f ? 1 : 0; },
+        render: function (r) { return r.f ? "fork of " + esc(r.p || "another repo") : "new repo"; } },
+      { key: "language", label: "Language", cls: "col-lang", text: true, value: function (r) { return r.l || ""; },
+        render: function (r) { return esc(r.l || "—"); } },
+      { key: "stars", label: "Stars", cls: "num col-stars", value: function (r) { return r.s || 0; },
+        render: function (r) { return String(r.s || 0); } },
+      { key: "firstSeen", label: "First seen", value: function (r) { return r.firstSeenMs; },
+        render: function (r) { return esc(r.fs || "—"); } }
+    ],
+    chips: [
+      { key: "all", label: "All" },
+      { key: "source", label: "Made" },
+      { key: "fork", label: "Forked" }
+    ],
+    chipPred: function (r, key) {
+      if (key === "source") return !r.f;
+      if (key === "fork") return Boolean(r.f);
+      return true;
+    },
+    searchText: function (r) { return (r.o + " " + r.n + " " + (r.d || "")).toLowerCase(); },
+    els: {
+      thead: document.querySelector("#following-table thead"),
+      tbody: document.getElementById("f-rows"),
+      count: document.getElementById("f-count"),
+      empty: document.getElementById("f-empty"),
+      q: document.getElementById("f-q"),
+      chips: document.getElementById("f-chips")
+    }
+  });
+
+  var filters = { activity: "any", language: "any", newOnly: false };
+
+  function svgYears() {
+    var counts = {};
+    rows.forEach(function (r) {
+      var y = r.c ? r.c.slice(0, 4) : "—";
+      counts[y] = (counts[y] || 0) + 1;
+    });
+    var entries = Object.keys(counts).sort().map(function (y) { return [y, counts[y]]; });
+    var max = entries.reduce(function (m, e) { return Math.max(m, e[1]); }, 1);
+    var W = 520, H = 150, top = 14, base = H - 24, gap = 8;
+    var barW = (W - gap * (entries.length - 1)) / entries.length;
+    var parts = entries.map(function (e, i) {
+      var h = Math.max(1, Math.round((e[1] / max) * (base - top)));
+      var x = i * (barW + gap);
+      return '<rect x="' + x.toFixed(1) + '" y="' + (base - h) + '" width="' + barW.toFixed(1) + '" height="' + h + '" fill="var(--bar)"></rect>' +
+        '<text class="value-text" x="' + (x + barW / 2).toFixed(1) + '" y="' + (base - h - 4) + '" text-anchor="middle">' + e[1] + "</text>" +
+        '<text x="' + (x + barW / 2).toFixed(1) + '" y="' + (base + 14) + '" text-anchor="middle">' + esc(e[0]) + "</text>";
+    }).join("");
+    return '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Repositories created per year">' +
+      '<line x1="0" y1="' + base + '" x2="' + W + '" y2="' + base + '" stroke="var(--rule-strong)"></line>' + parts + "</svg>";
+  }
+
+  function svgLanguages() {
+    var counts = {};
+    rows.forEach(function (r) { var l = r.l || "(no language)"; counts[l] = (counts[l] || 0) + 1; });
+    var entries = Object.keys(counts).map(function (l) { return [l, counts[l]]; })
+      .sort(function (a, b) { return b[1] - a[1] || a[0].localeCompare(b[0]); })
+      .slice(0, 10);
+    var max = entries.reduce(function (m, e) { return Math.max(m, e[1]); }, 1);
+    var W = 520, rowH = 17, labelW = 104, barMax = W - labelW - 34, H = entries.length * rowH + 4;
+    var parts = entries.map(function (e, i) {
+      var w = Math.max(1, Math.round((e[1] / max) * barMax));
+      var y = i * rowH + 2;
+      return '<text x="' + (labelW - 6) + '" y="' + (y + 9) + '" text-anchor="end">' + esc(e[0]) + "</text>" +
+        '<rect x="' + labelW + '" y="' + y + '" width="' + w + '" height="11" fill="var(--bar)"></rect>' +
+        '<text class="value-text" x="' + (labelW + w + 5) + '" y="' + (y + 9) + '">' + e[1] + "</text>";
+    }).join("");
+    return '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Top 10 languages">' + parts + "</svg>";
+  }
+
+  function init() {
+    document.getElementById("generated").textContent = META.generatedAtLocal;
+    document.getElementById("t-total").textContent = total;
+    document.getElementById("t-private").textContent = rows.filter(function (r) { return r.v === "Private"; }).length;
+    document.getElementById("t-new").textContent = rows.filter(function (r) { return r.isNew; }).length;
+    document.getElementById("t-active").textContent = rows.filter(function (r) { return r.act === "Active"; }).length;
+
+    document.getElementById("footer-note").textContent = META.footer;
+    document.getElementById("chart-years").innerHTML = svgYears();
+    document.getElementById("chart-languages").innerHTML = svgLanguages();
+
+    var langs = {};
+    rows.forEach(function (r) { var l = r.l || "(no language)"; langs[l] = (langs[l] || 0) + 1; });
+    var options = Object.keys(langs).sort(function (a, b) { return langs[b] - langs[a] || a.localeCompare(b); });
+    document.getElementById("language").innerHTML = '<option value="any">Any language</option>' + options.map(function (l) {
+      return '<option value="' + esc(l) + '">' + esc(l) + " (" + langs[l] + ")</option>";
+    }).join("");
+
+    document.getElementById("activity").addEventListener("change", function (e) {
+      filters.activity = e.target.value;
+      reposTable.draw();
+    });
+    document.getElementById("language").addEventListener("change", function (e) {
+      filters.language = e.target.value;
+      reposTable.draw();
+    });
+    document.getElementById("newonly").addEventListener("change", function (e) {
+      filters.newOnly = e.target.checked;
+      reposTable.draw();
+    });
+    document.getElementById("clear").addEventListener("click", function () {
+      filters.activity = "any"; filters.language = "any"; filters.newOnly = false;
+      reposTable.state.q = ""; reposTable.state.chip = "all";
+      document.getElementById("activity").value = "any";
+      document.getElementById("language").value = "any";
+      document.getElementById("newonly").checked = false;
+      document.getElementById("q").value = "";
+      reposTable.draw();
+    });
+
+    reposTable.draw();
+
+    if (following.length) {
+      document.getElementById("following-section").hidden = false;
+      document.getElementById("following-note").textContent =
+        following.length + " repo" + (following.length === 1 ? "" : "s") + " first seen in the last " + META.followingWindow + " days, from " + (META.followedCount || 0) + " followed accounts";
+      followingTable.draw();
+    }
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>

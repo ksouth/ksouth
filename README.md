@@ -10,6 +10,8 @@ Instagram: [@KrystalSouth](https://www.instagram.com/Krystalsouth)<br>
 LinkedIn: [krystalsouth](https://www.linkedin.com/in/krystalsouth/)<br>
 YouTube: [@KrystalSouth](https://www.youtube.com/@KrystalSouth)<br>
 <br>
+I keep a [public repository dashboard](https://ksouth.github.io/ksouth/) with a live repo-count badge: ![Public repositories](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fksouth%2Fksouth%2Fmain%2Fdocs%2Fdata%2Fsummary.json)<br>
+<br>
 I've been on GitHub since 2013 but I am only now learning how to use it!!!! I love to fork and star, I consider this zone to be the only good social network. I love to see what people are creating with code and data. I'm a Mac OSX/iOS user and only really know html and css but I am exploring new languages with AI, for better or worse.<br>
 
 ## Please reach out if you have any questions, inquiries, opportunities, ideas, whatever. 

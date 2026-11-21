@@ -1,0 +1,47 @@
+name: Public dashboard
+
+# Keeps the GitHub Pages dashboard at https://ksouth.github.io/ksouth/ current.
+# Public data only, no secrets, no dependencies — this job must keep working even
+# if everything else in the account changes. It never opens issues and never
+# touches the private repo-inventory repository.
+
+on:
+  schedule:
+    # 21:00 UTC = 08:00 Australia/Melbourne during daylight saving, 07:00 otherwise.
+    - cron: '0 21 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: public-dashboard
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+
+      - name: Regenerate the dashboard
+        # Writes nothing if collection fails, so a bad run leaves the last good page.
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/public-dashboard.mjs
+
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          if git diff --cached --quiet; then
+            echo "Nothing changed since the last run."
+            exit 0
+          fi
+          git commit -m "chore: refresh public dashboard"
+          git push
