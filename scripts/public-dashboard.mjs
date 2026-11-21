@@ -76,14 +76,20 @@ async function api(href, options = {}) {
       attempt += 1;
       continue;
     }
-    if (res.status >= 500 && attempt === 1) {
-      log(`  ${res.status} from ${href}, retrying once.`);
-      await sleep(2000);
+    if (res.status >= 500 && attempt <= 2) {
+      const waitMs = 2000 * attempt;
+      log(`  ${res.status} from ${href}, retry ${attempt} after ${waitMs / 1000}s.`);
+      await sleep(waitMs);
       attempt += 1;
       continue;
     }
 
-    const body = text ? JSON.parse(text) : null;
+    let body;
+    try {
+      body = text ? JSON.parse(text) : null;
+    } catch {
+      throw new Error(`${options.method || 'GET'} ${href} returned non-JSON HTTP ${res.status}: ${text.slice(0, 160)}`);
+    }
     if (!res.ok) throw new Error(`${options.method || 'GET'} ${href} failed with HTTP ${res.status}: ${text.slice(0, 300)}`);
     return { body, link: res.headers.get('link') };
   }
