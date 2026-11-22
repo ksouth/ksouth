@@ -1,5 +1,218 @@
 [
   {
+    "date": "2026-11-22",
+    "generated_at": "2026-11-22T01:07:17.131Z",
+    "items": [
+      {
+        "starred_by": "19h",
+        "nameWithOwner": "EliteClassRoom/raxdbg",
+        "url": "https://github.com/EliteClassRoom/raxdbg",
+        "language": "Rust",
+        "stars": 8,
+        "description": "",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "19h",
+        "nameWithOwner": "emoose/idaxex",
+        "url": "https://github.com/emoose/idaxex",
+        "language": "C++",
+        "stars": 223,
+        "description": "XEX/XBE loader plugin for IDA 9, and xex1tool, supporting most known Xbox/Xbox360 executable formats.",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "19h",
+        "nameWithOwner": "SumZer0-git/EDAPGui",
+        "url": "https://github.com/SumZer0-git/EDAPGui",
+        "language": "Python",
+        "stars": 146,
+        "description": "An Autopilot for Elite Dangerous",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "19h",
+        "nameWithOwner": "V4bel/dirtyfrag",
+        "url": "https://github.com/V4bel/dirtyfrag",
+        "language": "C",
+        "stars": 5312,
+        "description": "",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "19h",
+        "nameWithOwner": "warpdotdev/warp",
+        "url": "https://github.com/warpdotdev/warp",
+        "language": "Rust",
+        "stars": 66077,
+        "description": "Warp is an agentic development environment, born out of the terminal.",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "chuanqisun",
+        "nameWithOwner": "weastler/p5-canvas",
+        "url": "https://github.com/weastler/p5-canvas",
+        "language": "JavaScript",
+        "stars": 2,
+        "description": "P5.js sketches canvas extension for GitHub Copilot",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "coygeek",
+        "nameWithOwner": "ersinkoc/phonebox",
+        "url": "https://github.com/ersinkoc/phonebox",
+        "language": "JavaScript",
+        "stars": 4650,
+        "description": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 124 widgets and 30 templates for system stats, AI coding, media and automation, in 13 languages. USB or paired Wi-Fi. No cloud required.",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "coygeek",
+        "nameWithOwner": "FrigadeHQ/yogurt",
+        "url": "https://github.com/FrigadeHQ/yogurt",
+        "language": "TypeScript",
+        "stars": 2869,
+        "description": "Private AI meeting notes that stay on your computer. No meeting bot. Free and open source for Mac, Windows and Linux. An alternative to Granola, Otter and Fireflies.",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "coygeek",
+        "nameWithOwner": "ItsNotRexed/Leonida",
+        "url": "https://github.com/ItsNotRexed/Leonida",
+        "language": "Python",
+        "stars": 5653,
+        "description": "Leonida Is A Native PC Recompilation Of The Xbox Version Of Grand Theft Auto 6",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "coygeek",
+        "nameWithOwner": "janestreet/agent_skills",
+        "url": "https://github.com/janestreet/agent_skills",
+        "language": "",
+        "stars": 10557,
+        "description": "Agent skills",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "coygeek",
+        "nameWithOwner": "ZiChuanLan/freebie-radar",
+        "url": "https://github.com/ZiChuanLan/freebie-radar",
+        "language": "TypeScript",
+        "stars": 2136,
+        "description": "白嫖与资讯资源聚合雷达：100+个源定时采集 + AI 二审过滤假福利 + 获取方式分级隔离抽奖/试用/推广 + Telegram 即时推送",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "Deicyde",
+        "nameWithOwner": "cslib-community/cslib-frontier",
+        "url": "https://github.com/cslib-community/cslib-frontier",
+        "language": "Lean",
+        "stars": 57,
+        "description": "A frontier formalization of all of theoretical computer science built atop CSLib.",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "fendouai",
+        "nameWithOwner": "JuneYaooo/rea-video",
+        "url": "https://github.com/JuneYaooo/rea-video",
+        "language": "Python",
+        "stars": 11816,
+        "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "fendouai",
+        "nameWithOwner": "spider-ios/autox-release",
+        "url": "https://github.com/spider-ios/autox-release",
+        "language": "",
+        "stars": 1149,
+        "description": "网页自动化工具，油管等视频下载，一键搬家，视频多平台发布，一键发布到tiktok、小红书、快手、抖音、油管、B站等等平台",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "jph00",
+        "nameWithOwner": "ShinMegamiBoson/lookatmyquant",
+        "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+        "language": "Python",
+        "stars": 284,
+        "description": "A quantization compiler that delivers 12× lower KL than Q4_K_M at the same file size",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "levzzz5154",
+        "nameWithOwner": "Dawnforger/occultism-horizon",
+        "url": "https://github.com/Dawnforger/occultism-horizon",
+        "language": "Rust",
+        "stars": 1,
+        "description": "Occultism, the mod by KliKli (github.com/klikli-dev), ported to Horizon with their permission: spirits, ritual circles, the Demonic Altar and dimensional storage",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "levzzz5154",
+        "nameWithOwner": "ItsNotRexed/Leonida",
+        "url": "https://github.com/ItsNotRexed/Leonida",
+        "language": "Python",
+        "stars": 5656,
+        "description": "Leonida Is A Native PC Recompilation Of The Xbox Version Of Grand Theft Auto 6",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "machinestein",
+        "nameWithOwner": "Generated-Computers/Theory",
+        "url": "https://github.com/Generated-Computers/Theory",
+        "language": "Lean",
+        "stars": 1,
+        "description": "P=NC?",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "rufuspollock",
+        "nameWithOwner": "observablehq/inputs",
+        "url": "https://github.com/observablehq/inputs",
+        "language": "JavaScript",
+        "stars": 175,
+        "description": "Better input elements",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "SensenGao",
+        "nameWithOwner": "xlang-ai/RoboWild",
+        "url": "https://github.com/xlang-ai/RoboWild",
+        "language": "Python",
+        "stars": 44,
+        "description": "RoboWild: Can Frontier Models Generalize to Robot Use in the Wild?",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "shannonsands",
+        "nameWithOwner": "martin-marek/score-centering",
+        "url": "https://github.com/martin-marek/score-centering",
+        "language": "Python",
+        "stars": 245,
+        "description": "📄Score Centering Stabilizes Off-policy Reinforcement Learning",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "shannonsands",
+        "nameWithOwner": "ShinMegamiBoson/lookatmyquant",
+        "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+        "language": "Python",
+        "stars": 285,
+        "description": "A quantization compiler that delivers 12× lower KL than Q4_K_M at the same file size",
+        "first_seen": "2026-11-22"
+      },
+      {
+        "starred_by": "Vasco0x4",
+        "nameWithOwner": "BaaRai/ARTEX",
+        "url": "https://github.com/BaaRai/ARTEX",
+        "language": "Go",
+        "stars": 15181,
+        "description": "ARTEX - AI autonomous penetration testing system (English translation; upstream: Autumn-27/ARTEX, AGPL-3.0)",
+        "first_seen": "2026-11-22"
+      }
+    ]
+  },
+  {
     "date": "2026-11-21",
     "generated_at": "2026-11-21T10:51:47.179Z",
     "items": [
