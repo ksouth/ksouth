@@ -1,5 +1,218 @@
 [
   {
+    "date": "2026-11-23",
+    "generated_at": "2026-11-23T01:29:29.928Z",
+    "items": [
+      {
+        "starred_by": "allisoneer",
+        "nameWithOwner": "justrach/nanoui",
+        "url": "https://github.com/justrach/nanoui",
+        "language": "Zig",
+        "stars": 971,
+        "description": "Desktop apps in Zig, with native UI drawn on the GPU or a web frontend",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "coygeek",
+        "nameWithOwner": "Lemxy/WinRust",
+        "url": "https://github.com/Lemxy/WinRust",
+        "language": "Rust",
+        "stars": 1243,
+        "description": "Windows shell replacement in Rust: taskbar, file manager, NTFS search, task manager, disk cleaner. One installer exe.",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "coygeek",
+        "nameWithOwner": "R0Y00/Xbox2Windows",
+        "url": "https://github.com/R0Y00/Xbox2Windows",
+        "language": "Python",
+        "stars": 1315,
+        "description": "GTA VI static recompilation research for x64 Windows. Source-built EXEs run on Windows, and two translated pixel shaders match reference outputs on hardware and WARP. Full-game startup is unverified.",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "coygeek",
+        "nameWithOwner": "siliconjungle/shapeshift-labs-ink-studio",
+        "url": "https://github.com/siliconjungle/shapeshift-labs-ink-studio",
+        "language": "JavaScript",
+        "stars": 1031,
+        "description": "Sculpting, animation and simulation toolkit for pixel-art Gaussian splats",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "dahlia",
+        "nameWithOwner": "dahlia/oseo",
+        "url": "https://github.com/dahlia/oseo",
+        "language": "TypeScript",
+        "stars": 19,
+        "description": "A JavaScript and TypeScript engine that compiles every function to native code ahead of time, using type annotations as guarded optimization hints. No interpreter, no JIT, no deoptimization.",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "heqin-zhu",
+        "nameWithOwner": "huangwb8/ChineseResearchLaTeX",
+        "url": "https://github.com/huangwb8/ChineseResearchLaTeX",
+        "language": "Python",
+        "stars": 3064,
+        "description": "中国科研常用LaTeX模板集",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "janbam",
+        "nameWithOwner": "varpsilon/tinytale",
+        "url": "https://github.com/varpsilon/tinytale",
+        "language": "Python",
+        "stars": 1,
+        "description": "a tiny gpt trained from scratch on fairy tales",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "koala73",
+        "nameWithOwner": "Generated-Computers/Locals",
+        "url": "https://github.com/Generated-Computers/Locals",
+        "language": "Python",
+        "stars": 722,
+        "description": "Run many AI agents at once on your Mac, up to 3x faster.",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "koala73",
+        "nameWithOwner": "humanitas-labs/sirius",
+        "url": "https://github.com/humanitas-labs/sirius",
+        "language": "Swift",
+        "stars": 86,
+        "description": "Ambient intelligence for macOS.",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "koala73",
+        "nameWithOwner": "iterate/mac-app",
+        "url": "https://github.com/iterate/mac-app",
+        "language": "Swift",
+        "stars": 3,
+        "description": "This Mac's menu-bar app for an iterate mind: npx @iterate-com/mac-app builds it, installs it and lends it to your mind",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "koala73",
+        "nameWithOwner": "m1guelpf/Exo",
+        "url": "https://github.com/m1guelpf/Exo",
+        "language": "Rust",
+        "stars": 247,
+        "description": "A fast, local and native Gmail client for macOS, inspired by Superhuman.",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "koala73",
+        "nameWithOwner": "pierridotite/mobile-agent-testers",
+        "url": "https://github.com/pierridotite/mobile-agent-testers",
+        "language": "Python",
+        "stars": 560,
+        "description": "20 AI testers on 20 different phones, in parallel, on GitHub's free runners: Claude Code agents on iOS Simulators and Android emulators that find broken flows, translation, layout and accessibility bugs",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "kocaemre",
+        "nameWithOwner": "0sec-labs/0security",
+        "url": "https://github.com/0sec-labs/0security",
+        "language": "TypeScript",
+        "stars": 1587,
+        "description": "Open-source cybersecurity harness to build and deploy sovereign, persistent AI security agents (sentinels) that continuously find, prove and fix security risks. Web UI, CLI, CI and MCP.",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "mvanhorn",
+        "nameWithOwner": "Piebald-AI/awesome-gemini-cli",
+        "url": "https://github.com/Piebald-AI/awesome-gemini-cli",
+        "language": "",
+        "stars": 654,
+        "description": "A curated list of awesome tools, extensions, and resources for Gemini CLI.",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "ncoop57",
+        "nameWithOwner": "AnswerDotAI/fastcolab",
+        "url": "https://github.com/AnswerDotAI/fastcolab",
+        "language": "Jupyter Notebook",
+        "stars": 4,
+        "description": "Convenient access to the colab API",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "Sertug17",
+        "nameWithOwner": "mimir-stellar/mimir-markets",
+        "url": "https://github.com/mimir-stellar/mimir-markets",
+        "language": "TypeScript",
+        "stars": 4,
+        "description": "",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "shannonsands",
+        "nameWithOwner": "wwillchen/ebr",
+        "url": "https://github.com/wwillchen/ebr",
+        "language": "Python",
+        "stars": 94,
+        "description": "The official implementation for Energy-Based Reasoners: Your Recurrent Reasoner Should be an Energy-Based Model.",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "smoe",
+        "nameWithOwner": "Speicherstadt/haben",
+        "url": "https://github.com/Speicherstadt/haben",
+        "language": "TypeScript",
+        "stars": 788,
+        "description": "Selbst gehostete Buchhaltung für Freiberufler, Selbstständige, Kleinunternehmer, GmbH und UG: E-Rechnung (ZUGFeRD, XRechnung), Belege, Bankabgleich, EÜR oder Bilanz, E-Bilanz und Steuererklärungen an ELSTER. Für die GoBD gebaut, DATEV-Export. Open-Source-Alternative zu Lexware Office (lexoffice) und sevDesk. Docker-Image für den eigenen Server.",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "tairov",
+        "nameWithOwner": "EL4CTEO/fast-anything",
+        "url": "https://github.com/EL4CTEO/fast-anything",
+        "language": "Rust",
+        "stars": 1936,
+        "description": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "tandpfun",
+        "nameWithOwner": "louis-e/arnis",
+        "url": "https://github.com/louis-e/arnis",
+        "language": "Rust",
+        "stars": 18795,
+        "description": "Generate any location from the real world in Minecraft with a high level of detail.",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "tchajed",
+        "nameWithOwner": "pingdotgg/t3code",
+        "url": "https://github.com/pingdotgg/t3code",
+        "language": "TypeScript",
+        "stars": 71715,
+        "description": "The best way to control Claude Code, Codex and more from any computer or phone",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "vtrivedy",
+        "nameWithOwner": "scarletkc/colab-playground",
+        "url": "https://github.com/scarletkc/colab-playground",
+        "language": "Rust",
+        "stars": 392,
+        "description": "A desktop app for the Google Colab CLI: accounts, GPU sessions with cost guards, port forwarding and plugins.",
+        "first_seen": "2026-11-23"
+      },
+      {
+        "starred_by": "zechengz",
+        "nameWithOwner": "containers/bubblewrap",
+        "url": "https://github.com/containers/bubblewrap",
+        "language": "C",
+        "stars": 9590,
+        "description": "Low-level unprivileged sandboxing tool used by Flatpak and similar projects",
+        "first_seen": "2026-11-23"
+      }
+    ]
+  },
+  {
     "date": "2026-11-22",
     "generated_at": "2026-11-22T01:07:17.131Z",
     "items": [
