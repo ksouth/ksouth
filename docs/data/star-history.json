@@ -1,5 +1,2432 @@
 [
   {
+    "date": "2026-11-25",
+    "generated_at": "2026-11-25T04:03:44.228Z",
+    "items": [
+      {
+        "starred_by": "0xrlawrence",
+        "nameWithOwner": "crhywun/g1-acq",
+        "url": "https://github.com/crhywun/g1-acq",
+        "language": "JavaScript",
+        "stars": 666,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "0xrlawrence",
+        "nameWithOwner": "WhiteTowerAI/ohmygame",
+        "url": "https://github.com/WhiteTowerAI/ohmygame",
+        "language": "TypeScript",
+        "stars": 3517,
+        "description": "The open-source studio for making games with AI. Your own one-person game studio. Everything you need to make games with AI, in one app. Game canvas.  Bring your own key.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "9QIX",
+        "nameWithOwner": "DuarteSantos8/openGym",
+        "url": "https://github.com/DuarteSantos8/openGym",
+        "language": "JavaScript",
+        "stars": 23941,
+        "description": "Open-source gym & body-weight tracker, now in the App Store (iPhone + Apple Watch) and as an Android APK. Plan routines, log workouts, see which muscles are trained, import from Strong/Hevy/FitNotes. Self-host it or use it on the phone alone.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "aakashadesara",
+        "nameWithOwner": "jzone3/new-media-writer",
+        "url": "https://github.com/jzone3/new-media-writer",
+        "language": "Swift",
+        "stars": 15,
+        "description": "The notepad for New Media professionals",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "aakashadesara",
+        "nameWithOwner": "ninjahawk/livenerf",
+        "url": "https://github.com/ninjahawk/livenerf",
+        "language": "Python",
+        "stars": 1998,
+        "description": "Benchmark for tracking model capability after release.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "aakashadesara",
+        "nameWithOwner": "photon-hq/spectrum-ts",
+        "url": "https://github.com/photon-hq/spectrum-ts",
+        "language": "TypeScript",
+        "stars": 2206,
+        "description": "Bring agents to any interfaces",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "aakashadesara",
+        "nameWithOwner": "shadcn-labs/mdxcn",
+        "url": "https://github.com/shadcn-labs/mdxcn",
+        "language": "TypeScript",
+        "stars": 724,
+        "description": "mdxcn is a free, open-source set of callouts, steps, terminals, charts, and timelines for mdx. copy any component with the shadcn cli.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "aakashadesara",
+        "nameWithOwner": "stablyai/orca",
+        "url": "https://github.com/stablyai/orca",
+        "language": "TypeScript",
+        "stars": 136435,
+        "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "AgentSparko",
+        "nameWithOwner": "MiaAI-Lab/m3code",
+        "url": "https://github.com/MiaAI-Lab/m3code",
+        "language": "TypeScript",
+        "stars": 316,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "AgentSparko",
+        "nameWithOwner": "myllmbox/qwen38-flash-next-recipe",
+        "url": "https://github.com/myllmbox/qwen38-flash-next-recipe",
+        "language": "Shell",
+        "stars": 179,
+        "description": "qwen38-flash-next recipe for solo GB10",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "AgentSparko",
+        "nameWithOwner": "robbietilton/Editroom",
+        "url": "https://github.com/robbietilton/Editroom",
+        "language": "Swift",
+        "stars": 163,
+        "description": "Fast and powerful video editing for Mac",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "albertvillanova",
+        "nameWithOwner": "huggingface/physics-intern-v0",
+        "url": "https://github.com/huggingface/physics-intern-v0",
+        "language": "Python",
+        "stars": 50,
+        "description": "An agentic framework for solving scientific research problems",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "albertvillanova",
+        "nameWithOwner": "NationalSecurityAgency/ghidra",
+        "url": "https://github.com/NationalSecurityAgency/ghidra",
+        "language": "Java",
+        "stars": 101245,
+        "description": "Ghidra is a software reverse engineering (SRE) framework",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "albertvillanova",
+        "nameWithOwner": "nextmoca/adl",
+        "url": "https://github.com/nextmoca/adl",
+        "language": "Python",
+        "stars": 105,
+        "description": "ADL (Agent Definition Language) is a vendor-neutral, declarative standard for defining AI agents, including their tools, LLM settings, RAG inputs, permissions, and dependencies. It brings consistency, governance, and portability to enterprise AI by providing a clear, machine-readable agent blueprint.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "albertvillanova",
+        "nameWithOwner": "openresponses/openresponses",
+        "url": "https://github.com/openresponses/openresponses",
+        "language": "TypeScript",
+        "stars": 1216,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "albertvillanova",
+        "nameWithOwner": "Paulescu/hands-on-rl",
+        "url": "https://github.com/Paulescu/hands-on-rl",
+        "language": "Jupyter Notebook",
+        "stars": 1580,
+        "description": "Free course that takes you from zero to Reinforcement Learning PRO 🦸🏻‍🦸🏽",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "amanharwara",
+        "nameWithOwner": "andremichelle/openDAW",
+        "url": "https://github.com/andremichelle/openDAW",
+        "language": "TypeScript",
+        "stars": 2481,
+        "description": "openDAW is a next-generation web-based Digital Audio Workstation (DAW)",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "amanharwara",
+        "nameWithOwner": "kooparse/ui_builder",
+        "url": "https://github.com/kooparse/ui_builder",
+        "language": "Jai",
+        "stars": 32,
+        "description": "An immediate-mode GUI with a layout system and nice effects.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "amanharwara",
+        "nameWithOwner": "nicoverbruggen/libron",
+        "url": "https://github.com/nicoverbruggen/libron",
+        "language": "Python",
+        "stars": 2091,
+        "description": "A manually tuned font revision of Readerly, with reduced and altered serifs, optimized for digital reading and e-readers. OFL licensed.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "amanharwara",
+        "nameWithOwner": "pingdotgg/t3code",
+        "url": "https://github.com/pingdotgg/t3code",
+        "language": "TypeScript",
+        "stars": 77909,
+        "description": "The best way to control Claude Code, Codex and more from any computer or phone",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "amanharwara",
+        "nameWithOwner": "vicinaehq/vicinae",
+        "url": "https://github.com/vicinaehq/vicinae",
+        "language": "C++",
+        "stars": 10707,
+        "description": "A focused launcher for your desktop - native, fast, extensible",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "AmintaCCCP",
+        "nameWithOwner": "Cheese-nya/pita",
+        "url": "https://github.com/Cheese-nya/pita",
+        "language": "TypeScript",
+        "stars": 3,
+        "description": "Cross-Agent Skills Manager for Claude Code, Codex, Antigravity, DeepSeek & 13+ AI coding tools — copy-sync, token budget, security audit & rollback (Tauri + Rust).",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "AmintaCCCP",
+        "nameWithOwner": "micooz/ossia",
+        "url": "https://github.com/micooz/ossia",
+        "language": "Rust",
+        "stars": 11,
+        "description": "Ossia is AI-native music notation software that gives AI agents the tools and guidance they need to create scores through conversation.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "AmintaCCCP",
+        "nameWithOwner": "pingdotgg/t3code",
+        "url": "https://github.com/pingdotgg/t3code",
+        "language": "TypeScript",
+        "stars": 77912,
+        "description": "The best way to control Claude Code, Codex and more from any computer or phone",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "AmintaCCCP",
+        "nameWithOwner": "StevewJin/biz-agent",
+        "url": "https://github.com/StevewJin/biz-agent",
+        "language": "Java",
+        "stars": 3,
+        "description": "Open-source AI agent platform for business: one Agent Loop + skill packs + extension packs, with SQL/HTTP tools, chart rendering, team RBAC and publish review. 面向业务的 AI 智能体平台：一个 Agent Loop + 技能包 + 扩展包，接入业务数据库与接口，支持团队权限与上架审核。",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "AmintaCCCP",
+        "nameWithOwner": "yuripu1997/proxy-pool",
+        "url": "https://github.com/yuripu1997/proxy-pool",
+        "language": "Python",
+        "stars": 21,
+        "description": "Self-hosted free proxy pool: scheduled scraping, real-target verification, SQLite persistence, Web UI and plain HTTP API. Zero dependencies.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "antsgar",
+        "nameWithOwner": "standardnotes/app",
+        "url": "https://github.com/standardnotes/app",
+        "language": "TypeScript",
+        "stars": 6736,
+        "description": "Think fearlessly with end-to-end encrypted notes and files. For issues, visit https://standardnotes.com/forum or https://standardnotes.com/help.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "armanckeser",
+        "nameWithOwner": "fif7y/dimble",
+        "url": "https://github.com/fif7y/dimble",
+        "language": "Swift",
+        "stars": 1344,
+        "description": "A calm menu bar, done the native way. Hides the icons you don't need until you do.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "armanckeser",
+        "nameWithOwner": "ShihanLi/clipboard",
+        "url": "https://github.com/ShihanLi/clipboard",
+        "language": "Swift",
+        "stars": 2,
+        "description": "Hold ⌘V to see your clipboard history on macOS. Tap to paste as usual.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "armanckeser",
+        "nameWithOwner": "ShihanLi/tadpod",
+        "url": "https://github.com/ShihanLi/tadpod",
+        "language": "Python",
+        "stars": 1,
+        "description": "Your people, on your machine. A local MCP server for your LinkedIn export, QR-scanned contacts and notes.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "armanckeser",
+        "nameWithOwner": "tembo/voxl",
+        "url": "https://github.com/tembo/voxl",
+        "language": "Rust",
+        "stars": 1929,
+        "description": "extremely fast web remote desktop streaming",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "armanckeser",
+        "nameWithOwner": "vercel-labs/ui",
+        "url": "https://github.com/vercel-labs/ui",
+        "language": "TypeScript",
+        "stars": 7260,
+        "description": "A library of behaviors for agents to build and drive the next generation of user interfaces.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "Aslam97",
+        "nameWithOwner": "deepseek-ai/deepseek-harness",
+        "url": "https://github.com/deepseek-ai/deepseek-harness",
+        "language": "TypeScript",
+        "stars": 286642,
+        "description": "DeepSeek Harness: Everything is a Plugin.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "Aslam97",
+        "nameWithOwner": "expo/exact",
+        "url": "https://github.com/expo/exact",
+        "language": "Rust",
+        "stars": 5067,
+        "description": "Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI agent can build it, run it, see it, and test it on every one of them.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "Aslam97",
+        "nameWithOwner": "fayazara/Screendrop",
+        "url": "https://github.com/fayazara/Screendrop",
+        "language": "Swift",
+        "stars": 2529,
+        "description": "A beautiful screenshot + screen recording + Loom alternative - all native, self hostable and free.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "Aslam97",
+        "nameWithOwner": "liveblocks/frimousse",
+        "url": "https://github.com/liveblocks/frimousse",
+        "language": "TypeScript",
+        "stars": 1813,
+        "description": "A lightweight, unstyled, and composable emoji picker for React.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "Aslam97",
+        "nameWithOwner": "YusufCeng1z/ding",
+        "url": "https://github.com/YusufCeng1z/ding",
+        "language": "TypeScript",
+        "stars": 832,
+        "description": "Toasts with real spring physics. One toast that morphs in place. No dependencies. React, Svelte, Vue and plain DOM.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "atmoio",
+        "nameWithOwner": "just-every/code",
+        "url": "https://github.com/just-every/code",
+        "language": "Rust",
+        "stars": 4056,
+        "description": "Every Code - push frontier AI to it limits. A fork of the Codex CLI with validation, automation, browser integration, multi-agents, theming, and much more. Orchestrate agents from OpenAI, Claude, Gemini or any provider.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "atmoio",
+        "nameWithOwner": "oramasearch/orama",
+        "url": "https://github.com/oramasearch/orama",
+        "language": "TypeScript",
+        "stars": 10620,
+        "description": "🌌  A complete search engine and RAG pipeline in your browser, server or edge network with support for full-text, vector, and hybrid search in less than 2kb.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "atmoio",
+        "nameWithOwner": "rberg27/doom-coding",
+        "url": "https://github.com/rberg27/doom-coding",
+        "language": "",
+        "stars": 1733,
+        "description": "A guide for how to use your smartphone to code anywhere at anytime. ",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "atmoio",
+        "nameWithOwner": "rhashimoto/wa-sqlite",
+        "url": "https://github.com/rhashimoto/wa-sqlite",
+        "language": "JavaScript",
+        "stars": 1431,
+        "description": "WebAssembly SQLite with support for browser storage extensions",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "atmoio",
+        "nameWithOwner": "shakedlokits/stash",
+        "url": "https://github.com/shakedlokits/stash",
+        "language": "Shell",
+        "stars": 212,
+        "description": "Bidirectionally sync Markdown files with Apple Notes.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "b1tg",
+        "nameWithOwner": "0xBakeer/deepseek-v4-flash-spark",
+        "url": "https://github.com/0xBakeer/deepseek-v4-flash-spark",
+        "language": "Jinja",
+        "stars": 4,
+        "description": "DeepSeek V4 Flash on a DGX Spark: 384k context, thinking, tools, OpenAI API — one command to install",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "b1tg",
+        "nameWithOwner": "pegainfer-project/kern",
+        "url": "https://github.com/pegainfer-project/kern",
+        "language": "Rust",
+        "stars": 244,
+        "description": "Model-agnostic GPU runtime for LLM inference in Rust. Ship models as verified manifests + CUDA kernels — run standalone or drop into vLLM & SGLang.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "bdbch",
+        "nameWithOwner": "colibri-social/colibri.social",
+        "url": "https://github.com/colibri-social/colibri.social",
+        "language": "TypeScript",
+        "stars": 105,
+        "description": "Colibri is a next-generation social chat app built on the AT protocol.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "bdbch",
+        "nameWithOwner": "dmno-dev/bumpy",
+        "url": "https://github.com/dmno-dev/bumpy",
+        "language": "TypeScript",
+        "stars": 154,
+        "description": "🐸 Modern monorepo friendly version management + changelog tool",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "bdbch",
+        "nameWithOwner": "hardbeat920/monocode",
+        "url": "https://github.com/hardbeat920/monocode",
+        "language": "Rust",
+        "stars": 4143,
+        "description": "A GUI for your coding agents",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "bdbch",
+        "nameWithOwner": "LadybirdBrowser/ladybird",
+        "url": "https://github.com/LadybirdBrowser/ladybird",
+        "language": "Rust",
+        "stars": 68884,
+        "description": "Truly independent web browser",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "bdbch",
+        "nameWithOwner": "MatteoGabriele/agentscan-text-action",
+        "url": "https://github.com/MatteoGabriele/agentscan-text-action",
+        "language": "TypeScript",
+        "stars": 10,
+        "description": "GitHub Action that flags agent-written PR descriptions",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "benesch",
+        "nameWithOwner": "dtolnay/cargo-llvm-lines",
+        "url": "https://github.com/dtolnay/cargo-llvm-lines",
+        "language": "Rust",
+        "stars": 533,
+        "description": "Count lines of LLVM IR per generic function",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "benesch",
+        "nameWithOwner": "MaterializeInc/datagen",
+        "url": "https://github.com/MaterializeInc/datagen",
+        "language": "TypeScript",
+        "stars": 169,
+        "description": "Generate authentic looking mock data based on a SQL, JSON or Avro schema and produce to Kafka in JSON or Avro format.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "benesch",
+        "nameWithOwner": "MaterializeInc/materialize",
+        "url": "https://github.com/MaterializeInc/materialize",
+        "language": "Rust",
+        "stars": 6413,
+        "description": "The live data layer for apps and AI agents. Create up-to-the-second views into your business, just using SQL",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "benesch",
+        "nameWithOwner": "TimelyDataflow/timely-dataflow",
+        "url": "https://github.com/TimelyDataflow/timely-dataflow",
+        "language": "Rust",
+        "stars": 3665,
+        "description": "A modular implementation of timely dataflow in Rust",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "benesch",
+        "nameWithOwner": "turbopuffer/turbopuffer-rust",
+        "url": "https://github.com/turbopuffer/turbopuffer-rust",
+        "language": "Rust",
+        "stars": 19,
+        "description": "Rust language bindings for turbopuffer.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "benf549",
+        "nameWithOwner": "LPDI-EPFL/lddm",
+        "url": "https://github.com/LPDI-EPFL/lddm",
+        "language": "Python",
+        "stars": 105,
+        "description": "A Unified 3D Generative Model for Synthesizable Structure-Based Drug Design.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "Brendonovich",
+        "nameWithOwner": "anomalyco/furiten",
+        "url": "https://github.com/anomalyco/furiten",
+        "language": "Rust",
+        "stars": 4,
+        "description": "Spaced repetition flascards",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "CAlamosV",
+        "nameWithOwner": "epfl-dlab/AIReviewLottery",
+        "url": "https://github.com/epfl-dlab/AIReviewLottery",
+        "language": "Python",
+        "stars": 8,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "CAlamosV",
+        "nameWithOwner": "in-context-learning-2024/in-context",
+        "url": "https://github.com/in-context-learning-2024/in-context",
+        "language": "Jupyter Notebook",
+        "stars": 6,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "CAlamosV",
+        "nameWithOwner": "lukasalthoff/ai_labor_markets",
+        "url": "https://github.com/lukasalthoff/ai_labor_markets",
+        "language": "",
+        "stars": 12,
+        "description": "Model-predicted AI impacts on occupations and college majors",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "CAlamosV",
+        "nameWithOwner": "Seafoodair/Openreview",
+        "url": "https://github.com/Seafoodair/Openreview",
+        "language": "Python",
+        "stars": 74,
+        "description": "data from ICLR OpenReview and code for data analysis",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "CAlamosV",
+        "nameWithOwner": "snap-stanford/stark",
+        "url": "https://github.com/snap-stanford/stark",
+        "language": "Python",
+        "stars": 339,
+        "description": "(NeurIPS D&B 2024) STaRK: Benchmarking LLM Retrieval on Textual and Relational Knowledge Bases ",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "comfuture",
+        "nameWithOwner": "karolpiczak/ESC-50",
+        "url": "https://github.com/karolpiczak/ESC-50",
+        "language": "Python",
+        "stars": 1911,
+        "description": "ESC-50: Dataset for Environmental Sound Classification",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "coygeek",
+        "nameWithOwner": "4lwayz/portwatch-vi",
+        "url": "https://github.com/4lwayz/portwatch-vi",
+        "language": "JavaScript",
+        "stars": 3022,
+        "description": "Does GTA VI run on PC yet? A live tracker of community recompilation and emulation efforts, updated daily.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "coygeek",
+        "nameWithOwner": "conductor-oss/conductor",
+        "url": "https://github.com/conductor-oss/conductor",
+        "language": "Java",
+        "stars": 32502,
+        "description": "Conductor is an event driven agentic workflow engine providing durable and highly resilient execution engine for applications and AI Agents",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "coygeek",
+        "nameWithOwner": "run-llama/liteparse",
+        "url": "https://github.com/run-llama/liteparse",
+        "language": "Rust",
+        "stars": 13332,
+        "description": "A fast, helpful, and open-source document parser",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "coygeek",
+        "nameWithOwner": "shirudo-dev/shirudo",
+        "url": "https://github.com/shirudo-dev/shirudo",
+        "language": "C",
+        "stars": 1811,
+        "description": "eBPF-based security platform",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "coygeek",
+        "nameWithOwner": "sybil-solutions/inference-optimisation-skill",
+        "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+        "language": "Python",
+        "stars": 2595,
+        "description": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "DAlperin",
+        "nameWithOwner": "fabianlindfors/pgfdb",
+        "url": "https://github.com/fabianlindfors/pgfdb",
+        "language": "Rust",
+        "stars": 229,
+        "description": "Postgres made distributed using FoundationDB",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "DAlperin",
+        "nameWithOwner": "feldera/feldera",
+        "url": "https://github.com/feldera/feldera",
+        "language": "Rust",
+        "stars": 2183,
+        "description": "The Feldera Incremental Computation Engine",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "DAlperin",
+        "nameWithOwner": "multigres/multigres",
+        "url": "https://github.com/multigres/multigres",
+        "language": "Go",
+        "stars": 2717,
+        "description": "Vitess for Postgres",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "DAlperin",
+        "nameWithOwner": "nextjs/deploy-fly",
+        "url": "https://github.com/nextjs/deploy-fly",
+        "language": "Dockerfile",
+        "stars": 44,
+        "description": "Next.js template to deploy to Fly with a Docker container.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "DAlperin",
+        "nameWithOwner": "vortex-data/vortex",
+        "url": "https://github.com/vortex-data/vortex",
+        "language": "Rust",
+        "stars": 3347,
+        "description": "An extensible, state-of-the-art framework for columnar compression, and the fastest FOSS columnar file format. Formerly at @spiraldb, now an Incubation Stage project at LFAI&Data, part of the Linux Foundation.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "davanstrien",
+        "nameWithOwner": "emmett-framework/emmett",
+        "url": "https://github.com/emmett-framework/emmett",
+        "language": "Python",
+        "stars": 1243,
+        "description": "The web framework for inventors",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "davanstrien",
+        "nameWithOwner": "gi0baro/punkreq",
+        "url": "https://github.com/gi0baro/punkreq",
+        "language": "Python",
+        "stars": 6,
+        "description": "An async HTTP client on top of httpunk",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "davanstrien",
+        "nameWithOwner": "gradium-ai/xn-ptts",
+        "url": "https://github.com/gradium-ai/xn-ptts",
+        "language": "Rust",
+        "stars": 532,
+        "description": "Phonon TTS inference using xn",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "davanstrien",
+        "nameWithOwner": "lightonai/LightOnOCR",
+        "url": "https://github.com/lightonai/LightOnOCR",
+        "language": "Python",
+        "stars": 90,
+        "description": "Turn document pixels into structured, grounded content with LightOnOCR-3",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "davanstrien",
+        "nameWithOwner": "MinishLab/model2vec-rs",
+        "url": "https://github.com/MinishLab/model2vec-rs",
+        "language": "Rust",
+        "stars": 240,
+        "description": "Official Rust Implementation of Model2Vec",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "def-",
+        "nameWithOwner": "ddnet/ddnet-rs",
+        "url": "https://github.com/ddnet/ddnet-rs",
+        "language": "Rust",
+        "stars": 47,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "def-",
+        "nameWithOwner": "ghostty-org/ghostty",
+        "url": "https://github.com/ghostty-org/ghostty",
+        "language": "Zig",
+        "stars": 64427,
+        "description": "👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "def-",
+        "nameWithOwner": "pH14/harmony",
+        "url": "https://github.com/pH14/harmony",
+        "language": "Rust",
+        "stars": 2,
+        "description": "A deterministic hypervisor & test environment. Designed to run in as many environments as possible.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "def-",
+        "nameWithOwner": "suyZhong/SQLancerPlusPlus",
+        "url": "https://github.com/suyZhong/SQLancerPlusPlus",
+        "language": "Java",
+        "stars": 20,
+        "description": "Scaling Automated Database System Testing. ASPLOS'26",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "def-",
+        "nameWithOwner": "timakro/trashmap",
+        "url": "https://github.com/timakro/trashmap",
+        "language": "Rust",
+        "stars": 8,
+        "description": "Trashmap lets you start a DDraceNetwork server for testing your maps at a click of a button.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "Deicyde",
+        "nameWithOwner": "homeowmorphism/riemann-hypothesis-original",
+        "url": "https://github.com/homeowmorphism/riemann-hypothesis-original",
+        "language": "Lean",
+        "stars": 19,
+        "description": "Levent Alpöge's Lean 4 submission claiming proofs of the Riemann hypothesis and GRH for Dirichlet L-functions, preserved exactly as published on 2026-11-20. Adds a community build cache and a Comparator setup so you can check it yourself.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "dmonad",
+        "nameWithOwner": "filipesilva/obsidian-collab",
+        "url": "https://github.com/filipesilva/obsidian-collab",
+        "language": "TypeScript",
+        "stars": 10,
+        "description": "Real-time, end-to-end encrypted, peer-to-peer, collaborative editing across Obsidian vaults for files and folders.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "dmonad",
+        "nameWithOwner": "mutativejs/mutative-yjs",
+        "url": "https://github.com/mutativejs/mutative-yjs",
+        "language": "TypeScript",
+        "stars": 19,
+        "description": "A library for building Yjs collaborative web applications with Mutative",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "dmonad",
+        "nameWithOwner": "precisit/y-jsflow",
+        "url": "https://github.com/precisit/y-jsflow",
+        "language": "JavaScript",
+        "stars": 1,
+        "description": "Yjs provider for jsflow: sync Yjs documents and awareness over a jsflow room, peer to peer.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "dmonad",
+        "nameWithOwner": "stuga-dev/stuga",
+        "url": "https://github.com/stuga-dev/stuga",
+        "language": "TypeScript",
+        "stars": 6,
+        "description": "Self-hosted Notion alternative where AI agents' edits arrive as tracked changes you accept or reject. Docs, databases, MCP.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "dmonad",
+        "nameWithOwner": "yjs/yhub",
+        "url": "https://github.com/yjs/yhub",
+        "language": "JavaScript",
+        "stars": 309,
+        "description": "Alternative backend for y-websocket",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "dpaoliello",
+        "nameWithOwner": "OpenTodoApp/OpenTodo",
+        "url": "https://github.com/OpenTodoApp/OpenTodo",
+        "language": "TypeScript",
+        "stars": 718,
+        "description": "Your tasks, your server. An open-source, local-first task manager you can host yourself. Everything you expect from a commercial task app, without the subscription or the lock-in.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "Extraltodeus",
+        "nameWithOwner": "Starnodes2024/ComfyUI-YuE2-Trainer",
+        "url": "https://github.com/Starnodes2024/ComfyUI-YuE2-Trainer",
+        "language": "Python",
+        "stars": 82,
+        "description": "LoRa Trainer For YuE in ComfyUI",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "Extraltodeus",
+        "nameWithOwner": "vrgamegirl19/comfyui-vrgamedevgirl",
+        "url": "https://github.com/vrgamegirl19/comfyui-vrgamedevgirl",
+        "language": "JavaScript",
+        "stars": 904,
+        "description": "Custom ComfyUI nodes for film grain, color matching, and video enhancement.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "fendouai",
+        "nameWithOwner": "liyupi/ai-promo-video-maker",
+        "url": "https://github.com/liyupi/ai-promo-video-maker",
+        "language": "Python",
+        "stars": 503,
+        "description": "一句话让 AI 帮你做产品宣传片！把产品名或网址告诉 Cursor、Claude Code、Codex 等 AI 编程工具，它会自己调研产品、画出多种风格样图让你挑选、截取 4K 真实页面、按音乐节拍卡点剪辑、生成 AI 旁白并逐句转写校验、自动审图，最后交付一支 4K 商业宣传视频和可在线播放的网页版。App、网站、SaaS、开源项目、课程、AI 模型都能做，你只需确认需求、试听配乐。不用学剪辑软件，也不用花钱找外包。基于 Remotion + ElevenLabs，可直接克隆使用，也能一键安装为 Agent Skill。",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "gorjan5sk",
+        "nameWithOwner": "99designs/gqlgen",
+        "url": "https://github.com/99designs/gqlgen",
+        "language": "Go",
+        "stars": 10773,
+        "description": "go generate based graphql server library",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "gorjan5sk",
+        "nameWithOwner": "freeCodeCamp/freeCodeCamp",
+        "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+        "language": "TypeScript",
+        "stars": 459587,
+        "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "gorjan5sk",
+        "nameWithOwner": "skopjehacklab/press-kit",
+        "url": "https://github.com/skopjehacklab/press-kit",
+        "language": "Shell",
+        "stars": 3,
+        "description": "Press kit and publications for KIKA hacklab",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "gorjan5sk",
+        "nameWithOwner": "spion/branded-types",
+        "url": "https://github.com/spion/branded-types",
+        "language": "TypeScript",
+        "stars": 14,
+        "description": "Nice branded types for TypeScript",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "gorjan5sk",
+        "nameWithOwner": "square/leakcanary",
+        "url": "https://github.com/square/leakcanary",
+        "language": "Kotlin",
+        "stars": 30011,
+        "description": "A memory leak detection library for Android.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "Hona",
+        "nameWithOwner": "anomalyco/opencode-rune",
+        "url": "https://github.com/anomalyco/opencode-rune",
+        "language": "Rust",
+        "stars": 2,
+        "description": "OpenCode (Rune) desktop client and embeddable Rune session crates",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "htlou",
+        "nameWithOwner": "AgentsLastExam/orbit",
+        "url": "https://github.com/AgentsLastExam/orbit",
+        "language": "Python",
+        "stars": 10,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "huihui-support",
+        "nameWithOwner": "NVlabs/Sana",
+        "url": "https://github.com/NVlabs/Sana",
+        "language": "Python",
+        "stars": 9887,
+        "description": "SANA & Sol: Efficient Generative Models and Full-Stack Training & Inference Engines for Image, Video, World Modeling and Robotics ",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "huihui-support",
+        "nameWithOwner": "omacom/omarchy",
+        "url": "https://github.com/omacom/omarchy",
+        "language": "Shell",
+        "stars": 47548,
+        "description": "Beautiful, Modern & Opinionated Linux",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "huihui-support",
+        "nameWithOwner": "rounma/mobile-agent",
+        "url": "https://github.com/rounma/mobile-agent",
+        "language": "HTML",
+        "stars": 1,
+        "description": "Offline Android voice assistant: Qwen3-ASR speech recognition + Kokoro TTS, powered by sherpa-onnx & transformers.js",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "huihui-support",
+        "nameWithOwner": "stubbi/openxet",
+        "url": "https://github.com/stubbi/openxet",
+        "language": "Rust",
+        "stars": 5,
+        "description": "Open-source server and client for the Xet protocol: chunk-deduplicated storage for large, versioned files that works with the official Hugging Face and Git tools.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "huihui-support",
+        "nameWithOwner": "webbrain-one/webbrain",
+        "url": "https://github.com/webbrain-one/webbrain",
+        "language": "JavaScript",
+        "stars": 1756,
+        "description": "Open-source AI browser agent for Chrome and Firefox (monorepo) 🧠 ",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "ignaciosica",
+        "nameWithOwner": "greydanus/pengpt",
+        "url": "https://github.com/greydanus/pengpt",
+        "language": "Python",
+        "stars": 48,
+        "description": "A small transformer that holds a pen: it writes by hand and it draws",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "JackChen-me",
+        "nameWithOwner": "anhao/ai-pose-gallery-zh",
+        "url": "https://github.com/anhao/ai-pose-gallery-zh",
+        "language": "TypeScript",
+        "stars": 8782,
+        "description": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "jarvis394",
+        "nameWithOwner": "pch/rawmakase",
+        "url": "https://github.com/pch/rawmakase",
+        "language": "Rust",
+        "stars": 1712,
+        "description": "📸 Free, fast, Lightroom-compatible RAW photo editor for Linux, macOS, and Windows.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "JCBrouwer",
+        "nameWithOwner": "Retro-Diffusion/rd-flow-64",
+        "url": "https://github.com/Retro-Diffusion/rd-flow-64",
+        "language": "Python",
+        "stars": 10,
+        "description": "Inference code for RD Flow 64, a 271M-parameter model that draws real 64x64 pixel art. Windows, Linux and macOS.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "JCBrouwer",
+        "nameWithOwner": "shiyiwang958/Scalable-Beckmann-Maps",
+        "url": "https://github.com/shiyiwang958/Scalable-Beckmann-Maps",
+        "language": "Python",
+        "stars": 5,
+        "description": "Codebase for paper: Scalable Beckmann Maps Improves One Step Generation. Website for the paper is below:",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "justinphan3110",
+        "nameWithOwner": "andyzoujm/representation-engineering",
+        "url": "https://github.com/andyzoujm/representation-engineering",
+        "language": "Jupyter Notebook",
+        "stars": 1060,
+        "description": "Representation Engineering: A Top-Down Approach to AI Transparency",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "justinphan3110",
+        "nameWithOwner": "centerforaisafety/HarmBench",
+        "url": "https://github.com/centerforaisafety/HarmBench",
+        "language": "Jupyter Notebook",
+        "stars": 1129,
+        "description": "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "justinphan3110",
+        "nameWithOwner": "centerforaisafety/simple-evals",
+        "url": "https://github.com/centerforaisafety/simple-evals",
+        "language": "Python",
+        "stars": 24,
+        "description": "Simple evaluation scripts for AI benchmarks with minimal dependencies.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "justinphan3110",
+        "nameWithOwner": "heraclex12/octopus",
+        "url": "https://github.com/heraclex12/octopus",
+        "language": "Python",
+        "stars": 2,
+        "description": "Efficiently training Transformer-based models in single line.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "justinphan3110",
+        "nameWithOwner": "open-compass/VLMEvalKit",
+        "url": "https://github.com/open-compass/VLMEvalKit",
+        "language": "Python",
+        "stars": 4504,
+        "description": "Open-source evaluation toolkit of large multi-modality models (LMMs), support 220+ LMMs, 80+ benchmarks",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "justinphan3110cais",
+        "nameWithOwner": "andyzoujm/representation-engineering",
+        "url": "https://github.com/andyzoujm/representation-engineering",
+        "language": "Jupyter Notebook",
+        "stars": 1060,
+        "description": "Representation Engineering: A Top-Down Approach to AI Transparency",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "justinphan3110cais",
+        "nameWithOwner": "centerforaisafety/political-manipulation",
+        "url": "https://github.com/centerforaisafety/political-manipulation",
+        "language": "Python",
+        "stars": 7,
+        "description": "Reducing Political Manipulation with Consistency Training",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "justinphan3110cais",
+        "nameWithOwner": "centerforaisafety/simple-evals",
+        "url": "https://github.com/centerforaisafety/simple-evals",
+        "language": "Python",
+        "stars": 24,
+        "description": "Simple evaluation scripts for AI benchmarks with minimal dependencies.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "justinphan3110cais",
+        "nameWithOwner": "centerforaisafety/textquests",
+        "url": "https://github.com/centerforaisafety/textquests",
+        "language": "ZAP",
+        "stars": 20,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "justinphan3110cais",
+        "nameWithOwner": "chrisliu298/awesome-representation-engineering",
+        "url": "https://github.com/chrisliu298/awesome-representation-engineering",
+        "language": "",
+        "stars": 161,
+        "description": "A resource repository for representation engineering in large language models",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "kanghengliu",
+        "nameWithOwner": "fcitx5-vinput/fcitx5-vinput",
+        "url": "https://github.com/fcitx5-vinput/fcitx5-vinput",
+        "language": "C++",
+        "stars": 656,
+        "description": "Voice input for Fcitx5 — local and cloud ASR, LLM rewriting, cross-distro packages",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "karolsojko",
+        "nameWithOwner": "aws-samples/aws-lambda-redirection-at-edge",
+        "url": "https://github.com/aws-samples/aws-lambda-redirection-at-edge",
+        "language": "JavaScript",
+        "stars": 46,
+        "description": "Sample code for Handling Redirections@Edge using CloudFront + Lambda@Edge",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "karolsojko",
+        "nameWithOwner": "standardnotes/app",
+        "url": "https://github.com/standardnotes/app",
+        "language": "TypeScript",
+        "stars": 6736,
+        "description": "Think fearlessly with end-to-end encrypted notes and files. For issues, visit https://standardnotes.com/forum or https://standardnotes.com/help.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "karolsojko",
+        "nameWithOwner": "standardnotes/auth",
+        "url": "https://github.com/standardnotes/auth",
+        "language": "TypeScript",
+        "stars": 3,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "karolsojko",
+        "nameWithOwner": "standardnotes/sncrypto",
+        "url": "https://github.com/standardnotes/sncrypto",
+        "language": "TypeScript",
+        "stars": 4,
+        "description": "[Moved to github.com/standardnotes/snjs] Cryptographic primitives used by SNJS.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "karolsojko",
+        "nameWithOwner": "stemmlerjs/white-label",
+        "url": "https://github.com/stemmlerjs/white-label",
+        "language": "TypeScript",
+        "stars": 1514,
+        "description": "A Vinyl-Trading enterprise app built with Node.js + TypeScript using Domain-Driven Design",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "kgoedecke",
+        "nameWithOwner": "glassray/glassray-signals-js",
+        "url": "https://github.com/glassray/glassray-signals-js",
+        "language": "TypeScript",
+        "stars": 2,
+        "description": "Send signals about your AI agent's work to Glassray: what people do with it, and what the agent says about it. One line for MCP servers, a setup skill for coding agents, and a check for your tests.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "kgoedecke",
+        "nameWithOwner": "glassray/good-agent-tracing",
+        "url": "https://github.com/glassray/good-agent-tracing",
+        "language": "",
+        "stars": 3,
+        "description": "An agent skill that adds, audits and fixes OpenTelemetry tracing for AI agents, so a person or an LLM judge can see what the agent did and where it went wrong.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "kgoedecke",
+        "nameWithOwner": "linebender/parley",
+        "url": "https://github.com/linebender/parley",
+        "language": "Rust",
+        "stars": 841,
+        "description": "Rich text layout library",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "kgoedecke",
+        "nameWithOwner": "mooman219/fontdue",
+        "url": "https://github.com/mooman219/fontdue",
+        "language": "Rust",
+        "stars": 1723,
+        "description": "The fastest font renderer in the world, written in pure rust.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "kgoedecke",
+        "nameWithOwner": "ParadevAI/Paradev",
+        "url": "https://github.com/ParadevAI/Paradev",
+        "language": "TypeScript",
+        "stars": 16598,
+        "description": "Paradev is an open-source Codex App and Conductor alternative. Orchestrate an army coding agents in parallel with your own subscriptions.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "kimdn",
+        "nameWithOwner": "anirudhbhashyam/chimenodes",
+        "url": "https://github.com/anirudhbhashyam/chimenodes",
+        "language": "Python",
+        "stars": 11,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "kimdn",
+        "nameWithOwner": "debbiemarkslab/ML_affinity_maturation",
+        "url": "https://github.com/debbiemarkslab/ML_affinity_maturation",
+        "language": "Jupyter Notebook",
+        "stars": 8,
+        "description": "Repository containing the code performing ML assisted affinity maturation",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "koala73",
+        "nameWithOwner": "burakgon/OpenScreens",
+        "url": "https://github.com/burakgon/OpenScreens",
+        "language": "Swift",
+        "stars": 258,
+        "description": "Remote desktop for Mac, iPhone and iPad. Free and open source. Controls Macs with Apple's High Performance screen sharing, and Linux, Windows and Raspberry Pi over VNC. SSH tunnels and Tailscale built in.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "koala73",
+        "nameWithOwner": "gr8rstudio/gr8r-studio",
+        "url": "https://github.com/gr8rstudio/gr8r-studio",
+        "language": "JavaScript",
+        "stars": 2152,
+        "description": "Gr8r Studio: a calm, structured project management workspace. Vite + plain ES modules.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "koala73",
+        "nameWithOwner": "michaelshimeles/rstack",
+        "url": "https://github.com/michaelshimeles/rstack",
+        "language": "Python",
+        "stars": 1552,
+        "description": "Agent skills and an AGENTS.md workflow template — isolate in worktrees, build to a service layer, prove with evidence, ship with before/after proof and Greptile review loops. For Claude Code, Cursor, and Codex.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "koala73",
+        "nameWithOwner": "robbietilton/Editroom",
+        "url": "https://github.com/robbietilton/Editroom",
+        "language": "Swift",
+        "stars": 161,
+        "description": "Fast and powerful video editing for Mac",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "koala73",
+        "nameWithOwner": "usetuff/tuff",
+        "url": "https://github.com/usetuff/tuff",
+        "language": "TypeScript",
+        "stars": 209,
+        "description": "Open-source, self-hosted alternative to Linear, ClickUp, Asana and Basecamp. Tasks, docs and chat in one place, where your team and its AI agents work side by side.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "kobihikri",
+        "nameWithOwner": "AlmogBaku/ContextSaver",
+        "url": "https://github.com/AlmogBaku/ContextSaver",
+        "language": "TypeScript",
+        "stars": 28,
+        "description": "Stop Claude Code from wasting tokens doing useless shit, in realtime.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "kobihikri",
+        "nameWithOwner": "Armchair-Heavy-Industries/A4T",
+        "url": "https://github.com/Armchair-Heavy-Industries/A4T",
+        "language": "",
+        "stars": 673,
+        "description": "[A]nother [4]010 [T]oolhead. A toolhead for Voron front rail printers built around 4010 blower fans, efficient ducts, and easy assembly.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "kobihikri",
+        "nameWithOwner": "orico/Flexeegile",
+        "url": "https://github.com/orico/Flexeegile",
+        "language": "",
+        "stars": 8,
+        "description": "Extending Agile For AI & Data Teams",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "kobihikri",
+        "nameWithOwner": "ponya5/VDock",
+        "url": "https://github.com/ponya5/VDock",
+        "language": "Vue",
+        "stars": 17,
+        "description": "VDock - Virtual Stream Deck",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "kocaemre",
+        "nameWithOwner": "Graphify-Labs/graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "language": "Python",
+        "stars": 153048,
+        "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "kocaemre",
+        "nameWithOwner": "guillaumemeyer/watermarks-remover",
+        "url": "https://github.com/guillaumemeyer/watermarks-remover",
+        "language": "Python",
+        "stars": 28364,
+        "description": "A privacy-first app that strips AI watermarks from content you own.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "kocaemre",
+        "nameWithOwner": "latent-spaces/brag",
+        "url": "https://github.com/latent-spaces/brag",
+        "language": "Python",
+        "stars": 22493,
+        "description": "You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "l0ng-ai",
+        "nameWithOwner": "dinjufen/idea-git-tool",
+        "url": "https://github.com/dinjufen/idea-git-tool",
+        "language": "Swift",
+        "stars": 46,
+        "description": "跨平台原生 Git 客户端（对齐 IDEA Git 功能）：Rust 核心 + macOS(Swift) / Windows(WinUI)",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "l0ng-ai",
+        "nameWithOwner": "DioxusLabs/blitz",
+        "url": "https://github.com/DioxusLabs/blitz",
+        "language": "Rust",
+        "stars": 4531,
+        "description": "A radically modular HTML/CSS rendering engine",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "l0ng-ai",
+        "nameWithOwner": "indexable-inc/blaze",
+        "url": "https://github.com/indexable-inc/blaze",
+        "language": "Rust",
+        "stars": 2651,
+        "description": "Incremental rust builds up to 92x faster than cargo/rustc. Backed by Y Combinator (F26).",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "l0ng-ai",
+        "nameWithOwner": "makepad/relax",
+        "url": "https://github.com/makepad/relax",
+        "language": "Rust",
+        "stars": 640,
+        "description": "Relax Rust JIT",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "l0ng-ai",
+        "nameWithOwner": "microsoft/TokenEconomizer",
+        "url": "https://github.com/microsoft/TokenEconomizer",
+        "language": "Python",
+        "stars": 8085,
+        "description": "Experience-Driven Black-Box Cost Control for Coding Agents",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "laurentsenta",
+        "nameWithOwner": "alexei-led/pumba",
+        "url": "https://github.com/alexei-led/pumba",
+        "language": "Go",
+        "stars": 3185,
+        "description": "Chaos testing, network emulation, and stress testing tool for containers",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "laurentsenta",
+        "nameWithOwner": "derkork/godot-statecharts",
+        "url": "https://github.com/derkork/godot-statecharts",
+        "language": "GDScript",
+        "stars": 1633,
+        "description": "A state charts extension for Godot 4",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "laurentsenta",
+        "nameWithOwner": "gohugoio/hugo-mod-jslibs",
+        "url": "https://github.com/gohugoio/hugo-mod-jslibs",
+        "language": "HTML",
+        "stars": 56,
+        "description": "A collection of JS libraries that works great with Hugo.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "laurentsenta",
+        "nameWithOwner": "idbrii/godot-debugdraw2d",
+        "url": "https://github.com/idbrii/godot-debugdraw2d",
+        "language": "GDScript",
+        "stars": 20,
+        "description": "Adds support for debug drawing primitives to the Godot game engine.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "laurentsenta",
+        "nameWithOwner": "probe-lab/thunderdome",
+        "url": "https://github.com/probe-lab/thunderdome",
+        "language": "Go",
+        "stars": 12,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "levlaz",
+        "nameWithOwner": "foxglove/extension-registry",
+        "url": "https://github.com/foxglove/extension-registry",
+        "language": "TypeScript",
+        "stars": 56,
+        "description": "A public registry of Foxglove extensions",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "levlaz",
+        "nameWithOwner": "foxglove/tutorials",
+        "url": "https://github.com/foxglove/tutorials",
+        "language": "Python",
+        "stars": 32,
+        "description": "Code for tutorials on the Foxglove blog",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "levlaz",
+        "nameWithOwner": "go-task/task",
+        "url": "https://github.com/go-task/task",
+        "language": "Go",
+        "stars": 16389,
+        "description": "A fast, cross-platform build tool inspired by Make, designed for modern workflows.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "levlaz",
+        "nameWithOwner": "mosaico-labs/mosaico",
+        "url": "https://github.com/mosaico-labs/mosaico",
+        "language": "Python",
+        "stars": 1160,
+        "description": "Mosaico - The Data Platform for Physical AI",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "levlaz",
+        "nameWithOwner": "trailofbits/claude-code-devcontainer",
+        "url": "https://github.com/trailofbits/claude-code-devcontainer",
+        "language": "Shell",
+        "stars": 981,
+        "description": "Sandboxed devcontainer for running Claude Code in bypass mode safely. Built for security audits and untrusted code review.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "levzzz5154",
+        "nameWithOwner": "aprilivy/HintFix",
+        "url": "https://github.com/aprilivy/HintFix",
+        "language": "Java",
+        "stars": 17,
+        "description": "Mod to mitigate the recent minecraft2shell vulnerability via disabling font hinting",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "levzzz5154",
+        "nameWithOwner": "Archive-xx/LiquidSense-src",
+        "url": "https://github.com/Archive-xx/LiquidSense-src",
+        "language": "Java",
+        "stars": 6,
+        "description": "LiquidSense Client by AquaVit",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "levzzz5154",
+        "nameWithOwner": "bikini/minecraft2shell",
+        "url": "https://github.com/bikini/minecraft2shell",
+        "language": "Python",
+        "stars": 357,
+        "description": "Minecraft to native RCE",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "levzzz5154",
+        "nameWithOwner": "xcl-dev/xcl",
+        "url": "https://github.com/xcl-dev/xcl",
+        "language": "Rust",
+        "stars": 7928,
+        "description": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "luispater",
+        "nameWithOwner": "havenicec/google-qr-sms-helper",
+        "url": "https://github.com/havenicec/google-qr-sms-helper",
+        "language": "JavaScript",
+        "stars": 5253,
+        "description": "Chrome Extension (MV3) to switch Google's mandatory QR code verification back to standard 6-digit SMS verification via iPad Mini profile & [3,null,4] RPC fallback.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "lzt404",
+        "nameWithOwner": "sbpk2077207/quick2api-cliproxyapi",
+        "url": "https://github.com/sbpk2077207/quick2api-cliproxyapi",
+        "language": "Go",
+        "stars": 2,
+        "description": "Amazon Quick plugin for CLIProxyAPI - browser OAuth (OIDC+PKCE), no desktop app needed",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "marccampbell",
+        "nameWithOwner": "autoci-ai/autoci",
+        "url": "https://github.com/autoci-ai/autoci",
+        "language": "Go",
+        "stars": 1,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "marccampbell",
+        "nameWithOwner": "boldsoftware/meat",
+        "url": "https://github.com/boldsoftware/meat",
+        "language": "Go",
+        "stars": 2105,
+        "description": "meat.dev",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "marccampbell",
+        "nameWithOwner": "getdocbrown/docbrown-macos",
+        "url": "https://github.com/getdocbrown/docbrown-macos",
+        "language": "Swift",
+        "stars": 1,
+        "description": "A local-first macOS app for exploring the prompts, conversations, and history behind your work.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "marccampbell",
+        "nameWithOwner": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "language": "TypeScript",
+        "stars": 395169,
+        "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "marccampbell",
+        "nameWithOwner": "vercel-labs/deepsec",
+        "url": "https://github.com/vercel-labs/deepsec",
+        "language": "TypeScript",
+        "stars": 8599,
+        "description": "Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "matt0975",
+        "nameWithOwner": "anomalyco/spaceman",
+        "url": "https://github.com/anomalyco/spaceman",
+        "language": "Rust",
+        "stars": 471,
+        "description": "A macOS tiling window manager with stable logical windows",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "matt0975",
+        "nameWithOwner": "ashwanthbalakrishnan5/hermes-whatsapp-voice",
+        "url": "https://github.com/ashwanthbalakrishnan5/hermes-whatsapp-voice",
+        "language": "Rust",
+        "stars": 167,
+        "description": "Live WhatsApp voice calls with Hermes: call your bot, or let Hermes call you. Hermes plugin + whatsapp-rust sidecar + Gemini Live.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "matt0975",
+        "nameWithOwner": "azmasm/hermit",
+        "url": "https://github.com/azmasm/hermit",
+        "language": "Swift",
+        "stars": 186,
+        "description": "Hermit (formerly switch2mac): a Mac app that turns your own Nintendo Switch and Switch 2 game dumps into native Apple silicon apps, with the best build for your Mac and a 3D game-case library. Not an emulator.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "matt0975",
+        "nameWithOwner": "browser-use/browser-use",
+        "url": "https://github.com/browser-use/browser-use",
+        "language": "Python",
+        "stars": 121957,
+        "description": "Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers and a hosted agent API.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "matt0975",
+        "nameWithOwner": "FreeStuffCrazy/player",
+        "url": "https://github.com/FreeStuffCrazy/player",
+        "language": "JavaScript",
+        "stars": 30,
+        "description": "Self-hosted Tesla browser player for Plex, Jellyfin and Emby, that a passenger can use in a Tesla while the car is in motion.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "mihail-yartsev",
+        "nameWithOwner": "mihail-yartsev/kurai",
+        "url": "https://github.com/mihail-yartsev/kurai",
+        "language": "Python",
+        "stars": 1,
+        "description": "Kurai is a custom music server built for family use",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "mihail-yartsev",
+        "nameWithOwner": "mihail-yartsev/kurai-torrent",
+        "url": "https://github.com/mihail-yartsev/kurai-torrent",
+        "language": "Python",
+        "stars": 1,
+        "description": "Music downloader for Kurai.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "mil-ad",
+        "nameWithOwner": "nicoverbruggen/ebook-fonts",
+        "url": "https://github.com/nicoverbruggen/ebook-fonts",
+        "language": "Python",
+        "stars": 1116,
+        "description": "Selection of fonts with modified line height and family names, optimized for e-reading, particularly for Kobo, Kindle and Boox devices.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "mlodic",
+        "nameWithOwner": "shirudo-dev/shirudo",
+        "url": "https://github.com/shirudo-dev/shirudo",
+        "language": "C",
+        "stars": 1811,
+        "description": "eBPF-based security platform",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "mmazeika",
+        "nameWithOwner": "chrisliu298/awesome-llm-unlearning",
+        "url": "https://github.com/chrisliu298/awesome-llm-unlearning",
+        "language": "",
+        "stars": 640,
+        "description": "A resource repository for machine unlearning in large language models",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "mmazeika",
+        "nameWithOwner": "llm-attacks/llm-attacks",
+        "url": "https://github.com/llm-attacks/llm-attacks",
+        "language": "Python",
+        "stars": 4873,
+        "description": "Universal and Transferable Attacks on Aligned Language Models",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "mmazeika",
+        "nameWithOwner": "magpie-align/magpie",
+        "url": "https://github.com/magpie-align/magpie",
+        "language": "Python",
+        "stars": 904,
+        "description": "[ICLR 2025] Alignment Data Synthesis from Scratch by Prompting Aligned LLMs with Nothing. Your efficient and high-quality synthetic data generation pipeline!",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "mmazeika",
+        "nameWithOwner": "meta-llama/llama",
+        "url": "https://github.com/meta-llama/llama",
+        "language": "Python",
+        "stars": 59650,
+        "description": "Inference code for Llama models",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "mmazeika",
+        "nameWithOwner": "uw-nsl/ArtPrompt",
+        "url": "https://github.com/uw-nsl/ArtPrompt",
+        "language": "Python",
+        "stars": 100,
+        "description": "[ACL24] Official Repo of Paper `ArtPrompt: ASCII Art-based Jailbreak Attacks against Aligned LLMs`",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "mvanhorn",
+        "nameWithOwner": "heygen-com/hyperframes",
+        "url": "https://github.com/heygen-com/hyperframes",
+        "language": "TypeScript",
+        "stars": 89675,
+        "description": "Open-source AI video editor: edit your own footage, or create and remake any video with Claude Code, Codex or the free Studio app. Write HTML, render MP4. By HeyGen.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "mvanhorn",
+        "nameWithOwner": "prompthunt/committed",
+        "url": "https://github.com/prompthunt/committed",
+        "language": "Swift",
+        "stars": 4,
+        "description": "A friendly GitHub contributions leaderboard in your Mac’s menu bar.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "mvanhorn",
+        "nameWithOwner": "TensorBlock/awesome-mcp-servers",
+        "url": "https://github.com/TensorBlock/awesome-mcp-servers",
+        "language": "TypeScript",
+        "stars": 1136,
+        "description": "A comprehensive collection of Model Context Protocol (MCP) servers",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "nouhadziri",
+        "nameWithOwner": "blader/humanizer",
+        "url": "https://github.com/blader/humanizer",
+        "language": "Python",
+        "stars": 73266,
+        "description": "Agent skill that removes signs of AI-generated writing from text",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "nouhadziri",
+        "nameWithOwner": "dwarkeshsp/clocktower",
+        "url": "https://github.com/dwarkeshsp/clocktower",
+        "language": "Python",
+        "stars": 63,
+        "description": "Blood on the Clocktower LLM eval",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "nouhadziri",
+        "nameWithOwner": "open-thought/reasoning-gym",
+        "url": "https://github.com/open-thought/reasoning-gym",
+        "language": "Python",
+        "stars": 1557,
+        "description": "[NeurIPS 2025 Spotlight] Reasoning Environments for Reinforcement Learning with Verifiable Rewards",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "nouhadziri",
+        "nameWithOwner": "rasbt/LLMs-from-scratch",
+        "url": "https://github.com/rasbt/LLMs-from-scratch",
+        "language": "Jupyter Notebook",
+        "stars": 109008,
+        "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "nouhadziri",
+        "nameWithOwner": "stablyai/orca",
+        "url": "https://github.com/stablyai/orca",
+        "language": "TypeScript",
+        "stars": 136435,
+        "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "ParthJadhav",
+        "nameWithOwner": "EvanBacon/serve-sim",
+        "url": "https://github.com/EvanBacon/serve-sim",
+        "language": "TypeScript",
+        "stars": 2951,
+        "description": "The `npx serve` of Apple Simulators.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "ParthJadhav",
+        "nameWithOwner": "kitlangton/psychopomp",
+        "url": "https://github.com/kitlangton/psychopomp",
+        "language": "Rust",
+        "stars": 436,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "ParthJadhav",
+        "nameWithOwner": "ParthJadhav/cmdq",
+        "url": "https://github.com/ParthJadhav/cmdq",
+        "language": "Rust",
+        "stars": 3,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "ParthJadhav",
+        "nameWithOwner": "ParthJadhav/SpaceO",
+        "url": "https://github.com/ParthJadhav/SpaceO",
+        "language": "Swift",
+        "stars": 131,
+        "description": "Give AI agents their own macOS displays. Keep your screen, cursor, and focus.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "ParthJadhav",
+        "nameWithOwner": "shashankswe2020-ux/whoop-mcp",
+        "url": "https://github.com/shashankswe2020-ux/whoop-mcp",
+        "language": "TypeScript",
+        "stars": 184,
+        "description": "Read-only WHOOP MCP server for recovery, sleep, HRV, strain, workouts, and personal health analytics in Claude, Codex, and GitHub Copilot.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "Paulchen-git",
+        "nameWithOwner": "caveman-ai/caveman-code",
+        "url": "https://github.com/caveman-ai/caveman-code",
+        "language": "TypeScript",
+        "stars": 955,
+        "description": "Caveman Code: Desktop, CLI (@caveman-ai/code), Web, and Mobile coding agent built on Harness v4.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "phx",
+        "nameWithOwner": "AsamK/signal-cli",
+        "url": "https://github.com/AsamK/signal-cli",
+        "language": "Java",
+        "stars": 5072,
+        "description": "signal-cli provides an unofficial commandline, JSON-RPC and dbus interface for the Signal messenger.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "phx",
+        "nameWithOwner": "Jip-Hop/jailmaker",
+        "url": "https://github.com/Jip-Hop/jailmaker",
+        "language": "Python",
+        "stars": 583,
+        "description": "Persistent Linux 'jails' on TrueNAS SCALE to install software (k3s, docker, portainer, podman, etc.) with full access to all files via bind mounts thanks to systemd-nspawn!",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "phx",
+        "nameWithOwner": "LiveOverflow/PwnAdventure3",
+        "url": "https://github.com/LiveOverflow/PwnAdventure3",
+        "language": "C++",
+        "stars": 692,
+        "description": "PwnAdventure3 Server",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "phx",
+        "nameWithOwner": "phx/blueprint",
+        "url": "https://github.com/phx/blueprint",
+        "language": "Python",
+        "stars": 2,
+        "description": "The Divine Blueprint",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "phx",
+        "nameWithOwner": "rdpahalavan/nids-datasets",
+        "url": "https://github.com/rdpahalavan/nids-datasets",
+        "language": "Python",
+        "stars": 33,
+        "description": "Download UNSW-NB15 and CIC-IDS2017 Datasets for Network Intrusion Detection (NIDS)",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "Picrew",
+        "nameWithOwner": "tickmao/Novel",
+        "url": "https://github.com/tickmao/Novel",
+        "language": "Python",
+        "stars": 2018,
+        "description": "📚 Novle setting | 小说书源及软件整理 爱阅书香 / 香色闺阁 / 阅读（含字体、净化规则、TTS配置） ",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "popmechanic",
+        "nameWithOwner": "alantriesagain/awesome-local-first",
+        "url": "https://github.com/alantriesagain/awesome-local-first",
+        "language": "",
+        "stars": 48,
+        "description": "An awesome collection of local-first projects",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "popmechanic",
+        "nameWithOwner": "punkpeye/awesome-remote-mcp-servers",
+        "url": "https://github.com/punkpeye/awesome-remote-mcp-servers",
+        "language": "",
+        "stars": 4008,
+        "description": "A collection of remote MCP servers.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "pronskiy",
+        "nameWithOwner": "jayamartinez/cluely-rs",
+        "url": "https://github.com/jayamartinez/cluely-rs",
+        "language": "Rust",
+        "stars": 2,
+        "description": "Cluely built in Rust + GPUI",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "pronskiy",
+        "nameWithOwner": "ModernRelay/omnigraph-python",
+        "url": "https://github.com/ModernRelay/omnigraph-python",
+        "language": "Python",
+        "stars": 1,
+        "description": "Python client for the Omnigraph HTTP API (contract 0.14)",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "radko93",
+        "nameWithOwner": "appandflow/react-native-ease",
+        "url": "https://github.com/appandflow/react-native-ease",
+        "language": "TypeScript",
+        "stars": 998,
+        "description": "🍃 Lightweight declarative animations powered by platform APIs",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "radko93",
+        "nameWithOwner": "ParthJadhav/app-store-screenshots",
+        "url": "https://github.com/ParthJadhav/app-store-screenshots",
+        "language": "TypeScript",
+        "stars": 8042,
+        "description": "end to end app store screenshot creation using AI",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "radko93",
+        "nameWithOwner": "radko93/react-native-capture-view",
+        "url": "https://github.com/radko93/react-native-capture-view",
+        "language": "TypeScript",
+        "stars": 40,
+        "description": "Capture React Native views as images. Built for the New Architecture.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "radko93",
+        "nameWithOwner": "sacenox/irvc",
+        "url": "https://github.com/sacenox/irvc",
+        "language": "TypeScript",
+        "stars": 11,
+        "description": "A WebRTC-powered private text and voice chat. Self-hosted: Go + SQLite backend, React frontend, LiveKit for voice and screen share.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "radko93",
+        "nameWithOwner": "software-mansion/react-native-executorch",
+        "url": "https://github.com/software-mansion/react-native-executorch",
+        "language": "TypeScript",
+        "stars": 1796,
+        "description": "High-performance, privacy-first on-device AI inference library for React Native, powered by PyTorch's ExecuTorch runtime",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "rdbtCVS",
+        "nameWithOwner": "adepierre/SniffCraft",
+        "url": "https://github.com/adepierre/SniffCraft",
+        "language": "C++",
+        "stars": 661,
+        "description": "C++ program to capture and display all traffic between a client and a server in minecraft",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "rdbtCVS",
+        "nameWithOwner": "mizly/aether",
+        "url": "https://github.com/mizly/aether",
+        "language": "Java",
+        "stars": 64,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "rish-16",
+        "nameWithOwner": "gelnesr/AFCluster-plus",
+        "url": "https://github.com/gelnesr/AFCluster-plus",
+        "language": "Python",
+        "stars": 3,
+        "description": "Modular reimplementation of AFCluster for varied input/MSA generation, optimized for HPC/HTC workflows",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "rohanarun",
+        "nameWithOwner": "rohanarun/riemann-hypothesis",
+        "url": "https://github.com/rohanarun/riemann-hypothesis",
+        "language": "Lean",
+        "stars": 4,
+        "description": "Independent Comparator setup for the Lean formalization of the Riemann Hypothesis (Alpöge, 2026-11-20)",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "rufuspollock",
+        "nameWithOwner": "datasets/line-charts",
+        "url": "https://github.com/datasets/line-charts",
+        "language": "JavaScript",
+        "stars": 1,
+        "description": "Compare the leading open-source line-charting libraries — D3, Observable Plot, Vega-Lite, Plotly.js, Chart.js, Apache ECharts, µPlot — each drawing the same four datasets with the same colour-blind-safe palette, source visible inline.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "SensenGao",
+        "nameWithOwner": "M4A1TasteGood/ArgsWorld",
+        "url": "https://github.com/M4A1TasteGood/ArgsWorld",
+        "language": "Python",
+        "stars": 30,
+        "description": "Code for \"ArgsWorld: Unifying 3DGS Scene Reconstruction, Generation and Extrapolation with Autoregressive Diffusion Transformer\"",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "SensenGao",
+        "nameWithOwner": "sanshuiii/CausalDiorama",
+        "url": "https://github.com/sanshuiii/CausalDiorama",
+        "language": "Python",
+        "stars": 2,
+        "description": "Official Implementation of “Causal Dioramas: Controllable Video Generation, Revision and Editing via Intervention”",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "SensenGao",
+        "nameWithOwner": "ZhouTimeMachine/JVT",
+        "url": "https://github.com/ZhouTimeMachine/JVT",
+        "language": "Python",
+        "stars": 48,
+        "description": "JVT: Just Video Transformer makes pixel-space video diffusion simple",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "SharkEzz",
+        "nameWithOwner": "Cinderella-Man/geforce-dynbar1-p2p",
+        "url": "https://github.com/Cinderella-Man/geforce-dynbar1-p2p",
+        "language": "C",
+        "stars": 2,
+        "description": "GPU peer-to-peer over dynamic BAR1 for GeForce cards: patched NVIDIA open kernel modules.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "ShengjieJin",
+        "nameWithOwner": "pbakaus/impeccable",
+        "url": "https://github.com/pbakaus/impeccable",
+        "language": "Rust",
+        "stars": 116373,
+        "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "ShengjieJin",
+        "nameWithOwner": "pingdotgg/t3code",
+        "url": "https://github.com/pingdotgg/t3code",
+        "language": "TypeScript",
+        "stars": 77912,
+        "description": "The best way to control Claude Code, Codex and more from any computer or phone",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "ShengjieJin",
+        "nameWithOwner": "stablyai/orca",
+        "url": "https://github.com/stablyai/orca",
+        "language": "TypeScript",
+        "stars": 136438,
+        "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "silviyaboteva",
+        "nameWithOwner": "RuzmanovDev/Starfire-Forum",
+        "url": "https://github.com/RuzmanovDev/Starfire-Forum",
+        "language": "CSS",
+        "stars": 2,
+        "description": "Teamwork for the Javascript applications course at Telerik academy",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "silviyaboteva",
+        "nameWithOwner": "TeamGodfather/Paint-With-Shapes",
+        "url": "https://github.com/TeamGodfather/Paint-With-Shapes",
+        "language": "JavaScript",
+        "stars": 4,
+        "description": "paint, by popular request",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "silviyaboteva",
+        "nameWithOwner": "telerik/kendo-react",
+        "url": "https://github.com/telerik/kendo-react",
+        "language": "HTML",
+        "stars": 241,
+        "description": "Issue tracker - KendoReact",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "silviyaboteva",
+        "nameWithOwner": "telerik/kendo-themes",
+        "url": "https://github.com/telerik/kendo-themes",
+        "language": "HTML",
+        "stars": 159,
+        "description": "Monorepo for SASS-based Kendo UI themes",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "silviyaboteva",
+        "nameWithOwner": "TelerikAcademy/JavaScript-Fundamentals",
+        "url": "https://github.com/TelerikAcademy/JavaScript-Fundamentals",
+        "language": "HTML",
+        "stars": 42,
+        "description": "JavaScript Fundamentals Course Repository",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "SnowballXueQiu",
+        "nameWithOwner": "Inf-Network/EscapeFromCraftov",
+        "url": "https://github.com/Inf-Network/EscapeFromCraftov",
+        "language": "Java",
+        "stars": 1,
+        "description": "Craftov · 逃离块科夫 — Minecraft 里的搜打撤（extraction shooter）。Paper 1.21.11 单插件：组队匹配、搜索物资、和 AI 敌兵与其他小队交火、活着撤离才算赚到；原版客户端 + 服务器资源包即可游玩。",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "svenadlung",
+        "nameWithOwner": "ueberdosis/draft-js-to-tiptap",
+        "url": "https://github.com/ueberdosis/draft-js-to-tiptap",
+        "language": "TypeScript",
+        "stars": 21,
+        "description": "Allows conversion from a Draft.js Content State to a Tiptap compatible format",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "svenadlung",
+        "nameWithOwner": "ueberdosis/hocuspocus-laravel",
+        "url": "https://github.com/ueberdosis/hocuspocus-laravel",
+        "language": "PHP",
+        "stars": 33,
+        "description": "Integrates Hocuspocus into Laravel with a few clicks",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "svenadlung",
+        "nameWithOwner": "ueberdosis/tiptap",
+        "url": "https://github.com/ueberdosis/tiptap",
+        "language": "TypeScript",
+        "stars": 39129,
+        "description": "The headless rich text editor framework for web artisans.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "svenadlung",
+        "nameWithOwner": "ueberdosis/tiptap-collab-replit",
+        "url": "https://github.com/ueberdosis/tiptap-collab-replit",
+        "language": "Vue",
+        "stars": 8,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "svenadlung",
+        "nameWithOwner": "ueberdosis/tiptap-php",
+        "url": "https://github.com/ueberdosis/tiptap-php",
+        "language": "PHP",
+        "stars": 282,
+        "description": "A PHP package to work with Tiptap content",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "tairov",
+        "nameWithOwner": "omacom/gliff",
+        "url": "https://github.com/omacom/gliff",
+        "language": "Rust",
+        "stars": 325,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "tandpfun",
+        "nameWithOwner": "SelfControlApp/selfcontrol",
+        "url": "https://github.com/SelfControlApp/selfcontrol",
+        "language": "Objective-C",
+        "stars": 4428,
+        "description": ":skull: Mac app to block your own access to distracting websites etc for a predetermined period of time. It can not be undone by the app or by a restart – you must wait for the timer to run out.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "TheTechromancer",
+        "nameWithOwner": "goshs-labs/goshs",
+        "url": "https://github.com/goshs-labs/goshs",
+        "language": "Go",
+        "stars": 1026,
+        "description": "Feature-rich single-binary file server for red teamers and developers.  HTTP/S · WebDAV · FTP/SFTP · SMB · LDAP/S · NTLM hash capture · DNS/SMTP callbacks ·  TLS · Auth · Share links. A powerful python3 -m http.server replacement.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "trek-e",
+        "nameWithOwner": "ddalcu/mlx-serve",
+        "url": "https://github.com/ddalcu/mlx-serve",
+        "language": "Zig",
+        "stars": 2597,
+        "description": "Native LLM inference server for Apple Silicon. OpenAI + Anthropic API compatible. No Python. Zig backend, Swift frontend macOS app with chat, music, voice, video generation.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "trukhinyuri",
+        "nameWithOwner": "IlmenAI/ui-atlas",
+        "url": "https://github.com/IlmenAI/ui-atlas",
+        "language": "C#",
+        "stars": 23,
+        "description": "UI Atlas",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "tsvetomir",
+        "nameWithOwner": "harfbuzz/harfbuzz",
+        "url": "https://github.com/harfbuzz/harfbuzz",
+        "language": "C++",
+        "stars": 6250,
+        "description": "HarfBuzz text shaping engine",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "tsvetomir",
+        "nameWithOwner": "jensuuu/Xerox_Phaser_3020",
+        "url": "https://github.com/jensuuu/Xerox_Phaser_3020",
+        "language": "Shell",
+        "stars": 21,
+        "description": "Xerox Phaser 3020 Drivers for Linux Systems",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "tsvetomir",
+        "nameWithOwner": "neeythann/deyecloud",
+        "url": "https://github.com/neeythann/deyecloud",
+        "language": "Python",
+        "stars": 1,
+        "description": "A Python client for DeyeCloud",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "tsvetomir",
+        "nameWithOwner": "raineorshine/npm-check-updates",
+        "url": "https://github.com/raineorshine/npm-check-updates",
+        "language": "TypeScript",
+        "stars": 10335,
+        "description": "Find newer versions of package dependencies than what your package.json allows",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "tsvetomir",
+        "nameWithOwner": "zackb/tether",
+        "url": "https://github.com/zackb/tether",
+        "language": "C++",
+        "stars": 1567,
+        "description": "Linux + iPhone Continuity / iMessage / SMS",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "vardan-arm",
+        "nameWithOwner": "aniftyco/awesome-tailwindcss",
+        "url": "https://github.com/aniftyco/awesome-tailwindcss",
+        "language": "",
+        "stars": 15236,
+        "description": "😎 Awesome things related to Tailwind CSS",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "vardan-arm",
+        "nameWithOwner": "Dammyjay93/interface-design",
+        "url": "https://github.com/Dammyjay93/interface-design",
+        "language": "Shell",
+        "stars": 6031,
+        "description": "Design engineering for Claude Code. Craft, memory, and enforcement for consistent UI.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "vardan-arm",
+        "nameWithOwner": "dcastil/tailwind-merge",
+        "url": "https://github.com/dcastil/tailwind-merge",
+        "language": "TypeScript",
+        "stars": 5703,
+        "description": "Merge Tailwind CSS classes without style conflicts",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "vardan-arm",
+        "nameWithOwner": "mifi/lossless-cut",
+        "url": "https://github.com/mifi/lossless-cut",
+        "language": "TypeScript",
+        "stars": 46396,
+        "description": "The swiss army knife of lossless video/audio editing",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "vardan-arm",
+        "nameWithOwner": "vahe-evoyan/armenian-phonetic",
+        "url": "https://github.com/vahe-evoyan/armenian-phonetic",
+        "language": "Python",
+        "stars": 307,
+        "description": "Armenian phonetic keyboard layout for Mac OSX. Հայերեն ֆոնետիկ ստեղնաշար Mac OSX-ի համար։",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "vtrivedy",
+        "nameWithOwner": "browser-use/video-use",
+        "url": "https://github.com/browser-use/video-use",
+        "language": "Python",
+        "stars": 31539,
+        "description": "Edit videos with coding agents",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "vtrivedy",
+        "nameWithOwner": "CopilotKit/OpenBot",
+        "url": "https://github.com/CopilotKit/OpenBot",
+        "language": "TypeScript",
+        "stars": 13441,
+        "description": "The open, self-hostable alternative to closed AI bots. Production-ready, fully customizable, and plugs into every stack: any agent, any model, any tool.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "vtrivedy",
+        "nameWithOwner": "google/agentmesh",
+        "url": "https://github.com/google/agentmesh",
+        "language": "Go",
+        "stars": 1286,
+        "description": "Agent Mesh",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "vtrivedy",
+        "nameWithOwner": "milind-soni/OpenMausBot",
+        "url": "https://github.com/milind-soni/OpenMausBot",
+        "language": "TypeScript",
+        "stars": 27579,
+        "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "vtrivedy",
+        "nameWithOwner": "ShenSeanChen/waku-agent",
+        "url": "https://github.com/ShenSeanChen/waku-agent",
+        "language": "Python",
+        "stars": 2272,
+        "description": "Waku Agent is an open-source AI agent harness you own: loop, memory, evals, and an always-on layer (event inbox, timers, approvals, outbox), in code that stays readable.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "xiaohk",
+        "nameWithOwner": "openai/git",
+        "url": "https://github.com/openai/git",
+        "language": "C",
+        "stars": 306,
+        "description": "\"the information manager from hell\" - linus torvalds [e83c516, 7 Apr 2005]",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "xiaohk",
+        "nameWithOwner": "openai/math",
+        "url": "https://github.com/openai/math",
+        "language": "Lean",
+        "stars": 17844,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "xiaohk",
+        "nameWithOwner": "openai/redcard",
+        "url": "https://github.com/openai/redcard",
+        "language": "Python",
+        "stars": 47,
+        "description": "Eject yourself from work with a little help from Codex.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "xiaohk",
+        "nameWithOwner": "rusty-key/spoken-wow",
+        "url": "https://github.com/rusty-key/spoken-wow",
+        "language": "Lua",
+        "stars": 134,
+        "description": "Voiced quest dialogue, zone lore and in-world books for World of Warcraft Forever/Classic — addons, the site behind them, and the pipelines that generate the audio.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "xiaohk",
+        "nameWithOwner": "smogon/pokemon-showdown",
+        "url": "https://github.com/smogon/pokemon-showdown",
+        "language": "TypeScript",
+        "stars": 6044,
+        "description": "Pokémon battle simulator.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "yifanzhang-pro",
+        "nameWithOwner": "anthropics/formal-math",
+        "url": "https://github.com/anthropics/formal-math",
+        "language": "Lean",
+        "stars": 947,
+        "description": "",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "yifanzhang-pro",
+        "nameWithOwner": "frontiereval/AIChipBench",
+        "url": "https://github.com/frontiereval/AIChipBench",
+        "language": "HTML",
+        "stars": 2,
+        "description": "AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "zechengz",
+        "nameWithOwner": "HazAT/ultimate",
+        "url": "https://github.com/HazAT/ultimate",
+        "language": "TypeScript",
+        "stars": 616,
+        "description": "A local coding agent with a web UI that builds itself while it runs, on Pi Durable",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "zechengz",
+        "nameWithOwner": "skypilot-org/skypilot",
+        "url": "https://github.com/skypilot-org/skypilot",
+        "language": "Python",
+        "stars": 10881,
+        "description": "The AI Compute Platform for frontier teams. SkyPilot turns fragmented AI compute into one AI supercomputer, so frontier AI teams build custom intelligence faster.",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "zechengz",
+        "nameWithOwner": "stackedlol/ascii-sharks",
+        "url": "https://github.com/stackedlol/ascii-sharks",
+        "language": "TypeScript",
+        "stars": 1587,
+        "description": "ascii shark components in typescript",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "ziwenseal",
+        "nameWithOwner": "centerforaisafety/hle",
+        "url": "https://github.com/centerforaisafety/hle",
+        "language": "Python",
+        "stars": 1752,
+        "description": "Humanity's Last Exam",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "ziwenseal",
+        "nameWithOwner": "ruiqi-zhong/nlparam",
+        "url": "https://github.com/ruiqi-zhong/nlparam",
+        "language": "Jupyter Notebook",
+        "stars": 28,
+        "description": "Augmenting Statistical Models with Natural Language Parameters",
+        "first_seen": "2026-11-25"
+      },
+      {
+        "starred_by": "zxrys",
+        "nameWithOwner": "FrankYang-17/Coda",
+        "url": "https://github.com/FrankYang-17/Coda",
+        "language": "Python",
+        "stars": 43,
+        "description": "",
+        "first_seen": "2026-11-25"
+      }
+    ]
+  },
+  {
     "date": "2026-11-23",
     "generated_at": "2026-11-23T01:29:29.928Z",
     "items": [
