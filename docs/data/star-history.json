@@ -1,5 +1,3557 @@
 [
   {
+    "date": "2026-11-26",
+    "generated_at": "2026-11-26T03:27:51.839Z",
+    "items": [
+      {
+        "starred_by": "Aariq",
+        "nameWithOwner": "jmclawson/tidytuesday-explorer",
+        "url": "https://github.com/jmclawson/tidytuesday-explorer",
+        "language": "JavaScript",
+        "stars": 1,
+        "description": "Search, compare, and explore variables across TidyTuesday datasets",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Aariq",
+        "nameWithOwner": "omlahore/RemoveMacAI",
+        "url": "https://github.com/omlahore/RemoveMacAI",
+        "language": "Swift",
+        "stars": 6326,
+        "description": "Turn off Apple Intelligence and delete its models on your Mac. Optional tweaks for analytics, ads and pop-ups. A native app and CLI, and every change can be undone.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Aariq",
+        "nameWithOwner": "r-lib/portable",
+        "url": "https://github.com/r-lib/portable",
+        "language": "C++",
+        "stars": 39,
+        "description": "A Modern PDF Graphics Device",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Aariq",
+        "nameWithOwner": "tenmeh/bones",
+        "url": "https://github.com/tenmeh/bones",
+        "language": "R",
+        "stars": 6,
+        "description": "Content-shaped loading placeholders for Shiny outputs",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Aariq",
+        "nameWithOwner": "xolyn/listr2",
+        "url": "https://github.com/xolyn/listr2",
+        "language": "JavaScript",
+        "stars": 2,
+        "description": "Generate a index page to list all files in your Cloudflare R2 bucket, based on Cloudflare Workers",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "AdamGS",
+        "nameWithOwner": "datadog-labs/ephyra",
+        "url": "https://github.com/datadog-labs/ephyra",
+        "language": "Rust",
+        "stars": 306,
+        "description": "A property-based testing library for the LLM era",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "AdamGS",
+        "nameWithOwner": "deterministic-machines/deslop-please",
+        "url": "https://github.com/deterministic-machines/deslop-please",
+        "language": "Rust",
+        "stars": 1067,
+        "description": "Bring (back) sanity to your code",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "aedobbyn",
+        "nameWithOwner": "Covid19R/covid19mobility",
+        "url": "https://github.com/Covid19R/covid19mobility",
+        "language": "R",
+        "stars": 13,
+        "description": "Accesses the Apple Mobility data within R",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "aedobbyn",
+        "nameWithOwner": "Covid19R/covid19nytimes",
+        "url": "https://github.com/Covid19R/covid19nytimes",
+        "language": "R",
+        "stars": 25,
+        "description": "Pulls the covid-19 data from the New York Times Public Data Source",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "aedobbyn",
+        "nameWithOwner": "MilesMcBain/paint",
+        "url": "https://github.com/MilesMcBain/paint",
+        "language": "R",
+        "stars": 146,
+        "description": "paint the data",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "aedobbyn",
+        "nameWithOwner": "oakes/vim_cubed",
+        "url": "https://github.com/oakes/vim_cubed",
+        "language": "Nim",
+        "stars": 2729,
+        "description": "Vim rendered on a cube for no reason",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "aedobbyn",
+        "nameWithOwner": "seankross/twilio",
+        "url": "https://github.com/seankross/twilio",
+        "language": "R",
+        "stars": 46,
+        "description": ":phone: An interface to the Twilio API for R",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "AgentSparko",
+        "nameWithOwner": "ashhart/TensorFold",
+        "url": "https://github.com/ashhart/TensorFold",
+        "language": "Zig",
+        "stars": 2440,
+        "description": "LLM Inference Engine for Metal, CUDA and Vulkan.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "alexgleith",
+        "nameWithOwner": "girder/django-large-image",
+        "url": "https://github.com/girder/django-large-image",
+        "language": "Python",
+        "stars": 70,
+        "description": "🩻 🗺️ Django endpoints for working with large images for tile serving",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "alexgleith",
+        "nameWithOwner": "stac-utils/pystac",
+        "url": "https://github.com/stac-utils/pystac",
+        "language": "Python",
+        "stars": 470,
+        "description": "Python library for working with any SpatioTemporal Asset Catalog (STAC)",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "alexgleith",
+        "nameWithOwner": "stac-utils/pystac-client",
+        "url": "https://github.com/stac-utils/pystac-client",
+        "language": "Python",
+        "stars": 213,
+        "description": "Python client for searching STAC APIs",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "alexgleith",
+        "nameWithOwner": "stac-utils/rustac",
+        "url": "https://github.com/stac-utils/rustac",
+        "language": "Rust",
+        "stars": 150,
+        "description": "The power of Rust for the STAC ecosystem",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "alexgleith",
+        "nameWithOwner": "vshymanskyy/StandWithUkraine",
+        "url": "https://github.com/vshymanskyy/StandWithUkraine",
+        "language": "JavaScript",
+        "stars": 1561,
+        "description": "#StandWithUkraine banner and related documents",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "alvlam-au",
+        "nameWithOwner": "aehrc/genomator",
+        "url": "https://github.com/aehrc/genomator",
+        "language": "Python",
+        "stars": 2,
+        "description": "Privacy-hardened, hallucination-resistant synthetic data generator. ",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Alyetama",
+        "nameWithOwner": "0x0funky/agent-sprite-forge",
+        "url": "https://github.com/0x0funky/agent-sprite-forge",
+        "language": "Python",
+        "stars": 5989,
+        "description": "Agent Skill for generating 2D sprite sheets and map, transparent PNG frames, and animated GIFs from prompts.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Alyetama",
+        "nameWithOwner": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "language": "Python",
+        "stars": 266143,
+        "description": "The agent that grows with you",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Alyetama",
+        "nameWithOwner": "omacom/omarchy",
+        "url": "https://github.com/omacom/omarchy",
+        "language": "Shell",
+        "stars": 47618,
+        "description": "Beautiful, Modern & Opinionated Linux",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Alyetama",
+        "nameWithOwner": "storytold/photocraft",
+        "url": "https://github.com/storytold/photocraft",
+        "language": "Rust",
+        "stars": 81525,
+        "description": "PhotoCraft: An open-source photo editor written from scratch in pure Rust",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Alyetama",
+        "nameWithOwner": "Suchisrit/CalibrationTokens",
+        "url": "https://github.com/Suchisrit/CalibrationTokens",
+        "language": "Python",
+        "stars": 15,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "alyssarosemartin",
+        "nameWithOwner": "bbarker505/ddrp-cohorts-v1",
+        "url": "https://github.com/bbarker505/ddrp-cohorts-v1",
+        "language": "R",
+        "stars": 2,
+        "description": "The objective of the Degree-Day, establishment Risk, and Pest event mapping system (DDRP) is to predict phenology and climate suitability of invasive, biocontrol, and IPM species for the conterminous United States. DDRP is written entirely in the R statistical programming language (R Development Core Team 2019), making it flexible and extensible, and has a simple command-line interface that has already been adapted for online use. The platform can use a variety of gridded weather and climate data types for any historical (post-hoc), real-time, or future (downscaled GCM) time period. Model products include gridded (raster) and graphical outputs of number of completed generations, phenological/pest events, and climate suitability (i.e., establishment risk maps). ",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "alyssarosemartin",
+        "nameWithOwner": "dblodgett-usgs/derivatives_runner",
+        "url": "https://github.com/dblodgett-usgs/derivatives_runner",
+        "language": "Python",
+        "stars": 1,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "alyssarosemartin",
+        "nameWithOwner": "eco4cast/EFIstandards",
+        "url": "https://github.com/eco4cast/EFIstandards",
+        "language": "R",
+        "stars": 17,
+        "description": "Exploring possible metadata and data formatting standards for comparing Ecological Forecasts",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "alyssarosemartin",
+        "nameWithOwner": "kjones13/pheDataQC",
+        "url": "https://github.com/kjones13/pheDataQC",
+        "language": "HTML",
+        "stars": 1,
+        "description": "NPN-NEON coordination WG repo",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "alyssarosemartin",
+        "nameWithOwner": "TWellman/USGS_BCB-NPN-Dev-Space",
+        "url": "https://github.com/TWellman/USGS_BCB-NPN-Dev-Space",
+        "language": "Jupyter Notebook",
+        "stars": 2,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "AmintaCCCP",
+        "nameWithOwner": "0x0funky/audioghost-ai",
+        "url": "https://github.com/0x0funky/audioghost-ai",
+        "language": "Python",
+        "stars": 793,
+        "description": "Extract any sound with text prompts. Memory-optimized SAM-Audio with modern UI.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "AmintaCCCP",
+        "nameWithOwner": "fred2045/diting",
+        "url": "https://github.com/fred2045/diting",
+        "language": "Python",
+        "stars": 8,
+        "description": "抗 FOMO 的个人信息分级系统 · 分级交给 LLM，判断留给人 · 自建 RSS 阅读器 + 知识库(LLM Wiki)",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "AmintaCCCP",
+        "nameWithOwner": "hehehai/AudioSmith",
+        "url": "https://github.com/hehehai/AudioSmith",
+        "language": "Go",
+        "stars": 263,
+        "description": "Speech, voices, stories, audiobooks, dubbing and transcription, made on your Mac. Free and open source.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "AmintaCCCP",
+        "nameWithOwner": "yuhuan-dev/antigravity-usage-monitor",
+        "url": "https://github.com/yuhuan-dev/antigravity-usage-monitor",
+        "language": "JavaScript",
+        "stars": 371,
+        "description": "Real-time Google Antigravity monitor for token usage, context windows, quotas, generation speed (TPS), TTFT and subagent analytics.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "AndrewBrown-USDA",
+        "nameWithOwner": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "language": "JavaScript",
+        "stars": 310785,
+        "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "AndrewBrown-USDA",
+        "nameWithOwner": "AndrewBrown-USDA/fpac-soil-mcp",
+        "url": "https://github.com/AndrewBrown-USDA/fpac-soil-mcp",
+        "language": "Python",
+        "stars": 1,
+        "description": "Proof-of-Concept Model Context Protocol (MCP) Server for preliminary Farmland Protection Policy Act (FPPA) screening",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "AndrewBrown-USDA",
+        "nameWithOwner": "gsa-mcp-hackathon/fpac-soil-mcp",
+        "url": "https://github.com/gsa-mcp-hackathon/fpac-soil-mcp",
+        "language": "Python",
+        "stars": 1,
+        "description": "Model Context Protocol (MCP) Server and Agent Map App for preliminary Farmland Protection Policy Act (FPPA) screening",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "AndrewBrown-USDA",
+        "nameWithOwner": "promptfoo/promptfoo",
+        "url": "https://github.com/promptfoo/promptfoo",
+        "language": "TypeScript",
+        "stars": 27691,
+        "description": "Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Compare performance of GPT, Claude, Gemini, DeepSeek, and more. Simple declarative configs with command line and CI/CD integration.  Used by OpenAI and Anthropic.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "AndrewBrown-USDA",
+        "nameWithOwner": "Qweary/Swarnam",
+        "url": "https://github.com/Qweary/Swarnam",
+        "language": "Python",
+        "stars": 18,
+        "description": "Red team competition swarm",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "aparrish",
+        "nameWithOwner": "redcode/6502",
+        "url": "https://github.com/redcode/6502",
+        "language": "C",
+        "stars": 196,
+        "description": "Highly portable MOS 6502 CPU emulator written in ANSI C",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "aparrish",
+        "nameWithOwner": "redcode/Z80",
+        "url": "https://github.com/redcode/Z80",
+        "language": "C",
+        "stars": 569,
+        "description": "Highly portable Zilog Z80 CPU emulator written in ANSI C",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "apjanke",
+        "nameWithOwner": "celoyd/potato",
+        "url": "https://github.com/celoyd/potato",
+        "language": "Python",
+        "stars": 87,
+        "description": "A small pansharpening model",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "apjanke",
+        "nameWithOwner": "Kuberwastaken/cookie",
+        "url": "https://github.com/Kuberwastaken/cookie",
+        "language": "TypeScript",
+        "stars": 338,
+        "description": "Modern Browsers Don't Really Need The Cookie to Track You Anymore",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "apjanke",
+        "nameWithOwner": "mip-org/mip",
+        "url": "https://github.com/mip-org/mip",
+        "language": "MATLAB",
+        "stars": 17,
+        "description": "pip-style package manager for matlab",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "apjanke",
+        "nameWithOwner": "xscreensaver-official/xscreensaver",
+        "url": "https://github.com/xscreensaver-official/xscreensaver",
+        "language": "",
+        "stars": 1249,
+        "description": "There is no official XScreenSaver GitHub repository.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "apjanke",
+        "nameWithOwner": "yaelwrites/Big-Ass-Data-Broker-Opt-Out-List",
+        "url": "https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List",
+        "language": "",
+        "stars": 7023,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "arasskazov",
+        "nameWithOwner": "Avaneesh-Inamdar/Stream-Tube-Desktop",
+        "url": "https://github.com/Avaneesh-Inamdar/Stream-Tube-Desktop",
+        "language": "Rust",
+        "stars": 1246,
+        "description": "Native YouTube client for Windows in Rust, with SponsorBlock, DeArrow and Return YouTube Dislike built in",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Archaeo-Programmer",
+        "nameWithOwner": "AmirhosseinAhrari/GoogleEarthEngine",
+        "url": "https://github.com/AmirhosseinAhrari/GoogleEarthEngine",
+        "language": "Jupyter Notebook",
+        "stars": 264,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Archaeo-Programmer",
+        "nameWithOwner": "cloudnativegeo/cloud-optimized-geospatial-formats-guide",
+        "url": "https://github.com/cloudnativegeo/cloud-optimized-geospatial-formats-guide",
+        "language": "Jupyter Notebook",
+        "stars": 198,
+        "description": "Guide to methods for generating and testing Cloud-Optimized Geospatial Formats",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Archaeo-Programmer",
+        "nameWithOwner": "developmentseed/cng-formats-benchmark",
+        "url": "https://github.com/developmentseed/cng-formats-benchmark",
+        "language": "Python",
+        "stars": 7,
+        "description": "A Benchmark Framework for the Cloud Native Geospatial Format",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Archaeo-Programmer",
+        "nameWithOwner": "developmentseed/titiler",
+        "url": "https://github.com/developmentseed/titiler",
+        "language": "Python",
+        "stars": 1211,
+        "description": "Build your own Raster dynamic map tile services",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Archaeo-Programmer",
+        "nameWithOwner": "ESA-PhiLab/Major-TOM",
+        "url": "https://github.com/ESA-PhiLab/Major-TOM",
+        "language": "Jupyter Notebook",
+        "stars": 237,
+        "description": "Expandable Datasets for Earth Observation",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "arfon",
+        "nameWithOwner": "2x11-xyz/euler",
+        "url": "https://github.com/2x11-xyz/euler",
+        "language": "Rust",
+        "stars": 10,
+        "description": "Euler is a research agent (coding agent included) and an open-ended runtime-extensible platform.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "arfon",
+        "nameWithOwner": "deepseek-ai/deepseek-harness",
+        "url": "https://github.com/deepseek-ai/deepseek-harness",
+        "language": "TypeScript",
+        "stars": 287141,
+        "description": "DeepSeek Harness: Everything is a Plugin.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "arfon",
+        "nameWithOwner": "GoogleCloudPlatform/knowledge-catalog",
+        "url": "https://github.com/GoogleCloudPlatform/knowledge-catalog",
+        "language": "TypeScript",
+        "stars": 9755,
+        "description": "Google Cloud Knowledge Catalog Tools and Samples",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "arfon",
+        "nameWithOwner": "LBNL-UCB-STI/consist",
+        "url": "https://github.com/LBNL-UCB-STI/consist",
+        "language": "Python",
+        "stars": 4,
+        "description": "Provenance tracking, intelligent caching, and data virtualization for scientific simulation workflows.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "arfon",
+        "nameWithOwner": "umago/bubblewrap-ai",
+        "url": "https://github.com/umago/bubblewrap-ai",
+        "language": "Go",
+        "stars": 28,
+        "description": "Bubblewrap sandbox for AI coding agents",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "arogozhnikov",
+        "nameWithOwner": "a-rahimi/hessian",
+        "url": "https://github.com/a-rahimi/hessian",
+        "language": "Python",
+        "stars": 18,
+        "description": "The Hessian of tall-skinny networks is easy to invert",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "arogozhnikov",
+        "nameWithOwner": "ENPICOM/immunum",
+        "url": "https://github.com/ENPICOM/immunum",
+        "language": "Rust",
+        "stars": 36,
+        "description": "A high-performance antibody and TCR sequence numbering tool for Rust, Python, Polars and JS/TS.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "arogozhnikov",
+        "nameWithOwner": "IUPAC/Dissociation-Constants-Izutsu",
+        "url": "https://github.com/IUPAC/Dissociation-Constants-Izutsu",
+        "language": "",
+        "stars": 4,
+        "description": "This repository includes pKa data measured in select dipolar aprotic solvents digitized and curated from reference data published by IUPAC.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "arogozhnikov",
+        "nameWithOwner": "lucidrains/torch-einops-utils",
+        "url": "https://github.com/lucidrains/torch-einops-utils",
+        "language": "Python",
+        "stars": 55,
+        "description": "Some utility functions to help myself (and perhaps others) go faster with ML/AI work",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "arogozhnikov",
+        "nameWithOwner": "tomsanbear/candle-einops",
+        "url": "https://github.com/tomsanbear/candle-einops",
+        "language": "Rust",
+        "stars": 44,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ateucher",
+        "nameWithOwner": "EmilHvitfeldt/quarto-diagrams",
+        "url": "https://github.com/EmilHvitfeldt/quarto-diagrams",
+        "language": "HTML",
+        "stars": 16,
+        "description": "Reveal.js diagram layouts for Quarto slides — circle-flow, pie, process, pyramid, matrix, hierarchy, venn, funnel, and cycle.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ateucher",
+        "nameWithOwner": "hadley/bananarama",
+        "url": "https://github.com/hadley/bananarama",
+        "language": "R",
+        "stars": 43,
+        "description": "Generate slide images with Gemini or OpenAI",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ateucher",
+        "nameWithOwner": "NewGraphEnvironment/stac_elevation_bc",
+        "url": "https://github.com/NewGraphEnvironment/stac_elevation_bc",
+        "language": "HTML",
+        "stars": 2,
+        "description": "STAC catalog of British Columbia's LidarBC elevation data — 102,460 tiles, each carrying a bare-earth DEM and, where flown, a digital surface model. Collection `stac-elevation-bc` at images.a11s.one; search by location and time from rstac, QGIS, or any STAC client. Updated monthly.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ateucher",
+        "nameWithOwner": "posit-conf-2026/modern-r-workflow",
+        "url": "https://github.com/posit-conf-2026/modern-r-workflow",
+        "language": "CSS",
+        "stars": 7,
+        "description": "Modern R Workflow (ft. Positron and AI), a posit::conf(2026) workshop",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ateucher",
+        "nameWithOwner": "rossjrw/pr-preview-action",
+        "url": "https://github.com/rossjrw/pr-preview-action",
+        "language": "Shell",
+        "stars": 450,
+        "description": "GitHub Action that deploys a pull request preview to GitHub Pages, similar to Vercel and Netlify, and cleans up after itself.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Autumn-27",
+        "nameWithOwner": "ai-openshell/openshell",
+        "url": "https://github.com/ai-openshell/openshell",
+        "language": "Rust",
+        "stars": 21951,
+        "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Autumn-27",
+        "nameWithOwner": "N1nEmAn/nvwabase",
+        "url": "https://github.com/N1nEmAn/nvwabase",
+        "language": "Python",
+        "stars": 101,
+        "description": "The Nüwa Foundation — the tree behind sapper-v2. Create (spawn AIs) + Language (agents talk) + History (layered fact-intent graph): the ground on which AIs grow into civilizations.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Autumn-27",
+        "nameWithOwner": "N1nEmAn/sapper",
+        "url": "https://github.com/N1nEmAn/sapper",
+        "language": "Python",
+        "stars": 41,
+        "description": "Engagement fact graph for autonomous pentest agents — typed facts, flag ledger, arena adapter, offline KB. Offensive fork of claude-fact-graph.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Autumn-27",
+        "nameWithOwner": "RuoJi6/AgentMirror",
+        "url": "https://github.com/RuoJi6/AgentMirror",
+        "language": "Go",
+        "stars": 102,
+        "description": "Honeypot for countering red-team penetration-testing agents, using AI against AI.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Autumn-27",
+        "nameWithOwner": "Xaaaa-bip/GodzillaSuper",
+        "url": "https://github.com/Xaaaa-bip/GodzillaSuper",
+        "language": "Java",
+        "stars": 473,
+        "description": "哥斯拉webshell管理工具二开",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "BaaRai",
+        "nameWithOwner": "Gen-Verse/RSI-Anything",
+        "url": "https://github.com/Gen-Verse/RSI-Anything",
+        "language": "HTML",
+        "stars": 1210,
+        "description": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "BaaRai",
+        "nameWithOwner": "JustVugg/colibri",
+        "url": "https://github.com/JustVugg/colibri",
+        "language": "C",
+        "stars": 53505,
+        "description": "A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA, Vulkan), warm ones in RAM, cold ones streamed from NVMe. Written in C, runs on the hardware you already own.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "BaaRai",
+        "nameWithOwner": "lobehub/awesome-rsi",
+        "url": "https://github.com/lobehub/awesome-rsi",
+        "language": "",
+        "stars": 1108,
+        "description": "A curated research map of Recursive Self-Improvement (RSI): models, agents, harnesses, embodied systems, automated AI R&D, benchmarks, and safety.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "BaaRai",
+        "nameWithOwner": "morluto/rea",
+        "url": "https://github.com/morluto/rea",
+        "language": "TypeScript",
+        "stars": 478625,
+        "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "beardthelion",
+        "nameWithOwner": "elder-plinius/G0DC0D3",
+        "url": "https://github.com/elder-plinius/G0DC0D3",
+        "language": "JavaScript",
+        "stars": 6,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "benben6515",
+        "nameWithOwner": "bnhan2710/pixel-hq",
+        "url": "https://github.com/bnhan2710/pixel-hq",
+        "language": "JavaScript",
+        "stars": 65,
+        "description": "Pixel HQ - a Herdr layout: your coding agents as pixel pets in a small engineering company",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "bhostetler18",
+        "nameWithOwner": "baldavenger/DCTLs",
+        "url": "https://github.com/baldavenger/DCTLs",
+        "language": "C",
+        "stars": 369,
+        "description": "DaVinci Resolve CTLs",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "bhostetler18",
+        "nameWithOwner": "lucalista/shinestacker",
+        "url": "https://github.com/lucalista/shinestacker",
+        "language": "Python",
+        "stars": 201,
+        "description": "Focus stacking software with an interactive GUI and Python API for advanced image processing workflows",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "bhostetler18",
+        "nameWithOwner": "mackron/miniaudio",
+        "url": "https://github.com/mackron/miniaudio",
+        "language": "C",
+        "stars": 7701,
+        "description": "Audio playback and capture library written in C, in a single source file.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "bhostetler18",
+        "nameWithOwner": "motioncam-app/motioncam-fs",
+        "url": "https://github.com/motioncam-app/motioncam-fs",
+        "language": "C++",
+        "stars": 21,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "bhostetler18",
+        "nameWithOwner": "tonyketcham/Depth-Mapper",
+        "url": "https://github.com/tonyketcham/Depth-Mapper",
+        "language": "Java",
+        "stars": 30,
+        "description": "Generates a depth map from a focal stack of images using OpenCV 📷 ",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "bkendzior",
+        "nameWithOwner": "arunrajiah/wildlife-detection-exchange",
+        "url": "https://github.com/arunrajiah/wildlife-detection-exchange",
+        "language": "",
+        "stars": 1,
+        "description": "Wildlife Detection Exchange (WDX): open JSON interchange format for AI wildlife detections from community-run sensors, mapped field by field to Darwin Core",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "bkendzior",
+        "nameWithOwner": "ChaoningZhang/MobileSAM",
+        "url": "https://github.com/ChaoningZhang/MobileSAM",
+        "language": "Jupyter Notebook",
+        "stars": 5928,
+        "description": "This is the official code for MobileSAM project that makes SAM lightweight for mobile applications and beyond!",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "bkendzior",
+        "nameWithOwner": "madelinehayes/seabirdNET",
+        "url": "https://github.com/madelinehayes/seabirdNET",
+        "language": "Jupyter Notebook",
+        "stars": 4,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "bkendzior",
+        "nameWithOwner": "opengeos/RustGIS",
+        "url": "https://github.com/opengeos/RustGIS",
+        "language": "Rust",
+        "stars": 3119,
+        "description": "A fast, free and open-source GIS in pure Rust.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "bkendzior",
+        "nameWithOwner": "qoqosz/BirdsCounter",
+        "url": "https://github.com/qoqosz/BirdsCounter",
+        "language": "JavaScript",
+        "stars": 2,
+        "description": "Cross-platform bird counting app built with Tauri.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "bozaah",
+        "nameWithOwner": "berba-q/faostat-mcp",
+        "url": "https://github.com/berba-q/faostat-mcp",
+        "language": "Python",
+        "stars": 20,
+        "description": "MCP server that exposes the full FAOSTAT API as tools for AI assistants — query UNFAO Food & Agriculture Statistics in natural language via Claude, Cursor, or any MCP-compatible client.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "bozaah",
+        "nameWithOwner": "block/buzz",
+        "url": "https://github.com/block/buzz",
+        "language": "Rust",
+        "stars": 37763,
+        "description": "A hive mind communication platform",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "bozaah",
+        "nameWithOwner": "cathrynlavery/diagram-design",
+        "url": "https://github.com/cathrynlavery/diagram-design",
+        "language": "HTML",
+        "stars": 73155,
+        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "bozaah",
+        "nameWithOwner": "centminmod/my-claude-code-setup",
+        "url": "https://github.com/centminmod/my-claude-code-setup",
+        "language": "Python",
+        "stars": 2749,
+        "description": "Shared starter template configuration and CLAUDE.md memory bank system for Claude Code",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "bozaah",
+        "nameWithOwner": "jamiepine/voicebox",
+        "url": "https://github.com/jamiepine/voicebox",
+        "language": "Python",
+        "stars": 61327,
+        "description": "The open-source AI voice studio. Clone, dictate, create.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "cboettig",
+        "nameWithOwner": "geotiffjs/geotiff.js",
+        "url": "https://github.com/geotiffjs/geotiff.js",
+        "language": "JavaScript",
+        "stars": 1060,
+        "description": "geotiff.js is a small library to parse TIFF files for visualization or analysis. It is written in pure JavaScript, and is usable in both the browser and node.js applications.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "cboettig",
+        "nameWithOwner": "justinkay/scrubdata",
+        "url": "https://github.com/justinkay/scrubdata",
+        "language": "Python",
+        "stars": 30,
+        "description": "Scrub Data: A Framework for Reproducible Data Curation with AI Coding Agents",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "cboettig",
+        "nameWithOwner": "microsoft/SPARROW-Engine",
+        "url": "https://github.com/microsoft/SPARROW-Engine",
+        "language": "Rust",
+        "stars": 16,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "cboettig",
+        "nameWithOwner": "uw-ssec/llmoxie",
+        "url": "https://github.com/uw-ssec/llmoxie",
+        "language": "Python",
+        "stars": 8,
+        "description": "An open-source AI control plane developed under NSF NAIRR award #240292 by UW SSEC under Schmidt Sciences Virtual Institutes for Scientific Software program.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "cboettig",
+        "nameWithOwner": "ZihaoZhou/nautilus-llm-status",
+        "url": "https://github.com/ZihaoZhou/nautilus-llm-status",
+        "language": "Vue",
+        "stars": 3,
+        "description": "Nautilus LLM inference status monitor — tracks NRP vLLM availability and performance via Prometheus",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "chuanqisun",
+        "nameWithOwner": "philippe-page/spaceship-local",
+        "url": "https://github.com/philippe-page/spaceship-local",
+        "language": "HTML",
+        "stars": 2,
+        "description": "Steer your ideas in realtime. Local-mode fork, runs in browser.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Coff0xc",
+        "nameWithOwner": "BaaRai/ARTEX",
+        "url": "https://github.com/BaaRai/ARTEX",
+        "language": "Go",
+        "stars": 20964,
+        "description": "Actively maintained ARTEX: AI autonomous penetration testing system. Self-hosted, model-agnostic, evidence-backed findings. Community continuation of Autumn-27/ARTEX, AGPL-3.0.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Coff0xc",
+        "nameWithOwner": "elementalsouls/Claude-BugHunter",
+        "url": "https://github.com/elementalsouls/Claude-BugHunter",
+        "language": "Python",
+        "stars": 23182,
+        "description": "A Claude Code skill bundle for bug hunting and external red-team work - 85 skills, 16 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Coff0xc",
+        "nameWithOwner": "Hut-hzf/ung220z-tool",
+        "url": "https://github.com/Hut-hzf/ung220z-tool",
+        "language": "Python",
+        "stars": 4934,
+        "description": "ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Coff0xc",
+        "nameWithOwner": "Nutlope/hallmark",
+        "url": "https://github.com/Nutlope/hallmark",
+        "language": "CSS",
+        "stars": 61172,
+        "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Coff0xc",
+        "nameWithOwner": "ucxn/Bro-Stat",
+        "url": "https://github.com/ucxn/Bro-Stat",
+        "language": "JavaScript",
+        "stars": 22,
+        "description": "路由器品牌插件！[BroTech] Router enhancement script for Xiaomi, ASUS, HUAWEI & TP-Link. Built for network geeks! Rebuilds dashboards with high-precision traffic/ratio stats, real-time math, data persistence, and Home Assistant sync for intuitive visualization.【哥哥科技】家用硬路由增强，支持小米华硕TP华为锐捷等.统计流量和比值智能接入，网络专用脚本！直观一览无余，数据存储可视化，同步HA智能，重构仪表盘面板，有手机App。高精数学统计、实时对比计算…",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "con-f-use",
+        "nameWithOwner": "9001/copyparty",
+        "url": "https://github.com/9001/copyparty",
+        "language": "Python",
+        "stars": 47471,
+        "description": "Portable file server with accelerated resumable uploads, dedup, WebDAV, SFTP, FTP, TFTP, zeroconf, media indexer, thumbnails++ all in one file",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "con-f-use",
+        "nameWithOwner": "birneee/nixnet",
+        "url": "https://github.com/birneee/nixnet",
+        "language": "Nix",
+        "stars": 37,
+        "description": "Reproducible network experiments with a single command, on a single machine with Nix",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "con-f-use",
+        "nameWithOwner": "mihakrumpestar/panix",
+        "url": "https://github.com/mihakrumpestar/panix",
+        "language": "Go",
+        "stars": 92,
+        "description": "Universal Nix Deployment Orchestrator - inspect, bootstrap, build, transfer, secrets, activate, rollback",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "con-f-use",
+        "nameWithOwner": "soloam/ha-pid-controller",
+        "url": "https://github.com/soloam/ha-pid-controller",
+        "language": "Python",
+        "stars": 141,
+        "description": "PID Controller to Home Assistant",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "con-f-use",
+        "nameWithOwner": "unnamed-systems/nix-secrets",
+        "url": "https://github.com/unnamed-systems/nix-secrets",
+        "language": "Nix",
+        "stars": 157,
+        "description": "A postmodern secrets manager for NixOS [maintainer=@BANanaD3V,@yunfachi]",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "coygeek",
+        "nameWithOwner": "mattpocock/cookout",
+        "url": "https://github.com/mattpocock/cookout",
+        "language": "TypeScript",
+        "stars": 272,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "CuteTigerF",
+        "nameWithOwner": "debbiemarkslab/nanobody-polyreactivity",
+        "url": "https://github.com/debbiemarkslab/nanobody-polyreactivity",
+        "language": "Python",
+        "stars": 25,
+        "description": "Polyreactivity Website",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "CuteTigerF",
+        "nameWithOwner": "InternLM/Intern-Decision",
+        "url": "https://github.com/InternLM/Intern-Decision",
+        "language": "Python",
+        "stars": 821,
+        "description": "Fast multi-modal decision model",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "CuteTigerF",
+        "nameWithOwner": "IVB-Generative-Biology/cyclic-benchmark",
+        "url": "https://github.com/IVB-Generative-Biology/cyclic-benchmark",
+        "language": "Python",
+        "stars": 4,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "CuteTigerF",
+        "nameWithOwner": "qwdwqfwq/topconf-paper-figure-gallery",
+        "url": "https://github.com/qwdwqfwq/topconf-paper-figure-gallery",
+        "language": "JavaScript",
+        "stars": 2350,
+        "description": "3,516 curated Figure 1 / teasers from ICLR, ICML, NeurIPS, CVPR, ACL, AAAI (2023-2026), with tier badges and FigureForge retrieval-augmented figure drafting",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "CuteTigerF",
+        "nameWithOwner": "VilyaPublic/Riptides",
+        "url": "https://github.com/VilyaPublic/Riptides",
+        "language": "Python",
+        "stars": 30,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "dahlia",
+        "nameWithOwner": "datadog-labs/ephyra",
+        "url": "https://github.com/datadog-labs/ephyra",
+        "language": "Rust",
+        "stars": 306,
+        "description": "A property-based testing library for the LLM era",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "dahlia",
+        "nameWithOwner": "nannan927/monozukuri-hiroba",
+        "url": "https://github.com/nannan927/monozukuri-hiroba",
+        "language": "JavaScript",
+        "stars": 1,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "danielskatz",
+        "nameWithOwner": "corsa-center/oss-documents",
+        "url": "https://github.com/corsa-center/oss-documents",
+        "language": "",
+        "stars": 85,
+        "description": "Collecting guidance, documents, examples, templates for open-source software projects, such as on governance, roadmaps, contributing, licenses, codes of conduct, etc.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "danielskatz",
+        "nameWithOwner": "funcx-faas/funcx-web-service",
+        "url": "https://github.com/funcx-faas/funcx-web-service",
+        "language": "Python",
+        "stars": 14,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "danielskatz",
+        "nameWithOwner": "globus/globus-compute",
+        "url": "https://github.com/globus/globus-compute",
+        "language": "Python",
+        "stars": 166,
+        "description": "Globus Compute: High Performance Function Serving for Science",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "danielskatz",
+        "nameWithOwner": "numfocus/DISCOVER-Cookbook",
+        "url": "https://github.com/numfocus/DISCOVER-Cookbook",
+        "language": "HTML",
+        "stars": 279,
+        "description": "The NumFOCUS DISCOVER Cookbook (Diverse & Inclusive Spaces and Conferences: Overall Vision and Essential Resources). A guide for organizing more diverse and inclusive events and conferences, produced by the NumFOCUS Diversity & Inclusion in Scientific Computing (DISC) Program, with support from the Moore Foundation.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "danielskatz",
+        "nameWithOwner": "Parsl/parsl",
+        "url": "https://github.com/Parsl/parsl",
+        "language": "Python",
+        "stars": 629,
+        "description": "Parsl - a Python parallel scripting library",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "danwild",
+        "nameWithOwner": "buildermethods/design-os",
+        "url": "https://github.com/buildermethods/design-os",
+        "language": "TypeScript",
+        "stars": 1883,
+        "description": "The missing design process between your product idea and your codebase.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "danwild",
+        "nameWithOwner": "mattpocock/skills",
+        "url": "https://github.com/mattpocock/skills",
+        "language": "Shell",
+        "stars": 332987,
+        "description": "Skills for Real Engineers. Straight from my .agents directory.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "danwild",
+        "nameWithOwner": "PrefectHQ/fastmcp",
+        "url": "https://github.com/PrefectHQ/fastmcp",
+        "language": "Python",
+        "stars": 28761,
+        "description": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "danwild",
+        "nameWithOwner": "Waybox-AI/roadtrip-skill",
+        "url": "https://github.com/Waybox-AI/roadtrip-skill",
+        "language": "Python",
+        "stars": 117,
+        "description": "An AI agent skill that turns \"start + days\" into a road trip you can actually drive.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "danwild",
+        "nameWithOwner": "webmachinelearning/webmcp",
+        "url": "https://github.com/webmachinelearning/webmcp",
+        "language": "Bikeshed",
+        "stars": 5047,
+        "description": "🤖 WebMCP",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "darianyang",
+        "nameWithOwner": "anthropics/uplifting-biomolecular-modeling",
+        "url": "https://github.com/anthropics/uplifting-biomolecular-modeling",
+        "language": "Python",
+        "stars": 394,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "darianyang",
+        "nameWithOwner": "google-deepmind/alphaprotein-novo",
+        "url": "https://github.com/google-deepmind/alphaprotein-novo",
+        "language": "Python",
+        "stars": 328,
+        "description": "AlphaProtein Novo",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "darianyang",
+        "nameWithOwner": "IDEA-XL/BioKinema",
+        "url": "https://github.com/IDEA-XL/BioKinema",
+        "language": "Python",
+        "stars": 33,
+        "description": "Official implementation for BioKinema",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "darianyang",
+        "nameWithOwner": "matteo-cagiada/mmcif-tools",
+        "url": "https://github.com/matteo-cagiada/mmcif-tools",
+        "language": "Python",
+        "stars": 11,
+        "description": "mmcif-tools is a package that allows you to quickly read, parse, edit and write biomolecular structures in the MMcif format.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "darianyang",
+        "nameWithOwner": "microsoft/bioemu2",
+        "url": "https://github.com/microsoft/bioemu2",
+        "language": "Python",
+        "stars": 539,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "darinchau",
+        "nameWithOwner": "EarthWindandFire1/swell-studio",
+        "url": "https://github.com/EarthWindandFire1/swell-studio",
+        "language": "TypeScript",
+        "stars": 1,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "davanstrien",
+        "nameWithOwner": "davanstrien/jobs-recipes",
+        "url": "https://github.com/davanstrien/jobs-recipes",
+        "language": "Python",
+        "stars": 4,
+        "description": "Tested recipes for Hugging Face Jobs: training, datasets, batch inference, rendering, container builds and more. One folder and an AGENTS.md per recipe.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "davanstrien",
+        "nameWithOwner": "n4ze3m/tiny-voca",
+        "url": "https://github.com/n4ze3m/tiny-voca",
+        "language": "Python",
+        "stars": 905,
+        "description": "A 4.5M-parameter two-voice English text-to-speech model, trained from scratch",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "daveredrum",
+        "nameWithOwner": "apple-aiml-research/ml-depth-pro-2",
+        "url": "https://github.com/apple-aiml-research/ml-depth-pro-2",
+        "language": "Python",
+        "stars": 754,
+        "description": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "debpaul",
+        "nameWithOwner": "carpentries-incubator/Data-Management-Training",
+        "url": "https://github.com/carpentries-incubator/Data-Management-Training",
+        "language": "R",
+        "stars": 5,
+        "description": "Data Handling and Management Training ",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "debpaul",
+        "nameWithOwner": "JackDanHollister/PlaceBot",
+        "url": "https://github.com/JackDanHollister/PlaceBot",
+        "language": "Python",
+        "stars": 3,
+        "description": "PlaceBot - A georeferencer for verbatim locality strings",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "debpaul",
+        "nameWithOwner": "jrpletch/fleasoftheworld",
+        "url": "https://github.com/jrpletch/fleasoftheworld",
+        "language": "Vue",
+        "stars": 3,
+        "description": "Flea taxonomic database.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "debpaul",
+        "nameWithOwner": "jtmiller28/PlantSweepeR",
+        "url": "https://github.com/jtmiller28/PlantSweepeR",
+        "language": "R",
+        "stars": 5,
+        "description": "A r package under development for databasing flagged tracheophyte occurrence data.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "debpaul",
+        "nameWithOwner": "sfborg/sf",
+        "url": "https://github.com/sfborg/sf",
+        "language": "Go",
+        "stars": 3,
+        "description": "sf is a combination of tools to work with SFG Archve files",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Deicyde",
+        "nameWithOwner": "mccorvie/riemann-masullo",
+        "url": "https://github.com/mccorvie/riemann-masullo",
+        "language": "Lean",
+        "stars": 171,
+        "description": "Lean 4 formalization of A. M. Masullo, The Music of the Primes",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "emhart",
+        "nameWithOwner": "audy/docker-sciruby-notebook",
+        "url": "https://github.com/audy/docker-sciruby-notebook",
+        "language": "",
+        "stars": 3,
+        "description": "SciRuby + IRuby notebook in a Docker container",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "emhart",
+        "nameWithOwner": "bbolker/mixedmodels-misc",
+        "url": "https://github.com/bbolker/mixedmodels-misc",
+        "language": "HTML",
+        "stars": 143,
+        "description": "miscellaneous materials for mixed models, mostly in R",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "emhart",
+        "nameWithOwner": "bearloga/dpmclust",
+        "url": "https://github.com/bearloga/dpmclust",
+        "language": "R",
+        "stars": 12,
+        "description": "Bayesian nonparametric clustering in R using DP-means",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "emhart",
+        "nameWithOwner": "cjbayesian/toyGANs",
+        "url": "https://github.com/cjbayesian/toyGANs",
+        "language": "Jupyter Notebook",
+        "stars": 24,
+        "description": "A toy model of Generative Adversarial Networks",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "emhart",
+        "nameWithOwner": "FCTweedie/NLTK",
+        "url": "https://github.com/FCTweedie/NLTK",
+        "language": "",
+        "stars": 10,
+        "description": "NLTK notebook",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "esloch",
+        "nameWithOwner": "AlertaDengue/infodengue-bucardo",
+        "url": "https://github.com/AlertaDengue/infodengue-bucardo",
+        "language": "Makefile",
+        "stars": 2,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "esloch",
+        "nameWithOwner": "AlertaDengue/UpdateHistoricoAlerta",
+        "url": "https://github.com/AlertaDengue/UpdateHistoricoAlerta",
+        "language": "R",
+        "stars": 2,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "esloch",
+        "nameWithOwner": "arxlang/sciarx",
+        "url": "https://github.com/arxlang/sciarx",
+        "language": "Logos",
+        "stars": 1,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "esloch",
+        "nameWithOwner": "esloch/retsu",
+        "url": "https://github.com/esloch/retsu",
+        "language": "Python",
+        "stars": 1,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "esloch",
+        "nameWithOwner": "scistitch/rago",
+        "url": "https://github.com/scistitch/rago",
+        "language": "Python",
+        "stars": 16,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ethanwhite",
+        "nameWithOwner": "NEONScience/NEON-utilities-python",
+        "url": "https://github.com/NEONScience/NEON-utilities-python",
+        "language": "Python",
+        "stars": 15,
+        "description": "Repository for Python package containing data-wrangling utilities for working with NEON data.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ethanwhite",
+        "nameWithOwner": "parmsam/quarto-flashcards",
+        "url": "https://github.com/parmsam/quarto-flashcards",
+        "language": "JavaScript",
+        "stars": 14,
+        "description": "A simple extension to add flashcards for RevealJS in Quarto",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ethanwhite",
+        "nameWithOwner": "vast-lib/tinyVAST",
+        "url": "https://github.com/vast-lib/tinyVAST",
+        "language": "R",
+        "stars": 19,
+        "description": "Multivariate spatio-temporal models using structural equations",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ethanwhite",
+        "nameWithOwner": "weecology/everglades-forecasting",
+        "url": "https://github.com/weecology/everglades-forecasting",
+        "language": "R",
+        "stars": 2,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ethanwhite",
+        "nameWithOwner": "zizmorcore/zizmor",
+        "url": "https://github.com/zizmorcore/zizmor",
+        "language": "Rust",
+        "stars": 7164,
+        "description": "Static analysis for GitHub Actions (and more)",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "filbranden",
+        "nameWithOwner": "abshkbh/arrakis",
+        "url": "https://github.com/abshkbh/arrakis",
+        "language": "Go",
+        "stars": 897,
+        "description": "A fully customizable and self-hosted sandboxing solution for AI agent code execution and computer use. It features out-of-the-box support for backtracking, a simple REST API and Python SDK, automatic port forwarding, and secure MicroVM isolation. Perfect for safely running, testing, and backtracking multi-step agent workflows.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "filbranden",
+        "nameWithOwner": "igrigorik/vimgolf",
+        "url": "https://github.com/igrigorik/vimgolf",
+        "language": "Ruby",
+        "stars": 778,
+        "description": "Real Vim ninjas count every keystroke - do you?",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "gayol-openrxiv",
+        "nameWithOwner": "ivelasq/shinylive-example",
+        "url": "https://github.com/ivelasq/shinylive-example",
+        "language": "JavaScript",
+        "stars": 1,
+        "description": "Making a webpage with Shinylive using R",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "gayol-openrxiv",
+        "nameWithOwner": "jennybc/repurrrsive",
+        "url": "https://github.com/jennybc/repurrrsive",
+        "language": "R",
+        "stars": 140,
+        "description": "Recursive lists to use in teaching and examples, because there is no mtcars for lists.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "gayol-openrxiv",
+        "nameWithOwner": "jwestreich/geoguessr_cities",
+        "url": "https://github.com/jwestreich/geoguessr_cities",
+        "language": "R",
+        "stars": 3,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "gayol-openrxiv",
+        "nameWithOwner": "posit-dev/positron",
+        "url": "https://github.com/posit-dev/positron",
+        "language": "TypeScript",
+        "stars": 4360,
+        "description": "Positron, a next-generation data science IDE",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "gayol-openrxiv",
+        "nameWithOwner": "r-lib/xml2",
+        "url": "https://github.com/r-lib/xml2",
+        "language": "R",
+        "stars": 227,
+        "description": "Bindings to libxml2",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "gcorso",
+        "nameWithOwner": "HannesStark/boltzgen",
+        "url": "https://github.com/HannesStark/boltzgen",
+        "language": "Python",
+        "stars": 1111,
+        "description": "BoltzGen: Toward Universal Binder Design",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "gcorso",
+        "nameWithOwner": "hsr87/boltzgen-on-sagemaker",
+        "url": "https://github.com/hsr87/boltzgen-on-sagemaker",
+        "language": "Jupyter Notebook",
+        "stars": 5,
+        "description": "Boltzgen on Amazon SageMaker",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "gcorso",
+        "nameWithOwner": "jwohlwend/minifold",
+        "url": "https://github.com/jwohlwend/minifold",
+        "language": "Python",
+        "stars": 98,
+        "description": "MiniFold: Simple, Fast and Accurate Protein Structure Prediction",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "gcorso",
+        "nameWithOwner": "NVIDIA/cuEquivariance",
+        "url": "https://github.com/NVIDIA/cuEquivariance",
+        "language": "Python",
+        "stars": 454,
+        "description": "cuEquivariance is a math library that is a collective of low-level primitives and tensor ops to accelerate widely-used models, like DiffDock, MACE, Allegro and NEQUIP, based on equivariant neural networks. Also includes kernels for accelerated structure prediction.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "gcorso",
+        "nameWithOwner": "soedinglab/MMseqs2",
+        "url": "https://github.com/soedinglab/MMseqs2",
+        "language": "C",
+        "stars": 2177,
+        "description": "MMseqs2: ultra fast and sensitive search and clustering suite",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "gustavdelius",
+        "nameWithOwner": "daeh/zotero-citation-tally",
+        "url": "https://github.com/daeh/zotero-citation-tally",
+        "language": "TypeScript",
+        "stars": 140,
+        "description": "Plugin that tallies citation counts for Zotero items.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "gustavdelius",
+        "nameWithOwner": "JuliaLang/julia",
+        "url": "https://github.com/JuliaLang/julia",
+        "language": "Julia",
+        "stars": 49308,
+        "description": "The Julia Programming Language",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "gustavdelius",
+        "nameWithOwner": "leovan/quarto-pseudocode",
+        "url": "https://github.com/leovan/quarto-pseudocode",
+        "language": "Lua",
+        "stars": 62,
+        "description": "Quarto Pseudocode Extension",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "gustavdelius",
+        "nameWithOwner": "lululxvi/deepxde",
+        "url": "https://github.com/lululxvi/deepxde",
+        "language": "Python",
+        "stars": 4511,
+        "description": "A library for scientific machine learning and physics-informed learning",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "gustavdelius",
+        "nameWithOwner": "NVIDIA/physicsnemo",
+        "url": "https://github.com/NVIDIA/physicsnemo",
+        "language": "Python",
+        "stars": 3481,
+        "description": "Open-source deep-learning framework for building, training, and fine-tuning deep learning models using state-of-the-art Physics-ML methods",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ignaciosica",
+        "nameWithOwner": "ARahim3/mlx-tune",
+        "url": "https://github.com/ARahim3/mlx-tune",
+        "language": "Python",
+        "stars": 1478,
+        "description": "Fine-tune LLMs on your Mac with Apple Silicon. SFT, DPO, GRPO, Vision, TTS, STT, Embedding, and OCR fine-tuning — natively on MLX. Unsloth-compatible API.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ignaciosica",
+        "nameWithOwner": "google-research/google-research",
+        "url": "https://github.com/google-research/google-research",
+        "language": "Jupyter Notebook",
+        "stars": 39449,
+        "description": "Google Research",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ignaciosica",
+        "nameWithOwner": "ml-explore/mlx-lm",
+        "url": "https://github.com/ml-explore/mlx-lm",
+        "language": "Python",
+        "stars": 7761,
+        "description": "Run LLMs with MLX",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ioannisa92",
+        "nameWithOwner": "arneschneuing/DiffSBDD",
+        "url": "https://github.com/arneschneuing/DiffSBDD",
+        "language": "Python",
+        "stars": 542,
+        "description": "A Euclidean diffusion model for structure-based drug design.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ioannisa92",
+        "nameWithOwner": "Chen-Cai-OSU/awesome-equivariant-network",
+        "url": "https://github.com/Chen-Cai-OSU/awesome-equivariant-network",
+        "language": "",
+        "stars": 1102,
+        "description": "Paper list for equivariant neural network",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ioannisa92",
+        "nameWithOwner": "HannesStark/FlowSite",
+        "url": "https://github.com/HannesStark/FlowSite",
+        "language": "Python",
+        "stars": 108,
+        "description": "Implementation of FlowSite and HarmonicFlow from the paper \"Harmonic Self-Conditioned Flow Matching for Multi-Ligand Docking and Binding Site Design\"",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ioannisa92",
+        "nameWithOwner": "hongliangduan/HighFold",
+        "url": "https://github.com/hongliangduan/HighFold",
+        "language": "Python",
+        "stars": 49,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ioannisa92",
+        "nameWithOwner": "TorchEnsemble-Community/Ensemble-Pytorch",
+        "url": "https://github.com/TorchEnsemble-Community/Ensemble-Pytorch",
+        "language": "Python",
+        "stars": 1035,
+        "description": "A unified ensemble framework for PyTorch to improve the performance and robustness of your deep learning model.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "janbam",
+        "nameWithOwner": "backnotprop/pstack",
+        "url": "https://github.com/backnotprop/pstack",
+        "language": "TypeScript",
+        "stars": 5192,
+        "description": "Use pstack with claude, codex, pi - Skills and principles for rigorous AI-assisted engineering",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "janbam",
+        "nameWithOwner": "Dwsy/pi-session-manager",
+        "url": "https://github.com/Dwsy/pi-session-manager",
+        "language": "TypeScript",
+        "stars": 206,
+        "description": "Pi session manager for browsing, searching, and resuming Pi AI coding sessions. Related project: https://github.com/badlogic/pi-mono",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jandom",
+        "nameWithOwner": "AMDResearch/geometric-nn-ops",
+        "url": "https://github.com/AMDResearch/geometric-nn-ops",
+        "language": "Python",
+        "stars": 5,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jandom",
+        "nameWithOwner": "ChrisHayduk/minAlphaFold2",
+        "url": "https://github.com/ChrisHayduk/minAlphaFold2",
+        "language": "Python",
+        "stars": 640,
+        "description": "A minimal PyTorch re-implementation of AlphaFold2's model & training",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jandom",
+        "nameWithOwner": "Novel-Therapeutics/boltz-community",
+        "url": "https://github.com/Novel-Therapeutics/boltz-community",
+        "language": "Python",
+        "stars": 75,
+        "description": "Community-maintained Boltz fork with bug fixes, broader compatibility, and CI.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jandom",
+        "nameWithOwner": "RMeli/spyrmsd",
+        "url": "https://github.com/RMeli/spyrmsd",
+        "language": "Python",
+        "stars": 127,
+        "description": "📐 Symmetry-corrected RMSD in Python",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jandom",
+        "nameWithOwner": "sourcefrog/cargo-mutants",
+        "url": "https://github.com/sourcefrog/cargo-mutants",
+        "language": "Rust",
+        "stars": 1417,
+        "description": ":zombie: Inject bugs and see if your tests catch them!",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jeffswitzer",
+        "nameWithOwner": "faqteur/ThirtyTwo",
+        "url": "https://github.com/faqteur/ThirtyTwo",
+        "language": "C",
+        "stars": 36,
+        "description": "Custom firmware for the Launchpad Pro grid controller turning it into a 32-track 32-step MIDI sequencer",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jeffswitzer",
+        "nameWithOwner": "goldbergyoni/nodebestpractices",
+        "url": "https://github.com/goldbergyoni/nodebestpractices",
+        "language": "Dockerfile",
+        "stars": 105774,
+        "description": "✅ The Node.js best practices list (July 2026)",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jeffswitzer",
+        "nameWithOwner": "Rainlog/rainlog-api",
+        "url": "https://github.com/Rainlog/rainlog-api",
+        "language": "Python",
+        "stars": 4,
+        "description": "Rainlog API information and examples",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jeffswitzer",
+        "nameWithOwner": "TalalAlrawajfeh/mathematics-roadmap",
+        "url": "https://github.com/TalalAlrawajfeh/mathematics-roadmap",
+        "language": "",
+        "stars": 3634,
+        "description": "A Comprehensive Roadmap to Mathematics",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jeffswitzer",
+        "nameWithOwner": "VectorInstitute/usa-npn-mcp-server",
+        "url": "https://github.com/VectorInstitute/usa-npn-mcp-server",
+        "language": "Python",
+        "stars": 3,
+        "description": "Model Context Protocol server for USA-NPN Data Web Service API",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jeroen",
+        "nameWithOwner": "janraasch/hugo-bearblog",
+        "url": "https://github.com/janraasch/hugo-bearblog",
+        "language": "HTML",
+        "stars": 1529,
+        "description": "🧸 A Hugo theme based on »Bear Blog«. Free, no-nonsense, super-fast blogging. This theme now includes a dark color scheme to support dark mode 🦉 ⬛️!",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jeroen",
+        "nameWithOwner": "r-devel/recheck",
+        "url": "https://github.com/r-devel/recheck",
+        "language": "R",
+        "stars": 35,
+        "description": "GitHub action to run CRAN-style reverse dependency check",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jeroen",
+        "nameWithOwner": "r-hub/repos",
+        "url": "https://github.com/r-hub/repos",
+        "language": "",
+        "stars": 6,
+        "description": "Custom R package repositories — work in progress!",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jeroen",
+        "nameWithOwner": "r-lib/rig",
+        "url": "https://github.com/r-lib/rig",
+        "language": "Rust",
+        "stars": 1034,
+        "description": "Manage R installations, packages and projects",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jeroen",
+        "nameWithOwner": "we-data-ch/typr",
+        "url": "https://github.com/we-data-ch/typr",
+        "language": "Rust",
+        "stars": 151,
+        "description": "A safer complement of R, the legendary programming language for statistic and datasciences !",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jlpereira",
+        "nameWithOwner": "OpenRA/ra2",
+        "url": "https://github.com/OpenRA/ra2",
+        "language": "C#",
+        "stars": 1158,
+        "description": "A Red Alert 2 mod for the OpenRA game engine",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jlpereira",
+        "nameWithOwner": "react/react-native",
+        "url": "https://github.com/react/react-native",
+        "language": "C++",
+        "stars": 127009,
+        "description": "A framework for building native applications using React",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jlpereira",
+        "nameWithOwner": "SpeciesFileGroup/taxonpages",
+        "url": "https://github.com/SpeciesFileGroup/taxonpages",
+        "language": "JavaScript",
+        "stars": 18,
+        "description": "TaxonPages is a tool to serve taxon pages.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jlpereira",
+        "nameWithOwner": "SunshineStream/Sunshine",
+        "url": "https://github.com/SunshineStream/Sunshine",
+        "language": "C++",
+        "stars": 43925,
+        "description": "Self-hosted game stream host for Moonlight.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jlpereira",
+        "nameWithOwner": "Tresjs/tres",
+        "url": "https://github.com/Tresjs/tres",
+        "language": "Vue",
+        "stars": 3796,
+        "description": "Declarative ThreeJS using Vue Components",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jmp75",
+        "nameWithOwner": "AnswerDotAI/cachy",
+        "url": "https://github.com/AnswerDotAI/cachy",
+        "language": "Jupyter Notebook",
+        "stars": 27,
+        "description": "Cache your API calls with a single line of code. No mocks, no fixtures. Just faster, cleaner code.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jmp75",
+        "nameWithOwner": "AnswerDotAI/pyskills",
+        "url": "https://github.com/AnswerDotAI/pyskills",
+        "language": "Jupyter Notebook",
+        "stars": 21,
+        "description": "Python-native skills system",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jmp75",
+        "nameWithOwner": "AnswerDotAI/rustymath",
+        "url": "https://github.com/AnswerDotAI/rustymath",
+        "language": "Rust",
+        "stars": 7,
+        "description": "Very fast maths functions for float, complex, integer, and rational arrays, plus linalg, distributions, and more, in Rust and Python",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jmp75",
+        "nameWithOwner": "mistralai/timestral",
+        "url": "https://github.com/mistralai/timestral",
+        "language": "Python",
+        "stars": 1264,
+        "description": "Repository for Timestral, the time-series foundation model by Mistral AI",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jmp75",
+        "nameWithOwner": "vedicreader/leela",
+        "url": "https://github.com/vedicreader/leela",
+        "language": "Python",
+        "stars": 3,
+        "description": "A creative workspace that starts with coding: an editor, notebooks, an assistant and lessons from abhyasa, as a Mac app.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jnwei",
+        "nameWithOwner": "aqlaboratory/openfold-3",
+        "url": "https://github.com/aqlaboratory/openfold-3",
+        "language": "Python",
+        "stars": 933,
+        "description": "A fully open source biomolecular structure prediction model based on AlphaFold3",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jnwei",
+        "nameWithOwner": "htmlpreview/htmlpreview.github.com",
+        "url": "https://github.com/htmlpreview/htmlpreview.github.com",
+        "language": "JavaScript",
+        "stars": 1777,
+        "description": "HTML Preview for GitHub Repositories",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jnwei",
+        "nameWithOwner": "latent-spacecraft/openfold-3-mlx",
+        "url": "https://github.com/latent-spacecraft/openfold-3-mlx",
+        "language": "Python",
+        "stars": 26,
+        "description": "A fully open source biomolecular structure prediction model based on AlphaFold3 with Apple Silicon support",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jnwei",
+        "nameWithOwner": "rdkit/rdkit",
+        "url": "https://github.com/rdkit/rdkit",
+        "language": "HTML",
+        "stars": 3705,
+        "description": "The official sources for the RDKit library",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jnwei",
+        "nameWithOwner": "sokrypton/ColabFold",
+        "url": "https://github.com/sokrypton/ColabFold",
+        "language": "Jupyter Notebook",
+        "stars": 2999,
+        "description": "Making Protein folding accessible to all!",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "johnbaums",
+        "nameWithOwner": "codecrafters-io/build-your-own-x",
+        "url": "https://github.com/codecrafters-io/build-your-own-x",
+        "language": "Markdown",
+        "stars": 565574,
+        "description": "Master programming by recreating your favorite technologies from scratch.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "johnbaums",
+        "nameWithOwner": "fallow-rs/fallow",
+        "url": "https://github.com/fallow-rs/fallow",
+        "language": "Rust",
+        "stars": 5409,
+        "description": "Codebase intelligence for TypeScript and JavaScript. Health, complexity hotspots, duplication, architecture boundaries, circular dependencies, design-system drift, and unused code, from one graph. CLI, GitHub Action, LSP, MCP, and VS Code. Rust, MIT licensed.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "johnbaums",
+        "nameWithOwner": "fiberplane/drift",
+        "url": "https://github.com/fiberplane/drift",
+        "language": "Zig",
+        "stars": 160,
+        "description": "Bind specs to code and check for drift.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "johnbaums",
+        "nameWithOwner": "matthewkling/ggcube",
+        "url": "https://github.com/matthewkling/ggcube",
+        "language": "R",
+        "stars": 60,
+        "description": "3D plotting extension for ggplot2",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "johnbaums",
+        "nameWithOwner": "rouault/gdal_cli_workshop",
+        "url": "https://github.com/rouault/gdal_cli_workshop",
+        "language": "Python",
+        "stars": 4,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jordansread",
+        "nameWithOwner": "aemon-j/LakeEnsemblR",
+        "url": "https://github.com/aemon-j/LakeEnsemblR",
+        "language": "R",
+        "stars": 50,
+        "description": "An R package that facilitates multi-model ensembles for lake thermodynamics. Also includes tools for calibration, sensitivity analysis and data visualization.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jordansread",
+        "nameWithOwner": "arkadaw9/PGA_LSTM",
+        "url": "https://github.com/arkadaw9/PGA_LSTM",
+        "language": "Python",
+        "stars": 25,
+        "description": "Physics Guided Architecture (PGA) of Neural Networks for Quantifying Uncertainty in Lake Temperature Modelling",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jordansread",
+        "nameWithOwner": "DOI-USGS/lake-temperature-model-prep",
+        "url": "https://github.com/DOI-USGS/lake-temperature-model-prep",
+        "language": "R",
+        "stars": 6,
+        "description": "Pipeline #1",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jordansread",
+        "nameWithOwner": "hydroshare/HSClientR",
+        "url": "https://github.com/hydroshare/HSClientR",
+        "language": "R",
+        "stars": 4,
+        "description": "R :package: for accessing the HydroShare API",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jordansread",
+        "nameWithOwner": "rough-stuff/rough",
+        "url": "https://github.com/rough-stuff/rough",
+        "language": "HTML",
+        "stars": 21469,
+        "description": "Create graphics with a hand-drawn, sketchy, appearance",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "joshim5",
+        "nameWithOwner": "Biohub/esm-archive",
+        "url": "https://github.com/Biohub/esm-archive",
+        "language": "Python",
+        "stars": 4175,
+        "description": "Evolutionary Scale Modeling (esm): Pretrained language models for proteins",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "joshim5",
+        "nameWithOwner": "chaidiscovery/chai-lab",
+        "url": "https://github.com/chaidiscovery/chai-lab",
+        "language": "Python",
+        "stars": 2019,
+        "description": "Chai-1, SOTA model for biomolecular structure prediction",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "joshim5",
+        "nameWithOwner": "facebookincubator/submitit",
+        "url": "https://github.com/facebookincubator/submitit",
+        "language": "Python",
+        "stars": 1645,
+        "description": "Python 3.8+ toolbox for submitting jobs to Slurm",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "joshim5",
+        "nameWithOwner": "jax-md/jax-md",
+        "url": "https://github.com/jax-md/jax-md",
+        "language": "Jupyter Notebook",
+        "stars": 1475,
+        "description": "Differentiable, Hardware Accelerated, Molecular Dynamics",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "joshim5",
+        "nameWithOwner": "SnapDrop/snapdrop",
+        "url": "https://github.com/SnapDrop/snapdrop",
+        "language": "JavaScript",
+        "stars": 19714,
+        "description": "A Progressive Web App for local file sharing ",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jsscclr",
+        "nameWithOwner": "declarative-dragging/dragology",
+        "url": "https://github.com/declarative-dragging/dragology",
+        "language": "TypeScript",
+        "stars": 855,
+        "description": "Declarative dragging for SVG on the web",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jsscclr",
+        "nameWithOwner": "jj-vcs/jj",
+        "url": "https://github.com/jj-vcs/jj",
+        "language": "Rust",
+        "stars": 32637,
+        "description": "A Git-compatible VCS that is both simple and powerful",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jtklein",
+        "nameWithOwner": "AntonelliLab/raxmlGUI",
+        "url": "https://github.com/AntonelliLab/raxmlGUI",
+        "language": "TypeScript",
+        "stars": 23,
+        "description": "A new graphical interface for RAxML",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jtklein",
+        "nameWithOwner": "arminfabritzek/WatchMyBirds",
+        "url": "https://github.com/arminfabritzek/WatchMyBirds",
+        "language": "Python",
+        "stars": 29,
+        "description": "WatchMyBirds is a lightweight, customizable object detection application designed for real-time monitoring and birdwatching. Leveraging state-of-the-art AI models and supporting a variety of video sources—including web- and IP-cams and RTSP streams—WatchMyBirds transforms any camera into a powerful detection system.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jtklein",
+        "nameWithOwner": "clair3st/NatureMapr-iNaturalist-export",
+        "url": "https://github.com/clair3st/NatureMapr-iNaturalist-export",
+        "language": "Python",
+        "stars": 1,
+        "description": "Helping my dad out taking his exported data from NatureMapr and adding to iNaturalist",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jwohlwend",
+        "nameWithOwner": "aivant/peppr",
+        "url": "https://github.com/aivant/peppr",
+        "language": "Python",
+        "stars": 79,
+        "description": "It's a package for evaluation of predicted poses, right?",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jwohlwend",
+        "nameWithOwner": "Dao-AILab/flash-attention",
+        "url": "https://github.com/Dao-AILab/flash-attention",
+        "language": "Python",
+        "stars": 25347,
+        "description": "Fast and memory-efficient exact attention",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jwohlwend",
+        "nameWithOwner": "getcontacts/getcontacts",
+        "url": "https://github.com/getcontacts/getcontacts",
+        "language": "Python",
+        "stars": 153,
+        "description": "Library for computing dynamic non-covalent contact networks in proteins throughout MD Simulation",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jwohlwend",
+        "nameWithOwner": "HannesStark/boltzgen",
+        "url": "https://github.com/HannesStark/boltzgen",
+        "language": "Python",
+        "stars": 1111,
+        "description": "BoltzGen: Toward Universal Binder Design",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "jwohlwend",
+        "nameWithOwner": "YujiaBao/ls",
+        "url": "https://github.com/YujiaBao/ls",
+        "language": "Python",
+        "stars": 47,
+        "description": "Learning to Split for Automatic Bias Detection",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kbroman",
+        "nameWithOwner": "daskelly/notes",
+        "url": "https://github.com/daskelly/notes",
+        "language": "HTML",
+        "stars": 1,
+        "description": "short vignettes for compute tasks I need to refresh occasionally",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kbroman",
+        "nameWithOwner": "halfhp/androidplot",
+        "url": "https://github.com/halfhp/androidplot",
+        "language": "Java",
+        "stars": 533,
+        "description": "Charts and plots for Android",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kbroman",
+        "nameWithOwner": "KennethEvans/KE.Net-ECG",
+        "url": "https://github.com/KennethEvans/KE.Net-ECG",
+        "language": "Java",
+        "stars": 18,
+        "description": "Android application to create ECG's from a Polar H10 heart monitor.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kbroman",
+        "nameWithOwner": "rstudio/hex-stickers",
+        "url": "https://github.com/rstudio/hex-stickers",
+        "language": "R",
+        "stars": 527,
+        "description": "RStudio hex stickers",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kbroman",
+        "nameWithOwner": "treetrum/amazon-kindle-bulk-downloader",
+        "url": "https://github.com/treetrum/amazon-kindle-bulk-downloader",
+        "language": "TypeScript",
+        "stars": 964,
+        "description": "Allows you to bulk download all your Kindle eBook in a more automated fashion. This tool allows you to create backup copies of the books you've already purchased.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kendonB",
+        "nameWithOwner": "Davidvandijcke/coarse",
+        "url": "https://github.com/Davidvandijcke/coarse",
+        "language": "Python",
+        "stars": 195,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kendonB",
+        "nameWithOwner": "lrberge/fixest",
+        "url": "https://github.com/lrberge/fixest",
+        "language": "R",
+        "stars": 465,
+        "description": "Fixed-effects estimations",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kendonB",
+        "nameWithOwner": "pingdotgg/t3code",
+        "url": "https://github.com/pingdotgg/t3code",
+        "language": "TypeScript",
+        "stars": 79669,
+        "description": "The best way to control Claude Code, Codex and more from any computer or phone",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kendonB",
+        "nameWithOwner": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "language": "Python",
+        "stars": 188200,
+        "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kendonB",
+        "nameWithOwner": "typst/typst",
+        "url": "https://github.com/typst/typst",
+        "language": "Rust",
+        "stars": 57422,
+        "description": "A markup-based typesetting system that is powerful and easy to learn.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kleintom",
+        "nameWithOwner": "SpeciesFileGroup/taxonworks",
+        "url": "https://github.com/SpeciesFileGroup/taxonworks",
+        "language": "Ruby",
+        "stars": 117,
+        "description": "Workbench for biodiversity informatics.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kleintom",
+        "nameWithOwner": "SpeciesFileGroup/tw_firefox",
+        "url": "https://github.com/SpeciesFileGroup/tw_firefox",
+        "language": "JavaScript",
+        "stars": 1,
+        "description": "Firefox search bangs extension for TaxonWorks, etc.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kmeng01",
+        "nameWithOwner": "NVIDIA-NeMo/Gym",
+        "url": "https://github.com/NVIDIA-NeMo/Gym",
+        "language": "Python",
+        "stars": 1358,
+        "description": "Evaluate and improve models and agents using environments",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "koala73",
+        "nameWithOwner": "frida/frida",
+        "url": "https://github.com/frida/frida",
+        "language": "Meson",
+        "stars": 22964,
+        "description": "Main repo for hosting release binaries",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "koala73",
+        "nameWithOwner": "Remocn/remocn",
+        "url": "https://github.com/Remocn/remocn",
+        "language": "TypeScript",
+        "stars": 1913,
+        "description": "Production-ready animations, transitions, backgrounds, and scenes for Remotion",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kueda",
+        "nameWithOwner": "ethansaso/klados",
+        "url": "https://github.com/ethansaso/klados",
+        "language": "TypeScript",
+        "stars": 3,
+        "description": "Klados",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kueda",
+        "nameWithOwner": "gbif/dwc-dp-analyser",
+        "url": "https://github.com/gbif/dwc-dp-analyser",
+        "language": "Java",
+        "stars": 2,
+        "description": "DarwinCore datapackage analyser is a tool to validate and analyse dwc-dp's data",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kueda",
+        "nameWithOwner": "n8agrin/gh-tools",
+        "url": "https://github.com/n8agrin/gh-tools",
+        "language": "JavaScript",
+        "stars": 1,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kueda",
+        "nameWithOwner": "pnwinsects/pnwmoths",
+        "url": "https://github.com/pnwinsects/pnwmoths",
+        "language": "TypeScript",
+        "stars": 2,
+        "description": "Static rebuild of pnwmoths.biol.wwu.edu using Eleventy, DuckDB/Parquet, Vite, and Lit web components",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kueda",
+        "nameWithOwner": "tywr/Nordwand-Mono",
+        "url": "https://github.com/tywr/Nordwand-Mono",
+        "language": "Python",
+        "stars": 1796,
+        "description": "A compact monospace neo-grotesque font designed for developers (and adventurers).",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kvangork",
+        "nameWithOwner": "edwardsanchez/Tinkerble",
+        "url": "https://github.com/edwardsanchez/Tinkerble",
+        "language": "Swift",
+        "stars": 185,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kvangork",
+        "nameWithOwner": "kylehughes/agent-plugins-for-making-good-software",
+        "url": "https://github.com/kylehughes/agent-plugins-for-making-good-software",
+        "language": "Python",
+        "stars": 20,
+        "description": "Plugins for making good software with Claude Code and Codex.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kvangork",
+        "nameWithOwner": "kylehughes/PersistentKeyValueKit",
+        "url": "https://github.com/kylehughes/PersistentKeyValueKit",
+        "language": "Swift",
+        "stars": 57,
+        "description": "Perfectly-shaped interfaces for UserDefaults and NSUbiquitiousKeyValueStore.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kvangork",
+        "nameWithOwner": "kylehughes/writing-prose-like-a-human-for-agents",
+        "url": "https://github.com/kylehughes/writing-prose-like-a-human-for-agents",
+        "language": "Python",
+        "stars": 23,
+        "description": "A skill and subagent that help AI agents write and edit prose that doesn't read like AI.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "kvangork",
+        "nameWithOwner": "max-vkl/TaxonRL",
+        "url": "https://github.com/max-vkl/TaxonRL",
+        "language": "Python",
+        "stars": 5,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "levzzz5154",
+        "nameWithOwner": "AriSparks/Inventorial",
+        "url": "https://github.com/AriSparks/Inventorial",
+        "language": "Rust",
+        "stars": 1,
+        "description": "A port of RubixDev's Inventorio mod for the Horizon rust client",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ljarosch",
+        "nameWithOwner": "aqlaboratory/openfold-3",
+        "url": "https://github.com/aqlaboratory/openfold-3",
+        "language": "Python",
+        "stars": 933,
+        "description": "A fully open source biomolecular structure prediction model based on AlphaFold3",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ljarosch",
+        "nameWithOwner": "KosinskiLab/openfold-doctor",
+        "url": "https://github.com/KosinskiLab/openfold-doctor",
+        "language": "Python",
+        "stars": 2,
+        "description": "Trainable, memory-efficient, and GPU-friendly PyTorch reproduction of AlphaFold 2",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ljarosch",
+        "nameWithOwner": "plinder-org/runs-n-poses",
+        "url": "https://github.com/plinder-org/runs-n-poses",
+        "language": "Jupyter Notebook",
+        "stars": 96,
+        "description": "A benchmark dataset for protein-ligand co-folding prediction",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ljarosch",
+        "nameWithOwner": "tidyverse/ggplot2",
+        "url": "https://github.com/tidyverse/ggplot2",
+        "language": "R",
+        "stars": 7029,
+        "description": "An implementation of the Grammar of Graphics in R",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ljarosch",
+        "nameWithOwner": "torvalds/linux",
+        "url": "https://github.com/torvalds/linux",
+        "language": "C",
+        "stars": 256786,
+        "description": "Linux kernel source tree",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "loarie",
+        "nameWithOwner": "inaturalist/ActionSheetPicker-3.0",
+        "url": "https://github.com/inaturalist/ActionSheetPicker-3.0",
+        "language": "Objective-C",
+        "stars": 1,
+        "description": "Quickly reproduce the dropdown UIPickerView / ActionSheet functionality on iOS.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "loarie",
+        "nameWithOwner": "inaturalist/inaturalist",
+        "url": "https://github.com/inaturalist/inaturalist",
+        "language": "JavaScript",
+        "stars": 878,
+        "description": "The Rails app behind iNaturalist.org",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "loarie",
+        "nameWithOwner": "inaturalist/INaturalistIOS",
+        "url": "https://github.com/inaturalist/INaturalistIOS",
+        "language": "Objective-C",
+        "stars": 187,
+        "description": "iNaturalist iOS app",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "loarie",
+        "nameWithOwner": "loarie/ayp",
+        "url": "https://github.com/loarie/ayp",
+        "language": "Ruby",
+        "stars": 1,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "loarie",
+        "nameWithOwner": "loarie/crops",
+        "url": "https://github.com/loarie/crops",
+        "language": "Ruby",
+        "stars": 1,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "lzt404",
+        "nameWithOwner": "Dgkncn/g1-acq-plus",
+        "url": "https://github.com/Dgkncn/g1-acq-plus",
+        "language": "JavaScript",
+        "stars": 131,
+        "description": "Google One (iOS Shadowrocket & Android) 隐藏免费试用与折扣 SKU 模块 (Pro 18M/15M/12M Free & Ultra 1M Free) — 基于 crhywun/g1-acq 扩展",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "macromackie",
+        "nameWithOwner": "ndif-team/looped-lens-challenge",
+        "url": "https://github.com/ndif-team/looped-lens-challenge",
+        "language": "Python",
+        "stars": 11,
+        "description": "The Looped Lens Challenge: an NDIF competition for lenses that read what a model computes but never writes",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "maelle",
+        "nameWithOwner": "ArthurData/quarto-i18n",
+        "url": "https://github.com/ArthurData/quarto-i18n",
+        "language": "Lua",
+        "stars": 6,
+        "description": "Quarto i18n for revealJS 🌐",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "maelle",
+        "nameWithOwner": "bastianolea/territorial",
+        "url": "https://github.com/bastianolea/territorial",
+        "language": "R",
+        "stars": 11,
+        "description": "Paquete de R para limpiar datos de nivel comunal y regional de Chile",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "maelle",
+        "nameWithOwner": "EMODnet/emodnet-bio-r-geo-tutorials",
+        "url": "https://github.com/EMODnet/emodnet-bio-r-geo-tutorials",
+        "language": "HTML",
+        "stars": 3,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "maelle",
+        "nameWithOwner": "jonocarroll/safespace",
+        "url": "https://github.com/jonocarroll/safespace",
+        "language": "R",
+        "stars": 17,
+        "description": " A Safe Space to Experience Pull Requests",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "maelle",
+        "nameWithOwner": "moodymudskipper/boomer",
+        "url": "https://github.com/moodymudskipper/boomer",
+        "language": "R",
+        "stars": 159,
+        "description": "Debugging Tools to Inspect the Intermediate Steps of a Call",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Maschette",
+        "nameWithOwner": "Guoping-Zhu/Using-neural-networks-to-detect-anomalous-samples-in-the-otolith-image",
+        "url": "https://github.com/Guoping-Zhu/Using-neural-networks-to-detect-anomalous-samples-in-the-otolith-image",
+        "language": "",
+        "stars": 1,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Maschette",
+        "nameWithOwner": "MartaCousido/A-novel-statistical-approach-to-deal-with-spatial-bias-in-the-maturity-ogive-estimation",
+        "url": "https://github.com/MartaCousido/A-novel-statistical-approach-to-deal-with-spatial-bias-in-the-maturity-ogive-estimation",
+        "language": "HTML",
+        "stars": 2,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Maschette",
+        "nameWithOwner": "pfmc-assessments/indexwc",
+        "url": "https://github.com/pfmc-assessments/indexwc",
+        "language": "R",
+        "stars": 3,
+        "description": "Estimate indices of abundance for west coast fish species",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Maschette",
+        "nameWithOwner": "sdmTMB/sdmTMBextra",
+        "url": "https://github.com/sdmTMB/sdmTMBextra",
+        "language": "TeX",
+        "stars": 5,
+        "description": ":hammer: Extra tools for working with sdmTMB models",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Maschette",
+        "nameWithOwner": "ZoeStarkey/K_Axis_Midoc",
+        "url": "https://github.com/ZoeStarkey/K_Axis_Midoc",
+        "language": "R",
+        "stars": 1,
+        "description": "K4S Honours K-Axis Midoc Data ",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "mathiasbynens",
+        "nameWithOwner": "chrisflav/blueprint",
+        "url": "https://github.com/chrisflav/blueprint",
+        "language": "JavaScript",
+        "stars": 3,
+        "description": "Blueprints for Lean formalisation projects: one uniform object model, quotient views at any level of detail, status derived from the Lean environment, semantic diffs, and an interactive site",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Mattbusel",
+        "nameWithOwner": "apify/apify-mcp-server",
+        "url": "https://github.com/apify/apify-mcp-server",
+        "language": "TypeScript",
+        "stars": 17909,
+        "description": "The Apify MCP server enables your AI agents to extract data from social media, search engines, maps, e-commerce sites, or any other website using thousands of ready-made scrapers, crawlers, and automation tools available on the Apify Store.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Mattbusel",
+        "nameWithOwner": "GonnyTech/Keychron-Reverse-Engineering-Tool",
+        "url": "https://github.com/GonnyTech/Keychron-Reverse-Engineering-Tool",
+        "language": "Makefile",
+        "stars": 2,
+        "description": "Keychron BLE Battery & Telemetry Tool (Rust / Linux / Hyprland)",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Mattbusel",
+        "nameWithOwner": "Mattbusel/llm-budget",
+        "url": "https://github.com/Mattbusel/llm-budget",
+        "language": "Rust",
+        "stars": 4,
+        "description": "AI agents have loop limits, not spending limits. Hard dollar caps for agents in Rust: refuse the call that would go over, fleet caps, kill switch.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Mattbusel",
+        "nameWithOwner": "punkpeye/awesome-remote-mcp-servers",
+        "url": "https://github.com/punkpeye/awesome-remote-mcp-servers",
+        "language": "",
+        "stars": 4104,
+        "description": "A collection of remote MCP servers.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "Mattbusel",
+        "nameWithOwner": "WiFiSmashr/BrainrotBattlers",
+        "url": "https://github.com/WiFiSmashr/BrainrotBattlers",
+        "language": "Luau",
+        "stars": 3,
+        "description": "Roblox Brainrot Autobattler",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "mdsumner",
+        "nameWithOwner": "carbonplan/leap-data-catalog",
+        "url": "https://github.com/carbonplan/leap-data-catalog",
+        "language": "TypeScript",
+        "stars": 2,
+        "description": "data catalog for the LEAP project",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "mdsumner",
+        "nameWithOwner": "hypertidy/shallows",
+        "url": "https://github.com/hypertidy/shallows",
+        "language": "R",
+        "stars": 1,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "mdsumner",
+        "nameWithOwner": "paleolimbot/2026-11-12_postgis-adbc",
+        "url": "https://github.com/paleolimbot/2026-11-12_postgis-adbc",
+        "language": "Python",
+        "stars": 5,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "mdsumner",
+        "nameWithOwner": "pka/awesome-georust",
+        "url": "https://github.com/pka/awesome-georust",
+        "language": "",
+        "stars": 421,
+        "description": "A curated list of awesome geospatial software, libraries, tools and resources, written in Rust",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "mdsumner",
+        "nameWithOwner": "pourpoint-tools/pourpoint",
+        "url": "https://github.com/pourpoint-tools/pourpoint",
+        "language": "Python",
+        "stars": 17,
+        "description": "Python watershed delineation and river workflows using compiled HFX datasets.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "MiaAI-Lab",
+        "nameWithOwner": "ashhart/TFQ",
+        "url": "https://github.com/ashhart/TFQ",
+        "language": "Cuda",
+        "stars": 20,
+        "description": "TensorFold Native Quantisation ",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "mihail-yartsev",
+        "nameWithOwner": "supermemoryai/company-brain",
+        "url": "https://github.com/supermemoryai/company-brain",
+        "language": "TypeScript",
+        "stars": 1140,
+        "description": "Open-sourcing our company brain - A teammate in your Slack that remembers everything your team says, and can go do the work.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "MoritzErtelt",
+        "nameWithOwner": "NVIDIA-BioNeMo/BioReason-Pro-2",
+        "url": "https://github.com/NVIDIA-BioNeMo/BioReason-Pro-2",
+        "language": "Python",
+        "stars": 10,
+        "description": "BioReason-Pro 2: Multimodal Reasoning LLM for Protein Function Prediction",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "mpadge",
+        "nameWithOwner": "cosmik-network/semble",
+        "url": "https://github.com/cosmik-network/semble",
+        "language": "TypeScript",
+        "stars": 100,
+        "description": "A social knowledge tool for research trails, built on ATProto",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "mpadge",
+        "nameWithOwner": "disnet/semble-it",
+        "url": "https://github.com/disnet/semble-it",
+        "language": "Svelte",
+        "stars": 5,
+        "description": "A fast, local-first client for Semble.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "mpadge",
+        "nameWithOwner": "eddelbuettel/talk-programming-with-local-models",
+        "url": "https://github.com/eddelbuettel/talk-programming-with-local-models",
+        "language": "R",
+        "stars": 26,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "mpadge",
+        "nameWithOwner": "Konrad1991/ast2ast",
+        "url": "https://github.com/Konrad1991/ast2ast",
+        "language": "C++",
+        "stars": 40,
+        "description": "Translates an R function into a to a C++ function which is callable from within R. The typical use case intended by 'ast2ast' are functions describing ode-systems. ",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "mpadge",
+        "nameWithOwner": "The-AI-Disclosures-Project/Open-Memory-Protocol",
+        "url": "https://github.com/The-AI-Disclosures-Project/Open-Memory-Protocol",
+        "language": "Python",
+        "stars": 50,
+        "description": "Open Memory Protocol (OMP): an open protocol for moving and sharing AI-agent memory. Hosted at the AI Disclosures Project, co-convened with IBM and Mozilla.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "muellerzr",
+        "nameWithOwner": "JegZheng/tflt-dev",
+        "url": "https://github.com/JegZheng/tflt-dev",
+        "language": "Python",
+        "stars": 4,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "nckx",
+        "nameWithOwner": "guix-mirror/guix",
+        "url": "https://github.com/guix-mirror/guix",
+        "language": "",
+        "stars": 270,
+        "description": "Obsolete mirror of GNU Guix. Pull requests are ignored. Go to https://codeberg.org/guix/guix instead.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ndim",
+        "nameWithOwner": "atomvm/AtomVM",
+        "url": "https://github.com/atomvm/AtomVM",
+        "language": "Erlang",
+        "stars": 2273,
+        "description": "Tiny Erlang VM",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ndim",
+        "nameWithOwner": "atomvm/atomvm_examples",
+        "url": "https://github.com/atomvm/atomvm_examples",
+        "language": "Erlang",
+        "stars": 27,
+        "description": "AtomVM example programs",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ndim",
+        "nameWithOwner": "Jonghakseo/chrome-extension-boilerplate-react-vite",
+        "url": "https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite",
+        "language": "TypeScript",
+        "stars": 4892,
+        "description": "Chrome Extension Boilerplate with React + Vite + Typescript",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ndim",
+        "nameWithOwner": "markmoxon/elite-source-code-commodore-64",
+        "url": "https://github.com/markmoxon/elite-source-code-commodore-64",
+        "language": "Assembly",
+        "stars": 481,
+        "description": "Fully documented source code for the classic game Elite on the Commodore 64",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ndim",
+        "nameWithOwner": "unicornlines/checklists",
+        "url": "https://github.com/unicornlines/checklists",
+        "language": "Python",
+        "stars": 32,
+        "description": "A LaTex checklist environment",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "neouks",
+        "nameWithOwner": "QiantangCredit/heimdall-agent",
+        "url": "https://github.com/QiantangCredit/heimdall-agent",
+        "language": "TypeScript",
+        "stars": 153,
+        "description": "An autonomous AI agent framework for authorized CTF and security labs",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "neouks",
+        "nameWithOwner": "Taxuspt/garmin_mcp",
+        "url": "https://github.com/Taxuspt/garmin_mcp",
+        "language": "Python",
+        "stars": 1556,
+        "description": "MCP server to access Garmin data",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "neouks",
+        "nameWithOwner": "Tcotl/AgentCapture",
+        "url": "https://github.com/Tcotl/AgentCapture",
+        "language": "Python",
+        "stars": 188,
+        "description": "Deception-layer honeypot that captures & reverse-controls AI pentest agents — embedded decoys, prompt-injection counter-offense, MCP honeypot, conversational C2. ",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "neouks",
+        "nameWithOwner": "weidutech/PentestPi",
+        "url": "https://github.com/weidutech/PentestPi",
+        "language": "Python",
+        "stars": 35,
+        "description": "Autonomous Penetration Testing Agent Framework with External State Memory & Anti-False-Falsification Guardrails.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "neouks",
+        "nameWithOwner": "Xaaaa-bip/GodzillaSuper",
+        "url": "https://github.com/Xaaaa-bip/GodzillaSuper",
+        "language": "Java",
+        "stars": 473,
+        "description": "哥斯拉webshell管理工具二开",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "npnlee85",
+        "nameWithOwner": "usa-npn/rnpn",
+        "url": "https://github.com/usa-npn/rnpn",
+        "language": "R",
+        "stars": 26,
+        "description": "R client for the National Phenology Network database API",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ParthJadhav",
+        "nameWithOwner": "n8n-io/nod",
+        "url": "https://github.com/n8n-io/nod",
+        "language": "TypeScript",
+        "stars": 3607,
+        "description": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "PhialsBasement",
+        "nameWithOwner": "vuyp/gta6-pc-race",
+        "url": "https://github.com/vuyp/gta6-pc-race",
+        "language": "HTML",
+        "stars": 234,
+        "description": "Automatically maintained tracking site for PC ports of the GTA VI Xbox Build. This repository is managed autonomously by Claude Fable 5.2.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "pleary",
+        "nameWithOwner": "inaturalist/inaturalist",
+        "url": "https://github.com/inaturalist/inaturalist",
+        "language": "JavaScript",
+        "stars": 878,
+        "description": "The Rails app behind iNaturalist.org",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "pleary",
+        "nameWithOwner": "inaturalist/inaturalist-open-data",
+        "url": "https://github.com/inaturalist/inaturalist-open-data",
+        "language": "",
+        "stars": 164,
+        "description": "Documentation for iNaturalist Open Data",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "pleary",
+        "nameWithOwner": "inaturalist/iNaturalistAPI",
+        "url": "https://github.com/inaturalist/iNaturalistAPI",
+        "language": "JavaScript",
+        "stars": 159,
+        "description": "Node.js API for iNaturalist.org",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "pleary",
+        "nameWithOwner": "mapnik/node-mapnik",
+        "url": "https://github.com/mapnik/node-mapnik",
+        "language": "C++",
+        "stars": 544,
+        "description": "Bindings to mapnik for node.js",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "pleary",
+        "nameWithOwner": "NorthernMan54/homebridge-alexa",
+        "url": "https://github.com/NorthernMan54/homebridge-alexa",
+        "language": "JavaScript",
+        "stars": 476,
+        "description": "Expose your homebridge controlled devices to Amazon Alexa.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "pucedoteth",
+        "nameWithOwner": "openvm-org/openvm",
+        "url": "https://github.com/openvm-org/openvm",
+        "language": "Rust",
+        "stars": 400,
+        "description": "A performant and modular zkVM framework built for customization and extensibility.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "rabutler-usbr",
+        "nameWithOwner": "zackary-leady/StVrain_NaturalFlow_Model",
+        "url": "https://github.com/zackary-leady/StVrain_NaturalFlow_Model",
+        "language": "Jupyter Notebook",
+        "stars": 1,
+        "description": "An exploration in data-driven models for extending St. Vrain Natural Flow data into other Hydrologies",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ran-codes",
+        "nameWithOwner": "duckdb/dbt-duckdb",
+        "url": "https://github.com/duckdb/dbt-duckdb",
+        "language": "Python",
+        "stars": 1376,
+        "description": "dbt adapter for DuckDB",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ran-codes",
+        "nameWithOwner": "Meghansaha/fake_it_til_you_make_it",
+        "url": "https://github.com/Meghansaha/fake_it_til_you_make_it",
+        "language": "JavaScript",
+        "stars": 2,
+        "description": "Talk Repository for \"Fake It Til' You Make It: Mocking Reality So Your Tests Can Run\" - Posit::Conf(2026)",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ran-codes",
+        "nameWithOwner": "quarto-dev/q2",
+        "url": "https://github.com/quarto-dev/q2",
+        "language": "Rust",
+        "stars": 318,
+        "description": "q2 is the experimental implementation of Quarto 2 in Rust.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ran-codes",
+        "nameWithOwner": "stablyai/orca",
+        "url": "https://github.com/stablyai/orca",
+        "language": "TypeScript",
+        "stars": 138412,
+        "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "ran-codes",
+        "nameWithOwner": "whipson/maestro",
+        "url": "https://github.com/whipson/maestro",
+        "language": "R",
+        "stars": 139,
+        "description": "Simple, lightweight orchestrator for R pipelines",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "rdbtCVS",
+        "nameWithOwner": "caldoai/skills",
+        "url": "https://github.com/caldoai/skills",
+        "language": "",
+        "stars": 1560,
+        "description": "Caldo's skills",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "rdbtCVS",
+        "nameWithOwner": "rdbtCVS/horizon",
+        "url": "https://github.com/rdbtCVS/horizon",
+        "language": "Rust",
+        "stars": 5,
+        "description": "Minecraft: Java Edition 26.3 rewritten from scratch in Rust, checked against vanilla with 281 differential harnesses. Get it with the Horizon launcher.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "rohitg00",
+        "nameWithOwner": "anchorbrowser/commerce-bench",
+        "url": "https://github.com/anchorbrowser/commerce-bench",
+        "language": "TypeScript",
+        "stars": 2,
+        "description": "Commerce Bench is an open harness for testing a shopping agent on real ecommerce sites.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "sckott",
+        "nameWithOwner": "browniefed/pps-explorer",
+        "url": "https://github.com/browniefed/pps-explorer",
+        "language": "HTML",
+        "stars": 2,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "sckott",
+        "nameWithOwner": "luxir-search/luxir",
+        "url": "https://github.com/luxir-search/luxir",
+        "language": "C++",
+        "stars": 179,
+        "description": "search at the speed of light",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "sckott",
+        "nameWithOwner": "ollama/ollama-python",
+        "url": "https://github.com/ollama/ollama-python",
+        "language": "Python",
+        "stars": 10740,
+        "description": "Ollama Python library",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "sckott",
+        "nameWithOwner": "ResearchPocket/researchpocket.github.io",
+        "url": "https://github.com/ResearchPocket/researchpocket.github.io",
+        "language": "Rust",
+        "stars": 14,
+        "description": "A human-first, local-first library for saving and synchronizing useful links.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "sckott",
+        "nameWithOwner": "zizmorcore/zizmor",
+        "url": "https://github.com/zizmorcore/zizmor",
+        "language": "Rust",
+        "stars": 7164,
+        "description": "Static analysis for GitHub Actions (and more)",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "sdtaylor",
+        "nameWithOwner": "DPIRD-DMA/MultiClean",
+        "url": "https://github.com/DPIRD-DMA/MultiClean",
+        "language": "Jupyter Notebook",
+        "stars": 72,
+        "description": "Python library for morphological cleaning of multiclass 2D numpy arrays (edge smoothing and island removal",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "sdtaylor",
+        "nameWithOwner": "duckdb/ducklake",
+        "url": "https://github.com/duckdb/ducklake",
+        "language": "C++",
+        "stars": 3391,
+        "description": "DuckLake is an integrated data lake and catalog format",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "sdtaylor",
+        "nameWithOwner": "laspy/laspy",
+        "url": "https://github.com/laspy/laspy",
+        "language": "Python",
+        "stars": 511,
+        "description": "Laspy is a pythonic interface for reading/modifying/creating .LAS LIDAR files matching specification 1.0-1.4. ",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "sdtaylor",
+        "nameWithOwner": "ucam-eo/tessera",
+        "url": "https://github.com/ucam-eo/tessera",
+        "language": "Python",
+        "stars": 804,
+        "description": "[CVPR26] TESSERA is a foundation model that can process time-series satellite imagery for applications such as land classification and canopy height prediction. Developed at the University of Cambridge, it enables efficient extraction of temporal patterns from Earth observation",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "sdtaylor",
+        "nameWithOwner": "wilsonfreitas/awesome-quant",
+        "url": "https://github.com/wilsonfreitas/awesome-quant",
+        "language": "Python",
+        "stars": 30914,
+        "description": "A curated list of insanely awesome libraries, packages and resources for Quants (Quantitative Finance)",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "SensenGao",
+        "nameWithOwner": "chengzhag/UCPE",
+        "url": "https://github.com/chengzhag/UCPE",
+        "language": "Python",
+        "stars": 245,
+        "description": "📷 [CVPR'26] Camera-controlled text-to-video generation, now with intrinsics, distortion and orientation control!",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "SensenGao",
+        "nameWithOwner": "ggxxii/ACE-Ego-Hand",
+        "url": "https://github.com/ggxxii/ACE-Ego-Hand",
+        "language": "Python",
+        "stars": 149,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "stitam",
+        "nameWithOwner": "barricklab/breseq",
+        "url": "https://github.com/barricklab/breseq",
+        "language": "GDScript",
+        "stars": 216,
+        "description": "breseq is a computational pipeline for finding mutations relative to a reference sequence using high-throughput DNA resequencing data. It is intended for haploid microbial genomes (<20 Mb). breseq is a command line tool implemented in C++.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "stitam",
+        "nameWithOwner": "dvdsosa/scientific-writing-skills",
+        "url": "https://github.com/dvdsosa/scientific-writing-skills",
+        "language": "Python",
+        "stars": 47,
+        "description": "Six Claude Agent Skills for scientific writing, distilled from Stanford's Writing in the Sciences (Kristin Sainani). Edit prose, structure an IMRaD manuscript, run the writing process, handle peer review, draft grants, and write for general audiences.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "stitam",
+        "nameWithOwner": "enasequence/webin-cli",
+        "url": "https://github.com/enasequence/webin-cli",
+        "language": "Java",
+        "stars": 45,
+        "description": "Webin command line submission program.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "stitam",
+        "nameWithOwner": "etiennebacher/jarl",
+        "url": "https://github.com/etiennebacher/jarl",
+        "language": "Rust",
+        "stars": 171,
+        "description": "Just another R linter",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "stitam",
+        "nameWithOwner": "kylegontjes/phyloAMR",
+        "url": "https://github.com/kylegontjes/phyloAMR",
+        "language": "R",
+        "stars": 8,
+        "description": "Toolkit to perform phylogenetically-informed analysis of antibiotic resistance and other genome-influenced traits",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "sxu99",
+        "nameWithOwner": "AgenticScience/Awesome-Agent-Scientists",
+        "url": "https://github.com/AgenticScience/Awesome-Agent-Scientists",
+        "language": "",
+        "stars": 323,
+        "description": "Paper list of agent for science",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "sxu99",
+        "nameWithOwner": "BEAM-Labs/denovo",
+        "url": "https://github.com/BEAM-Labs/denovo",
+        "language": "Python",
+        "stars": 32,
+        "description": "Collection of peptide de novo sequencing  algorithms by BEAM labs",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "sxu99",
+        "nameWithOwner": "GENTEL-lab/OriGene",
+        "url": "https://github.com/GENTEL-lab/OriGene",
+        "language": "Python",
+        "stars": 236,
+        "description": "OriGene: A Self-Evolving Virtual Disease Biologist for Mechanism-Guided Therapeutic Target Discovery",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "sxu99",
+        "nameWithOwner": "IntelliGen-AI/IntelliFold",
+        "url": "https://github.com/IntelliGen-AI/IntelliFold",
+        "language": "Python",
+        "stars": 240,
+        "description": "IntelliFold: A Controllable Foundation Model for General and Specialized Biomolecular Structure Prediction.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "sxu99",
+        "nameWithOwner": "SpectrAI-Initiative/InnoClaw",
+        "url": "https://github.com/SpectrAI-Initiative/InnoClaw",
+        "language": "TypeScript",
+        "stars": 399,
+        "description": "An AI research Agent for scientific innovation.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "TheTechromancer",
+        "nameWithOwner": "opentofu/opentofu",
+        "url": "https://github.com/opentofu/opentofu",
+        "language": "Go",
+        "stars": 31000,
+        "description": "OpenTofu lets you declaratively manage your cloud infrastructure.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "tnalpgge",
+        "nameWithOwner": "dwmkerr/hacker-laws",
+        "url": "https://github.com/dwmkerr/hacker-laws",
+        "language": "HTML",
+        "stars": 27365,
+        "description": "🧠 Laws, Theories, Principles and Patterns for developers and technologists.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "tnalpgge",
+        "nameWithOwner": "hakimel/reveal.js",
+        "url": "https://github.com/hakimel/reveal.js",
+        "language": "JavaScript",
+        "stars": 72636,
+        "description": "The HTML Presentation Framework",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "tnalpgge",
+        "nameWithOwner": "n-t-roff/heirloom-doctools",
+        "url": "https://github.com/n-t-roff/heirloom-doctools",
+        "language": "C",
+        "stars": 150,
+        "description": "The Heirloom Documentation Tools: troff, nroff, and related utilities",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "tnalpgge",
+        "nameWithOwner": "Tlf/tlf",
+        "url": "https://github.com/Tlf/tlf",
+        "language": "C",
+        "stars": 84,
+        "description": "TLF - a console based ham radio contest logger",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "tnalpgge",
+        "nameWithOwner": "yjwen/org-reveal",
+        "url": "https://github.com/yjwen/org-reveal",
+        "language": "Emacs Lisp",
+        "stars": 1465,
+        "description": "Exports Org-mode contents to Reveal.js HTML presentation.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "torvalds",
+        "nameWithOwner": "subsurface/subsurface",
+        "url": "https://github.com/subsurface/subsurface",
+        "language": "C++",
+        "stars": 3228,
+        "description": "This is the official upstream of the Subsurface divelog program",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "torvalds",
+        "nameWithOwner": "torvalds/linux",
+        "url": "https://github.com/torvalds/linux",
+        "language": "C",
+        "stars": 256786,
+        "description": "Linux kernel source tree",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "victorm-lc",
+        "nameWithOwner": "langchain-samples/Persistent-Agent",
+        "url": "https://github.com/langchain-samples/Persistent-Agent",
+        "language": "Python",
+        "stars": 58,
+        "description": "Persistent Agent is a proactive, always-on, goal-oriented agent. Think Muse or Instinct, but for the enterprise. Comes with memory, browser use, hundreds of tools, and proactive playbooks it can run in the background to take work off your plate. Built on Managed Deep Agents (MDA).",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "vtrivedy",
+        "nameWithOwner": "huggingface/legion",
+        "url": "https://github.com/huggingface/legion",
+        "language": "Python",
+        "stars": 33,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "vtrivedy",
+        "nameWithOwner": "janestreet/agent_skills",
+        "url": "https://github.com/janestreet/agent_skills",
+        "language": "",
+        "stars": 11842,
+        "description": "Agent skills",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "vtrivedy",
+        "nameWithOwner": "magnitudedev/magnitude",
+        "url": "https://github.com/magnitudedev/magnitude",
+        "language": "Rust",
+        "stars": 8589,
+        "description": "Open source inference engine that spreads models across your GPU, RAM, and SSD so they run on everyday Macs and PCs. Works on Apple Silicon, NVIDIA, AMD, Intel, or just a CPU.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "vtrivedy",
+        "nameWithOwner": "stablyai/orca",
+        "url": "https://github.com/stablyai/orca",
+        "language": "TypeScript",
+        "stars": 138409,
+        "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "wukevin",
+        "nameWithOwner": "assafdori/bypass-mdm",
+        "url": "https://github.com/assafdori/bypass-mdm",
+        "language": "Shell",
+        "stars": 2671,
+        "description": "Bypass MDM Setup for MacOS, up to MacOS Golden Gate.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "wukevin",
+        "nameWithOwner": "biotite-dev/biotite",
+        "url": "https://github.com/biotite-dev/biotite",
+        "language": "Python",
+        "stars": 989,
+        "description": "A comprehensive library for computational molecular biology",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "wukevin",
+        "nameWithOwner": "chaidiscovery/chai-lab",
+        "url": "https://github.com/chaidiscovery/chai-lab",
+        "language": "Python",
+        "stars": 2019,
+        "description": "Chai-1, SOTA model for biomolecular structure prediction",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "wukevin",
+        "nameWithOwner": "lllyasviel/ControlNet",
+        "url": "https://github.com/lllyasviel/ControlNet",
+        "language": "Python",
+        "stars": 34160,
+        "description": "Let us control diffusion models!",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "wukevin",
+        "nameWithOwner": "sindresorhus/Actions",
+        "url": "https://github.com/sindresorhus/Actions",
+        "language": "",
+        "stars": 3080,
+        "description": "⚙️ Supercharge your shortcuts",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "YaoxiangLi",
+        "nameWithOwner": "blader/humanizer",
+        "url": "https://github.com/blader/humanizer",
+        "language": "Python",
+        "stars": 73634,
+        "description": "Agent skill that removes signs of AI-generated writing from text",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "YaoxiangLi",
+        "nameWithOwner": "kundajelab/genesis-preprocessing",
+        "url": "https://github.com/kundajelab/genesis-preprocessing",
+        "language": "Python",
+        "stars": 2,
+        "description": "Folder for preprocessing plant omics data before model training",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "YaoxiangLi",
+        "nameWithOwner": "microsoft/playwright-mcp",
+        "url": "https://github.com/microsoft/playwright-mcp",
+        "language": "TypeScript",
+        "stars": 40153,
+        "description": "Playwright MCP server",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "YaoxiangLi",
+        "nameWithOwner": "oncologylab/histopia",
+        "url": "https://github.com/oncologylab/histopia",
+        "language": "Python",
+        "stars": 772,
+        "description": "Histology Spatial Topology for Omics Profiling and Inter-section Alignment",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "YaoxiangLi",
+        "nameWithOwner": "YaoxiangLi/ggpalettes",
+        "url": "https://github.com/YaoxiangLi/ggpalettes",
+        "language": "R",
+        "stars": 2,
+        "description": "Curated scientific colour palettes and scales for ggplot2",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "yehui-tang",
+        "nameWithOwner": "CzzzzzzJ/mdldm-maitian",
+        "url": "https://github.com/CzzzzzzJ/mdldm-maitian",
+        "language": "JavaScript",
+        "stars": 2119,
+        "description": "麦田：自媒体多平台发布中控与数据监控（B站/抖音/小红书/视频号/YouTube/X），飞书卡片通知 + 数据大屏",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "yehui-tang",
+        "nameWithOwner": "Max-cu/SkillGo",
+        "url": "https://github.com/Max-cu/SkillGo",
+        "language": "Python",
+        "stars": 62,
+        "description": "Skill管理与运行能力闭环平台，多用户管理、隔离沙箱中运行、支持发布为api与你的业务系统结合。",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "yehui-tang",
+        "nameWithOwner": "openai/mle-bench",
+        "url": "https://github.com/openai/mle-bench",
+        "language": "Python",
+        "stars": 1803,
+        "description": "MLE-bench is a benchmark for measuring how well AI agents perform at machine learning engineering",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "yehui-tang",
+        "nameWithOwner": "vibe-motion/skills",
+        "url": "https://github.com/vibe-motion/skills",
+        "language": "HTML",
+        "stars": 1779,
+        "description": "agent skills for vibe motion",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "yehui-tang",
+        "nameWithOwner": "withnative/native",
+        "url": "https://github.com/withnative/native",
+        "language": "Rust",
+        "stars": 183,
+        "description": "ChatGPT Space, but open source and more powerful. Own your context, bring any model and shape any UI. Engine + MCP server, with desktop app coming soon.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "yifanzhang-pro",
+        "nameWithOwner": "FrontierCS/FrontierCS-2",
+        "url": "https://github.com/FrontierCS/FrontierCS-2",
+        "language": "Python",
+        "stars": 97,
+        "description": "A Benchmark for Computer Science R&D",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "yifanzhang-pro",
+        "nameWithOwner": "lsernau/grh-lean",
+        "url": "https://github.com/lsernau/grh-lean",
+        "language": "Lean",
+        "stars": 359,
+        "description": "A short Lean 4 proof of the Generalized Riemann Hypothesis",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "zechengz",
+        "nameWithOwner": "earakely-scale/agentenv-vfs",
+        "url": "https://github.com/earakely-scale/agentenv-vfs",
+        "language": "Python",
+        "stars": 1,
+        "description": "agent-env plugin: any env's MCP tools as shell commands in a Mirage workspace (agentvfs)",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "zechengz",
+        "nameWithOwner": "slatedb/slatedb",
+        "url": "https://github.com/slatedb/slatedb",
+        "language": "Rust",
+        "stars": 3683,
+        "description": "A cloud native embedded storage engine built on object storage.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "zechengz",
+        "nameWithOwner": "zenbu-labs/terminal-browser",
+        "url": "https://github.com/zenbu-labs/terminal-browser",
+        "language": "Rust",
+        "stars": 4957,
+        "description": "A real browser inside your terminal",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "zeevvax",
+        "nameWithOwner": "rack/rack",
+        "url": "https://github.com/rack/rack",
+        "language": "Ruby",
+        "stars": 5135,
+        "description": "A modular Ruby web server interface.",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "zeevvax",
+        "nameWithOwner": "servo-ai/servo-platform",
+        "url": "https://github.com/servo-ai/servo-platform",
+        "language": "CSS",
+        "stars": 57,
+        "description": "The best conversational AI framework",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "zeevvax",
+        "nameWithOwner": "zeevvax/App-Setting-2",
+        "url": "https://github.com/zeevvax/App-Setting-2",
+        "language": "Objective-C",
+        "stars": 2,
+        "description": "",
+        "first_seen": "2026-11-26"
+      },
+      {
+        "starred_by": "zeevvax",
+        "nameWithOwner": "zeevvax/Camera",
+        "url": "https://github.com/zeevvax/Camera",
+        "language": "Objective-C",
+        "stars": 1,
+        "description": "",
+        "first_seen": "2026-11-26"
+      }
+    ]
+  },
+  {
     "date": "2026-11-25",
     "generated_at": "2026-11-25T04:03:44.228Z",
     "items": [
