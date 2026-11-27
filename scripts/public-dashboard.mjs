@@ -90,11 +90,39 @@ async function api(href, options = {}) {
       continue;
     }
 
+    if (!text && res.ok) {
+      if (attempt <= 2) {
+        const waitMs = 2000 * attempt;
+        log(`  Empty response from ${href}, retry ${attempt} after ${waitMs / 1000}s.`);
+        await sleep(waitMs);
+        attempt += 1;
+        continue;
+      }
+      throw new Error(`${options.method || 'GET'} ${href} returned an empty HTTP ${res.status} response after retries.`);
+    }
+
     let body;
     try {
       body = text ? JSON.parse(text) : null;
     } catch {
+      if (res.ok && attempt <= 2) {
+        const waitMs = 2000 * attempt;
+        log(`  Non-JSON response from ${href}, retry ${attempt} after ${waitMs / 1000}s.`);
+        await sleep(waitMs);
+        attempt += 1;
+        continue;
+      }
       throw new Error(`${options.method || 'GET'} ${href} returned non-JSON HTTP ${res.status}: ${text.slice(0, 160)}`);
+    }
+    if (res.ok && body === null) {
+      if (attempt <= 2) {
+        const waitMs = 2000 * attempt;
+        log(`  Null response from ${href}, retry ${attempt} after ${waitMs / 1000}s.`);
+        await sleep(waitMs);
+        attempt += 1;
+        continue;
+      }
+      throw new Error(`${options.method || 'GET'} ${href} returned a null HTTP ${res.status} response after retries.`);
     }
     if (!res.ok) throw new Error(`${options.method || 'GET'} ${href} failed with HTTP ${res.status}: ${text.slice(0, 300)}`);
     return { body, link: res.headers.get('link') };
@@ -123,9 +151,9 @@ async function graphql(query, label) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ query }),
   });
-  const errors = response.body.errors ?? [];
+  const errors = response.body?.errors ?? [];
   if (errors.length) throw new Error(`${label} query failed: ${errors.slice(0, 3).map((error) => error.message).join('; ')}`);
-  if (!response.body.data) throw new Error(`${label} query returned no data.`);
+  if (!response.body?.data) throw new Error(`${label} query returned no data.`);
   return response.body.data;
 }
 
@@ -162,12 +190,7 @@ async function fetchFollowedData(follows, since) {
   const ownersWithRepos = [];
   const unresolvedLogins = [];
   for (const [index, batch] of batches.entries()) {
-    const res = await api('https://api.github.com/graphql', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ query: buildQuery(batch) }),
-    });
-    const data = res.body.data || {};
+    const data = await graphql(buildQuery(batch), 'Followed-account data');
     for (const [accountIndex, requestedLogin] of batch.entries()) {
       const value = data[`u${accountIndex}`];
       if (!value?.repositories || !Array.isArray(value.repositories.nodes)) {
