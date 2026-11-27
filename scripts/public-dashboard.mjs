@@ -18,7 +18,9 @@ const OUT_SUMMARY = path.join(ROOT, 'docs', 'data', 'summary.json');
 const OUT_HISTORY = path.join(ROOT, 'docs', 'data', 'history.json');
 const OUT_STAR_HISTORY = path.join(ROOT, 'docs', 'data', 'star-history.json');
 const OUT_STAR_STATE = path.join(ROOT, 'state', 'stars.json');
+const OUT_LISTS = path.join(ROOT, 'docs', 'lists');
 const TEMPLATE = path.join(ROOT, 'scripts', 'dashboard.template.html');
+const LIST_TEMPLATE = path.join(ROOT, 'scripts', 'lists.template.html');
 
 const BATCH_SIZE = 20;
 const REPOS_PER_USER = 5;
@@ -27,6 +29,10 @@ const FOLLOWED_WINDOW_DAYS = 30;
 const HISTORY_LOOKBACK_DAYS = 7;
 const HISTORY_MAX_ITEMS = 20_000;
 const STARS_PER_PERSON = 5;
+const LISTS_PER_BATCH = 2;
+const LIST_ITEMS_PER_PAGE = 100;
+const STARRED_REPOS_PER_PAGE = 100;
+const REPOSITORY_TOPICS_PER_PAGE = 20;
 const DAY = 86_400_000;
 const TZ = 'Australia/Melbourne';
 
@@ -111,6 +117,18 @@ async function paginate(url) {
   return items;
 }
 
+async function graphql(query, label) {
+  const response = await api('https://api.github.com/graphql', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ query }),
+  });
+  const errors = response.body.errors ?? [];
+  if (errors.length) throw new Error(`${label} query failed: ${errors.slice(0, 3).map((error) => error.message).join('; ')}`);
+  if (!response.body.data) throw new Error(`${label} query returned no data.`);
+  return response.body.data;
+}
+
 async function fetchPublicRepos() {
   const repos = await paginate(`https://api.github.com/users/${OWNER}/repos?per_page=100&type=owner&sort=created`);
   return repos.filter((repo) => repo.owner?.login?.toLowerCase() === OWNER.toLowerCase() && !repo.private);
@@ -174,8 +192,8 @@ async function fetchFollowedData(follows, since) {
         });
       }
       for (const edge of value.starredRepositories?.edges ?? []) {
-        const node = edge.node;
-        if (!node || node.visibility !== 'PUBLIC') continue;
+        const node = edge?.node;
+        if (!node || node.visibility !== 'PUBLIC' || !edge.starredAt) continue;
         stars.push({
           starred_by: value.login,
           nameWithOwner: node.nameWithOwner,
@@ -196,6 +214,254 @@ async function fetchFollowedData(follows, since) {
     ownersWithRepos,
     unresolvedLogins,
   };
+}
+
+async function fetchPublicLists() {
+  const lists = [];
+  let after = null;
+  do {
+    const connection = `lists(first: 100${after ? `, after: ${JSON.stringify(after)}` : ''})`;
+    const data = await graphql(
+      `{ user(login: ${JSON.stringify(OWNER)}) { ${connection} { nodes { id name slug description isPrivate } pageInfo { hasNextPage endCursor } } } }`,
+      'Star-list metadata',
+    );
+    const page = data.user?.lists;
+    if (!page || !Array.isArray(page.nodes)) throw new Error('Star-list metadata was missing from GitHub.');
+    lists.push(...page.nodes.filter((list) => list && !list.isPrivate).map((list) => ({ ...list, items: [] })));
+    after = page.pageInfo?.hasNextPage ? page.pageInfo.endCursor : null;
+    if (page.pageInfo?.hasNextPage && !after) throw new Error('GitHub returned a star-list page without a cursor.');
+  } while (after);
+
+  if (lists.some((list) => list.slug === 'unfiled')) throw new Error('A star list already uses the reserved `unfiled` slug.');
+  const slugs = new Set(lists.map((list) => list.slug));
+  if (slugs.size !== lists.length) throw new Error('GitHub returned duplicate public star-list slugs.');
+
+  let pending = lists.map((list) => ({ list, after: null }));
+  while (pending.length) {
+    const next = [];
+    for (let offset = 0; offset < pending.length; offset += LISTS_PER_BATCH) {
+      const batch = pending.slice(offset, offset + LISTS_PER_BATCH);
+      const aliases = batch.map(({ list, after: cursor }, index) =>
+        `l${index}: node(id: ${JSON.stringify(list.id)}) { ... on UserList { items(first: ${LIST_ITEMS_PER_PAGE}${cursor ? `, after: ${JSON.stringify(cursor)}` : ''}) { nodes { ... on Repository { nameWithOwner url description visibility stargazerCount pushedAt isFork parent { stargazerCount } repositoryTopics(first: ${REPOSITORY_TOPICS_PER_PAGE}) { totalCount nodes { topic { name } } } } } pageInfo { hasNextPage endCursor } } } }`,
+      );
+      const data = await graphql(`{ ${aliases.join('\n')} }`, 'Star-list items');
+      for (const [index, { list }] of batch.entries()) {
+        const page = data[`l${index}`]?.items;
+        if (!page || !Array.isArray(page.nodes)) throw new Error(`GitHub omitted items for the public ${list.slug} list.`);
+        const existing = new Set(list.items.map((item) => item.nameWithOwner));
+        for (const item of page.nodes) {
+          if (!item || item.visibility !== 'PUBLIC' || existing.has(item.nameWithOwner)) continue;
+          existing.add(item.nameWithOwner);
+          list.items.push({
+            nameWithOwner: item.nameWithOwner,
+            url: item.url,
+            description: item.description ?? '',
+            stargazerCount: item.stargazerCount ?? 0,
+            pushedAt: item.pushedAt ?? null,
+            isFork: Boolean(item.isFork),
+            parentStars: item.parent?.stargazerCount ?? null,
+            topics: item.repositoryTopics?.nodes?.map((entry) => entry?.topic?.name).filter(Boolean) ?? [],
+            topicsCount: item.repositoryTopics?.totalCount ?? 0,
+          });
+        }
+        if (page.pageInfo?.hasNextPage) {
+          if (!page.pageInfo.endCursor) throw new Error(`GitHub returned an item page without a cursor for ${list.slug}.`);
+          next.push({ list, after: page.pageInfo.endCursor });
+        }
+      }
+    }
+    pending = next;
+  }
+
+  return lists.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+async function fetchAllPublicStars() {
+  const stars = [];
+  let after = null;
+  do {
+    const connection = `starredRepositories(first: ${STARRED_REPOS_PER_PAGE}${after ? `, after: ${JSON.stringify(after)}` : ''}, orderBy: {field: STARRED_AT, direction: DESC})`;
+    const data = await graphql(
+      `{ user(login: ${JSON.stringify(OWNER)}) { ${connection} { edges { starredAt node { nameWithOwner url description visibility stargazerCount pushedAt isFork parent { stargazerCount } repositoryTopics(first: ${REPOSITORY_TOPICS_PER_PAGE}) { totalCount nodes { topic { name } } } } } pageInfo { hasNextPage endCursor } } } }`,
+      'Starred repositories',
+    );
+    const page = data.user?.starredRepositories;
+    if (!page || !Array.isArray(page.edges)) throw new Error('Starred repositories were missing from GitHub.');
+    stars.push(...page.edges.filter((edge) => edge?.node?.visibility === 'PUBLIC').map((edge) => ({
+      nameWithOwner: edge.node.nameWithOwner,
+      url: edge.node.url,
+      description: edge.node.description ?? '',
+      stargazerCount: edge.node.stargazerCount ?? 0,
+      pushedAt: edge.node.pushedAt ?? null,
+      isFork: Boolean(edge.node.isFork),
+      parentStars: edge.node.parent?.stargazerCount ?? null,
+      topics: edge.node.repositoryTopics?.nodes?.map((entry) => entry?.topic?.name).filter(Boolean) ?? [],
+      topicsCount: edge.node.repositoryTopics?.totalCount ?? 0,
+      starredAt: edge.starredAt ?? null,
+    })));
+    after = page.pageInfo?.hasNextPage ? page.pageInfo.endCursor : null;
+    if (page.pageInfo?.hasNextPage && !after) throw new Error('GitHub returned a starred-repository page without a cursor.');
+  } while (after);
+  return stars;
+}
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>\"]/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[character]);
+}
+
+function formatStars(value) {
+  return new Intl.NumberFormat('en-AU').format(value);
+}
+
+function listItemMarkup(repo) {
+  const [owner, name] = repo.nameWithOwner.split('/', 2);
+  const stars = repo.isFork
+    ? repo.parentStars === null || repo.parentStars === undefined
+      ? 'Original stars unavailable'
+      : `${formatStars(repo.parentStars)} ★ original`
+    : `${formatStars(repo.stargazerCount)} stars`;
+  const pushed = repo.pushedAt ? repo.pushedAt.slice(0, 10) : 'Unknown';
+  const starred = repo.starredAt ? repo.starredAt.slice(0, 10) : 'Unknown';
+  const description = repo.description ? `<p class="description">${escapeHtml(repo.description.replace(/\s+/g, ' ').trim())}</p>` : '';
+  const topicMarkup = repo.topics.slice(0, 4).map((topic) => `<span class="topic">${escapeHtml(topic.toLowerCase())}</span>`).join('');
+  const topicCount = repo.topicsCount ?? repo.topics.length;
+  const topicMore = topicCount > 4 ? `<span class="topic-more">+${topicCount - 4}</span>` : '';
+  const topics = topicMarkup || topicMore ? `<div class="topics">${topicMarkup}${topicMore}</div>` : '';
+  const search = [owner, name, repo.description, repo.topics.join(' ')].join(' ').toLocaleLowerCase();
+  return `<li class="repo-item" data-name="${escapeHtml(name)}" data-owner="${escapeHtml(owner)}" data-stars="${repo.sortStars}" data-pushed="${escapeHtml(repo.pushedAt || '')}" data-search="${escapeHtml(search)}"><div class="repo"><a href="${escapeHtml(repo.url)}" target="_blank" rel="noopener">${escapeHtml(name)}</a><span>by <a href="https://github.com/${escapeHtml(owner)}" target="_blank" rel="noopener">${escapeHtml(owner)}</a></span></div><div class="repo-meta"><span class="stars">${stars}</span><span>Last push: ${pushed}</span><span>Starred: ${starred}</span></div>${description}${topics}</li>`;
+}
+
+function renderListPage({ title, description, count, content, dashboardHref, listsHref, generatedAt, script = '' }) {
+  const values = {
+    TITLE: escapeHtml(title),
+    DESCRIPTION: escapeHtml(description),
+    COUNT: escapeHtml(count),
+    CONTENT: content,
+    SCRIPT: script,
+    DASHBOARD_HREF: escapeHtml(dashboardHref),
+    LISTS_HREF: escapeHtml(listsHref),
+    GENERATED_AT: escapeHtml(generatedAt),
+  };
+  return fs.readFileSync(LIST_TEMPLATE, 'utf8').replace(/__(TITLE|DESCRIPTION|COUNT|CONTENT|SCRIPT|DASHBOARD_HREF|LISTS_HREF|GENERATED_AT)__/g, (_, key) => values[key]);
+}
+
+function listControlsScript() {
+  return `<script>
+(function () {
+  var list = document.getElementById("repo-list");
+  var rows = Array.from(list.querySelectorAll(".repo-item"));
+  var search = document.getElementById("repo-search");
+  var sort = document.getElementById("repo-sort");
+  var count = document.getElementById("repo-count");
+  var empty = document.getElementById("repo-empty");
+  function byName(a, b) {
+    return a.dataset.name.localeCompare(b.dataset.name, undefined, { sensitivity: "base" }) || a.dataset.owner.localeCompare(b.dataset.owner, undefined, { sensitivity: "base" });
+  }
+  function render() {
+    var query = search.value.trim().toLocaleLowerCase();
+    var visible = rows.filter(function (row) { return row.dataset.search.indexOf(query) >= 0; });
+    visible.sort(function (a, b) {
+      if (sort.value === "name") return byName(a, b);
+      if (sort.value === "owner") return a.dataset.owner.localeCompare(b.dataset.owner, undefined, { sensitivity: "base" }) || byName(a, b);
+      if (sort.value === "stars") return Number(b.dataset.stars) - Number(a.dataset.stars) || byName(a, b);
+      return (Date.parse(b.dataset.pushed) || 0) - (Date.parse(a.dataset.pushed) || 0) || byName(a, b);
+    });
+    list.replaceChildren.apply(list, visible);
+    count.textContent = "Showing " + visible.length + " of " + rows.length + " repositories";
+    empty.hidden = visible.length > 0;
+  }
+  search.addEventListener("input", render);
+  sort.addEventListener("change", render);
+  render();
+})();
+</script>`;
+}
+
+function writeListPages(lists, starred, generatedAt) {
+  const starredByName = new Map(starred.map((repo) => [repo.nameWithOwner, repo]));
+  for (const repo of starred) repo.sortStars = repo.isFork ? repo.parentStars ?? 0 : repo.stargazerCount ?? 0;
+  for (const list of lists) {
+    for (const item of list.items) {
+      item.starredAt = starredByName.get(item.nameWithOwner)?.starredAt ?? null;
+      item.sortStars = item.isFork ? item.parentStars ?? 0 : item.stargazerCount ?? 0;
+    }
+    list.items.sort((a, b) => (Date.parse(b.pushedAt) || 0) - (Date.parse(a.pushedAt) || 0) || a.nameWithOwner.localeCompare(b.nameWithOwner));
+  }
+  const assigned = new Set(lists.flatMap((list) => list.items.map((item) => item.nameWithOwner)));
+  const unfiled = starred.filter((repo) => !assigned.has(repo.nameWithOwner));
+  unfiled.sort((a, b) => (Date.parse(b.pushedAt) || 0) - (Date.parse(a.pushedAt) || 0) || a.nameWithOwner.localeCompare(b.nameWithOwner));
+  const card = (name, slug, description, count, sortable) => {
+    const attributes = sortable
+      ? ` data-sortable="true" data-name="${escapeHtml(name)}" data-count="${count}"`
+      : ' data-sortable="false"';
+    return `<a class="list-card" href="./${escapeHtml(slug)}/"${attributes}><h2>${escapeHtml(name)}</h2><p>${escapeHtml(description || 'No description.')}</p><span class="card-count">${count} public repositories</span></a>`;
+  };
+  const sortedLists = [...lists].sort((a, b) => b.items.length - a.items.length || a.name.localeCompare(b.name));
+  const cards = sortedLists.map((list) => card(list.name, list.slug, list.description, list.items.length, true));
+  cards.push(card('Not in any list', 'unfiled', 'Public repositories you have starred but not added to a public list.', unfiled.length, false));
+  const sortScript = `<script>
+(function () {
+  var select = document.getElementById("list-sort");
+  var grid = document.getElementById("list-grid");
+  var cards = Array.from(grid.querySelectorAll('.list-card[data-sortable="true"]'));
+  var unfiled = grid.querySelector('.list-card[data-sortable="false"]');
+  function sortCards() {
+    cards.sort(function (a, b) {
+      if (select.value === "name") return a.dataset.name.localeCompare(b.dataset.name, undefined, { sensitivity: "base" });
+      return Number(b.dataset.count) - Number(a.dataset.count) || a.dataset.name.localeCompare(b.dataset.name, undefined, { sensitivity: "base" });
+    });
+    cards.forEach(function (card) { grid.appendChild(card); });
+    if (unfiled) grid.appendChild(unfiled);
+  }
+  select.addEventListener("change", sortCards);
+  sortCards();
+})();
+</script>`;
+  const hubHtml = renderListPage({
+    title: 'GitHub star lists',
+    description: `Browse ${lists.length} public lists and the public stars not filed into any of them.`,
+    count: `${lists.length} lists · ${unfiled.length} unfiled stars`,
+    content: `<div class="sort-controls"><label for="list-sort">Sort lists</label><select id="list-sort" aria-label="Sort the public star lists"><option value="count" selected>Most repositories</option><option value="name">Name</option></select></div><section class="list-grid" id="list-grid" aria-label="Public star lists">${cards.join('')}</section>`,
+    script: sortScript,
+    dashboardHref: '../index.html',
+    listsHref: './index.html',
+    generatedAt,
+  });
+  fs.mkdirSync(OUT_LISTS, { recursive: true });
+  fs.writeFileSync(path.join(OUT_LISTS, 'index.html'), hubHtml);
+  for (const list of lists) {
+    const items = list.items.map(listItemMarkup).join('');
+    const content = `<div class="repo-controls"><div class="field"><label for="repo-search">Search</label><input id="repo-search" type="search" placeholder="Name, owner, description or topics" aria-label="Search repositories"></div><div class="field"><label for="repo-sort">Sort by</label><select id="repo-sort" aria-label="Sort repositories"><option value="pushed" selected>Last push (newest)</option><option value="name">Repo name (A–Z)</option><option value="owner">Owner (A–Z)</option><option value="stars">Stars (most)</option></select></div><p class="result-count" id="repo-count" aria-live="polite">Showing ${list.items.length} of ${list.items.length} repositories</p></div><ol class="repos" id="repo-list">${items}</ol><p class="empty" id="repo-empty" hidden>${list.items.length ? 'No repositories match these filters.' : 'This list has no public repositories.'}</p>`;
+    const html = renderListPage({
+      title: list.name,
+      description: list.description || 'A public GitHub star list.',
+      count: `${list.items.length} public repositories`,
+      content,
+      script: listControlsScript(),
+      dashboardHref: '../../index.html',
+      listsHref: '../index.html',
+      generatedAt,
+    });
+    const directory = path.join(OUT_LISTS, list.slug);
+    fs.mkdirSync(directory, { recursive: true });
+    fs.writeFileSync(path.join(directory, 'index.html'), html);
+  }
+  const unfiledRows = unfiled.map(listItemMarkup).join('');
+  const content = `<div class="repo-controls"><div class="field"><label for="repo-search">Search</label><input id="repo-search" type="search" placeholder="Name, owner, description or topics" aria-label="Search repositories"></div><div class="field"><label for="repo-sort">Sort by</label><select id="repo-sort" aria-label="Sort repositories"><option value="pushed" selected>Last push (newest)</option><option value="name">Repo name (A–Z)</option><option value="owner">Owner (A–Z)</option><option value="stars">Stars (most)</option></select></div><p class="result-count" id="repo-count" aria-live="polite">Showing ${unfiled.length} of ${unfiled.length} repositories</p></div><ol class="repos" id="repo-list">${unfiledRows}</ol><p class="empty" id="repo-empty" hidden>${unfiled.length ? 'No repositories match these filters.' : 'Every public starred repository is in a public list.'}</p>`;
+  const unfiledHtml = renderListPage({
+    title: 'Not in any list',
+    description: 'Public repositories you have starred but not added to a public list.',
+    count: `${unfiled.length} public stars`,
+    content,
+    script: listControlsScript(),
+    dashboardHref: '../../index.html',
+    listsHref: '../index.html',
+    generatedAt,
+  });
+  const unfiledDirectory = path.join(OUT_LISTS, 'unfiled');
+  fs.mkdirSync(unfiledDirectory, { recursive: true });
+  fs.writeFileSync(path.join(unfiledDirectory, 'index.html'), unfiledHtml);
+  log(`Wrote the public star-list hub, ${lists.length} list pages, and ${unfiled.length} unfiled stars.`);
 }
 
 const melbourneDate = (date) =>
@@ -343,6 +609,9 @@ async function main() {
 
   const historyUpdate = appendHistory(readHistory(), followed.repos, startedAt);
   const starUpdate = appendStarHistory(readStarHistory(), followed.stars, readStarState(), startedAt);
+  const lists = await fetchPublicLists();
+  const publicStars = await fetchAllPublicStars();
+  log(`Read ${lists.length} public star lists and ${publicStars.length} public starred repositories.`);
 
   const rows = repos.map((repo) => ({
     n: repo.name,
@@ -390,6 +659,8 @@ async function main() {
     resolvedCount: resolved.size,
     followingWindow: FOLLOWED_WINDOW_DAYS,
   };
+
+  writeListPages(lists, publicStars, meta.generatedAtLocal);
 
   const literal = (value) =>
     JSON.stringify(value).replace(/</g, '\\u003c').replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029');
