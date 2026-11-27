@@ -594,6 +594,11 @@
     "starred_by": "agafonovartem",
     "starred_at": "2025-09-03T12:24:18Z"
   },
+  "AgentSparko/AEON-7/Aeon3.8-Flash-Next-Ultimate-Uncensored": {
+    "first_seen": "2026-11-27",
+    "starred_by": "AgentSparko",
+    "starred_at": "2026-11-26T06:51:23Z"
+  },
   "AgentSparko/ashhart/TensorFold": {
     "first_seen": "2026-11-26",
     "starred_by": "AgentSparko",
@@ -664,6 +669,31 @@
     "starred_by": "AgentWrapper",
     "starred_at": "2026-03-01T20:52:17Z"
   },
+  "agl/agl/crlset-tools": {
+    "first_seen": "2026-11-27",
+    "starred_by": "agl",
+    "starred_at": "2012-01-20T21:16:32Z"
+  },
+  "agl/agl/extract-nss-root-certs": {
+    "first_seen": "2026-11-27",
+    "starred_by": "agl",
+    "starred_at": "2012-01-30T18:51:51Z"
+  },
+  "agl/google-antigravity/antigravity-sdk-python": {
+    "first_seen": "2026-11-27",
+    "starred_by": "agl",
+    "starred_at": "2026-05-19T18:54:35Z"
+  },
+  "agl/google-gemini/genai-processors": {
+    "first_seen": "2026-11-27",
+    "starred_by": "agl",
+    "starred_at": "2025-05-22T00:34:25Z"
+  },
+  "agl/microsoft/webauthn": {
+    "first_seen": "2026-11-27",
+    "starred_by": "agl",
+    "starred_at": "2022-01-13T18:40:28Z"
+  },
   "ai-boost/HaoyanZhang123/dsh-plugin-control-your-development": {
     "first_seen": "2026-10-09",
     "starred_by": "ai-boost",
@@ -728,6 +758,11 @@
     "first_seen": "2026-04-15",
     "starred_by": "AlabamaMike",
     "starred_at": "2026-04-15T19:57:20Z"
+  },
+  "AlabamaMike/MiaAI-Lab/Inkling-2-Mini-DGX-Spark-TensorFold": {
+    "first_seen": "2026-11-27",
+    "starred_by": "AlabamaMike",
+    "starred_at": "2026-11-27T00:35:38Z"
   },
   "AlabamaMike/NousResearch/atropos": {
     "first_seen": "2026-05-13",
@@ -889,6 +924,11 @@
     "starred_by": "allisoneer",
     "starred_at": "2026-11-10T23:51:51Z"
   },
+  "allisoneer/gabrielkoerich/git-cow": {
+    "first_seen": "2026-11-27",
+    "starred_by": "allisoneer",
+    "starred_at": "2026-11-26T19:48:20Z"
+  },
   "allisoneer/hyper-light/kiln": {
     "first_seen": "2026-11-16",
     "starred_by": "allisoneer",
@@ -898,6 +938,11 @@
     "first_seen": "2026-11-23",
     "starred_by": "allisoneer",
     "starred_at": "2026-11-22T17:57:41Z"
+  },
+  "allisoneer/leostera/git-twig": {
+    "first_seen": "2026-11-27",
+    "starred_by": "allisoneer",
+    "starred_at": "2026-11-26T23:40:52Z"
   },
   "allisoneer/longbridge/nsh": {
     "first_seen": "2026-11-10",
@@ -1104,15 +1149,30 @@
     "starred_by": "AmintaCCCP",
     "starred_at": "2026-11-25T12:58:31Z"
   },
+  "AmintaCCCP/guangshu100/BidMaster-Pro": {
+    "first_seen": "2026-11-27",
+    "starred_by": "AmintaCCCP",
+    "starred_at": "2026-11-26T10:22:45Z"
+  },
   "AmintaCCCP/hehehai/AudioSmith": {
     "first_seen": "2026-11-26",
     "starred_by": "AmintaCCCP",
     "starred_at": "2026-11-25T13:06:04Z"
   },
+  "AmintaCCCP/limitcool/jiyue": {
+    "first_seen": "2026-11-27",
+    "starred_by": "AmintaCCCP",
+    "starred_at": "2026-11-26T12:16:14Z"
+  },
   "AmintaCCCP/micooz/ossia": {
     "first_seen": "2026-11-25",
     "starred_by": "AmintaCCCP",
     "starred_at": "2026-11-24T12:22:11Z"
+  },
+  "AmintaCCCP/MuhammadaliMS/brink-releases": {
+    "first_seen": "2026-11-27",
+    "starred_by": "AmintaCCCP",
+    "starred_at": "2026-11-26T08:10:28Z"
   },
   "AmintaCCCP/pingdotgg/t3code": {
     "first_seen": "2026-11-25",
@@ -1133,6 +1193,11 @@
     "first_seen": "2026-11-25",
     "starred_by": "AmintaCCCP",
     "starred_at": "2026-11-24T09:34:49Z"
+  },
+  "anabologyco-maker/spiritbuun/buun-llama-cpp": {
+    "first_seen": "2026-11-27",
+    "starred_by": "anabologyco-maker",
+    "starred_at": "2026-08-13T04:30:54Z"
   },
   "anandology/anandology/isi-fcp": {
     "first_seen": "2024-08-10",
@@ -1684,6 +1749,11 @@
     "starred_by": "armanckeser",
     "starred_at": "2026-11-11T14:25:42Z"
   },
+  "armanckeser/getarcaneapp/arcane": {
+    "first_seen": "2026-11-27",
+    "starred_by": "armanckeser",
+    "starred_at": "2026-11-26T20:25:01Z"
+  },
   "armanckeser/ShihanLi/clipboard": {
     "first_seen": "2026-11-25",
     "starred_by": "armanckeser",
@@ -2014,6 +2084,31 @@
     "starred_by": "atravitz",
     "starred_at": "2026-10-08T04:41:21Z"
   },
+  "austinywang/manaflow-ai/cmux": {
+    "first_seen": "2026-11-27",
+    "starred_by": "austinywang",
+    "starred_at": "2026-10-10T22:33:39Z"
+  },
+  "austinywang/stoneHee99/cmux-spotify": {
+    "first_seen": "2026-11-27",
+    "starred_by": "austinywang",
+    "starred_at": "2026-04-16T04:40:31Z"
+  },
+  "austinywang/su-record/torya-ext": {
+    "first_seen": "2026-11-27",
+    "starred_by": "austinywang",
+    "starred_at": "2026-04-26T09:51:37Z"
+  },
+  "austinywang/thedotmack/claude-mem": {
+    "first_seen": "2026-11-27",
+    "starred_by": "austinywang",
+    "starred_at": "2026-04-02T22:58:21Z"
+  },
+  "austinywang/Yeachan-Heo/oh-my-codex": {
+    "first_seen": "2026-11-27",
+    "starred_by": "austinywang",
+    "starred_at": "2026-04-20T19:42:19Z"
+  },
   "Autumn-27/ai-openshell/openshell": {
     "first_seen": "2026-11-26",
     "starred_by": "Autumn-27",
@@ -2113,6 +2208,16 @@
     "first_seen": "2024-07-24",
     "starred_by": "ayobamiseun",
     "starred_at": "2024-07-24T15:32:58Z"
+  },
+  "azooz2003-bit/manaflow-ai/cmux": {
+    "first_seen": "2026-11-27",
+    "starred_by": "azooz2003-bit",
+    "starred_at": "2026-03-01T18:02:52Z"
+  },
+  "azooz2003-bit/WeaveMindAI/Webfurl": {
+    "first_seen": "2026-11-27",
+    "starred_by": "azooz2003-bit",
+    "starred_at": "2026-03-01T19:00:19Z"
   },
   "AzurePy-0x/lizTheDeveloper/privacy-the-game": {
     "first_seen": "2026-09-09",
@@ -2463,6 +2568,11 @@
     "first_seen": "2026-11-04",
     "starred_by": "benben6515",
     "starred_at": "2026-11-04T09:04:58Z"
+  },
+  "benben6515/herdrdev/herdr-core": {
+    "first_seen": "2026-11-27",
+    "starred_by": "benben6515",
+    "starred_at": "2026-11-27T02:58:37Z"
   },
   "benben6515/pilmokim/herdr-pixel-spaces": {
     "first_seen": "2026-11-04",
@@ -3449,6 +3559,31 @@
     "starred_by": "chuanqisun",
     "starred_at": "2026-11-21T17:55:41Z"
   },
+  "chuckx/go-piv/piv-go": {
+    "first_seen": "2026-11-27",
+    "starred_by": "chuckx",
+    "starred_at": "2023-05-21T07:56:48Z"
+  },
+  "chuckx/keith/xcode-man-pages": {
+    "first_seen": "2026-11-27",
+    "starred_by": "chuckx",
+    "starred_at": "2025-06-25T06:08:39Z"
+  },
+  "chuckx/openconfig/bootz": {
+    "first_seen": "2026-11-27",
+    "starred_by": "chuckx",
+    "starred_at": "2023-10-26T05:24:05Z"
+  },
+  "chuckx/softhsm/SoftHSMv2": {
+    "first_seen": "2026-11-27",
+    "starred_by": "chuckx",
+    "starred_at": "2025-07-08T21:30:45Z"
+  },
+  "chuckx/str4d/ed25519-java": {
+    "first_seen": "2026-11-27",
+    "starred_by": "chuckx",
+    "starred_at": "2025-09-05T06:33:54Z"
+  },
   "ciembor/ciembor/brunch": {
     "first_seen": "2026-10-02",
     "starred_by": "ciembor",
@@ -3473,6 +3608,11 @@
     "first_seen": "2026-10-03",
     "starred_by": "ciembor",
     "starred_at": "2026-10-03T21:23:29Z"
+  },
+  "ciembor/the-momentum/open-wearables": {
+    "first_seen": "2026-11-27",
+    "starred_by": "ciembor",
+    "starred_at": "2026-11-26T21:05:26Z"
   },
   "cjcarlson/colebrookson/urbanfox": {
     "first_seen": "2024-05-27",
@@ -3734,6 +3874,11 @@
     "starred_by": "coygeek",
     "starred_at": "2026-11-25T17:33:27Z"
   },
+  "coygeek/nexu-io/opengame": {
+    "first_seen": "2026-11-27",
+    "starred_by": "coygeek",
+    "starred_at": "2026-11-26T22:11:09Z"
+  },
   "coygeek/R0Y00/Xbox2Windows": {
     "first_seen": "2026-11-23",
     "starred_by": "coygeek",
@@ -3924,6 +4069,11 @@
     "starred_by": "dahlia",
     "starred_at": "2026-11-19T16:42:32Z"
   },
+  "dahlia/jj1guj/blog": {
+    "first_seen": "2026-11-27",
+    "starred_by": "dahlia",
+    "starred_at": "2026-11-26T04:41:14Z"
+  },
   "dahlia/nannan927/monozukuri-hiroba": {
     "first_seen": "2026-11-26",
     "starred_by": "dahlia",
@@ -3993,6 +4143,31 @@
     "first_seen": "2026-06-20",
     "starred_by": "DamascusGit",
     "starred_at": "2026-06-20T22:14:31Z"
+  },
+  "Dammyjay93/ai-job-search-dev/ai-job-search": {
+    "first_seen": "2026-11-27",
+    "starred_by": "Dammyjay93",
+    "starred_at": "2026-07-08T20:20:03Z"
+  },
+  "Dammyjay93/career-ops-hq/career-ops": {
+    "first_seen": "2026-11-27",
+    "starred_by": "Dammyjay93",
+    "starred_at": "2026-07-08T20:19:58Z"
+  },
+  "Dammyjay93/Chuloo/mural": {
+    "first_seen": "2026-11-27",
+    "starred_by": "Dammyjay93",
+    "starred_at": "2026-09-12T15:07:43Z"
+  },
+  "Dammyjay93/Dammyjay93/design-engineer-archived": {
+    "first_seen": "2026-11-27",
+    "starred_by": "Dammyjay93",
+    "starred_at": "2026-01-14T10:30:50Z"
+  },
+  "Dammyjay93/thedotmack/claude-mem": {
+    "first_seen": "2026-11-27",
+    "starred_by": "Dammyjay93",
+    "starred_at": "2026-01-10T15:28:40Z"
   },
   "danielskatz/corsa-center/oss-documents": {
     "first_seen": "2026-11-26",
@@ -4099,6 +4274,11 @@
     "starred_by": "darinchau",
     "starred_at": "2026-10-11T04:28:26Z"
   },
+  "davanstrien/alvarobartt/hf-mem": {
+    "first_seen": "2026-11-27",
+    "starred_by": "davanstrien",
+    "starred_at": "2026-11-26T14:47:03Z"
+  },
   "davanstrien/davanstrien/jobs-recipes": {
     "first_seen": "2026-11-26",
     "starred_by": "davanstrien",
@@ -4119,10 +4299,20 @@
     "starred_by": "davanstrien",
     "starred_at": "2026-11-05T17:49:59Z"
   },
+  "davanstrien/Knowledgator/FlashDeBERTa": {
+    "first_seen": "2026-11-27",
+    "starred_by": "davanstrien",
+    "starred_at": "2026-11-26T16:44:14Z"
+  },
   "davanstrien/lightonai/LightOnOCR": {
     "first_seen": "2026-11-25",
     "starred_by": "davanstrien",
     "starred_at": "2026-11-05T14:22:45Z"
+  },
+  "davanstrien/michaelsauter/crane": {
+    "first_seen": "2026-11-27",
+    "starred_by": "davanstrien",
+    "starred_at": "2026-11-26T07:49:32Z"
   },
   "davanstrien/MinishLab/model2vec-rs": {
     "first_seen": "2026-11-25",
@@ -4188,6 +4378,31 @@
     "first_seen": "2026-02-11",
     "starred_by": "david-rx",
     "starred_at": "2026-02-11T04:04:22Z"
+  },
+  "davidben/davidben/barnowl-zstatus": {
+    "first_seen": "2026-11-27",
+    "starred_by": "davidben",
+    "starred_at": "2011-07-18T02:57:19Z"
+  },
+  "davidben/davidben/emscripten": {
+    "first_seen": "2026-11-27",
+    "starred_by": "davidben",
+    "starred_at": "2012-03-31T02:53:13Z"
+  },
+  "davidben/davidben/mosh-chrome": {
+    "first_seen": "2026-11-27",
+    "starred_by": "davidben",
+    "starred_at": "2012-06-18T03:08:10Z"
+  },
+  "davidben/davidben/uqm": {
+    "first_seen": "2026-11-27",
+    "starred_by": "davidben",
+    "starred_at": "2012-03-02T05:36:16Z"
+  },
+  "davidben/davidben/webathena": {
+    "first_seen": "2026-11-27",
+    "starred_by": "davidben",
+    "starred_at": "2012-06-09T01:39:07Z"
   },
   "davidgasquez/BquantFinance/Administracion-fuentes-publicas": {
     "first_seen": "2026-10-01",
@@ -4849,6 +5064,11 @@
     "starred_by": "EdwardBetts",
     "starred_at": "2026-06-23T14:55:49Z"
   },
+  "EdwardBetts/planarnetwork/gb-transit": {
+    "first_seen": "2026-11-27",
+    "starred_by": "EdwardBetts",
+    "starred_at": "2026-11-26T14:45:06Z"
+  },
   "EdwardBetts/SeaGL/seagl.github.io": {
     "first_seen": "2026-11-05",
     "starred_by": "EdwardBetts",
@@ -5424,6 +5644,11 @@
     "starred_by": "fedebotu",
     "starred_at": "2026-11-09T05:19:58Z"
   },
+  "fedebotu/heydamir/unslop": {
+    "first_seen": "2026-11-27",
+    "starred_by": "fedebotu",
+    "starred_at": "2026-11-26T23:31:38Z"
+  },
   "fedebotu/IngenixAI/Thalamus-Reasoning": {
     "first_seen": "2026-11-13",
     "starred_by": "fedebotu",
@@ -5489,6 +5714,11 @@
     "starred_by": "fendouai",
     "starred_at": "2026-11-23T11:56:14Z"
   },
+  "fendouai/mathiasmantelli/awesome-mobile-robotics": {
+    "first_seen": "2026-11-27",
+    "starred_by": "fendouai",
+    "starred_at": "2026-11-26T14:31:45Z"
+  },
   "fendouai/phone-harness/phone-harness": {
     "first_seen": "2026-11-19",
     "starred_by": "fendouai",
@@ -5503,6 +5733,11 @@
     "first_seen": "2026-11-20",
     "starred_by": "fendouai",
     "starred_at": "2026-11-20T12:00:29Z"
+  },
+  "fendouai/zhaotoday/awesome-ai-video": {
+    "first_seen": "2026-11-27",
+    "starred_by": "fendouai",
+    "starred_at": "2026-11-26T12:03:45Z"
   },
   "filbranden/abshkbh/arrakis": {
     "first_seen": "2026-11-26",
@@ -6774,6 +7009,31 @@
     "starred_by": "HynekPetrak",
     "starred_at": "2025-12-03T21:26:38Z"
   },
+  "iainmcgin/andrey-pohilko/registry-cli": {
+    "first_seen": "2026-11-27",
+    "starred_by": "iainmcgin",
+    "starred_at": "2022-11-03T19:15:53Z"
+  },
+  "iainmcgin/anthropics/buffa": {
+    "first_seen": "2026-11-27",
+    "starred_by": "iainmcgin",
+    "starred_at": "2026-04-20T15:36:59Z"
+  },
+  "iainmcgin/bufbuild/protobuf-py": {
+    "first_seen": "2026-11-27",
+    "starred_by": "iainmcgin",
+    "starred_at": "2026-07-16T18:50:03Z"
+  },
+  "iainmcgin/connectrpc/connect-rust": {
+    "first_seen": "2026-11-27",
+    "starred_by": "iainmcgin",
+    "starred_at": "2026-05-07T15:25:03Z"
+  },
+  "iainmcgin/connyay/connectrpc-workers": {
+    "first_seen": "2026-11-27",
+    "starred_by": "iainmcgin",
+    "starred_at": "2026-06-09T18:08:38Z"
+  },
   "IAlibay/eliantiudic/atom-openfe": {
     "first_seen": "2026-06-16",
     "starred_by": "IAlibay",
@@ -6993,6 +7253,31 @@
     "first_seen": "2025-07-13",
     "starred_by": "immortal3",
     "starred_at": "2025-07-13T02:10:18Z"
+  },
+  "Infatoshi/bendlang/bend": {
+    "first_seen": "2026-11-27",
+    "starred_by": "Infatoshi",
+    "starred_at": "2026-09-18T00:06:02Z"
+  },
+  "Infatoshi/deepseek-ai/DeepInfer": {
+    "first_seen": "2026-11-27",
+    "starred_by": "Infatoshi",
+    "starred_at": "2026-10-20T14:47:29Z"
+  },
+  "Infatoshi/FlashML-org/FreeToken": {
+    "first_seen": "2026-11-27",
+    "starred_by": "Infatoshi",
+    "starred_at": "2026-08-25T15:56:08Z"
+  },
+  "Infatoshi/morluto/rea": {
+    "first_seen": "2026-11-27",
+    "starred_by": "Infatoshi",
+    "starred_at": "2026-10-19T07:14:05Z"
+  },
+  "Infatoshi/TeamWheelWizard/WheelWizard": {
+    "first_seen": "2026-11-27",
+    "starred_by": "Infatoshi",
+    "starred_at": "2026-09-06T16:51:01Z"
   },
   "interplains/interplains/archive-genocide-website-mirror": {
     "first_seen": "2026-07-07",
@@ -7253,6 +7538,31 @@
     "first_seen": "2022-01-12",
     "starred_by": "JamesGreen31",
     "starred_at": "2022-01-12T06:41:17Z"
+  },
+  "JamesPerlman/CompVis/EDGS": {
+    "first_seen": "2026-11-27",
+    "starred_by": "JamesPerlman",
+    "starred_at": "2025-04-28T05:15:12Z"
+  },
+  "JamesPerlman/luv91/NeRFs-TrueLog_vs_sRGB": {
+    "first_seen": "2026-11-27",
+    "starred_by": "JamesPerlman",
+    "starred_at": "2025-02-14T02:39:07Z"
+  },
+  "JamesPerlman/Shubhamsaboo/awesome-llm-apps": {
+    "first_seen": "2026-11-27",
+    "starred_by": "JamesPerlman",
+    "starred_at": "2025-06-06T06:48:22Z"
+  },
+  "JamesPerlman/TMElyralab/MuseTalk": {
+    "first_seen": "2026-11-27",
+    "starred_by": "JamesPerlman",
+    "starred_at": "2025-03-09T08:49:16Z"
+  },
+  "JamesPerlman/TMElyralab/MuseV": {
+    "first_seen": "2026-11-27",
+    "starred_by": "JamesPerlman",
+    "starred_at": "2025-03-09T08:49:07Z"
   },
   "janbam/backnotprop/pstack": {
     "first_seen": "2026-11-26",
@@ -8209,6 +8519,31 @@
     "starred_by": "jtmiller28",
     "starred_at": "2023-06-19T15:33:17Z"
   },
+  "juergw/google/conscrypt": {
+    "first_seen": "2026-11-27",
+    "starred_by": "juergw",
+    "starred_at": "2026-10-11T19:22:16Z"
+  },
+  "juergw/tink-crypto/tink-cc-awskms": {
+    "first_seen": "2026-11-27",
+    "starred_by": "juergw",
+    "starred_at": "2026-04-16T10:37:59Z"
+  },
+  "juergw/tink-crypto/tink-cc-gcpkms": {
+    "first_seen": "2026-11-27",
+    "starred_by": "juergw",
+    "starred_at": "2023-09-18T09:46:12Z"
+  },
+  "juergw/tink-crypto/tink-go-awskms": {
+    "first_seen": "2026-11-27",
+    "starred_by": "juergw",
+    "starred_at": "2025-08-27T08:58:28Z"
+  },
+  "juergw/tink-crypto/tink-go-hcvault": {
+    "first_seen": "2026-11-27",
+    "starred_by": "juergw",
+    "starred_at": "2024-12-03T20:39:30Z"
+  },
   "juliagsy/AsamK/signal-cli": {
     "first_seen": "2025-07-16",
     "starred_by": "juliagsy",
@@ -8358,6 +8693,31 @@
     "first_seen": "2026-03-03",
     "starred_by": "justinrporter",
     "starred_at": "2026-03-03T22:34:29Z"
+  },
+  "justsmth/aws/aws-lc-rs": {
+    "first_seen": "2026-11-27",
+    "starred_by": "justsmth",
+    "starred_at": "2023-12-12T17:21:55Z"
+  },
+  "justsmth/DioxusLabs/dioxus": {
+    "first_seen": "2026-11-27",
+    "starred_by": "justsmth",
+    "starred_at": "2022-07-02T18:00:34Z"
+  },
+  "justsmth/fadeevab/design-patterns-rust": {
+    "first_seen": "2026-11-27",
+    "starred_by": "justsmth",
+    "starred_at": "2022-09-01T10:33:09Z"
+  },
+  "justsmth/mre/idiomatic-rust": {
+    "first_seen": "2026-11-27",
+    "starred_by": "justsmth",
+    "starred_at": "2023-05-26T13:27:51Z"
+  },
+  "justsmth/realbigsean/idealix": {
+    "first_seen": "2026-11-27",
+    "starred_by": "justsmth",
+    "starred_at": "2024-06-10T13:21:35Z"
   },
   "jvarah/Tonejs/Tone.js": {
     "first_seen": "2023-08-30",
@@ -9154,6 +9514,11 @@
     "starred_by": "koala73",
     "starred_at": "2026-11-23T12:33:01Z"
   },
+  "koala73/chuspeeism/xiaozao-os": {
+    "first_seen": "2026-11-27",
+    "starred_by": "koala73",
+    "starred_at": "2026-11-26T08:11:27Z"
+  },
   "koala73/frida/frida": {
     "first_seen": "2026-11-26",
     "starred_by": "koala73",
@@ -9163,6 +9528,11 @@
     "first_seen": "2026-11-23",
     "starred_by": "koala73",
     "starred_at": "2026-11-22T12:33:15Z"
+  },
+  "koala73/GoogleCloudPlatform/genmedia-creative-studio": {
+    "first_seen": "2026-11-27",
+    "starred_by": "koala73",
+    "starred_at": "2026-11-26T07:26:38Z"
   },
   "koala73/gr8rstudio/gr8r-studio": {
     "first_seen": "2026-11-25",
@@ -9198,6 +9568,11 @@
     "first_seen": "2026-11-23",
     "starred_by": "koala73",
     "starred_at": "2026-11-22T14:21:42Z"
+  },
+  "koala73/posts-design/mcp": {
+    "first_seen": "2026-11-27",
+    "starred_by": "koala73",
+    "starred_at": "2026-11-27T02:41:45Z"
   },
   "koala73/Remocn/remocn": {
     "first_seen": "2026-11-26",
@@ -9549,6 +9924,31 @@
     "starred_by": "laurentsenta",
     "starred_at": "2022-08-29T13:38:20Z"
   },
+  "lawrencecchen/brennanMKE/SubagentMultiplexingSkill": {
+    "first_seen": "2026-11-27",
+    "starred_by": "lawrencecchen",
+    "starred_at": "2026-04-08T10:23:18Z"
+  },
+  "lawrencecchen/denoland/celld": {
+    "first_seen": "2026-11-27",
+    "starred_by": "lawrencecchen",
+    "starred_at": "2026-08-06T00:54:10Z"
+  },
+  "lawrencecchen/marekkowalczyk/breathe-cli": {
+    "first_seen": "2026-11-27",
+    "starred_by": "lawrencecchen",
+    "starred_at": "2026-05-31T07:58:35Z"
+  },
+  "lawrencecchen/mem0ai/openmemory": {
+    "first_seen": "2026-11-27",
+    "starred_by": "lawrencecchen",
+    "starred_at": "2026-07-11T03:09:12Z"
+  },
+  "lawrencecchen/yigitkonur/awesome-cmux": {
+    "first_seen": "2026-11-27",
+    "starred_by": "lawrencecchen",
+    "starred_at": "2026-04-07T10:11:53Z"
+  },
   "ledbetterljoshua/DorsaRoh/audial": {
     "first_seen": "2026-01-01",
     "starred_by": "ledbetterljoshua",
@@ -9668,6 +10068,11 @@
     "first_seen": "2026-11-17",
     "starred_by": "levzzz5154",
     "starred_at": "2026-11-17T21:08:41Z"
+  },
+  "levzzz5154/inclusionAI/Ming-Image": {
+    "first_seen": "2026-11-27",
+    "starred_by": "levzzz5154",
+    "starred_at": "2026-11-26T16:44:46Z"
   },
   "levzzz5154/ItsNotRexed/Leonida": {
     "first_seen": "2026-11-22",
@@ -10193,6 +10598,11 @@
     "first_seen": "2026-11-17",
     "starred_by": "lzt404",
     "starred_at": "2026-11-17T17:43:12Z"
+  },
+  "lzt404/crhywun/g1-acq": {
+    "first_seen": "2026-11-27",
+    "starred_by": "lzt404",
+    "starred_at": "2026-11-26T11:34:02Z"
   },
   "lzt404/cxy2730/CLIProxyAPI-freetier2api-plugin": {
     "first_seen": "2026-11-06",
@@ -10749,6 +11159,11 @@
     "starred_by": "MaxForAI",
     "starred_at": "2026-08-18T13:40:01Z"
   },
+  "MaxForAI/lobehub/awesome-wsp": {
+    "first_seen": "2026-11-27",
+    "starred_by": "MaxForAI",
+    "starred_at": "2026-11-26T11:51:03Z"
+  },
   "MaxFreedomPollard/MaxFreedomPollard/artificial-knowledge-collection-6.0": {
     "first_seen": "2026-07-18",
     "starred_by": "MaxFreedomPollard",
@@ -11038,6 +11453,11 @@
     "first_seen": "2026-11-07",
     "starred_by": "MiaAI-Lab",
     "starred_at": "2026-11-07T18:44:33Z"
+  },
+  "MiaAI-Lab/omacom/omarchy": {
+    "first_seen": "2026-11-27",
+    "starred_by": "MiaAI-Lab",
+    "starred_at": "2026-11-26T22:13:39Z"
   },
   "MiaAI-Lab/OnlyTerp/turnpack": {
     "first_seen": "2026-11-13",
@@ -11434,6 +11854,31 @@
     "starred_by": "montanalow",
     "starred_at": "2025-02-04T22:06:19Z"
   },
+  "morambro/tink-crypto/tink": {
+    "first_seen": "2026-11-27",
+    "starred_by": "morambro",
+    "starred_at": "2023-11-07T14:39:02Z"
+  },
+  "morambro/tink-crypto/tink-cc": {
+    "first_seen": "2026-11-27",
+    "starred_by": "morambro",
+    "starred_at": "2024-05-02T11:05:38Z"
+  },
+  "morambro/tink-crypto/tink-go-awskms": {
+    "first_seen": "2026-11-27",
+    "starred_by": "morambro",
+    "starred_at": "2023-06-07T07:59:10Z"
+  },
+  "morambro/tink-crypto/tink-go-gcpkms": {
+    "first_seen": "2026-11-27",
+    "starred_by": "morambro",
+    "starred_at": "2024-01-13T06:48:43Z"
+  },
+  "morambro/tink-crypto/tink-objc": {
+    "first_seen": "2026-11-27",
+    "starred_by": "morambro",
+    "starred_at": "2023-07-06T14:31:45Z"
+  },
   "MoritzErtelt/AstraZeneca/CAST-AbAg": {
     "first_seen": "2026-11-13",
     "starred_by": "MoritzErtelt",
@@ -11453,6 +11898,11 @@
     "first_seen": "2026-11-19",
     "starred_by": "MoritzErtelt",
     "starred_at": "2026-11-19T07:04:30Z"
+  },
+  "MoritzErtelt/Mateusz-Jaskolowski/NbFrame": {
+    "first_seen": "2026-11-27",
+    "starred_by": "MoritzErtelt",
+    "starred_at": "2026-11-26T10:43:45Z"
   },
   "MoritzErtelt/NVIDIA-BioNeMo/BioReason-Pro-2": {
     "first_seen": "2026-11-26",
@@ -11619,10 +12069,20 @@
     "starred_by": "MunGell",
     "starred_at": "2025-06-12T21:30:12Z"
   },
+  "mvanhorn/ardia-browser/ardia": {
+    "first_seen": "2026-11-27",
+    "starred_by": "mvanhorn",
+    "starred_at": "2026-11-26T05:18:28Z"
+  },
   "mvanhorn/heygen-com/hyperframes": {
     "first_seen": "2026-11-25",
     "starred_by": "mvanhorn",
     "starred_at": "2026-11-24T19:08:20Z"
+  },
+  "mvanhorn/morganlinton/BeautifulRust": {
+    "first_seen": "2026-11-27",
+    "starred_by": "mvanhorn",
+    "starred_at": "2026-11-26T15:42:16Z"
   },
   "mvanhorn/mvanhorn/agentcookie": {
     "first_seen": "2026-11-10",
@@ -13199,6 +13659,11 @@
     "starred_by": "pronskiy",
     "starred_at": "2026-11-09T15:00:36Z"
   },
+  "pronskiy/fabio-rovai/open-ontologies": {
+    "first_seen": "2026-11-27",
+    "starred_by": "pronskiy",
+    "starred_at": "2026-11-26T11:55:56Z"
+  },
   "pronskiy/jayamartinez/cluely-rs": {
     "first_seen": "2026-11-25",
     "starred_by": "pronskiy",
@@ -13764,6 +14229,11 @@
     "starred_by": "rekram1-node",
     "starred_at": "2026-01-17T19:21:15Z"
   },
+  "rekram1-node/anomalyco/psychoscript": {
+    "first_seen": "2026-11-27",
+    "starred_by": "rekram1-node",
+    "starred_at": "2026-11-26T04:03:49Z"
+  },
   "rekram1-node/UsefulSoftwareCo/integrations": {
     "first_seen": "2026-07-03",
     "starred_by": "rekram1-node",
@@ -14174,6 +14644,11 @@
     "starred_by": "rohitg00",
     "starred_at": "2026-09-25T13:44:13Z"
   },
+  "rohitg00/superdesigndev/treg": {
+    "first_seen": "2026-11-27",
+    "starred_by": "rohitg00",
+    "starred_at": "2026-11-26T10:41:24Z"
+  },
   "RohithKuditipudi/ahmeda14960/model-tracing": {
     "first_seen": "2025-03-05",
     "starred_by": "RohithKuditipudi",
@@ -14364,6 +14839,11 @@
     "starred_by": "rufuspollock",
     "starred_at": "2026-11-05T19:15:57Z"
   },
+  "rufuspollock/natureoforder/alexander-wiki": {
+    "first_seen": "2026-11-27",
+    "starred_by": "rufuspollock",
+    "starred_at": "2026-11-26T09:27:36Z"
+  },
   "rufuspollock/observablehq/inputs": {
     "first_seen": "2026-11-22",
     "starred_by": "rufuspollock",
@@ -14504,6 +14984,31 @@
     "starred_by": "samdickson22",
     "starred_at": "2026-04-14T00:31:12Z"
   },
+  "samuel40791765/awslabs/mls-rs": {
+    "first_seen": "2026-11-27",
+    "starred_by": "samuel40791765",
+    "starred_at": "2023-11-14T22:34:25Z"
+  },
+  "samuel40791765/ByteByteGoHq/system-design-101": {
+    "first_seen": "2026-11-27",
+    "starred_by": "samuel40791765",
+    "starred_at": "2023-10-26T06:37:34Z"
+  },
+  "samuel40791765/C2SP/x509-limbo": {
+    "first_seen": "2026-11-27",
+    "starred_by": "samuel40791765",
+    "starred_at": "2023-11-30T17:46:20Z"
+  },
+  "samuel40791765/secure-foundations/vest": {
+    "first_seen": "2026-11-27",
+    "starred_by": "samuel40791765",
+    "starred_at": "2025-10-22T19:00:45Z"
+  },
+  "samuel40791765/wolfSSL/wolfssl": {
+    "first_seen": "2026-11-27",
+    "starred_by": "samuel40791765",
+    "starred_at": "2024-02-13T18:35:38Z"
+  },
   "sarahnlewis/ehoogeboom/e3_diffusion_for_molecules": {
     "first_seen": "2022-05-19",
     "starred_by": "sarahnlewis",
@@ -14608,6 +15113,31 @@
     "first_seen": "2022-11-02",
     "starred_by": "saurabhdash2512",
     "starred_at": "2022-11-02T17:35:17Z"
+  },
+  "sb-/harvard-edge/cs249r_book": {
+    "first_seen": "2026-11-27",
+    "starred_by": "sb-",
+    "starred_at": "2025-12-20T05:09:26Z"
+  },
+  "sb-/mindverse/Second-Me": {
+    "first_seen": "2026-11-27",
+    "starred_by": "sb-",
+    "starred_at": "2025-03-28T19:26:42Z"
+  },
+  "sb-/MystenLabs/walrus-sites": {
+    "first_seen": "2026-11-27",
+    "starred_by": "sb-",
+    "starred_at": "2025-03-27T15:30:34Z"
+  },
+  "sb-/sdan/qwen-web": {
+    "first_seen": "2026-11-27",
+    "starred_by": "sb-",
+    "starred_at": "2025-06-06T04:12:53Z"
+  },
+  "sb-/smtg-ai/claude-squad": {
+    "first_seen": "2026-11-27",
+    "starred_by": "sb-",
+    "starred_at": "2025-04-05T03:51:17Z"
   },
   "schacon/BartInTheField/gitbutler-for-ide": {
     "first_seen": "2026-08-10",
@@ -15184,6 +15714,11 @@
     "starred_by": "SharkEzz",
     "starred_at": "2026-11-13T17:54:47Z"
   },
+  "SharkEzz/sindresorhus/type-fest": {
+    "first_seen": "2026-11-27",
+    "starred_by": "SharkEzz",
+    "starred_at": "2026-11-26T05:14:29Z"
+  },
   "SharkEzz/tylertms/Stela": {
     "first_seen": "2026-11-15",
     "starred_by": "SharkEzz",
@@ -15243,6 +15778,11 @@
     "first_seen": "2026-11-04",
     "starred_by": "ShengjieJin",
     "starred_at": "2026-11-04T03:19:00Z"
+  },
+  "ShengjieJin/open-compass/AgentCompass": {
+    "first_seen": "2026-11-27",
+    "starred_by": "ShengjieJin",
+    "starred_at": "2026-11-26T07:46:05Z"
   },
   "ShengjieJin/pbakaus/impeccable": {
     "first_seen": "2026-11-25",
@@ -16254,6 +16794,31 @@
     "starred_by": "tcwang0509",
     "starred_at": "2018-11-29T01:33:27Z"
   },
+  "teamleaderleo/donnemartin/system-design-primer": {
+    "first_seen": "2026-11-27",
+    "starred_by": "teamleaderleo",
+    "starred_at": "2025-06-19T07:25:11Z"
+  },
+  "teamleaderleo/honestbleeps/Reddit-Enhancement-Suite": {
+    "first_seen": "2026-11-27",
+    "starred_by": "teamleaderleo",
+    "starred_at": "2026-07-06T00:39:16Z"
+  },
+  "teamleaderleo/PostHog/posthog": {
+    "first_seen": "2026-11-27",
+    "starred_by": "teamleaderleo",
+    "starred_at": "2025-06-05T23:20:50Z"
+  },
+  "teamleaderleo/syncthing/syncthing": {
+    "first_seen": "2026-11-27",
+    "starred_by": "teamleaderleo",
+    "starred_at": "2025-06-01T05:33:06Z"
+  },
+  "teamleaderleo/XTraceAI/xtrace": {
+    "first_seen": "2026-11-27",
+    "starred_by": "teamleaderleo",
+    "starred_at": "2026-10-19T04:12:51Z"
+  },
   "technicalpickles/matthartman/ghost-pepper": {
     "first_seen": "2026-10-06",
     "starred_by": "technicalpickles",
@@ -16578,6 +17143,26 @@
     "first_seen": "2026-11-03",
     "starred_by": "thinkwee",
     "starred_at": "2026-11-03T09:50:29Z"
+  },
+  "tholenst/tink-crypto/tink-cc": {
+    "first_seen": "2026-11-27",
+    "starred_by": "tholenst",
+    "starred_at": "2023-04-27T11:04:02Z"
+  },
+  "tholenst/tink-crypto/tink-cross-lang-tests": {
+    "first_seen": "2026-11-27",
+    "starred_by": "tholenst",
+    "starred_at": "2023-09-18T09:45:50Z"
+  },
+  "tholenst/tink-crypto/tink-java": {
+    "first_seen": "2026-11-27",
+    "starred_by": "tholenst",
+    "starred_at": "2024-06-04T16:25:59Z"
+  },
+  "tholenst/tink-crypto/tink-objc": {
+    "first_seen": "2026-11-27",
+    "starred_by": "tholenst",
+    "starred_at": "2025-04-23T13:59:43Z"
   },
   "tipsy/AlphaSudo/EventDebug": {
     "first_seen": "2026-03-16",
@@ -17038,6 +17623,31 @@
     "first_seen": "2026-10-21",
     "starred_by": "Ubiquinone-dot",
     "starred_at": "2026-10-21T19:54:29Z"
+  },
+  "UlisesGascon/daytonaio/daytona": {
+    "first_seen": "2026-11-27",
+    "starred_by": "UlisesGascon",
+    "starred_at": "2024-03-06T17:54:26Z"
+  },
+  "UlisesGascon/glanceapp/glance": {
+    "first_seen": "2026-11-27",
+    "starred_by": "UlisesGascon",
+    "starred_at": "2025-11-10T14:59:17Z"
+  },
+  "UlisesGascon/jquery-lts/jquery-security-patches": {
+    "first_seen": "2026-11-27",
+    "starred_by": "UlisesGascon",
+    "starred_at": "2024-02-12T19:52:01Z"
+  },
+  "UlisesGascon/marco-ippolito/libuv-milo-http-server": {
+    "first_seen": "2026-11-27",
+    "starred_by": "UlisesGascon",
+    "starred_at": "2024-04-09T14:14:24Z"
+  },
+  "UlisesGascon/rwaldron/johnny-five": {
+    "first_seen": "2026-11-27",
+    "starred_by": "UlisesGascon",
+    "starred_at": "2024-03-09T16:24:58Z"
   },
   "uuuvn/helix-editor/helix": {
     "first_seen": "2024-07-12",
@@ -18064,6 +18674,31 @@
     "starred_by": "Yoosseph",
     "starred_at": "2026-10-23T14:25:10Z"
   },
+  "zaxioms0/AndrewRadev/undoquit.vim": {
+    "first_seen": "2026-11-27",
+    "starred_by": "zaxioms0",
+    "starred_at": "2024-04-20T19:44:09Z"
+  },
+  "zaxioms0/arminbiere/cadical": {
+    "first_seen": "2026-11-27",
+    "starred_by": "zaxioms0",
+    "starred_at": "2026-03-08T03:57:04Z"
+  },
+  "zaxioms0/ghostty-org/ghostty": {
+    "first_seen": "2026-11-27",
+    "starred_by": "zaxioms0",
+    "starred_at": "2024-12-27T19:03:14Z"
+  },
+  "zaxioms0/GothenburgBitFactory/taskwarrior": {
+    "first_seen": "2026-11-27",
+    "starred_by": "zaxioms0",
+    "starred_at": "2024-12-26T05:48:59Z"
+  },
+  "zaxioms0/rubenGoetz/PalRUP-Check": {
+    "first_seen": "2026-11-27",
+    "starred_by": "zaxioms0",
+    "starred_at": "2026-07-21T16:15:45Z"
+  },
   "zaycev/agersant/tiger": {
     "first_seen": "2026-08-20",
     "starred_by": "zaycev",
@@ -18228,6 +18863,11 @@
     "first_seen": "2026-09-05",
     "starred_by": "zhanghang1989",
     "starred_at": "2026-09-05T03:27:40Z"
+  },
+  "zhanghang1989/leanprover-community/riemann-hypothesis": {
+    "first_seen": "2026-11-27",
+    "starred_by": "zhanghang1989",
+    "starred_at": "2026-11-26T05:58:06Z"
   },
   "zhanghang1989/MoonshotAI/Kimi-K2": {
     "first_seen": "2026-05-06",

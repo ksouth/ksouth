@@ -1,5 +1,1163 @@
 [
   {
+    "date": "2026-11-27",
+    "generated_at": "2026-11-27T03:35:02.649Z",
+    "items": [
+      {
+        "starred_by": "AgentSparko",
+        "nameWithOwner": "AEON-7/Aeon3.8-Flash-Next-Ultimate-Uncensored",
+        "url": "https://github.com/AEON-7/Aeon3.8-Flash-Next-Ultimate-Uncensored",
+        "language": "",
+        "stars": 3,
+        "description": "Uncensored (abliterated) Qwen3.8-Flash-Next 180B on NVIDIA DGX Spark: copy-paste quick-start guides and AGENTS.md for the 98 GiB NVFP4-XS build. Strata and AEON vLLM Ultimate recipes for 1, 2 and 4 Sparks, OpenAI-compatible API.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "agl",
+        "nameWithOwner": "agl/crlset-tools",
+        "url": "https://github.com/agl/crlset-tools",
+        "language": "Go",
+        "stars": 173,
+        "description": "Tools for dealing with Chrome's CRLSets",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "agl",
+        "nameWithOwner": "agl/extract-nss-root-certs",
+        "url": "https://github.com/agl/extract-nss-root-certs",
+        "language": "Go",
+        "stars": 143,
+        "description": "",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "agl",
+        "nameWithOwner": "google-antigravity/antigravity-sdk-python",
+        "url": "https://github.com/google-antigravity/antigravity-sdk-python",
+        "language": "Python",
+        "stars": 4243,
+        "description": "A Python library for building AI agents that leverage the full power of Google Antigravity.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "agl",
+        "nameWithOwner": "google-gemini/genai-processors",
+        "url": "https://github.com/google-gemini/genai-processors",
+        "language": "Python",
+        "stars": 2125,
+        "description": "GenAI Processors is a lightweight Python library that enables efficient, parallel content processing.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "agl",
+        "nameWithOwner": "microsoft/webauthn",
+        "url": "https://github.com/microsoft/webauthn",
+        "language": "C",
+        "stars": 191,
+        "description": "Win32 APIs for WebAuthn standard",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "AlabamaMike",
+        "nameWithOwner": "MiaAI-Lab/Inkling-2-Mini-DGX-Spark-TensorFold",
+        "url": "https://github.com/MiaAI-Lab/Inkling-2-Mini-DGX-Spark-TensorFold",
+        "language": "Shell",
+        "stars": 55,
+        "description": "Serve Inkling 2 Mini on one NVIDIA DGX Spark (GB10, sm_121) with TensorFold (DSpark drafts, fp8 KV, FP4/MXFP8 prefill tensor cores, vision, structured output)",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "allisoneer",
+        "nameWithOwner": "gabrielkoerich/git-cow",
+        "url": "https://github.com/gabrielkoerich/git-cow",
+        "language": "Rust",
+        "stars": 95,
+        "description": "Git worktrees that share files through copy-on-write clones (APFS, XFS, btrfs). A git subcommand and a Rust crate",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "allisoneer",
+        "nameWithOwner": "leostera/git-twig",
+        "url": "https://github.com/leostera/git-twig",
+        "language": "Rust",
+        "stars": 303,
+        "description": "lightweight git-worktrees for agents",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "AmintaCCCP",
+        "nameWithOwner": "guangshu100/BidMaster-Pro",
+        "url": "https://github.com/guangshu100/BidMaster-Pro",
+        "language": "Python",
+        "stars": 483,
+        "description": "全流程 智能招投标 Agent：标书生成 · 招投标解读 · 标书检查 · 标书文档ai排版 · 商机发现 一键完成。 21 项合规检查 · 多模型切换 · RAG 知识库 · OCR 抽取。 从招标公告到可交付 docx 文档，全流程 AI 自动化。",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "AmintaCCCP",
+        "nameWithOwner": "limitcool/jiyue",
+        "url": "https://github.com/limitcool/jiyue",
+        "language": "Rust",
+        "stars": 9,
+        "description": "Jiyue 霁月: a local-first Markdown notes app in Rust (GPUI) with live preview, CJK search and S3 sync",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "AmintaCCCP",
+        "nameWithOwner": "MuhammadaliMS/brink-releases",
+        "url": "https://github.com/MuhammadaliMS/brink-releases",
+        "language": "",
+        "stars": 3,
+        "description": "Brink releases (macOS)",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "anabologyco-maker",
+        "nameWithOwner": "spiritbuun/buun-llama-cpp",
+        "url": "https://github.com/spiritbuun/buun-llama-cpp",
+        "language": "C++",
+        "stars": 911,
+        "description": "Experimental llama.cpp fork for inference research and development",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "armanckeser",
+        "nameWithOwner": "getarcaneapp/arcane",
+        "url": "https://github.com/getarcaneapp/arcane",
+        "language": "Go",
+        "stars": 10589,
+        "description": "Modern Docker Management, Designed for Everyone",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "austinywang",
+        "nameWithOwner": "manaflow-ai/cmux",
+        "url": "https://github.com/manaflow-ai/cmux",
+        "language": "Swift",
+        "stars": 28986,
+        "description": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "austinywang",
+        "nameWithOwner": "stoneHee99/cmux-spotify",
+        "url": "https://github.com/stoneHee99/cmux-spotify",
+        "language": "Shell",
+        "stars": 2,
+        "description": "Show your currently playing Spotify track in cmux's sidebar. Real-time updates, cross-platform.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "austinywang",
+        "nameWithOwner": "su-record/torya-ext",
+        "url": "https://github.com/su-record/torya-ext",
+        "language": "TypeScript",
+        "stars": 4,
+        "description": "",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "austinywang",
+        "nameWithOwner": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "language": "TypeScript",
+        "stars": 120024,
+        "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "austinywang",
+        "nameWithOwner": "Yeachan-Heo/oh-my-codex",
+        "url": "https://github.com/Yeachan-Heo/oh-my-codex",
+        "language": "TypeScript",
+        "stars": 33853,
+        "description": "OmX - Oh My codeX: Your codex is not alone. Add hooks, agent teams, HUDs, and so much more.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "azooz2003-bit",
+        "nameWithOwner": "manaflow-ai/cmux",
+        "url": "https://github.com/manaflow-ai/cmux",
+        "language": "Swift",
+        "stars": 28986,
+        "description": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "azooz2003-bit",
+        "nameWithOwner": "WeaveMindAI/Webfurl",
+        "url": "https://github.com/WeaveMindAI/Webfurl",
+        "language": "Rust",
+        "stars": 56,
+        "description": "A browser use AI agent that uses a compressed unfoldable representation of HTML for high token efficiency",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "benben6515",
+        "nameWithOwner": "herdrdev/herdr-core",
+        "url": "https://github.com/herdrdev/herdr-core",
+        "language": "Rust",
+        "stars": 937,
+        "description": "herdr-core: terminals for coding agents",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "chuckx",
+        "nameWithOwner": "go-piv/piv-go",
+        "url": "https://github.com/go-piv/piv-go",
+        "language": "Go",
+        "stars": 433,
+        "description": "Keys and certificates for YubiKeys, written in Go",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "chuckx",
+        "nameWithOwner": "keith/xcode-man-pages",
+        "url": "https://github.com/keith/xcode-man-pages",
+        "language": "Python",
+        "stars": 76,
+        "description": "A HTML export of Xcode's man pages",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "chuckx",
+        "nameWithOwner": "openconfig/bootz",
+        "url": "https://github.com/openconfig/bootz",
+        "language": "Go",
+        "stars": 27,
+        "description": "OpenConfig network device bootstrap APIs and services",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "chuckx",
+        "nameWithOwner": "softhsm/SoftHSMv2",
+        "url": "https://github.com/softhsm/SoftHSMv2",
+        "language": "C++",
+        "stars": 1126,
+        "description": "SoftHSM version 2",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "chuckx",
+        "nameWithOwner": "str4d/ed25519-java",
+        "url": "https://github.com/str4d/ed25519-java",
+        "language": "Java",
+        "stars": 233,
+        "description": "Pure Java implementation of EdDSA",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "ciembor",
+        "nameWithOwner": "the-momentum/open-wearables",
+        "url": "https://github.com/the-momentum/open-wearables",
+        "language": "Python",
+        "stars": 2823,
+        "description": "Self-hosted platform to unify wearable health data through one AI-ready API.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "coygeek",
+        "nameWithOwner": "nexu-io/opengame",
+        "url": "https://github.com/nexu-io/opengame",
+        "language": "TypeScript",
+        "stars": 1190,
+        "description": "The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral games to remix. Turn 20+ coding agents (Claude Code, Codex, DeepSeek, etc.) into a full-stack AI game studio. Build and publish 3D & mini-games to WeChat, Douyin, TikTok, Telegram, itch.io, and more.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "dahlia",
+        "nameWithOwner": "jj1guj/blog",
+        "url": "https://github.com/jj1guj/blog",
+        "language": "TypeScript",
+        "stars": 3,
+        "description": "JJ1GUJのブログ",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "Dammyjay93",
+        "nameWithOwner": "ai-job-search-dev/ai-job-search",
+        "url": "https://github.com/ai-job-search-dev/ai-job-search",
+        "language": "Python",
+        "stars": 73644,
+        "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "Dammyjay93",
+        "nameWithOwner": "career-ops-hq/career-ops",
+        "url": "https://github.com/career-ops-hq/career-ops",
+        "language": "JavaScript",
+        "stars": 85090,
+        "description": "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an ATS-friendly resume and cover letter, get interview prep and an application tracker. It helps you fill in each application; you press Submit. Runs locally in Codex, OpenCode and other AI CLIs, or as a Claude Code plugin.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "Dammyjay93",
+        "nameWithOwner": "Chuloo/mural",
+        "url": "https://github.com/Chuloo/mural",
+        "language": "TypeScript",
+        "stars": 1825,
+        "description": "The language app you eventually delete. A native iPhone companion for learning through conversation.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "Dammyjay93",
+        "nameWithOwner": "Dammyjay93/design-engineer-archived",
+        "url": "https://github.com/Dammyjay93/design-engineer-archived",
+        "language": "JavaScript",
+        "stars": 6,
+        "description": "Design engineering for Claude Code. Craft, direction, memory, enforcement.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "Dammyjay93",
+        "nameWithOwner": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "language": "TypeScript",
+        "stars": 120024,
+        "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "davanstrien",
+        "nameWithOwner": "alvarobartt/hf-mem",
+        "url": "https://github.com/alvarobartt/hf-mem",
+        "language": "Python",
+        "stars": 958,
+        "description": "A CLI to estimate inference memory requirements for Hugging Face models, written in Python.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "davanstrien",
+        "nameWithOwner": "Knowledgator/FlashDeBERTa",
+        "url": "https://github.com/Knowledgator/FlashDeBERTa",
+        "language": "Python",
+        "stars": 97,
+        "description": "Trully flash implementation of DeBERTa disentangled attention mechanism.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "davanstrien",
+        "nameWithOwner": "michaelsauter/crane",
+        "url": "https://github.com/michaelsauter/crane",
+        "language": "Go",
+        "stars": 999,
+        "description": "Crane - Lift containers with ease",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "davidben",
+        "nameWithOwner": "davidben/barnowl-zstatus",
+        "url": "https://github.com/davidben/barnowl-zstatus",
+        "language": "Perl",
+        "stars": 3,
+        "description": "Z-Status module for BarnOwl",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "davidben",
+        "nameWithOwner": "davidben/emscripten",
+        "url": "https://github.com/davidben/emscripten",
+        "language": "JavaScript",
+        "stars": 4,
+        "description": "Emscripten: An LLVM-to-JavaScript Compiler",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "davidben",
+        "nameWithOwner": "davidben/mosh-chrome",
+        "url": "https://github.com/davidben/mosh-chrome",
+        "language": "JavaScript",
+        "stars": 27,
+        "description": "The start of a Chrome port of mosh (mobile shell)",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "davidben",
+        "nameWithOwner": "davidben/uqm",
+        "url": "https://github.com/davidben/uqm",
+        "language": "C",
+        "stars": 29,
+        "description": "Port of The Ur-Quan Masters to Native Client",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "davidben",
+        "nameWithOwner": "davidben/webathena",
+        "url": "https://github.com/davidben/webathena",
+        "language": "JavaScript",
+        "stars": 30,
+        "description": "An experiment to bring Kerberos and Project Athena to the web",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "EdwardBetts",
+        "nameWithOwner": "planarnetwork/gb-transit",
+        "url": "https://github.com/planarnetwork/gb-transit",
+        "language": "TypeScript",
+        "stars": 37,
+        "description": "DTD feed importing, timetable conversion and GTFS tooling",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "fedebotu",
+        "nameWithOwner": "heydamir/unslop",
+        "url": "https://github.com/heydamir/unslop",
+        "language": "JavaScript",
+        "stars": 22259,
+        "description": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "fendouai",
+        "nameWithOwner": "mathiasmantelli/awesome-mobile-robotics",
+        "url": "https://github.com/mathiasmantelli/awesome-mobile-robotics",
+        "language": "",
+        "stars": 789,
+        "description": "Useful links of different content related to AI, Computer Vision, and Robotics.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "fendouai",
+        "nameWithOwner": "zhaotoday/awesome-ai-video",
+        "url": "https://github.com/zhaotoday/awesome-ai-video",
+        "language": "",
+        "stars": 68,
+        "description": "AI 视频生产资源索引。收录短剧 / 漫剧产线、一键短视频、高光切片与混剪、时间线剪辑器、ComfyUI × MiniMax H3、Agent 框架与 Skills、画布工作台，以及云厂商智剪 / 高光 API 与相关产品。",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "iainmcgin",
+        "nameWithOwner": "andrey-pohilko/registry-cli",
+        "url": "https://github.com/andrey-pohilko/registry-cli",
+        "language": "Python",
+        "stars": 932,
+        "description": "Scripts for easy manipulation of docker-registry from command line (and from scripts)",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "iainmcgin",
+        "nameWithOwner": "anthropics/buffa",
+        "url": "https://github.com/anthropics/buffa",
+        "language": "Rust",
+        "stars": 953,
+        "description": "Rust implementation of protobuf with editions support, JSON serialization, and zero-copy views",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "iainmcgin",
+        "nameWithOwner": "bufbuild/protobuf-py",
+        "url": "https://github.com/bufbuild/protobuf-py",
+        "language": "Python",
+        "stars": 125,
+        "description": "Idiomatic Protocol Buffers for Python.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "iainmcgin",
+        "nameWithOwner": "connectrpc/connect-rust",
+        "url": "https://github.com/connectrpc/connect-rust",
+        "language": "Rust",
+        "stars": 544,
+        "description": "An implementation of the ConnectRPC, gRPC, and gRPC-Web for Rust",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "iainmcgin",
+        "nameWithOwner": "connyay/connectrpc-workers",
+        "url": "https://github.com/connyay/connectrpc-workers",
+        "language": "Rust",
+        "stars": 9,
+        "description": "ConnectRPC ClientTransport implementations backed by the Cloudflare Workers fetch APIs (service bindings + global fetch).",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "Infatoshi",
+        "nameWithOwner": "bendlang/bend",
+        "url": "https://github.com/bendlang/bend",
+        "language": "TypeScript",
+        "stars": 25940,
+        "description": "Bend 2: a fast language that blocks AI mistakes via proof. Install: curl -fsSL https://bend-lang.com/install.sh | sh",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "Infatoshi",
+        "nameWithOwner": "deepseek-ai/DeepInfer",
+        "url": "https://github.com/deepseek-ai/DeepInfer",
+        "language": "Python",
+        "stars": 26398,
+        "description": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "Infatoshi",
+        "nameWithOwner": "FlashML-org/FreeToken",
+        "url": "https://github.com/FlashML-org/FreeToken",
+        "language": "Python",
+        "stars": 17803,
+        "description": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "Infatoshi",
+        "nameWithOwner": "morluto/rea",
+        "url": "https://github.com/morluto/rea",
+        "language": "TypeScript",
+        "stars": 479964,
+        "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "Infatoshi",
+        "nameWithOwner": "TeamWheelWizard/WheelWizard",
+        "url": "https://github.com/TeamWheelWizard/WheelWizard",
+        "language": "C#",
+        "stars": 926,
+        "description": "WheelWizard, Retro Rewind Launcher",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "JamesPerlman",
+        "nameWithOwner": "CompVis/EDGS",
+        "url": "https://github.com/CompVis/EDGS",
+        "language": "Jupyter Notebook",
+        "stars": 754,
+        "description": "[CVPR 2026] A PyTorch implementation of the paper \"EDGS: Eliminating Densification for Efficient Convergence of 3DGS\"",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "JamesPerlman",
+        "nameWithOwner": "luv91/NeRFs-TrueLog_vs_sRGB",
+        "url": "https://github.com/luv91/NeRFs-TrueLog_vs_sRGB",
+        "language": "Python",
+        "stars": 1,
+        "description": "",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "JamesPerlman",
+        "nameWithOwner": "Shubhamsaboo/awesome-llm-apps",
+        "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+        "language": "Python",
+        "stars": 145858,
+        "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "JamesPerlman",
+        "nameWithOwner": "TMElyralab/MuseTalk",
+        "url": "https://github.com/TMElyralab/MuseTalk",
+        "language": "Python",
+        "stars": 7056,
+        "description": "MuseTalk: Real-Time High Quality Lip Synchorization with Latent Space Inpainting",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "JamesPerlman",
+        "nameWithOwner": "TMElyralab/MuseV",
+        "url": "https://github.com/TMElyralab/MuseV",
+        "language": "Python",
+        "stars": 2849,
+        "description": "MuseV: Infinite-length and High Fidelity Virtual Human Video Generation with Visual Conditioned Parallel Denoising",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "juergw",
+        "nameWithOwner": "google/conscrypt",
+        "url": "https://github.com/google/conscrypt",
+        "language": "Java",
+        "stars": 1414,
+        "description": "Conscrypt is a Java Security Provider that implements parts of the Java Cryptography Extension and Java Secure Socket Extension.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "juergw",
+        "nameWithOwner": "tink-crypto/tink-cc-awskms",
+        "url": "https://github.com/tink-crypto/tink-cc-awskms",
+        "language": "C++",
+        "stars": 6,
+        "description": "AWS-KMS extension for Tink C++",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "juergw",
+        "nameWithOwner": "tink-crypto/tink-cc-gcpkms",
+        "url": "https://github.com/tink-crypto/tink-cc-gcpkms",
+        "language": "C++",
+        "stars": 7,
+        "description": "Google Cloud KMS extension for Tink C++",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "juergw",
+        "nameWithOwner": "tink-crypto/tink-go-awskms",
+        "url": "https://github.com/tink-crypto/tink-go-awskms",
+        "language": "Go",
+        "stars": 10,
+        "description": "Extension to Tink Go that provides AWS KMS integration",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "juergw",
+        "nameWithOwner": "tink-crypto/tink-go-hcvault",
+        "url": "https://github.com/tink-crypto/tink-go-hcvault",
+        "language": "Shell",
+        "stars": 10,
+        "description": "Extension to Tink Go that provides HashiCorp Vault integration",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "justsmth",
+        "nameWithOwner": "aws/aws-lc-rs",
+        "url": "https://github.com/aws/aws-lc-rs",
+        "language": "Rust",
+        "stars": 680,
+        "description": "aws-lc-rs is a cryptographic library using AWS-LC for its cryptographic operations. The library strives to be API-compatible with the popular Rust library named ring.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "justsmth",
+        "nameWithOwner": "DioxusLabs/dioxus",
+        "url": "https://github.com/DioxusLabs/dioxus",
+        "language": "Rust",
+        "stars": 39940,
+        "description": "Fullstack app framework for web, desktop, and mobile.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "justsmth",
+        "nameWithOwner": "fadeevab/design-patterns-rust",
+        "url": "https://github.com/fadeevab/design-patterns-rust",
+        "language": "Rust",
+        "stars": 1061,
+        "description": "Rust examples for all 23 classic GoF design patterns, and even a little more",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "justsmth",
+        "nameWithOwner": "mre/idiomatic-rust",
+        "url": "https://github.com/mre/idiomatic-rust",
+        "language": "Rust",
+        "stars": 7916,
+        "description": "🦀 A peer-reviewed collection of articles/talks/repos which teach concise, idiomatic Rust.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "justsmth",
+        "nameWithOwner": "realbigsean/idealix",
+        "url": "https://github.com/realbigsean/idealix",
+        "language": "",
+        "stars": 3,
+        "description": "Helix like keybindings for Jetbrains ideavim plugin.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "koala73",
+        "nameWithOwner": "chuspeeism/xiaozao-os",
+        "url": "https://github.com/chuspeeism/xiaozao-os",
+        "language": "JavaScript",
+        "stars": 352,
+        "description": "大师的AI小灶官网：模拟桌面操作系统的个人主页",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "koala73",
+        "nameWithOwner": "GoogleCloudPlatform/genmedia-creative-studio",
+        "url": "https://github.com/GoogleCloudPlatform/genmedia-creative-studio",
+        "language": "Jupyter Notebook",
+        "stars": 1240,
+        "description": "GenMedia Creative Studio is a generative media user experience highlighting the use of Gemini, Gemini Omni, Veo, Gemini Image 🍌, Gemini TTS, Chirp 3, Lyria and other generative media APIs on Google Cloud.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "koala73",
+        "nameWithOwner": "posts-design/mcp",
+        "url": "https://github.com/posts-design/mcp",
+        "language": "JavaScript",
+        "stars": 31,
+        "description": "Hosted MCP server for posts.design: real social posts, OG images and launch-video breakdowns from top brands, for your design agent.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "lawrencecchen",
+        "nameWithOwner": "brennanMKE/SubagentMultiplexingSkill",
+        "url": "https://github.com/brennanMKE/SubagentMultiplexingSkill",
+        "language": "Shell",
+        "stars": 2,
+        "description": "Skill for Claude Code to leverage multiplexing with cmux window panes for subagents",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "lawrencecchen",
+        "nameWithOwner": "denoland/celld",
+        "url": "https://github.com/denoland/celld",
+        "language": "Rust",
+        "stars": 6371,
+        "description": "self-hosted, distributed Durable Objects",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "lawrencecchen",
+        "nameWithOwner": "marekkowalczyk/breathe-cli",
+        "url": "https://github.com/marekkowalczyk/breathe-cli",
+        "language": "Python",
+        "stars": 326,
+        "description": "Paced resonance breathing in your terminal",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "lawrencecchen",
+        "nameWithOwner": "mem0ai/openmemory",
+        "url": "https://github.com/mem0ai/openmemory",
+        "language": "TypeScript",
+        "stars": 109,
+        "description": "Open-source CLI & TUI to port AI coding sessions across Claude Code, Codex, and OpenCode.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "lawrencecchen",
+        "nameWithOwner": "yigitkonur/awesome-cmux",
+        "url": "https://github.com/yigitkonur/awesome-cmux",
+        "language": "Python",
+        "stars": 66,
+        "description": "",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "levzzz5154",
+        "nameWithOwner": "inclusionAI/Ming-Image",
+        "url": "https://github.com/inclusionAI/Ming-Image",
+        "language": "Python",
+        "stars": 243,
+        "description": "",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "lzt404",
+        "nameWithOwner": "crhywun/g1-acq",
+        "url": "https://github.com/crhywun/g1-acq",
+        "language": "JavaScript",
+        "stars": 1667,
+        "description": "",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "MaxForAI",
+        "nameWithOwner": "lobehub/awesome-wsp",
+        "url": "https://github.com/lobehub/awesome-wsp",
+        "language": "TeX",
+        "stars": 1,
+        "description": "A curated guide to weight-space programming: reading neural network weights, editing checkpoints, writing networks, and evaluating the results.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "MiaAI-Lab",
+        "nameWithOwner": "omacom/omarchy",
+        "url": "https://github.com/omacom/omarchy",
+        "language": "Shell",
+        "stars": 47659,
+        "description": "Beautiful, Modern & Opinionated Linux",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "morambro",
+        "nameWithOwner": "tink-crypto/tink",
+        "url": "https://github.com/tink-crypto/tink",
+        "language": "Java",
+        "stars": 13528,
+        "description": "Tink is a multi-language, cross-platform, open source library that provides cryptographic APIs that are secure, easy to use correctly, and hard(er) to misuse.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "morambro",
+        "nameWithOwner": "tink-crypto/tink-cc",
+        "url": "https://github.com/tink-crypto/tink-cc",
+        "language": "C++",
+        "stars": 107,
+        "description": "C++ implementation of Tink",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "morambro",
+        "nameWithOwner": "tink-crypto/tink-go-awskms",
+        "url": "https://github.com/tink-crypto/tink-go-awskms",
+        "language": "Go",
+        "stars": 10,
+        "description": "Extension to Tink Go that provides AWS KMS integration",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "morambro",
+        "nameWithOwner": "tink-crypto/tink-go-gcpkms",
+        "url": "https://github.com/tink-crypto/tink-go-gcpkms",
+        "language": "Go",
+        "stars": 18,
+        "description": "Extension to Tink Go that provides Google Cloud KMS integration",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "morambro",
+        "nameWithOwner": "tink-crypto/tink-objc",
+        "url": "https://github.com/tink-crypto/tink-objc",
+        "language": "Objective-C++",
+        "stars": 14,
+        "description": "Obj-C implementation of Tink",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "MoritzErtelt",
+        "nameWithOwner": "Mateusz-Jaskolowski/NbFrame",
+        "url": "https://github.com/Mateusz-Jaskolowski/NbFrame",
+        "language": "Python",
+        "stars": 9,
+        "description": "Classify nanobody structure or predict nanobody CDR3 conformation as kinked or extended from sequence alone.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "mvanhorn",
+        "nameWithOwner": "ardia-browser/ardia",
+        "url": "https://github.com/ardia-browser/ardia",
+        "language": "TypeScript",
+        "stars": 3151,
+        "description": "A free Chromium browser for the Mac: Arc's sidebar, Dia's polish. Chat on Discord: discord.gg/TdhuXrbcA6",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "mvanhorn",
+        "nameWithOwner": "morganlinton/BeautifulRust",
+        "url": "https://github.com/morganlinton/BeautifulRust",
+        "language": "Python",
+        "stars": 2158,
+        "description": "Agent Skills that teach coding agents to write, review, and port idiomatic Rust, plus a tested clippy config. Works with Claude Code, Codex, Copilot, Cursor, and Gemini CLI.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "pronskiy",
+        "nameWithOwner": "fabio-rovai/open-ontologies",
+        "url": "https://github.com/fabio-rovai/open-ontologies",
+        "language": "Rust",
+        "stars": 2970,
+        "description": "Plan, apply and roll back changes to a production ontology, with a blast radius report and a proof an auditor can re-check.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "rekram1-node",
+        "nameWithOwner": "anomalyco/psychoscript",
+        "url": "https://github.com/anomalyco/psychoscript",
+        "language": "Rust",
+        "stars": 379,
+        "description": "A confined JavaScript runtime for programs that call schema-described tools",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "rohitg00",
+        "nameWithOwner": "superdesigndev/treg",
+        "url": "https://github.com/superdesigndev/treg",
+        "language": "Python",
+        "stars": 9619,
+        "description": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "rufuspollock",
+        "nameWithOwner": "natureoforder/alexander-wiki",
+        "url": "https://github.com/natureoforder/alexander-wiki",
+        "language": "CSS",
+        "stars": 1,
+        "description": "A concept-first guide to Christopher Alexander, his works and neighborhood practice",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "samuel40791765",
+        "nameWithOwner": "awslabs/mls-rs",
+        "url": "https://github.com/awslabs/mls-rs",
+        "language": "Rust",
+        "stars": 263,
+        "description": "An implementation of Messaging Layer Security (RFC 9420)",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "samuel40791765",
+        "nameWithOwner": "ByteByteGoHq/system-design-101",
+        "url": "https://github.com/ByteByteGoHq/system-design-101",
+        "language": "",
+        "stars": 91421,
+        "description": "Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "samuel40791765",
+        "nameWithOwner": "C2SP/x509-limbo",
+        "url": "https://github.com/C2SP/x509-limbo",
+        "language": "C++",
+        "stars": 71,
+        "description": "A suite of testvectors for X.509 certificate path validation and tools for building them",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "samuel40791765",
+        "nameWithOwner": "secure-foundations/vest",
+        "url": "https://github.com/secure-foundations/vest",
+        "language": "Rust",
+        "stars": 116,
+        "description": "High-assurance and performant Rust-based parsing and serialization of binary data formats verified in Verus",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "samuel40791765",
+        "nameWithOwner": "wolfSSL/wolfssl",
+        "url": "https://github.com/wolfSSL/wolfssl",
+        "language": "C",
+        "stars": 2998,
+        "description": "The wolfSSL library is a small, fast, portable implementation of TLS/SSL for embedded devices to the cloud.  wolfSSL supports up to TLS 1.3 and DTLS 1.3! Update to wolfSSL 5.9.1 for the latest CVE fixes.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "sb-",
+        "nameWithOwner": "harvard-edge/cs249r_book",
+        "url": "https://github.com/harvard-edge/cs249r_book",
+        "language": "Python",
+        "stars": 30318,
+        "description": "Machine Learning Systems: Foundations, Scaling, Agentic AI, and Physical AI (Vols I–IV) • Harvard CS249r | https://mlsysbook.ai",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "sb-",
+        "nameWithOwner": "mindverse/Second-Me",
+        "url": "https://github.com/mindverse/Second-Me",
+        "language": "Python",
+        "stars": 15705,
+        "description": "Train your AI self, amplify you, bridge the world",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "sb-",
+        "nameWithOwner": "MystenLabs/walrus-sites",
+        "url": "https://github.com/MystenLabs/walrus-sites",
+        "language": "HTML",
+        "stars": 184,
+        "description": "Walrus Sites: Decentralized Websites using Sui and Walrus.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "sb-",
+        "nameWithOwner": "sdan/qwen-web",
+        "url": "https://github.com/sdan/qwen-web",
+        "language": "TypeScript",
+        "stars": 469,
+        "description": "qwen running locally in your browser",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "sb-",
+        "nameWithOwner": "smtg-ai/claude-squad",
+        "url": "https://github.com/smtg-ai/claude-squad",
+        "language": "Go",
+        "stars": 8873,
+        "description": "Manage multiple AI terminal agents like Claude Code, Codex, OpenCode, and Amp.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "SharkEzz",
+        "nameWithOwner": "sindresorhus/type-fest",
+        "url": "https://github.com/sindresorhus/type-fest",
+        "language": "TypeScript",
+        "stars": 17561,
+        "description": "A collection of essential TypeScript types",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "ShengjieJin",
+        "nameWithOwner": "open-compass/AgentCompass",
+        "url": "https://github.com/open-compass/AgentCompass",
+        "language": "Python",
+        "stars": 204,
+        "description": "[EMNLP 2026] AgentCompass is an extensible open-source evaluation infrastructure for systematically assessing LLM/VLM agent capabilities.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "teamleaderleo",
+        "nameWithOwner": "donnemartin/system-design-primer",
+        "url": "https://github.com/donnemartin/system-design-primer",
+        "language": "Python",
+        "stars": 379390,
+        "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "teamleaderleo",
+        "nameWithOwner": "honestbleeps/Reddit-Enhancement-Suite",
+        "url": "https://github.com/honestbleeps/Reddit-Enhancement-Suite",
+        "language": "JavaScript",
+        "stars": 4554,
+        "description": "Reddit Enhancement Suite",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "teamleaderleo",
+        "nameWithOwner": "PostHog/posthog",
+        "url": "https://github.com/PostHog/posthog",
+        "language": "Python",
+        "stars": 41180,
+        "description": ":hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "teamleaderleo",
+        "nameWithOwner": "syncthing/syncthing",
+        "url": "https://github.com/syncthing/syncthing",
+        "language": "Go",
+        "stars": 90889,
+        "description": "Open Source Continuous File Synchronization",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "teamleaderleo",
+        "nameWithOwner": "XTraceAI/xtrace",
+        "url": "https://github.com/XTraceAI/xtrace",
+        "language": "Rust",
+        "stars": 34,
+        "description": "XTrace – open-source macOS app for coding agent productivity: agent vs estimated human time, API-equivalent spend, usage limits, and customizable scoring skills.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "tholenst",
+        "nameWithOwner": "tink-crypto/tink-cc",
+        "url": "https://github.com/tink-crypto/tink-cc",
+        "language": "C++",
+        "stars": 107,
+        "description": "C++ implementation of Tink",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "tholenst",
+        "nameWithOwner": "tink-crypto/tink-cross-lang-tests",
+        "url": "https://github.com/tink-crypto/tink-cross-lang-tests",
+        "language": "Python",
+        "stars": 5,
+        "description": "Cross language tests for Tink",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "tholenst",
+        "nameWithOwner": "tink-crypto/tink-java",
+        "url": "https://github.com/tink-crypto/tink-java",
+        "language": "Java",
+        "stars": 318,
+        "description": "Java implementation of Tink",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "tholenst",
+        "nameWithOwner": "tink-crypto/tink-objc",
+        "url": "https://github.com/tink-crypto/tink-objc",
+        "language": "Objective-C++",
+        "stars": 14,
+        "description": "Obj-C implementation of Tink",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "UlisesGascon",
+        "nameWithOwner": "daytonaio/daytona",
+        "url": "https://github.com/daytonaio/daytona",
+        "language": "",
+        "stars": 71267,
+        "description": "Daytona is a Secure and Elastic Infrastructure for Running AI-Generated Code",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "UlisesGascon",
+        "nameWithOwner": "glanceapp/glance",
+        "url": "https://github.com/glanceapp/glance",
+        "language": "Go",
+        "stars": 38387,
+        "description": "A self-hosted dashboard that puts all your feeds in one place",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "UlisesGascon",
+        "nameWithOwner": "jquery-lts/jquery-security-patches",
+        "url": "https://github.com/jquery-lts/jquery-security-patches",
+        "language": "JavaScript",
+        "stars": 6,
+        "description": "LTS jQuery versions with security patches",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "UlisesGascon",
+        "nameWithOwner": "marco-ippolito/libuv-milo-http-server",
+        "url": "https://github.com/marco-ippolito/libuv-milo-http-server",
+        "language": "JavaScript",
+        "stars": 5,
+        "description": "http-server with libuv and milo",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "UlisesGascon",
+        "nameWithOwner": "rwaldron/johnny-five",
+        "url": "https://github.com/rwaldron/johnny-five",
+        "language": "JavaScript",
+        "stars": 13409,
+        "description": "JavaScript Robotics and IoT programming framework, developed at Bocoup.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "zaxioms0",
+        "nameWithOwner": "AndrewRadev/undoquit.vim",
+        "url": "https://github.com/AndrewRadev/undoquit.vim",
+        "language": "Ruby",
+        "stars": 71,
+        "description": "Undo a :quit -- reopen the last window you closed",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "zaxioms0",
+        "nameWithOwner": "arminbiere/cadical",
+        "url": "https://github.com/arminbiere/cadical",
+        "language": "C++",
+        "stars": 642,
+        "description": "CaDiCaL SAT Solver",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "zaxioms0",
+        "nameWithOwner": "ghostty-org/ghostty",
+        "url": "https://github.com/ghostty-org/ghostty",
+        "language": "Zig",
+        "stars": 64510,
+        "description": "👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "zaxioms0",
+        "nameWithOwner": "GothenburgBitFactory/taskwarrior",
+        "url": "https://github.com/GothenburgBitFactory/taskwarrior",
+        "language": "C++",
+        "stars": 6187,
+        "description": "Taskwarrior - Command line Task Management",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "zaxioms0",
+        "nameWithOwner": "rubenGoetz/PalRUP-Check",
+        "url": "https://github.com/rubenGoetz/PalRUP-Check",
+        "language": "C",
+        "stars": 1,
+        "description": "Standalone checker for the PalRUP Framework",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "zhanghang1989",
+        "nameWithOwner": "leanprover-community/riemann-hypothesis",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis",
+        "language": "Lean",
+        "stars": 1473,
+        "description": "Lean formalization of the Riemann Hypothesis (Alpöge, 2026-11-20) being cleaned up by members of the Lean community.",
+        "first_seen": "2026-11-27"
+      }
+    ]
+  },
+  {
     "date": "2026-11-26",
     "generated_at": "2026-11-26T03:27:51.839Z",
     "items": [
