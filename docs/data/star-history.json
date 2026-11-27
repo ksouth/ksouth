@@ -1,7 +1,7 @@
 [
   {
     "date": "2026-11-27",
-    "generated_at": "2026-11-27T03:35:02.649Z",
+    "generated_at": "2026-11-27T09:39:19.728Z",
     "items": [
       {
         "starred_by": "AgentSparko",
@@ -202,6 +202,15 @@
         "first_seen": "2026-11-27"
       },
       {
+        "starred_by": "CarlosArleo",
+        "nameWithOwner": "NVIDIA/auto-ontology",
+        "url": "https://github.com/NVIDIA/auto-ontology",
+        "language": "Python",
+        "stars": 15213,
+        "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+        "first_seen": "2026-11-27"
+      },
+      {
         "starred_by": "chuckx",
         "nameWithOwner": "go-piv/piv-go",
         "url": "https://github.com/go-piv/piv-go",
@@ -253,6 +262,15 @@
         "language": "Python",
         "stars": 2823,
         "description": "Self-hosted platform to unify wearable health data through one AI-ready API.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "Coff0xc",
+        "nameWithOwner": "claude-code-best/claude-code",
+        "url": "https://github.com/claude-code-best/claude-code",
+        "language": "TypeScript",
+        "stars": 23498,
+        "description": "原汁原昧 Claude Code 可运行,可构建, 可调试版; 生产级工程化, 企业级可靠性; 安全无毒, 内存泄露修复",
         "first_seen": "2026-11-27"
       },
       {
@@ -671,6 +689,15 @@
       },
       {
         "starred_by": "koala73",
+        "nameWithOwner": "johnrobinsn/AvatarVoice",
+        "url": "https://github.com/johnrobinsn/AvatarVoice",
+        "language": "Python",
+        "stars": 40,
+        "description": "Real-time voice chat with a lip-synced diffusion head-avatar (AvatarForcing). WebRTC server, VAD/STT/LLM/TTS loop, and a streaming infrastructure that keeps the model running indefinitely on one GPU.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "koala73",
         "nameWithOwner": "posts-design/mcp",
         "url": "https://github.com/posts-design/mcp",
         "language": "JavaScript",
@@ -811,6 +838,60 @@
         "language": "Python",
         "stars": 9,
         "description": "Classify nanobody structure or predict nanobody CDR3 conformation as kinked or extended from sequence alone.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "mpadge",
+        "nameWithOwner": "intel/intel-one-mono",
+        "url": "https://github.com/intel/intel-one-mono",
+        "language": "",
+        "stars": 10907,
+        "description": "Intel One Mono font repository",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "Mr-Infect",
+        "nameWithOwner": "Idov31/Nidhogg",
+        "url": "https://github.com/Idov31/Nidhogg",
+        "language": "C++",
+        "stars": 2572,
+        "description": "Windows rootkit for Intel x64 with 25+ features, demonstrating rootkit techniques compatible with all Windows 10 and Windows 11 versions.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "Mr-Infect",
+        "nameWithOwner": "infosecsanyam261/All_About_OSCP_Notes",
+        "url": "https://github.com/infosecsanyam261/All_About_OSCP_Notes",
+        "language": "HTML",
+        "stars": 3,
+        "description": "",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "Mr-Infect",
+        "nameWithOwner": "milabs/awesome-linux-rootkits",
+        "url": "https://github.com/milabs/awesome-linux-rootkits",
+        "language": "",
+        "stars": 2119,
+        "description": "awesome-linux-rootkits",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "Mr-Infect",
+        "nameWithOwner": "mncoppola/suterusu",
+        "url": "https://github.com/mncoppola/suterusu",
+        "language": "C",
+        "stars": 689,
+        "description": "An LKM rootkit targeting Linux 2.6/3.x on x86(_64), and ARM",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "Mr-Infect",
+        "nameWithOwner": "ruvnet/RuView",
+        "url": "https://github.com/ruvnet/RuView",
+        "language": "Rust",
+        "stars": 105326,
+        "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
         "first_seen": "2026-11-27"
       },
       {
@@ -958,6 +1039,15 @@
         "first_seen": "2026-11-27"
       },
       {
+        "starred_by": "SensenGao",
+        "nameWithOwner": "Robbyant/lingbot-map-v2",
+        "url": "https://github.com/Robbyant/lingbot-map-v2",
+        "language": "Python",
+        "stars": 220,
+        "description": "LingBot-Map 2.0: Geometric Streaming Base Model",
+        "first_seen": "2026-11-27"
+      },
+      {
         "starred_by": "SharkEzz",
         "nameWithOwner": "sindresorhus/type-fest",
         "url": "https://github.com/sindresorhus/type-fest",
@@ -1099,6 +1189,24 @@
         "language": "JavaScript",
         "stars": 13409,
         "description": "JavaScript Robotics and IoT programming framework, developed at Bocoup.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "vtrivedy",
+        "nameWithOwner": "christian-bromann/channelstack",
+        "url": "https://github.com/christian-bromann/channelstack",
+        "language": "TypeScript",
+        "stars": 2,
+        "description": "A test harness for AI agents that live in Slack, GitHub, Linear and Notion.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "starred_by": "vtrivedy",
+        "nameWithOwner": "rivet-dev/rivet",
+        "url": "https://github.com/rivet-dev/rivet",
+        "language": "Rust",
+        "stars": 6996,
+        "description": "The orchestrator for agentic workloads. A fast, high-density and scalable orchestrator for every workload an agent needs.",
         "first_seen": "2026-11-27"
       },
       {

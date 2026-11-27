@@ -1,7 +1,7 @@
 [
   {
     "date": "2026-11-27",
-    "generated_at": "2026-11-27T03:35:02.649Z",
+    "generated_at": "2026-11-27T09:39:19.728Z",
     "items": [
       {
         "owner": "adamhsparks",
@@ -12,6 +12,17 @@
         "language": "R",
         "stars": 0,
         "description": "",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "owner": "AnswerDotAI",
+        "name": "nbaocd",
+        "url": "https://github.com/AnswerDotAI/nbaocd",
+        "type": "source",
+        "parent": null,
+        "language": "",
+        "stars": 0,
+        "description": "Native BPL port of baocd",
         "first_seen": "2026-11-27"
       },
       {
@@ -49,6 +60,17 @@
       },
       {
         "owner": "CarlosArleo",
+        "name": "auto-ontology",
+        "url": "https://github.com/CarlosArleo/auto-ontology",
+        "type": "fork",
+        "parent": "NVIDIA/auto-ontology",
+        "language": "Python",
+        "stars": 0,
+        "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "owner": "CarlosArleo",
         "name": "constitutional-physics",
         "url": "https://github.com/CarlosArleo/constitutional-physics",
         "type": "source",
@@ -67,6 +89,17 @@
         "language": "TypeScript",
         "stars": 0,
         "description": "Plotter Art Experiment",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "owner": "chuanqisun",
+        "name": "semcad-v2",
+        "url": "https://github.com/chuanqisun/semcad-v2",
+        "type": "source",
+        "parent": null,
+        "language": "HTML",
+        "stars": 0,
+        "description": "",
         "first_seen": "2026-11-27"
       },
       {
@@ -301,6 +334,61 @@
         "first_seen": "2026-11-27"
       },
       {
+        "owner": "ishandutta2007",
+        "name": "Awesome-Interactive-Simulation-Experimental-AI",
+        "url": "https://github.com/ishandutta2007/Awesome-Interactive-Simulation-Experimental-AI",
+        "type": "source",
+        "parent": null,
+        "language": "",
+        "stars": 0,
+        "description": "Top Interactive Simulation Experimental AI (Opensource)  Star if you like it! ",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "owner": "ishandutta2007",
+        "name": "Awesome-IOS-Utilities-Mobile-Container-Storage",
+        "url": "https://github.com/ishandutta2007/Awesome-IOS-Utilities-Mobile-Container-Storage",
+        "type": "source",
+        "parent": null,
+        "language": "",
+        "stars": 0,
+        "description": "Top IOS Utilities Mobile Container Storage (Opensource)  Star if you like it! ",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "owner": "ishandutta2007",
+        "name": "Awesome-IOT-Audio-Esp32-Airplay-2-Streaming",
+        "url": "https://github.com/ishandutta2007/Awesome-IOT-Audio-Esp32-Airplay-2-Streaming",
+        "type": "source",
+        "parent": null,
+        "language": "",
+        "stars": 0,
+        "description": "Top IOT Audio Esp32 Airplay 2 Streaming (Opensource)  Star if you like it! ",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "owner": "ishandutta2007",
+        "name": "Awesome-IOT-Hardware-Smartphone-Bridging",
+        "url": "https://github.com/ishandutta2007/Awesome-IOT-Hardware-Smartphone-Bridging",
+        "type": "source",
+        "parent": null,
+        "language": "",
+        "stars": 0,
+        "description": "Top IOT Hardware Smartphone Bridging (Opensource)  Star if you like it! ",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "owner": "ishandutta2007",
+        "name": "Awesome-IPTV-Streaming-Media-Management",
+        "url": "https://github.com/ishandutta2007/Awesome-IPTV-Streaming-Media-Management",
+        "type": "source",
+        "parent": null,
+        "language": "",
+        "stars": 0,
+        "description": "Top IPTV Streaming Media Management (Opensource)  Star if you like it! ",
+        "first_seen": "2026-11-27"
+      },
+      {
         "owner": "jargh",
         "name": "mlkem-native",
         "url": "https://github.com/jargh/mlkem-native",
@@ -309,6 +397,17 @@
         "language": "Assembly",
         "stars": 0,
         "description": "Secure, fast, and portable C90 implementation of ML-KEM / FIPS 203",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "owner": "johnbaums",
+        "name": "aus-enviro-explorer",
+        "url": "https://github.com/johnbaums/aus-enviro-explorer",
+        "type": "source",
+        "parent": null,
+        "language": "TypeScript",
+        "stars": 0,
+        "description": "Interactive browser map for exploring Australia’s NVIS 7.0 vegetation classifications via Australian Government ArcGIS WMS/REST services.",
         "first_seen": "2026-11-27"
       },
       {
@@ -379,6 +478,39 @@
       },
       {
         "owner": "mvanhorn",
+        "name": "cloud-hypervisor",
+        "url": "https://github.com/mvanhorn/cloud-hypervisor",
+        "type": "fork",
+        "parent": "cloud-hypervisor/cloud-hypervisor",
+        "language": "Rust",
+        "stars": 0,
+        "description": "A Virtual Machine Monitor for modern Cloud workloads. Features include CPU, memory and device hotplug, support for running Windows and Linux guests, device offload with vhost-user and a minimal compact footprint. Written in Rust with a strong focus on security.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "owner": "mvanhorn",
+        "name": "gf",
+        "url": "https://github.com/mvanhorn/gf",
+        "type": "fork",
+        "parent": "gogf/gf",
+        "language": "Go",
+        "stars": 0,
+        "description": "A powerful framework for faster, easier, and more efficient project development.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "owner": "mvanhorn",
+        "name": "llama-swap",
+        "url": "https://github.com/mvanhorn/llama-swap",
+        "type": "fork",
+        "parent": "mostlygeek/llama-swap",
+        "language": "Go",
+        "stars": 0,
+        "description": "Reliable model swapping for any local AI server. Chosen by thousands of users.  Batteries included. If we don't have it, you probably don't need it.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "owner": "mvanhorn",
         "name": "optimizationproblems",
         "url": "https://github.com/mvanhorn/optimizationproblems",
         "type": "fork",
@@ -401,6 +533,28 @@
       },
       {
         "owner": "mvanhorn",
+        "name": "passivbot",
+        "url": "https://github.com/mvanhorn/passivbot",
+        "type": "fork",
+        "parent": "enarjord/passivbot",
+        "language": "Python",
+        "stars": 0,
+        "description": "Trading bot running on Bybit, Bitget, OKX, GateIO, Binance, Kucoin, WEEX and Hyperliquid",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "owner": "mvanhorn",
+        "name": "sanity",
+        "url": "https://github.com/mvanhorn/sanity",
+        "type": "fork",
+        "parent": "sanity-io/sanity",
+        "language": "TypeScript",
+        "stars": 1,
+        "description": "Sanity Studio – Rapidly configure content workspaces powered by structured content",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "owner": "mvanhorn",
         "name": "velociraptor",
         "url": "https://github.com/mvanhorn/velociraptor",
         "type": "fork",
@@ -419,6 +573,17 @@
         "language": "HCL",
         "stars": 0,
         "description": "Experiments with Trivy SARIF code flows and fingerprints in GitHub code scanning",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "owner": "NurAbir",
+        "name": "Paradox",
+        "url": "https://github.com/NurAbir/Paradox",
+        "type": "source",
+        "parent": null,
+        "language": "Python",
+        "stars": 0,
+        "description": "Read web novels out loud with a local Kokoro-82M voice - a local TTS server plus a Novel Phoenix browser extension.",
         "first_seen": "2026-11-27"
       },
       {
@@ -463,6 +628,17 @@
         "language": "Python",
         "stars": 0,
         "description": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "owner": "ronishrohan",
+        "name": "site",
+        "url": "https://github.com/ronishrohan/site",
+        "type": "source",
+        "parent": null,
+        "language": "TypeScript",
+        "stars": 0,
+        "description": "",
         "first_seen": "2026-11-27"
       },
       {
@@ -522,6 +698,28 @@
       },
       {
         "owner": "vincentkoc",
+        "name": "formal-conjectures",
+        "url": "https://github.com/vincentkoc/formal-conjectures",
+        "type": "fork",
+        "parent": "google-deepmind/formal-conjectures",
+        "language": "Lean",
+        "stars": 0,
+        "description": "A collection of formalized statements of conjectures in Lean.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "owner": "vincentkoc",
+        "name": "open-math-agents",
+        "url": "https://github.com/vincentkoc/open-math-agents",
+        "type": "fork",
+        "parent": "GuillaumeBAUD-coder/open-math-agents",
+        "language": "Lean",
+        "stars": 0,
+        "description": "Collaborative registry of open mathematical problems and AI-solved problems for multi-agent research (shipfastwith.me)",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "owner": "vincentkoc",
         "name": "WebKit",
         "url": "https://github.com/vincentkoc/WebKit",
         "type": "fork",
@@ -562,6 +760,17 @@
         "language": "Python",
         "stars": 0,
         "description": "Reports and feedback for the running FLOP Network: node bugs, verification disputes, gateway issues, docs.",
+        "first_seen": "2026-11-27"
+      },
+      {
+        "owner": "zkasuran",
+        "name": "paydate",
+        "url": "https://github.com/zkasuran/paydate",
+        "type": "source",
+        "parent": null,
+        "language": "JavaScript",
+        "stars": 0,
+        "description": "Pay your team without dumping the treasury. A payroll sell scheduler for Solana DAOs: plans the start day, sizes each day's sale, drafts it for Squads. Telegraph Season II: app, miner and evaluator.",
         "first_seen": "2026-11-27"
       },
       {

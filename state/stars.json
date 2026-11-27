@@ -3154,6 +3154,11 @@
     "starred_by": "CarlosArleo",
     "starred_at": "2021-07-26T06:19:59Z"
   },
+  "CarlosArleo/NVIDIA/auto-ontology": {
+    "first_seen": "2026-11-27",
+    "starred_by": "CarlosArleo",
+    "starred_at": "2026-11-27T07:50:20Z"
+  },
   "casparb/langchain-ai/langgraph": {
     "first_seen": "2026-05-04",
     "starred_by": "casparb",
@@ -3668,6 +3673,11 @@
     "first_seen": "2026-11-26",
     "starred_by": "Coff0xc",
     "starred_at": "2026-11-18T08:24:45Z"
+  },
+  "Coff0xc/claude-code-best/claude-code": {
+    "first_seen": "2026-11-27",
+    "starred_by": "Coff0xc",
+    "starred_at": "2026-11-27T08:25:47Z"
   },
   "Coff0xc/elementalsouls/Claude-BugHunter": {
     "first_seen": "2026-11-26",
@@ -9554,6 +9564,11 @@
     "starred_by": "koala73",
     "starred_at": "2026-11-22T09:26:11Z"
   },
+  "koala73/johnrobinsn/AvatarVoice": {
+    "first_seen": "2026-11-27",
+    "starred_by": "koala73",
+    "starred_at": "2026-11-27T05:10:21Z"
+  },
   "koala73/m1guelpf/Exo": {
     "first_seen": "2026-11-23",
     "starred_by": "koala73",
@@ -11929,6 +11944,11 @@
     "starred_by": "mpadge",
     "starred_at": "2026-11-18T17:43:58Z"
   },
+  "mpadge/intel/intel-one-mono": {
+    "first_seen": "2026-11-27",
+    "starred_by": "mpadge",
+    "starred_at": "2026-11-27T07:20:42Z"
+  },
   "mpadge/Konrad1991/ast2ast": {
     "first_seen": "2026-11-26",
     "starred_by": "mpadge",
@@ -11963,6 +11983,31 @@
     "first_seen": "2026-07-29",
     "starred_by": "mpous",
     "starred_at": "2026-07-29T12:52:53Z"
+  },
+  "Mr-Infect/Idov31/Nidhogg": {
+    "first_seen": "2026-11-27",
+    "starred_by": "Mr-Infect",
+    "starred_at": "2026-04-27T04:14:30Z"
+  },
+  "Mr-Infect/infosecsanyam261/All_About_OSCP_Notes": {
+    "first_seen": "2026-11-27",
+    "starred_by": "Mr-Infect",
+    "starred_at": "2026-05-07T03:09:02Z"
+  },
+  "Mr-Infect/milabs/awesome-linux-rootkits": {
+    "first_seen": "2026-11-27",
+    "starred_by": "Mr-Infect",
+    "starred_at": "2026-04-21T07:45:57Z"
+  },
+  "Mr-Infect/mncoppola/suterusu": {
+    "first_seen": "2026-11-27",
+    "starred_by": "Mr-Infect",
+    "starred_at": "2026-02-14T16:02:33Z"
+  },
+  "Mr-Infect/ruvnet/RuView": {
+    "first_seen": "2026-11-27",
+    "starred_by": "Mr-Infect",
+    "starred_at": "2026-06-30T03:55:06Z"
   },
   "mrayinteractive/aescaffre/pixinsight-mcp": {
     "first_seen": "2026-09-29",
@@ -15449,6 +15494,11 @@
     "starred_by": "SensenGao",
     "starred_at": "2026-11-24T11:36:16Z"
   },
+  "SensenGao/Robbyant/lingbot-map-v2": {
+    "first_seen": "2026-11-27",
+    "starred_by": "SensenGao",
+    "starred_at": "2026-11-27T05:53:10Z"
+  },
   "SensenGao/sanshuiii/CausalDiorama": {
     "first_seen": "2026-11-25",
     "starred_by": "SensenGao",
@@ -17909,6 +17959,11 @@
     "starred_by": "vtrivedy",
     "starred_at": "2026-11-23T02:37:53Z"
   },
+  "vtrivedy/christian-bromann/channelstack": {
+    "first_seen": "2026-11-27",
+    "starred_by": "vtrivedy",
+    "starred_at": "2026-11-27T04:04:42Z"
+  },
   "vtrivedy/CopilotKit/OpenBot": {
     "first_seen": "2026-11-25",
     "starred_by": "vtrivedy",
@@ -17958,6 +18013,11 @@
     "first_seen": "2026-11-19",
     "starred_by": "vtrivedy",
     "starred_at": "2026-11-19T02:13:13Z"
+  },
+  "vtrivedy/rivet-dev/rivet": {
+    "first_seen": "2026-11-27",
+    "starred_by": "vtrivedy",
+    "starred_at": "2026-11-27T06:12:41Z"
   },
   "vtrivedy/scarletkc/colab-playground": {
     "first_seen": "2026-11-23",
