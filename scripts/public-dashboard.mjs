@@ -328,7 +328,7 @@ function listItemMarkup(repo) {
   return `<li><div class="repo"><a href="${escapeHtml(repo.url)}" target="_blank" rel="noopener">${escapeHtml(name)}</a><span>by <a href="https://github.com/${escapeHtml(owner)}" target="_blank" rel="noopener">${escapeHtml(owner)}</a></span></div>${description}${language}</li>`;
 }
 
-function renderListPage({ title, headingHtml, byline = '', description, count, content, dashboardHref, listsHref, generatedAt, script = '' }) {
+function renderListPage({ title, headingHtml, byline = '', description, count, content, nav, seeAlso = '', generatedAt, script = '' }) {
   const values = {
     TITLE: escapeHtml(title),
     HEADING: headingHtml ?? escapeHtml(title),
@@ -336,30 +336,50 @@ function renderListPage({ title, headingHtml, byline = '', description, count, c
     DESCRIPTION: escapeHtml(description),
     COUNT: escapeHtml(count),
     CONTENT: content,
+    NAV: nav,
+    SEE_ALSO: seeAlso,
     SCRIPT: script,
-    DASHBOARD_HREF: escapeHtml(dashboardHref),
-    LISTS_HREF: escapeHtml(listsHref),
     GENERATED_AT: escapeHtml(generatedAt),
   };
-  return fs.readFileSync(LIST_TEMPLATE, 'utf8').replace(/__(TITLE|HEADING|BYLINE|DESCRIPTION|COUNT|CONTENT|SCRIPT|DASHBOARD_HREF|LISTS_HREF|GENERATED_AT)__/g, (_, key) => values[key]);
+  return fs.readFileSync(LIST_TEMPLATE, 'utf8').replace(/__(TITLE|HEADING|BYLINE|DESCRIPTION|COUNT|CONTENT|NAV|SEE_ALSO|SCRIPT|GENERATED_AT)__/g, (_, key) => values[key]);
 }
 
 function writeListPages(lists, starred, generatedAt) {
   const assigned = new Set(lists.flatMap((list) => list.items.map((item) => item.nameWithOwner)));
   const unfiled = starred.filter((repo) => !assigned.has(repo.nameWithOwner));
-  const card = (name, slug, description, count) =>
-    `<a class="list-card" href="./${escapeHtml(slug)}/"><h2>${escapeHtml(name)}</h2><p>${escapeHtml(description || 'No description.')}</p><span class="card-count">${count} public repositories</span></a>`;
-  const cards = lists.map((list) => card(list.name, list.slug, list.description, list.items.length));
-  cards.push(card('Not in any list', 'unfiled', 'Public repositories you have starred but not added to a public list.', unfiled.length));
+  const row = (name, slug, description, count, sortable = true) => {
+    const text = description?.replace(/\s+/g, ' ').trim() ?? '';
+    const descriptionMarkup = text ? `<p class="list-description">${escapeHtml(text)}</p>` : '';
+    return `<li class="list-row" data-sortable="${sortable}" data-name="${escapeHtml(name)}" data-count="${count}"><div class="list-row-head"><a class="list-name" href="./${escapeHtml(slug)}/">${escapeHtml(name)}</a><span class="list-count"><span class="repository-count">${count}</span> public repositories</span></div>${descriptionMarkup}</li>`;
+  };
+  const rows = lists.map((list) => row(list.name, list.slug, list.description, list.items.length));
+  rows.push(row('Not in any list', 'unfiled', 'Public repositories you have starred but not added to a public list.', unfiled.length, false));
+  const sortScript = `(function () {
+  var select = document.getElementById("list-sort");
+  var list = document.getElementById("list-rows");
+  var rows = Array.from(list.querySelectorAll('.list-row[data-sortable="true"]'));
+  var unfiled = list.querySelector('.list-row[data-sortable="false"]');
+  function sortRows() {
+    rows.sort(function (a, b) {
+      if (select.value === "name") return a.dataset.name.localeCompare(b.dataset.name, undefined, { sensitivity: "base" });
+      return Number(b.dataset.count) - Number(a.dataset.count) || a.dataset.name.localeCompare(b.dataset.name, undefined, { sensitivity: "base" });
+    });
+    rows.forEach(function (row) { list.appendChild(row); });
+    if (unfiled) list.appendChild(unfiled);
+  }
+  select.addEventListener("change", sortRows);
+  sortRows();
+})();`;
   const hubHtml = renderListPage({
     title: '@ksouth GitHub star lists · GitHub star lists',
     headingHtml: `<a class="owner-link" href="https://github.com/${OWNER}">@${OWNER}</a> GitHub star lists`,
     description: `Browse ${lists.length} topical lists and the stars not filed into any of them.`,
     count: `${lists.length} lists · ${unfiled.length} unfiled stars`,
-    content: `<section class="list-grid" aria-label="Public star lists">${cards.join('')}</section>`,
-    dashboardHref: '../index.html',
-    listsHref: './index.html',
+    content: `<div class="sort-controls"><label for="list-sort">Sort lists</label><select id="list-sort" aria-label="Sort the public star lists"><option value="count" selected>Most repositories</option><option value="name">Name</option></select></div><ol class="list-rows" id="list-rows" aria-label="Public star lists">${rows.join('')}</ol>`,
+    nav: '<nav><a href="../index.html">Dashboard</a></nav>',
+    seeAlso: '<p class="see-also">See also: <a href="https://ksouth.github.io/ksouth/">repo inventory →</a> · <a href="https://ksouth.github.io/ksouth/feed/">following feed →</a> · <a href="https://ksouth.github.io/ksouth/created/">created repos →</a></p>',
     generatedAt,
+    script: `<script>${sortScript}</script>`,
   });
   fs.mkdirSync(OUT_LISTS, { recursive: true });
   fs.writeFileSync(path.join(OUT_LISTS, 'index.html'), hubHtml);
@@ -375,8 +395,7 @@ function writeListPages(lists, starred, generatedAt) {
       description: list.description || 'A public GitHub star list.',
       count: `${list.items.length} public repositories`,
       content,
-      dashboardHref: '../../index.html',
-      listsHref: '../index.html',
+      nav: '<nav><a href="../../index.html">Dashboard</a> · <a href="../index.html">All star lists</a></nav>',
       generatedAt,
     });
     const directory = path.join(OUT_LISTS, list.slug);
@@ -392,8 +411,7 @@ function writeListPages(lists, starred, generatedAt) {
     description: 'Public repositories you have starred but not added to a public list.',
     count: `${unfiled.length} public stars`,
     content,
-    dashboardHref: '../../index.html',
-    listsHref: '../index.html',
+    nav: '<nav><a href="../../index.html">Dashboard</a> · <a href="../index.html">All star lists</a></nav>',
     generatedAt,
   });
   const unfiledDirectory = path.join(OUT_LISTS, 'unfiled');

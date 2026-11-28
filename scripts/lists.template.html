@@ -54,11 +54,15 @@
     background: var(--bg); color: var(--fg); font: inherit; font-size: 12px;
   }
   select:focus, input[type="search"]:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
-  .list-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding-top: 18px; }
-  .list-card { display: block; min-width: 0; padding: 13px; color: var(--fg); text-decoration: none; border: 1px solid var(--rule); border-radius: 4px; }
-  .list-card:hover { border-color: var(--strong); }
-  .list-card p { min-height: 2.8em; color: var(--muted); font-size: 12px; }
-  .card-count { display: block; margin-top: 9px; color: var(--muted); font-size: 11px; }
+  .see-also { margin-top: 6px; color: var(--muted); font-size: 12px; }
+  .see-also a { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--strong); }
+  .list-rows { margin: 14px 0 0; padding: 0; list-style: none; }
+  .list-row { padding: 9px 0; border-bottom: 1px solid var(--rule); }
+  .list-row-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+  .list-name { color: var(--accent); font-size: 14px; font-weight: 550; text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .list-name:hover { border-bottom-color: var(--accent); }
+  .list-count { color: var(--muted); font-size: 12px; }
+  .list-description { margin-top: 2px; color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
   .repos { margin: 0; padding: 0; list-style: none; }
   .repos li { padding: 12px 0; border-bottom: 1px solid var(--rule); }
   .repo { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; }
@@ -84,7 +88,6 @@
   footer a { color: var(--fg); }
   @media (max-width: 560px) {
     main { padding: 20px 14px 40px; }
-    .list-grid { grid-template-columns: 1fr; }
     .repo-controls { grid-template-columns: 1fr; }
     .result-count { grid-column: 1; }
   }
@@ -93,11 +96,12 @@
 <body>
 <main>
   <header>
-    <nav><a href="__DASHBOARD_HREF__">Dashboard</a> · <a href="__LISTS_HREF__">All star lists</a></nav>
+    __NAV__
     <h1>__HEADING__</h1>
 __BYLINE__
     <p class="description">__DESCRIPTION__</p>
     <p class="count">__COUNT__</p>
+    __SEE_ALSO__
   </header>
   __CONTENT__
   <footer>Public repositories only · Updated __GENERATED_AT__ (Australia/Melbourne)</footer>
