@@ -27,11 +27,11 @@ I've been on GitHub since 2013 but I am only now learning how to use it!!!! I lo
   <tr>
     <td width="50%" align="center" valign="top">
       <img src="docs/assets/gifs/kevin-bewersdorf-maximum-sorrow.gif" width="360" alt="Animated gif: Maximum Sorrow"><br>
-      <sub><em><a href="https://www.kevinbewersdorf.org/websites/maximumsorrow/index.html">Maximum Sorrow</a></em>, <a href="https://www.kevinbewersdorf.org/">Kevin Bewersdorf</a>, Animated .GIF, 2008&ndash;2009.</sub>
+      <sub><em><a href="https://www.kevinbewersdorf.org/websites/maximumsorrow/index.html">Maximum Sorrow</a></em>, <a href="https://www.kevinbewersdorf.org/">Kevin Bewersdorf</a>,<br>Animated .GIF, 2008&ndash;2009.</sub>
     </td>
     <td width="50%" align="center" valign="top">
       <img src="docs/assets/gifs/ben-aqua-never-log-off.gif" width="360" alt="Animated gif: Never Log Off"><br>
-      <sub><em><a href="https://www.etsy.com/au/listing/563405431/never-log-off-t-shirt">Never Log Off</a></em>, <a href="https://benaqua.org/info">Ben Aqua</a>, Animated .GIF, 2013.</sub>
+      <sub><em><a href="https://www.etsy.com/au/listing/563405431/never-log-off-t-shirt">Never Log Off</a></em>, <a href="https://benaqua.org/info">Ben Aqua</a>,<br>Animated .GIF, 2013.</sub>
     </td>
   </tr>
 </table>
