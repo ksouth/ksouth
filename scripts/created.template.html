@@ -1,0 +1,232 @@
+<!doctype html><html lang="en-AU"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Repositories @ksouth created</title>
+<style>
+:root{--bg:#fff;--fg:#111;--muted:#6b6b6b;--rule:#e3e3e3;--accent:#0000c8;--on:#111;--on-fg:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#0e0e0e;--fg:#e9e9e9;--muted:#9b9b9b;--rule:#2b2b2b;--accent:#1800f8;--on:#e9e9e9;--on-fg:#0e0e0e}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:36px 20px 80px}
+h1{font-size:24px;margin:0 0 6px;font-weight:600}
+h1 a{color:var(--accent);text-decoration:none}
+h1 a:hover{text-decoration:underline}
+.lede{color:var(--muted);font-size:14px;margin:0 0 8px}
+.lede a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--rule)}
+.lede a:hover{color:var(--fg);border-bottom-color:var(--muted)}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;margin-top:24px;font-size:14px}
+th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--rule);padding:0;font-weight:600;white-space:nowrap}
+th.desc{cursor:default}
+.sortbtn{all:unset;display:inline-block;padding:8px 10px 8px 0;cursor:pointer;font:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit}
+.sortbtn:hover{color:var(--fg)}
+.sortbtn:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.sortbtn .arrow{display:inline-block;width:9px;margin-left:4px;color:var(--accent);opacity:0}
+th[aria-sort="ascending"] .arrow,th[aria-sort="descending"] .arrow{opacity:1}
+td{border-bottom:1px solid var(--rule);padding:12px 10px 12px 0;vertical-align:top}
+td.vis{white-space:nowrap;padding-right:16px;width:1%}
+.kind{display:inline-block;font:10px/1.7 ui-monospace,Menlo,monospace;text-transform:uppercase;letter-spacing:.06em;padding:0 6px;border:1px solid var(--rule);border-radius:3px;color:var(--muted);background:none;cursor:pointer;font-weight:400}
+.kind:hover{border-color:var(--muted)}
+.kind:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.kind[aria-pressed="true"]{background:var(--on);color:var(--on-fg);border-color:var(--on)}
+.up{display:block;margin-top:3px;font-size:12px;font-weight:400;color:var(--muted)}
+.up a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--rule)}
+.up a:hover{border-bottom-color:var(--muted)}
+td.name{font-weight:600}
+td.name a{color:var(--accent);text-decoration:none;overflow-wrap:anywhere}
+td.name a:hover{text-decoration:underline}
+.desc{color:var(--fg);max-width:520px}
+.none{color:var(--muted);font-style:italic}
+.void{display:block;margin-top:4px;font-size:12px;color:var(--muted);font-style:italic}
+.chip{display:inline-block;margin:6px 6px 0 0;font-size:11px;padding:0 6px;border:1px solid var(--rule);border-radius:10px;color:var(--muted)}
+.site{display:inline-block;margin:6px 0 0;font-size:12px;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--rule)}
+.site:hover{border-bottom-color:var(--muted)}
+td.date{white-space:nowrap;color:var(--muted);font:12px/1.7 ui-monospace,Menlo,monospace}
+tr[hidden]{display:none}
+footer{margin-top:28px;padding-top:12px;border-top:1px solid var(--rule);color:var(--muted);font-size:12px}
+footer p{margin:0 0 6px;max-width:80ch}
+@media (max-width:720px){.wrap{padding:24px 14px 56px}table{font-size:13px}.desc{max-width:none}}
+</style></head><body><div class="wrap">
+<h1>Repositories <a href="https://github.com/ksouth">@ksouth</a> created</h1>
+<p class="lede" id="lede"></p>
+<p class="lede" id="updated"></p>
+<p class="lede" id="elsewhere">See also: <a href="https://ksouth.github.io/ksouth/">my repo dashboard</a> → <a href="https://ksouth.github.io/ksouth/feed/">accounts following feed</a> → <a href="https://ksouth.github.io/ksouth/lists/">my star lists</a> →</p>
+<div class="table-wrap">
+<table>
+<thead><tr>
+<th aria-sort="none"><button class="sortbtn" type="button" data-sort="access">Access<span class="arrow">▲</span></button></th>
+<th aria-sort="none"><button class="sortbtn" type="button" data-sort="name">Repository<span class="arrow">▲</span></button></th>
+<th class="desc">Current description</th>
+<th aria-sort="none"><button class="sortbtn" type="button" data-sort="created">Created<span class="arrow">▲</span></button></th>
+<th aria-sort="descending"><button class="sortbtn" type="button" data-sort="pushed">Last push<span class="arrow">▼</span></button></th>
+</tr></thead>
+<tbody id="rows"></tbody>
+</table>
+</div>
+<footer id="footer"></footer>
+</div>
+<script>
+const DATA = __DATA__;
+
+const repos = DATA.repos.slice();
+
+function stamp(iso){
+  if(!iso) return 'unknown time';
+  const d = new Date(iso);
+  if(Number.isNaN(d.getTime())) return 'unknown time';
+  return d.toLocaleString('en-AU',{timeZone:'Australia/Melbourne',day:'numeric',month:'short',year:'numeric',hour:'numeric',minute:'2-digit',timeZoneName:'short'});
+}
+
+function day(iso){
+  if(!iso) return '';
+  const d = new Date(iso);
+  if(Number.isNaN(d.getTime())) return '';
+  return d.toISOString().slice(0,10);
+}
+
+function el(tag, cls, text){
+  const node = document.createElement(tag);
+  if(cls) node.className = cls;
+  if(text != null) node.textContent = text;
+  return node;
+}
+
+const privateCount = repos.filter((r) => r.private).length;
+const publicCount = repos.length - privateCount;
+
+const forkCount = repos.filter((r) => r.fork).length;
+const ownCount = repos.length - forkCount;
+document.getElementById('lede').textContent =
+  `All ${repos.length} repos you have committed to — ${ownCount} you created` +
+  (forkCount ? `, ${forkCount} fork${forkCount === 1 ? '' : 's'} you pushed to` : '') +
+  `. ${publicCount} public, ${privateCount} private.`;
+
+document.getElementById('updated').textContent = `Last updated ${stamp(DATA.generated_at)}.`;
+
+const tbody = document.getElementById('rows');
+for(const repo of repos){
+  const tr = document.createElement('tr');
+  tr.dataset.access = repo.private ? 'private' : 'public';
+  tr.dataset.name = repo.name;
+  tr.dataset.created = repo.created_at || '';
+  tr.dataset.pushed = repo.pushed_at || '';
+
+  const tdVis = el('td','vis');
+  const badge = el('button','kind', repo.private ? 'private' : 'public');
+  badge.type = 'button';
+  badge.dataset.filter = tr.dataset.access;
+  badge.setAttribute('aria-pressed','false');
+  tdVis.append(badge);
+  tr.append(tdVis);
+
+  const tdName = el('td','name');
+  const link = el('a', null, repo.name);
+  link.href = repo.html_url;
+  tdName.append(link);
+  if(repo.fork){
+    const up = el('span','up','fork of ');
+    if(repo.upstream){
+      const parent = el('a', null, repo.upstream.name);
+      parent.href = repo.upstream.url;
+      up.append(parent);
+    } else {
+      up.append(document.createTextNode('another repository'));
+    }
+    tdName.append(up);
+  }
+  tr.append(tdName);
+
+  const tdDesc = el('td','desc');
+  if((repo.description || '').trim()){
+    tdDesc.append(document.createTextNode(repo.description.trim()));
+  } else {
+    tdDesc.append(el('span','none','no description'));
+  }
+  if(repo.topics && repo.topics.length){
+    const chips = el('div');
+    for(const topic of repo.topics) chips.append(el('span','chip',topic));
+    tdDesc.append(chips);
+  }
+  if(repo.homepage){
+    const site = el('a','site',repo.homepage.replace(/^https?:\/\//,'').replace(/\/$/,''));
+    site.href = repo.homepage;
+    const line = el('div');
+    line.append(site);
+    tdDesc.append(line);
+  }
+  if(repo.empty){
+    tdDesc.append(el('span','void','Empty repository — no commits yet.'));
+  }
+  tr.append(tdDesc);
+
+  tr.append(el('td','date', day(repo.created_at)));
+  tr.append(el('td','date', day(repo.pushed_at)));
+  tbody.append(tr);
+}
+
+const allRows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+
+function key(row, k){
+  if(k === 'access') return row.dataset.access;
+  if(k === 'name') return row.dataset.name;
+  if(k === 'created') return row.dataset.created;
+  return row.dataset.pushed;
+}
+
+let filter = null;
+let sortKey = 'pushed';
+let sortDir = -1;
+
+const sortBtns = Array.prototype.slice.call(document.querySelectorAll('.sortbtn'));
+
+function render(){
+  const sorted = allRows.slice().sort(function(a,b){
+    const ka = key(a, sortKey), kb = key(b, sortKey);
+    const cmp = sortKey === 'name' ? ka.localeCompare(kb, 'en') : (ka < kb ? -1 : ka > kb ? 1 : 0);
+    return cmp * sortDir;
+  });
+  for(const tr of sorted){
+    tbody.append(tr);
+    tr.hidden = filter !== null && tr.dataset.access !== filter;
+  }
+  for(const badge of tbody.querySelectorAll('.kind')){
+    badge.setAttribute('aria-pressed', String(badge.dataset.filter === filter));
+  }
+  for(const btn of sortBtns){
+    const th = btn.parentElement;
+    const active = btn.dataset.sort === sortKey;
+    th.setAttribute('aria-sort', active ? (sortDir === 1 ? 'ascending' : 'descending') : 'none');
+    btn.querySelector('.arrow').textContent = active && sortDir === -1 ? '▼' : '▲';
+  }
+}
+
+for(const btn of sortBtns){
+  btn.addEventListener('click', function(){
+    const k = btn.dataset.sort;
+    if(k === sortKey) sortDir = -sortDir;
+    else { sortKey = k; sortDir = 1; }
+    render();
+  });
+}
+
+tbody.addEventListener('click', function(event){
+  const badge = event.target.closest('.kind');
+  if(!badge) return;
+  filter = (filter === badge.dataset.filter) ? null : badge.dataset.filter;
+  render();
+});
+
+const footer = document.getElementById('footer');
+const p1 = el('p');
+p1.append(document.createTextNode('Each row is that repository’s own GitHub description — the words live on GitHub, not in a second file here.'));
+footer.append(p1);
+const p2 = el('p');
+p2.append(document.createTextNode('Built by '));
+p2.append(el('code', null, 'scripts/created.mjs'));
+p2.append(document.createTextNode(' from the GitHub API: repositories you created, plus forks with a commit of yours on the default branch. '));
+p2.append(document.createTextNode(DATA.visibility === 'public'
+  ? 'This build leaves private repositories out entirely.'
+  : 'This build lists every repository in full, private ones included.'));
+footer.append(p2);
+
+render();
+</script>
+</body></html>
