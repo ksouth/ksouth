@@ -314,15 +314,20 @@ function listItemMarkup(repo) {
   return `<li><div class="repo"><a href="${escapeHtml(repo.url)}" target="_blank" rel="noopener">${escapeHtml(name)}</a><span>by <a href="https://github.com/${escapeHtml(owner)}" target="_blank" rel="noopener">${escapeHtml(owner)}</a></span></div>${description}${language}</li>`;
 }
 
-function renderListPage({ title, description, count, content, dashboardHref, listsHref, generatedAt }) {
-  return fs.readFileSync(LIST_TEMPLATE, 'utf8')
-    .replaceAll('__TITLE__', escapeHtml(title))
-    .replaceAll('__DESCRIPTION__', escapeHtml(description))
-    .replaceAll('__COUNT__', escapeHtml(count))
-    .replaceAll('__CONTENT__', content)
-    .replaceAll('__DASHBOARD_HREF__', escapeHtml(dashboardHref))
-    .replaceAll('__LISTS_HREF__', escapeHtml(listsHref))
-    .replaceAll('__GENERATED_AT__', escapeHtml(generatedAt));
+function renderListPage({ title, headingHtml, byline = '', description, count, content, dashboardHref, listsHref, generatedAt, script = '' }) {
+  const values = {
+    TITLE: escapeHtml(title),
+    HEADING: headingHtml ?? escapeHtml(title),
+    BYLINE: byline,
+    DESCRIPTION: escapeHtml(description),
+    COUNT: escapeHtml(count),
+    CONTENT: content,
+    SCRIPT: script,
+    DASHBOARD_HREF: escapeHtml(dashboardHref),
+    LISTS_HREF: escapeHtml(listsHref),
+    GENERATED_AT: escapeHtml(generatedAt),
+  };
+  return fs.readFileSync(LIST_TEMPLATE, 'utf8').replace(/__(TITLE|HEADING|BYLINE|DESCRIPTION|COUNT|CONTENT|SCRIPT|DASHBOARD_HREF|LISTS_HREF|GENERATED_AT)__/g, (_, key) => values[key]);
 }
 
 function writeListPages(lists, starred, generatedAt) {
@@ -333,8 +338,9 @@ function writeListPages(lists, starred, generatedAt) {
   const cards = lists.map((list) => card(list.name, list.slug, list.description, list.items.length));
   cards.push(card('Not in any list', 'unfiled', 'Public repositories you have starred but not added to a public list.', unfiled.length));
   const hubHtml = renderListPage({
-    title: 'GitHub star lists',
-    description: `Browse ${lists.length} public lists and the public stars not filed into any of them.`,
+    title: '@ksouth GitHub star lists · GitHub star lists',
+    headingHtml: `<a class="owner-link" href="https://github.com/${OWNER}">@${OWNER}</a> GitHub star lists`,
+    description: `Browse ${lists.length} topical lists and the stars not filed into any of them.`,
     count: `${lists.length} lists · ${unfiled.length} unfiled stars`,
     content: `<section class="list-grid" aria-label="Public star lists">${cards.join('')}</section>`,
     dashboardHref: '../index.html',
@@ -349,7 +355,9 @@ function writeListPages(lists, starred, generatedAt) {
       ? `<ol class="repos">${items}</ol>`
       : '<p class="empty">This list has no public repositories.</p>';
     const html = renderListPage({
-      title: list.name,
+      title: `@${OWNER} list of starred repos: ${list.name}`,
+      headingHtml: `<a class="owner-link" href="https://github.com/${OWNER}">@${OWNER}</a> list of starred repos: ${escapeHtml(list.name)}`,
+      byline: `<p class="byline">A GitHub star list, by <a href="https://github.com/${OWNER}">@${OWNER}</a>.</p>`,
       description: list.description || 'A public GitHub star list.',
       count: `${list.items.length} public repositories`,
       content,
@@ -365,7 +373,8 @@ function writeListPages(lists, starred, generatedAt) {
     ? `<ol class="repos">${unfiled.map(listItemMarkup).join('')}</ol>`
     : '<p class="empty">Every public starred repository is in a public list.</p>';
   const unfiledHtml = renderListPage({
-    title: 'Not in any list',
+    title: 'Not in any list · GitHub star lists',
+    headingHtml: 'Not in any list',
     description: 'Public repositories you have starred but not added to a public list.',
     count: `${unfiled.length} public stars`,
     content,
