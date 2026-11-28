@@ -5,7 +5,7 @@
 //
 //   node scripts/public-dashboard.mjs
 //
-// Writes the dashboard, repo/star histories, and a top-five star state index.
+// Writes the dashboard, repo/star histories, and repo/star observation state.
 // If collection fails, outputs aren't written so the last good pages remain.
 
 import fs from 'node:fs';
@@ -18,6 +18,7 @@ const OUT_SUMMARY = path.join(ROOT, 'docs', 'data', 'summary.json');
 const OUT_HISTORY = path.join(ROOT, 'docs', 'data', 'history.json');
 const OUT_STAR_HISTORY = path.join(ROOT, 'docs', 'data', 'star-history.json');
 const OUT_STAR_STATE = path.join(ROOT, 'state', 'stars.json');
+const OUT_REPO_STATE = path.join(ROOT, 'state', 'repos.json');
 const OUT_LISTS = path.join(ROOT, 'docs', 'lists');
 const TEMPLATE = path.join(ROOT, 'scripts', 'dashboard.template.html');
 const LIST_TEMPLATE = path.join(ROOT, 'scripts', 'lists.template.html');
@@ -129,8 +130,21 @@ async function graphql(query, label) {
 }
 
 async function fetchPublicRepos() {
-  const repos = await paginate(`https://api.github.com/users/${OWNER}/repos?per_page=100&type=owner&sort=created`);
-  return repos.filter((repo) => repo.owner?.login?.toLowerCase() === OWNER.toLowerCase() && !repo.private);
+  const repos = [];
+  let after = null;
+  do {
+    const cursor = after ? `, after: ${JSON.stringify(after)}` : '';
+    const data = await graphql(
+      `{ user(login: ${JSON.stringify(OWNER)}) { repositories(first: 100, ownerAffiliations: OWNER, privacy: PUBLIC, orderBy: { field: CREATED_AT, direction: DESC }${cursor}) { nodes { id name nameWithOwner url description visibility stargazerCount primaryLanguage { name } createdAt pushedAt isFork isArchived issues { totalCount } repositoryTopics(first: 20) { nodes { topic { name } } } parent { nameWithOwner url stargazerCount primaryLanguage { name } } } pageInfo { hasNextPage endCursor } } } }`,
+      'Owned public repositories',
+    );
+    const page = data.user?.repositories;
+    if (!page || !Array.isArray(page.nodes)) throw new Error('Owned public repositories were missing from GitHub.');
+    repos.push(...page.nodes.filter((repo) => repo?.visibility === 'PUBLIC'));
+    after = page.pageInfo?.hasNextPage ? page.pageInfo.endCursor : null;
+    if (page.pageInfo?.hasNextPage && !after) throw new Error('GitHub returned a public-repository page without a cursor.');
+  } while (after);
+  return repos;
 }
 
 async function fetchFollows() {
@@ -480,6 +494,39 @@ function readStarState() {
   return state;
 }
 
+function readPreviouslyPublishedRepoNames() {
+  if (!fs.existsSync(OUT_HTML)) return null;
+  const html = fs.readFileSync(OUT_HTML, 'utf8');
+  const marker = 'const DATA = ';
+  const start = html.indexOf(marker);
+  const end = html.indexOf(';\n', start);
+  if (start < 0 || end < 0) throw new Error('The existing dashboard data could not be read to initialise repo history.');
+  const data = JSON.parse(html.slice(start + marker.length, end));
+  if (!Array.isArray(data.repos)) throw new Error('The existing dashboard has no repository rows to initialise repo history.');
+  return new Set(data.repos.map((repo) => String(repo.n).toLowerCase()));
+}
+
+function readRepoState(repos, startedAt) {
+  let state = {};
+  if (fs.existsSync(OUT_REPO_STATE)) {
+    state = JSON.parse(fs.readFileSync(OUT_REPO_STATE, 'utf8'));
+    if (!state || typeof state !== 'object' || Array.isArray(state)) throw new Error('state/repos.json is not a valid repo state.');
+  }
+  const previousNames = Object.keys(state).length ? null : readPreviouslyPublishedRepoNames();
+  for (const repo of repos) {
+    if (!repo.id) throw new Error(`GitHub omitted an ID for public repository ${repo.nameWithOwner}.`);
+    if (Object.hasOwn(state, repo.id)) {
+      state[repo.id].name_with_owner = repo.nameWithOwner;
+      continue;
+    }
+    state[repo.id] = {
+      name_with_owner: repo.nameWithOwner,
+      first_seen: previousNames === null || previousNames.has(repo.name.toLowerCase()) ? null : startedAt.toISOString(),
+    };
+  }
+  return state;
+}
+
 function readStarHistory() {
   if (!fs.existsSync(OUT_STAR_HISTORY)) return [];
   const history = JSON.parse(fs.readFileSync(OUT_STAR_HISTORY, 'utf8'));
@@ -554,17 +601,32 @@ async function main() {
   const startedAt = new Date();
   const now = startedAt.getTime();
 
+  if (!token) throw new Error('no token available for GraphQL');
   const repos = await fetchPublicRepos();
   log(`Read ${repos.length} public repositories.`);
+  const repoState = readRepoState(repos, startedAt);
 
   const follows = await fetchFollows();
-  if (!token) throw new Error('no token available for GraphQL');
   const followed = await fetchFollowedData(follows, now - FOLLOWED_WINDOW_DAYS * DAY);
   const resolved = new Set(followed.resolvedLogins.map((login) => login.toLowerCase()));
   const ownersWithRepos = new Set(followed.ownersWithRepos.map((login) => login.toLowerCase()));
   const unresolved = follows.filter((login) => !resolved.has(login.toLowerCase()));
-  log(`Checked ${follows.length} followed accounts: ${resolved.size} profiles resolved, ${ownersWithRepos.size} with public repos, ${unresolved.length} unresolved.`);
-  if (unresolved.length) throw new Error(`Could not query followed accounts: ${unresolved.join(', ')}`);
+  const unavailable = [];
+  for (const login of unresolved) {
+    try {
+      await api(`https://api.github.com/users/${encodeURIComponent(login)}`);
+    } catch (error) {
+      if (/failed with HTTP 404\b/.test(error.message)) {
+        unavailable.push(login);
+        continue;
+      }
+      throw error;
+    }
+  }
+  const stillUnresolved = unresolved.filter((login) => !unavailable.includes(login));
+  log(`Checked ${follows.length} followed accounts: ${resolved.size} profiles resolved, ${ownersWithRepos.size} with public repos, ${unavailable.length} unavailable (HTTP 404), ${stillUnresolved.length} unresolved.`);
+  if (stillUnresolved.length) throw new Error(`Could not query followed accounts: ${stillUnresolved.join(', ')}`);
+  if (unavailable.length) log(`Skipped followed accounts with no public profile: ${unavailable.join(', ')}.`);
   log(`Read ${followed.repos.length} public repos created in the last ${FOLLOWED_WINDOW_DAYS} days and ${followed.stars.length} recent stars.`);
 
   const publicLists = await fetchPublicLists();
@@ -576,25 +638,33 @@ async function main() {
 
   const rows = repos.map((repo) => ({
     n: repo.name,
-    u: repo.html_url,
-    v: repo.private ? 'Private' : 'Public',
-    f: Boolean(repo.fork),
-    a: Boolean(repo.archived),
-    l: repo.language ?? '',
-    s: repo.stargazers_count ?? 0,
-    o: repo.open_issues_count ?? 0,
-    c: isoDate(repo.created_at),
-    p: isoDate(repo.pushed_at),
-    t: (repo.topics ?? []).join(', '),
+    u: repo.url,
+    f: Boolean(repo.isFork),
+    a: Boolean(repo.isArchived),
+    l: repo.primaryLanguage?.name ?? repo.parent?.primaryLanguage?.name ?? '',
+    s: repo.stargazerCount ?? 0,
+    ps: repo.parent?.stargazerCount ?? null,
+    source_owner: repo.parent?.nameWithOwner?.split('/')[0] ?? '',
+    source_url: repo.parent?.url ?? '',
+    o: repo.issues?.totalCount ?? 0,
+    c: isoDate(repo.createdAt),
+    p: isoDate(repo.pushedAt),
+    t: (repo.repositoryTopics?.nodes ?? []).map((entry) => entry?.topic?.name).filter(Boolean).join(', '),
     d: repo.description ?? '',
-    fs: isoDate(repo.created_at),
-    act: activityFor(repo, now),
+    fs: repoState[repo.id].first_seen,
+    act: activityFor({ archived: repo.isArchived, pushed_at: repo.pushedAt }, now),
   }));
+  const newRepoCount = rows.filter((row) => {
+    const firstSeen = Date.parse(row.fs);
+    return Number.isFinite(firstSeen) && firstSeen <= now && now - firstSeen <= DAY;
+  }).length;
+  log(`Owned public repository fields: ${rows.filter((row) => Number(row.f ? row.ps : row.s) > 0).length} with non-zero displayed stars, ${rows.filter((row) => row.l).length} with a language, ${rows.filter((row) => row.f && row.ps !== null).length} forks with parent counts.`);
+  log(`First seen by this collector within 24 hours: ${newRepoCount} public repositories.`);
 
   const summary = {
     generated_at: startedAt.toISOString(),
     total_public_repos: rows.length,
-    new_last_7_days: rows.filter((row) => Date.parse(`${row.c}T00:00:00Z`) >= now - 7 * DAY).length,
+    new_last_24_hours: newRepoCount,
     active_last_30_days: rows.filter((row) => row.act === 'Active').length,
   };
 
@@ -603,10 +673,7 @@ async function main() {
     generatedAtISO: startedAt.toISOString(),
     generatedAtLocal: melbourneStamp(startedAt),
     owner: OWNER,
-    privateIncluded: false,
-    showPrivate: false,
     footer:
-      'Public repositories only — everything here is what anyone can see on GitHub. ' +
       'Rebuilt every morning from the GitHub API by scripts/public-dashboard.mjs.',
     followedCount: follows.length,
     resolvedCount: resolved.size,
@@ -623,6 +690,7 @@ async function main() {
   writeListPages(publicLists, publicStars, melbourneStamp(startedAt));
   fs.mkdirSync(path.dirname(OUT_SUMMARY), { recursive: true });
   fs.mkdirSync(path.dirname(OUT_STAR_STATE), { recursive: true });
+  fs.writeFileSync(OUT_REPO_STATE, `${JSON.stringify(Object.fromEntries(Object.entries(repoState).sort((a, b) => a[0].localeCompare(b[0]))), null, 2)}\n`);
   fs.writeFileSync(OUT_SUMMARY, `${JSON.stringify(summary, null, 2)}\n`);
   if (historyUpdate.changed) {
     fs.writeFileSync(OUT_HISTORY, `${JSON.stringify(historyUpdate.history, null, 2)}\n`);
