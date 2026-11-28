@@ -54,11 +54,15 @@
     background: var(--bg); color: var(--fg); font: inherit; font-size: 12px;
   }
   select:focus, input[type="search"]:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
-  .list-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding-top: 18px; }
-  .list-card { display: block; min-width: 0; padding: 13px; color: var(--fg); text-decoration: none; border: 1px solid var(--rule); border-radius: 4px; }
-  .list-card:hover { border-color: var(--strong); }
-  .list-card p { min-height: 2.8em; color: var(--muted); font-size: 12px; }
-  .card-count { display: block; margin-top: 9px; color: var(--muted); font-size: 11px; }
+  .see-also { margin-top: 6px; color: var(--muted); font-size: 12px; }
+  .see-also a { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--strong); }
+  .list-rows { margin: 14px 0 0; padding: 0; list-style: none; }
+  .list-row { padding: 9px 0; border-bottom: 1px solid var(--rule); }
+  .list-row-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+  .list-name { color: var(--accent); font-size: 14px; font-weight: 550; text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .list-name:hover { border-bottom-color: var(--accent); }
+  .list-count { color: var(--muted); font-size: 12px; }
+  .list-description { margin-top: 2px; color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
   .repos { margin: 0; padding: 0; list-style: none; }
   .repos li { padding: 12px 0; border-bottom: 1px solid var(--rule); }
   .repo { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; }
@@ -84,7 +88,6 @@
   footer a { color: var(--fg); }
   @media (max-width: 560px) {
     main { padding: 20px 14px 40px; }
-    .list-grid { grid-template-columns: 1fr; }
     .repo-controls { grid-template-columns: 1fr; }
     .result-count { grid-column: 1; }
   }
@@ -95,68 +98,14 @@
   <header>
     <nav><a href="../../index.html">Dashboard</a> · <a href="../index.html">All star lists</a></nav>
     <h1><a class="owner-link" href="https://github.com/ksouth">@ksouth</a> list of starred repos: Game</h1>
-    <p class="byline">A GitHub star list, by <a href="https://github.com/ksouth">@ksouth</a>.</p>
-    <p class="description"></p>
-    <p class="count"><span class="repository-count">5</span> public repositories</p>
+<p class="byline">A GitHub star list, by <a href="https://github.com/ksouth">@ksouth</a>.</p>
+    <p class="description">Relating to the gamification of things, or games themselves, or elements of game theory, or games used creatively. </p>
+    <p class="count">5 public repositories</p>
+
   </header>
-  <div class="repo-controls"><div class="field"><label for="repo-search">Search</label><input id="repo-search" type="search" placeholder="Name, owner, description or topics" aria-label="Search repositories"></div><div class="field"><label for="repo-sort">Sort by</label><select id="repo-sort" aria-label="Sort repositories"><option value="pushed" selected>Last push (newest)</option><option value="name">Repo name (A–Z)</option><option value="owner">Owner (A–Z)</option><option value="stars">Stars (most)</option></select></div><p class="result-count" id="repo-count" aria-live="polite">Showing 5 of 5 repositories</p></div><ol class="repos" id="repo-list"><li class="repo-item" data-name="sugarscape" data-owner="softmax-universe" data-stars="20" data-pushed="2026-11-20T07:51:12Z" data-search="softmax-universe sugarscape development repository for the digital terraria lab implementation of the sugarscape agent-based societal simulation. " data-topics="[]"><div class="repo"><a href="https://github.com/softmax-universe/sugarscape" target="_blank" rel="noopener">sugarscape</a><span>by <a href="https://github.com/softmax-universe" target="_blank" rel="noopener">softmax-universe</a></span></div><div class="repo-meta"><span class="stars">20 ★ original</span><span>Last push: 2026-11-20</span><span>Starred: 2026-11-21</span></div><p class="description">Development repository for the Digital Terraria Lab implementation of the Sugarscape agent-based societal simulation.</p></li><li class="repo-item" data-name="mettagrid" data-owner="softmax-universe" data-stars="19" data-pushed="2026-11-07T00:35:59Z" data-search="softmax-universe mettagrid a fast grid-based open-ended marl environment " data-topics="[]"><div class="repo"><a href="https://github.com/softmax-universe/mettagrid" target="_blank" rel="noopener">mettagrid</a><span>by <a href="https://github.com/softmax-universe" target="_blank" rel="noopener">softmax-universe</a></span></div><div class="repo-meta"><span class="stars">19 stars</span><span>Last push: 2026-11-07</span><span>Starred: 2026-11-21</span></div><p class="description">A fast grid-based open-ended MARL environment</p></li><li class="repo-item" data-name="prime-agent" data-owner="softmax-universe" data-stars="22944" data-pushed="2026-10-06T20:01:24Z" data-search="softmax-universe prime-agent a self-improving rlm agent for coding workflows and long-running autonomous tasks. " data-topics="[]"><div class="repo"><a href="https://github.com/softmax-universe/prime-agent" target="_blank" rel="noopener">prime-agent</a><span>by <a href="https://github.com/softmax-universe" target="_blank" rel="noopener">softmax-universe</a></span></div><div class="repo-meta"><span class="stars">22,944 ★ original</span><span>Last push: 2026-10-06</span><span>Starred: 2026-11-21</span></div><p class="description">A self-improving RLM agent for coding workflows and long-running autonomous tasks.</p></li><li class="repo-item" data-name="cogames" data-owner="PufferAI" data-stars="49" data-pushed="2025-10-04T07:59:48Z" data-search="pufferai cogames  cogames is a collection of multi-agent cooperative and competitive environments designed for reinforcement learning research. " data-topics="[]"><div class="repo"><a href="https://github.com/PufferAI/cogames" target="_blank" rel="noopener">cogames</a><span>by <a href="https://github.com/PufferAI" target="_blank" rel="noopener">PufferAI</a></span></div><div class="repo-meta"><span class="stars">49 ★ original</span><span>Last push: 2025-10-04</span><span>Starred: 2026-11-21</span></div><p class="description">CoGames is a collection of multi-agent cooperative and competitive environments designed for reinforcement learning research.</p></li><li class="repo-item" data-name="word-search" data-owner="robbiebarrat" data-stars="15" data-pushed="2015-08-29T13:37:55Z" data-search="robbiebarrat word-search solves word search puzzles. " data-topics="[]"><div class="repo"><a href="https://github.com/robbiebarrat/word-search" target="_blank" rel="noopener">word-search</a><span>by <a href="https://github.com/robbiebarrat" target="_blank" rel="noopener">robbiebarrat</a></span></div><div class="repo-meta"><span class="stars">15 stars</span><span>Last push: 2015-08-29</span><span>Starred: 2026-11-21</span></div><p class="description">Solves word search puzzles.</p></li></ol><p class="empty" id="repo-empty" hidden>No repositories match these filters.</p>
-  <footer>Public repositories only · Updated 2026-11-28 17:53 AEDT (Australia/Melbourne)</footer>
+  <ol class="repos"><li><div class="repo"><a href="https://github.com/PufferAI/cogames" target="_blank" rel="noopener">cogames</a><span>by <a href="https://github.com/PufferAI" target="_blank" rel="noopener">PufferAI</a></span></div><p class="description">CoGames is a collection of multi-agent cooperative and competitive environments designed for reinforcement learning research.</p><span class="language">Python</span></li><li><div class="repo"><a href="https://github.com/softmax-universe/mettagrid" target="_blank" rel="noopener">mettagrid</a><span>by <a href="https://github.com/softmax-universe" target="_blank" rel="noopener">softmax-universe</a></span></div><p class="description">A fast grid-based open-ended MARL environment</p><span class="language">Python</span></li><li><div class="repo"><a href="https://github.com/softmax-universe/sugarscape" target="_blank" rel="noopener">sugarscape</a><span>by <a href="https://github.com/softmax-universe" target="_blank" rel="noopener">softmax-universe</a></span></div><p class="description">Development repository for the Digital Terraria Lab implementation of the Sugarscape agent-based societal simulation.</p><span class="language">Python</span></li><li><div class="repo"><a href="https://github.com/softmax-universe/prime-agent" target="_blank" rel="noopener">prime-agent</a><span>by <a href="https://github.com/softmax-universe" target="_blank" rel="noopener">softmax-universe</a></span></div><p class="description">A self-improving RLM agent for coding workflows and long-running autonomous tasks.</p><span class="language">TypeScript</span></li><li><div class="repo"><a href="https://github.com/robbiebarrat/word-search" target="_blank" rel="noopener">word-search</a><span>by <a href="https://github.com/robbiebarrat" target="_blank" rel="noopener">robbiebarrat</a></span></div><p class="description">Solves word search puzzles.</p><span class="language">Python</span></li></ol>
+  <footer>Public repositories only · Updated 2026-11-28 22:01 AEDT (Australia/Melbourne)</footer>
 </main>
-<script>
-(function () {
-  var list = document.getElementById("repo-list");
-  var rows = Array.from(list.querySelectorAll(".repo-item"));
-  var search = document.getElementById("repo-search");
-  var sort = document.getElementById("repo-sort");
-  var count = document.getElementById("repo-count");
-  var empty = document.getElementById("repo-empty");
-  var activeTopic = null;
-  function byName(a, b) {
-    return a.dataset.name.localeCompare(b.dataset.name, undefined, { sensitivity: "base" }) || a.dataset.owner.localeCompare(b.dataset.owner, undefined, { sensitivity: "base" });
-  }
-  function render() {
-    var query = search.value.trim().toLocaleLowerCase();
-    var visible = rows.filter(function (row) {
-      var topics = JSON.parse(row.dataset.topics || "[]");
-      return row.dataset.search.indexOf(query) >= 0 && (!activeTopic || topics.indexOf(activeTopic) >= 0);
-    });
-    visible.sort(function (a, b) {
-      if (sort.value === "name") return byName(a, b);
-      if (sort.value === "owner") return a.dataset.owner.localeCompare(b.dataset.owner, undefined, { sensitivity: "base" }) || byName(a, b);
-      if (sort.value === "stars") return Number(b.dataset.stars) - Number(a.dataset.stars) || byName(a, b);
-      return (Date.parse(b.dataset.pushed) || 0) - (Date.parse(a.dataset.pushed) || 0) || byName(a, b);
-    });
-    list.replaceChildren.apply(list, visible);
-    count.textContent = "Showing " + visible.length + " of " + rows.length + " repositories";
-    empty.hidden = visible.length > 0;
-    rows.forEach(function (row) {
-      row.querySelectorAll(".topic").forEach(function (chip) {
-        chip.setAttribute("aria-pressed", String(chip.dataset.topic === activeTopic));
-      });
-    });
-  }
-  list.addEventListener("click", function (event) {
-    var more = event.target.closest(".topic-more");
-    if (more && list.contains(more)) {
-      var extra = document.getElementById(more.getAttribute("aria-controls"));
-      var expanded = more.getAttribute("aria-expanded") === "true";
-      var amount = Number(more.dataset.count);
-      var row = more.closest(".repo-item");
-      extra.hidden = expanded;
-      more.setAttribute("aria-expanded", String(!expanded));
-      more.textContent = (expanded ? "+" : "−") + amount;
-      more.setAttribute("aria-label", (expanded ? "Show " : "Hide ") + amount + " more topics for " + row.dataset.owner + "/" + row.dataset.name);
-      return;
-    }
-    var chip = event.target.closest(".topic");
-    if (!chip || !list.contains(chip)) return;
-    activeTopic = activeTopic === chip.dataset.topic ? null : chip.dataset.topic;
-    render();
-  });
-  search.addEventListener("input", render);
-  sort.addEventListener("change", render);
-  render();
-})();
-</script>
+
 </body>
 </html>

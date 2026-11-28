@@ -1,7 +1,7 @@
 [
   {
     "date": "2026-11-28",
-    "generated_at": "2026-11-28T08:34:13.646Z",
+    "generated_at": "2026-11-28T11:01:44.050Z",
     "items": [
       {
         "owner": "19h",
@@ -111,6 +111,19 @@
         "language": "TypeScript",
         "stars": 0,
         "description": "Sum up 27 November's world news in one image: your program writes one image of the day's news, an AI judge compares the images two at a time, and the 50 best win rates share $100: $20 for 1st place, $12 for 2nd, $6 for 3rd, $2 each for 4th to 10 Built by an AI agent for make.fun’s “Sum up 27 November’s world news in one image” bounty, $100 in USDC.",
+        "first_seen": "2026-11-28"
+      },
+      {
+        "owner": "CrazyNicolas",
+        "name": "AI-evolution-Riemann-grh-Lean",
+        "url": "https://github.com/CrazyNicolas/AI-evolution-Riemann-grh-Lean",
+        "type": "fork",
+        "parent": "Ahalikai/AI-evolution-Riemann-grh-Lean",
+        "parent_url": "https://github.com/Ahalikai/AI-evolution-Riemann-grh-Lean",
+        "parent_stars": 1,
+        "language": "Lean",
+        "stars": 0,
+        "description": "",
         "first_seen": "2026-11-28"
       },
       {
@@ -326,6 +339,19 @@
         "first_seen": "2026-11-28"
       },
       {
+        "owner": "LTbinglingfeng",
+        "name": "LTbinglingfeng",
+        "url": "https://github.com/LTbinglingfeng/LTbinglingfeng",
+        "type": "source",
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null,
+        "language": "",
+        "stars": 0,
+        "description": "",
+        "first_seen": "2026-11-28"
+      },
+      {
         "owner": "mccalpink",
         "name": "canmatrix",
         "url": "https://github.com/mccalpink/canmatrix",
@@ -455,6 +481,19 @@
       },
       {
         "owner": "mvanhorn",
+        "name": "NihilDigit-piko",
+        "url": "https://github.com/mvanhorn/NihilDigit-piko",
+        "type": "fork",
+        "parent": "NihilDigit/piko",
+        "parent_url": "https://github.com/NihilDigit/piko",
+        "parent_stars": 1123,
+        "language": "Kotlin",
+        "stars": 0,
+        "description": "优雅、易用、高性能的 PikPak 客户端 | An elegant, easy-to-use, high-performance PikPak client",
+        "first_seen": "2026-11-28"
+      },
+      {
+        "owner": "mvanhorn",
         "name": "open-math-agents",
         "url": "https://github.com/mvanhorn/open-math-agents",
         "type": "fork",
@@ -490,6 +529,19 @@
         "language": "Rust",
         "stars": 0,
         "description": "Voice-to-text with push-to-talk for Wayland compositors",
+        "first_seen": "2026-11-28"
+      },
+      {
+        "owner": "PhialsBasement",
+        "name": "gta6-mnk-mod",
+        "url": "https://github.com/PhialsBasement/gta6-mnk-mod",
+        "type": "source",
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null,
+        "language": "Python",
+        "stars": 0,
+        "description": "Mouse & keyboard for GTA VI on PS5 (chiaki-ng Remote Play): virtual DualSense, memory patches for linear aim, F-key cheats",
         "first_seen": "2026-11-28"
       },
       {
@@ -622,6 +674,19 @@
         "first_seen": "2026-11-28",
         "parent_url": "https://github.com/windymelt/z3s",
         "parent_stars": 0
+      },
+      {
+        "owner": "teknium1",
+        "name": "hermes-tag",
+        "url": "https://github.com/teknium1/hermes-tag",
+        "type": "fork",
+        "parent": "DanielLi202/hermes-tag",
+        "parent_url": "https://github.com/DanielLi202/hermes-tag",
+        "parent_stars": 3,
+        "language": "Python",
+        "stars": 0,
+        "description": "Post images, add notes, let the thread run, then @ it — Hermes Tag pulls the few messages that matter (originals + your notes + relevant replies), not your last line, not your whole history. Claude-Tag-style context-selection for Hermes on Feishu/Lark & Slack — @-only, no full-history RAG, per-chat memory + audit.",
+        "first_seen": "2026-11-28"
       },
       {
         "owner": "tldraw",
