@@ -12,32 +12,18 @@ YouTube: [@KrystalSouth](https://www.youtube.com/@KrystalSouth)<br>
 <br>
 I keep a [public repository dashboard](https://ksouth.github.io/ksouth/) with a live repo-count badge, and [a day-by-day log of new repos and stars from people I follow](https://ksouth.github.io/ksouth/feed/) — newest day first.<br>
 [Browse the public GitHub star lists](https://ksouth.github.io/ksouth/lists/)<br>
-![Public repositories](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fksouth%2Fksouth%2Fmain%2Fdocs%2Fdata%2Fsummary.json&query=%24.total_public_repos&label=public%20repos)<br>
+<!-- ![Public repositories](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fksouth%2Fksouth%2Fmain%2Fdocs%2Fdata%2Fsummary.json&query=%24.total_public_repos&label=public%20repos) --><br>
 <br>
 I've been on GitHub since 2013 but I am only now learning how to use it!!!! I love to fork and star, I consider this zone to be the only good social network. I love to see what people are creating with code and data. I'm a Mac OSX/iOS user and only really know html and css but I am exploring new languages with AI, for better or worse.<br>
 
 ## Please reach out if you have any questions, inquiries, opportunities, ideas, whatever. 
 
-<!-- also LET ME KNOW IF YOU CAN HELP ME GET THOSE CUTE LIL STAT THINGS TO WORK ON MY PROFILE README PLEASE !! 
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ksouth&show_icons=true&theme=radical&v=2)
-
-![GitHub Streak](https://streak-stats.demolab.com?user=ksouth)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ksouth&layout=compact&theme=radical&v=2) --!>
-
-
-<!--
-**ksouth/ksouth** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<br>
+<img src="docs/assets/gifs/krystal-south-googling-me.gif" width="500" height="500" alt="Animated gif: I can feel you googling me"><br>
+<sub><em>I can feel you googling me</em>, <a href="https://krystalsouth.com/">Krystal South</a>, Animated gif. November 2013. The Western Digital pavilion, curated by <a href="https://ricksilva.net/">Rick Silva</a> for <a href="https://thewrong.org/2013-14">The Wrong Biennale</a>.</sub><br>
+<br>
+<img src="docs/assets/gifs/kevin-bewersdorf-maximum-sorrow.gif" width="500" height="300" alt="Animated gif: Maximum Sorrow"><br>
+<sub><em>Maximum Sorrow</em>, <a href="https://www.kevinbewersdorf.org/">Kevin Bewersdorf</a>, Animated Gif. 2008–2009.</sub><br>
+<br>
+<img src="docs/assets/gifs/ben-aqua-never-log-off.gif" width="463" height="665" alt="Animated gif: Never Log Off"><br>
+<sub><em>Never Log Off</em>, <a href="https://benaqua.org/info">Ben Aqua</a>, 2013.</sub><br>
