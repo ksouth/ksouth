@@ -1,7 +1,7 @@
 [
   {
     "date": "2026-11-28",
-    "generated_at": "2026-11-28T03:12:09.351Z",
+    "generated_at": "2026-11-28T08:34:13.646Z",
     "items": [
       {
         "owner": "19h",
@@ -122,7 +122,9 @@
         "language": "C",
         "stars": 0,
         "description": "A library to support hangul input method logic",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "parent_url": "https://github.com/libhangul/libhangul",
+        "parent_stars": 230
       },
       {
         "owner": "dhh",
@@ -133,7 +135,9 @@
         "language": "C",
         "stars": 2,
         "description": "",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "parent_url": "https://github.com/intel/intel-lpmd",
+        "parent_stars": 242
       },
       {
         "owner": "erkancamli",
@@ -144,7 +148,9 @@
         "language": "TypeScript",
         "stars": 0,
         "description": "Lightweight utilities for encoding and decoding Solidity ABI",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "parent_url": "https://github.com/MetaMask/abi-utils",
+        "parent_stars": 24
       },
       {
         "owner": "fathah",
@@ -247,6 +253,19 @@
       },
       {
         "owner": "janbam",
+        "name": "islandmail",
+        "url": "https://github.com/janbam/islandmail",
+        "type": "fork",
+        "parent": "SauersML/islandmail",
+        "parent_url": "https://github.com/SauersML/islandmail",
+        "parent_stars": 17,
+        "language": "Rust",
+        "stars": 0,
+        "description": "Islandmail: peer-to-peer mail between agents, one islandmail-node per host, signed and encrypted mail replicated over iroh",
+        "first_seen": "2026-11-28"
+      },
+      {
+        "owner": "janbam",
         "name": "yt-dlp",
         "url": "https://github.com/janbam/yt-dlp",
         "type": "fork",
@@ -254,7 +273,9 @@
         "language": "Python",
         "stars": 0,
         "description": "A feature-rich command-line audio/video downloader",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "parent_url": "https://github.com/yt-dlp/yt-dlp",
+        "parent_stars": 211266
       },
       {
         "owner": "jph00",
@@ -265,7 +286,9 @@
         "language": "TeX",
         "stars": 0,
         "description": "LaTeX/PDF + Epub version of the online book (http://neuralnetworksanddeeplearning.com) ”Neural Networks and Deep Learning“ by Michael Nielsen (@mnielsen)",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "parent_url": "https://github.com/antonvladyka/neuralnetworksanddeeplearning.com.pdf",
+        "parent_stars": 311
       },
       {
         "owner": "kevinnbass",
@@ -276,6 +299,19 @@
         "language": "HTML",
         "stars": 0,
         "description": "The Megaspeed story in 14 slides, to November 26, 2026: the answer at once, the story in order, and a map of what rests on documents and what on press reports.",
+        "first_seen": "2026-11-28"
+      },
+      {
+        "owner": "LaansDole",
+        "name": "obsidian-accession",
+        "url": "https://github.com/LaansDole/obsidian-accession",
+        "type": "source",
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null,
+        "language": "HTML",
+        "stars": 0,
+        "description": "Accession: an archive reading-room theme for Obsidian, with a Hermes Memory treatment",
         "first_seen": "2026-11-28"
       },
       {
@@ -298,7 +334,9 @@
         "language": "Python",
         "stars": 0,
         "description": "Converting Can (Controller Area Network) Database Formats .arxml .dbc .dbf .kcd ...",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "parent_url": "https://github.com/ebroecker/canmatrix",
+        "parent_stars": 1095
       },
       {
         "owner": "mccalpink",
@@ -309,7 +347,9 @@
         "language": "JavaScript",
         "stars": 0,
         "description": "Cut your AI coding agent's token bill on three axes: terse prose, YAGNI-first code, and tool-output compression. Claude Code, Pi, Cursor, Codex, Gemini + 8 more. Zero deps, published benchmarks including the runs it loses.",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "parent_url": "https://github.com/JayPokale/Chisle",
+        "parent_stars": 1287
       },
       {
         "owner": "mccalpink",
@@ -320,7 +360,9 @@
         "language": "Python",
         "stars": 0,
         "description": "JSON-LD processor written in Python",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "parent_url": "https://github.com/digitalbazaar/pyld",
+        "parent_stars": 689
       },
       {
         "owner": "mdsumner",
@@ -331,6 +373,21 @@
         "language": "HTML",
         "stars": 0,
         "description": "",
+        "first_seen": "2026-11-28",
+        "parent_url": "https://github.com/MountainVagabond/afdrs",
+        "parent_stars": 1
+      },
+      {
+        "owner": "mdsumner",
+        "name": "portolan-browser",
+        "url": "https://github.com/mdsumner/portolan-browser",
+        "type": "fork",
+        "parent": "portolan-sdi/portolan-browser",
+        "parent_url": "https://github.com/portolan-sdi/portolan-browser",
+        "parent_stars": 8,
+        "language": "JavaScript",
+        "stars": 0,
+        "description": "A full-fledged UI in Vue for browsing and searching static STAC catalogs and STAC APIs",
         "first_seen": "2026-11-28"
       },
       {
@@ -346,6 +403,58 @@
       },
       {
         "owner": "mvanhorn",
+        "name": "go-musicfox",
+        "url": "https://github.com/mvanhorn/go-musicfox",
+        "type": "fork",
+        "parent": "go-musicfox/go-musicfox",
+        "parent_url": "https://github.com/go-musicfox/go-musicfox",
+        "parent_stars": 2666,
+        "language": "Go",
+        "stars": 0,
+        "description": "go-musicfox是用Go写的又一款网易云音乐命令行客户端，支持UnblockNeteaseMusic、各种音质级别、lastfm、MPRIS、MacOS交互响应（睡眠暂停、蓝牙耳机连接断开响应、菜单栏控制等）...",
+        "first_seen": "2026-11-28"
+      },
+      {
+        "owner": "mvanhorn",
+        "name": "gobgp",
+        "url": "https://github.com/mvanhorn/gobgp",
+        "type": "fork",
+        "parent": "osrg/gobgp",
+        "parent_url": "https://github.com/osrg/gobgp",
+        "parent_stars": 4121,
+        "language": "Go",
+        "stars": 0,
+        "description": "BGP implemented in the Go Programming Language",
+        "first_seen": "2026-11-28"
+      },
+      {
+        "owner": "mvanhorn",
+        "name": "LightNovelReader",
+        "url": "https://github.com/mvanhorn/LightNovelReader",
+        "type": "fork",
+        "parent": "dmzz-yyhyy/LightNovelReader",
+        "parent_url": "https://github.com/dmzz-yyhyy/LightNovelReader",
+        "parent_stars": 2384,
+        "language": "Kotlin",
+        "stars": 0,
+        "description": "一款基于Compose的多数据源轻小说阅读器。支持epub导出，自定义背景样式，本地书架和更新提醒等功能。",
+        "first_seen": "2026-11-28"
+      },
+      {
+        "owner": "mvanhorn",
+        "name": "MOSS-TTSD",
+        "url": "https://github.com/mvanhorn/MOSS-TTSD",
+        "type": "fork",
+        "parent": "OpenMOSS/MOSS-TTSD",
+        "parent_url": "https://github.com/OpenMOSS/MOSS-TTSD",
+        "parent_stars": 1428,
+        "language": "Python",
+        "stars": 0,
+        "description": "A multilingual model for long-form, multi-speaker dialogue synthesis with flexible speaker control and zero-shot voice cloning",
+        "first_seen": "2026-11-28"
+      },
+      {
+        "owner": "mvanhorn",
         "name": "open-math-agents",
         "url": "https://github.com/mvanhorn/open-math-agents",
         "type": "fork",
@@ -353,7 +462,9 @@
         "language": "Lean",
         "stars": 0,
         "description": "Collaborative registry of open mathematical problems and AI-solved problems for multi-agent research (shipfastwith.me)",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "parent_url": "https://github.com/lefttosolve2/open-math-agents",
+        "parent_stars": 58
       },
       {
         "owner": "mvanhorn",
@@ -364,6 +475,21 @@
         "language": "TypeScript",
         "stars": 0,
         "description": "A library of behaviors for agents to build and drive the next generation of user interfaces.",
+        "first_seen": "2026-11-28",
+        "parent_url": "https://github.com/vercel-labs/ui",
+        "parent_stars": 7822
+      },
+      {
+        "owner": "mvanhorn",
+        "name": "voxtype",
+        "url": "https://github.com/mvanhorn/voxtype",
+        "type": "fork",
+        "parent": "peteonrails/voxtype",
+        "parent_url": "https://github.com/peteonrails/voxtype",
+        "parent_stars": 1831,
+        "language": "Rust",
+        "stars": 0,
+        "description": "Voice-to-text with push-to-talk for Wayland compositors",
         "first_seen": "2026-11-28"
       },
       {
@@ -386,7 +512,9 @@
         "language": "Rust",
         "stars": 0,
         "description": "Quickly develop, deploy and test Solana programs from browsers",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "parent_url": "https://github.com/solana-playground/solana-playground",
+        "parent_stars": 981
       },
       {
         "owner": "rohanarun",
@@ -444,6 +572,19 @@
         "first_seen": "2026-11-28"
       },
       {
+        "owner": "SauersML",
+        "name": "sandbench",
+        "url": "https://github.com/SauersML/sandbench",
+        "type": "source",
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null,
+        "language": "Python",
+        "stars": 1,
+        "description": "Matched negative/positive valence prompts for testing whether models write worse code for suffering-maximization requests",
+        "first_seen": "2026-11-28"
+      },
+      {
         "owner": "scala-steward",
         "name": "comport",
         "url": "https://github.com/scala-steward/comport",
@@ -452,7 +593,9 @@
         "language": "Scala",
         "stars": 0,
         "description": "Docker Compose worktree port assigner: randomize port to avoid collision between worktree",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "parent_url": "https://github.com/windymelt/comport",
+        "parent_stars": 31
       },
       {
         "owner": "scala-steward",
@@ -463,7 +606,9 @@
         "language": "Scala",
         "stars": 0,
         "description": "",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "parent_url": "https://github.com/kubukoz/smithy-selector-playground",
+        "parent_stars": 0
       },
       {
         "owner": "scala-steward",
@@ -474,7 +619,9 @@
         "language": "Scala",
         "stars": 0,
         "description": "z3 (not compatible) clone in Scala 3 -- ZFS backup tool",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "parent_url": "https://github.com/windymelt/z3s",
+        "parent_stars": 0
       },
       {
         "owner": "tldraw",
@@ -496,7 +643,9 @@
         "language": "TypeScript",
         "stars": 0,
         "description": "Autonomous experiment loop extension for pi",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "parent_url": "https://github.com/davebcn87/pi-autoresearch",
+        "parent_stars": 8272
       },
       {
         "owner": "torvalds",
@@ -507,7 +656,9 @@
         "language": "JavaScript",
         "stars": 14,
         "description": "Turn KiCad Gerber + drill files into ready-to-mill G-code for the Makera Carvera Air. Isolation milling, drilling & outline cutting with 2D/3D preview, tool library, AI config check, guided workflow & direct machine control — no FlatCAM needed.",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "parent_url": "https://github.com/sthamann/makera-pcb",
+        "parent_stars": 5
       },
       {
         "owner": "vincentkoc",
@@ -529,7 +680,9 @@
         "language": "C++",
         "stars": 0,
         "description": "Firebolt fork of ducklake",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "parent_url": "https://github.com/duckdb/ducklake",
+        "parent_stars": 3396
       },
       {
         "owner": "zkasuran",

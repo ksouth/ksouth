@@ -1,7 +1,7 @@
 [
   {
     "date": "2026-11-28",
-    "generated_at": "2026-11-28T03:12:09.351Z",
+    "generated_at": "2026-11-28T08:27:23.926Z",
     "items": [
       {
         "starred_by": "AgentSparko",
@@ -10,7 +10,11 @@
         "language": "C++",
         "stars": 12,
         "description": "Omni by Atlas — Apache-2.0 CUDA omni-modal inference engine (Pascal to Blackwell): Inkling-2-Mini & Qwen3.8 + zero-gradient Plato's Key image/video+audio/music/voice grafting, Verified Ledger & Neuron Lens. Fork of satellitedown/ingine.",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "alpaim",
@@ -19,7 +23,11 @@
         "language": "Rust",
         "stars": 530,
         "description": "Open-source Rust SIP/VoIP stack: SIP, WebRTC, SRTP and AI voice agents behind one API. RFC 7502-benchmarked.",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "AmintaCCCP",
@@ -28,7 +36,11 @@
         "language": "TypeScript",
         "stars": 9,
         "description": "Curated Light & Dark SVG skins, 4-col Bento & zero-503 GitHub Actions live widgets, and Repo Skins — 30s live preview studio & AI Agent SKILL.md.",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "AmintaCCCP",
@@ -37,7 +49,11 @@
         "language": "Go",
         "stars": 121,
         "description": "Download and decrypt App Store & TestFlight IPAs. Historical App Store versions, reusable FairPlay credentials, and local Mac model recovery.",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "AmintaCCCP",
@@ -46,7 +62,11 @@
         "language": "Swift",
         "stars": 1745,
         "description": "iOS accessory-level location simulator over local loopback (iAP2 / MFi-v3 / NMEA)",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "AmintaCCCP",
@@ -55,7 +75,11 @@
         "language": "TypeScript",
         "stars": 8,
         "description": "Intelligent Generative UI without a component catalog — the model builds pages on UI SDK and DESIGN.md.",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "AmintaCCCP",
@@ -64,6 +88,23 @@
         "language": "JavaScript",
         "stars": 5,
         "description": "All-in-One AI PPT Generator & Image/Screenshot/PDF to Editable PPTX Skill — 一句话从零策划整套商业PPT / 1.6W+免登录版式库 / 图片截图PDF转可编辑PPT / 支持Trae、Qoder、OpenClaw、Claude Code、Codex、Cursor",
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
+      },
+      {
+        "starred_by": "chuanqisun",
+        "nameWithOwner": "pithings/unkernel",
+        "url": "https://github.com/pithings/unkernel",
+        "language": "TypeScript",
+        "stars": 2626,
+        "description": "A real Linux kernel, compiled to WebAssembly. It boots to a shell in less than a second.",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null,
         "first_seen": "2026-11-28"
       },
       {
@@ -73,7 +114,11 @@
         "language": "Go",
         "stars": 92,
         "description": "Version control for video projects made with coding agents",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "crazywriter1",
@@ -82,7 +127,11 @@
         "language": "Solidity",
         "stars": 1,
         "description": "",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "davanstrien",
@@ -91,7 +140,11 @@
         "language": "Python",
         "stars": 3,
         "description": "A tiny Xet: fsspec nxet:// filesystem with gear-hash content-defined chunking, deduplication and xorbs, on any filesystem",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "davanstrien",
@@ -100,7 +153,11 @@
         "language": "Python",
         "stars": 582,
         "description": "🔥🔥 The extremely fast inference engine for Jev-style decision models, up to 9.5x faster than vLLM and SGLang",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "Extraltodeus",
@@ -109,7 +166,11 @@
         "language": "Python",
         "stars": 831,
         "description": "This repository offers various extension nodes for ComfyUI. Nodes here have different characteristics compared to those in the ComfyUI Impact Pack. The Impact Pack has become too large now...",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "Extraltodeus",
@@ -118,6 +179,88 @@
         "language": "Vue",
         "stars": 1,
         "description": "",
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
+      },
+      {
+        "starred_by": "heqin-zhu",
+        "nameWithOwner": "CladeTeam/CENO",
+        "url": "https://github.com/CladeTeam/CENO",
+        "language": "Python",
+        "stars": 20,
+        "description": "",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null,
+        "first_seen": "2026-11-28"
+      },
+      {
+        "starred_by": "ishandutta2007",
+        "nameWithOwner": "ishandutta2007/address-github-security-vulnerabilities",
+        "url": "https://github.com/ishandutta2007/address-github-security-vulnerabilities",
+        "language": "Python",
+        "stars": 4,
+        "description": "🌟 Star if you like it! 🌟",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null,
+        "first_seen": "2026-11-28"
+      },
+      {
+        "starred_by": "ishandutta2007",
+        "nameWithOwner": "ishandutta2007/Awesome-Machine-Learning-Acceleration-On-Apple-Silicon",
+        "url": "https://github.com/ishandutta2007/Awesome-Machine-Learning-Acceleration-On-Apple-Silicon",
+        "language": "",
+        "stars": 4,
+        "description": "Top Machine Learning Acceleration On Apple Silicon (Opensource)  Star if you like it! ",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null,
+        "first_seen": "2026-11-28"
+      },
+      {
+        "starred_by": "ishandutta2007",
+        "nameWithOwner": "ishandutta2007/best-web-frameworks",
+        "url": "https://github.com/ishandutta2007/best-web-frameworks",
+        "language": "",
+        "stars": 4,
+        "description": " 🌟 Star if you like it!  🌟 ",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null,
+        "first_seen": "2026-11-28"
+      },
+      {
+        "starred_by": "ishandutta2007",
+        "nameWithOwner": "ishandutta2007/prompt-in-context-learning",
+        "url": "https://github.com/ishandutta2007/prompt-in-context-learning",
+        "language": "Jupyter Notebook",
+        "stars": 4,
+        "description": "Awesome resources for in-context learning and prompt engineering: Mastery of the LLMs such as ChatGPT, GPT-3, and FlanT5, with up-to-date and cutting-edge updates.",
+        "is_fork": true,
+        "parent": "EgoAlpha/prompt-in-context-learning",
+        "parent_url": "https://github.com/EgoAlpha/prompt-in-context-learning",
+        "parent_stars": 2252,
+        "first_seen": "2026-11-28"
+      },
+      {
+        "starred_by": "ishandutta2007",
+        "nameWithOwner": "ishandutta2007/world-gdp-per-capita",
+        "url": "https://github.com/ishandutta2007/world-gdp-per-capita",
+        "language": "Python",
+        "stars": 4,
+        "description": "🌟 Star if you like it! 🌟",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null,
         "first_seen": "2026-11-28"
       },
       {
@@ -127,6 +270,23 @@
         "language": "TypeScript",
         "stars": 2,
         "description": "Run and supervise your coding agents (Claude Code, Codex, Deep Agents, any ACP agent) from your Apple Watch",
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
+      },
+      {
+        "starred_by": "JCBrouwer",
+        "nameWithOwner": "bojone/bytepiece",
+        "url": "https://github.com/bojone/bytepiece",
+        "language": "Python",
+        "stars": 502,
+        "description": "更纯粹、更高压缩率的Tokenizer",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null,
         "first_seen": "2026-11-28"
       },
       {
@@ -136,7 +296,11 @@
         "language": "Python",
         "stars": 163,
         "description": "Lets AI agents read what web search misses on X, Reddit and more",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "kocaemre",
@@ -145,7 +309,11 @@
         "language": "Go",
         "stars": 235,
         "description": "Autonomous penetration testing platform for Claude Code. 65 MCP tools, dual-graph architecture, multi-instance coordination, web UI, recording proxy, and evidence capture.",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "levzzz5154",
@@ -154,7 +322,11 @@
         "language": "C",
         "stars": 10,
         "description": "Unofficial native ports of the Touhou Project games for Windows, Linux and macOS. Downloads at opentouhou.org.",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "levzzz5154",
@@ -163,7 +335,11 @@
         "language": "Python",
         "stars": 88,
         "description": "MCP server for Linux desktop GUI automation on KDE Plasma 6 Wayland — 29 tools for virtual and live sessions",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "levzzz5154",
@@ -172,7 +348,11 @@
         "language": "C++",
         "stars": 19,
         "description": "OptiScaler + DLSS 5 Neural Rendering + DLSS Multi Frame Generation (MFG 3x/4x/6x) unlock for RTX 40 / Ada, built into OptiScaler. No ReShade needed.",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": true,
+        "parent": "Dagherbou/OptiScaler_DLSSNR",
+        "parent_url": "https://github.com/Dagherbou/OptiScaler_DLSSNR",
+        "parent_stars": 878
       },
       {
         "starred_by": "levzzz5154",
@@ -181,7 +361,11 @@
         "language": "Python",
         "stars": 164,
         "description": "Lets AI agents read what web search misses on X, Reddit and more",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "levzzz5154",
@@ -190,7 +374,11 @@
         "language": "Rust",
         "stars": 18795,
         "description": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "LingyuZhi",
@@ -199,7 +387,11 @@
         "language": "MDX",
         "stars": 12335,
         "description": "AI Agent 开发指南 | Agent Harness | 上下文工程 | 高级 RAG | MCP | Agentic RL 强化学习 | LangGraph 实战 | 1.2 万+ 大模型面试题 | 算法岗 / 开发岗求职 | 转行大模型",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "lzt404",
@@ -208,7 +400,11 @@
         "language": "HTML",
         "stars": 483,
         "description": "🏛️ 推特顶级实战派交易员推文公开收录大典 · 剥离噪音，沉淀真金白银实盘认知体系与全量开源数据湖，完全开源免费 by 梭哈.AI",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "mdsumner",
@@ -217,7 +413,11 @@
         "language": "Rust",
         "stars": 10826,
         "description": "Rewrite your app in Rust, piece by piece, checked against the original at every step. Works with TypeScript, JavaScript, Python, Go, Ruby, Java, C, PHP, C#, Kotlin and PowerShell.",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "MiaAI-Lab",
@@ -226,7 +426,11 @@
         "language": "Python",
         "stars": 12,
         "description": "Security scanner for GitHub repos - audits installs before you clone.",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "ncoop57",
@@ -235,7 +439,11 @@
         "language": "Rust",
         "stars": 1,
         "description": "",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "PiotrCzapla",
@@ -244,7 +452,11 @@
         "language": "Python",
         "stars": 808,
         "description": "pyHanko: sign and stamp PDF files",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "PiotrCzapla",
@@ -253,7 +465,11 @@
         "language": "TypeScript",
         "stars": 2319,
         "description": "A real Linux kernel, compiled to WebAssembly. It boots to a shell in less than a second.",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "SauersML",
@@ -262,7 +478,11 @@
         "language": "Python",
         "stars": 100,
         "description": "",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "serengil",
@@ -271,7 +491,11 @@
         "language": "Python",
         "stars": 123,
         "description": "Soy ağacından kaynaklı aile tarihi raporu ve Türkçe seslendirmeli göç haritası videosu üreten Claude Code skill'i",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "SharkEzz",
@@ -280,7 +504,11 @@
         "language": "C++",
         "stars": 115,
         "description": "Zero-dependency local LLM inference engine in a ~50 MB binary — native long context, tuned per GPU, built-in speculative decoding and web dashboard.",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "SharkEzz",
@@ -289,7 +517,11 @@
         "language": "Rust",
         "stars": 22347,
         "description": "AI search engine and MCP server for bots and agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search without grep, agent memory and RAG. Elasticsearch-compatible API; Corpus Hub serves hundreds of reference memory corpora.",
-        "first_seen": "2026-11-28"
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
       },
       {
         "starred_by": "sxu99",
@@ -298,6 +530,23 @@
         "language": "TypeScript",
         "stars": 400,
         "description": "An AI research Agent for scientific innovation.",
+        "first_seen": "2026-11-28",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null
+      },
+      {
+        "starred_by": "xiaojialove-DRP",
+        "nameWithOwner": "zgc261/Nuli-Radio",
+        "url": "https://github.com/zgc261/Nuli-Radio",
+        "language": "CSS",
+        "stars": 2,
+        "description": "打开浏览器，收听喜欢的电台。支持电脑与手机、多个播放源、自定义电台和分类收藏。",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null,
         "first_seen": "2026-11-28"
       }
     ]

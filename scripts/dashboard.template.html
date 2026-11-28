@@ -233,6 +233,12 @@ const DATA = __DATA__;
     });
   }
 
+  function formatStars(count) {
+    count = Number(count) || 0;
+    if (count < 1000) return String(count);
+    return (count / 1000).toFixed(count >= 10000 ? 0 : 1).replace(/\.0$/, "") + "k";
+  }
+
   function makeTable(config) {
     var state = { q: "", chip: "all", sort: config.defaultSort, dir: config.defaultDir || "desc" };
     var cols = config.columns;
@@ -401,11 +407,17 @@ const DATA = __DATA__;
             (r.d ? '<div class="sub">' + esc(r.d) + "</div>" : "");
         } },
       { key: "kind", label: "Made / Forked", text: true, value: function (r) { return r.f ? 1 : 0; },
-        render: function (r) { return r.f ? "fork of " + esc(r.p || "another repo") : "new repo"; } },
+        render: function (r) {
+          if (!r.f) return "new repo";
+          var parentUrl = r.pu || (r.p ? "https://github.com/" + r.p : "");
+          return parentUrl && r.p
+            ? 'forked from <a href="' + esc(parentUrl) + '" target="_blank" rel="noopener">' + esc(r.p) + "</a>"
+            : "forked from " + esc(r.p || "another repo");
+        } },
       { key: "language", label: "Language", cls: "col-lang", text: true, value: function (r) { return r.l || ""; },
         render: function (r) { return esc(r.l || "—"); } },
-      { key: "stars", label: "Stars", cls: "num col-stars", value: function (r) { return r.s || 0; },
-        render: function (r) { return String(r.s || 0); } },
+      { key: "stars", label: "Stars (original for forks)", cls: "num col-stars", value: function (r) { return r.f ? r.ps || 0 : r.s || 0; },
+        render: function (r) { return r.f ? r.ps === null || r.ps === undefined ? "Original stars unavailable" : formatStars(r.ps) + " ★ original" : String(r.s || 0); } },
       { key: "firstSeen", label: "First seen", value: function (r) { return r.firstSeenMs; },
         render: function (r) { return esc(r.fs || "—"); } }
     ],
