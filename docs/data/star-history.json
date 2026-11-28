@@ -1,7 +1,7 @@
 [
   {
     "date": "2026-11-28",
-    "generated_at": "2026-11-28T08:27:23.926Z",
+    "generated_at": "2026-11-28T11:01:44.050Z",
     "items": [
       {
         "starred_by": "AgentSparko",
@@ -41,6 +41,19 @@
         "parent": null,
         "parent_url": null,
         "parent_stars": null
+      },
+      {
+        "starred_by": "AmintaCCCP",
+        "nameWithOwner": "icons8/hub",
+        "url": "https://github.com/icons8/hub",
+        "language": "Python",
+        "stars": 64,
+        "description": "Hub: run 100 Claude Code or Codex sessions like 5",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null,
+        "first_seen": "2026-11-28"
       },
       {
         "starred_by": "AmintaCCCP",
@@ -119,6 +132,19 @@
         "parent": null,
         "parent_url": null,
         "parent_stars": null
+      },
+      {
+        "starred_by": "CrazyNicolas",
+        "nameWithOwner": "Ahalikai/AI-evolution-Riemann-grh-Lean",
+        "url": "https://github.com/Ahalikai/AI-evolution-Riemann-grh-Lean",
+        "language": "Lean",
+        "stars": 1,
+        "description": "",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null,
+        "first_seen": "2026-11-28"
       },
       {
         "starred_by": "crazywriter1",
@@ -499,6 +525,19 @@
       },
       {
         "starred_by": "SharkEzz",
+        "nameWithOwner": "alesha-pro/llm.asm",
+        "url": "https://github.com/alesha-pro/llm.asm",
+        "language": "Assembly",
+        "stars": 2467,
+        "description": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies.",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null,
+        "first_seen": "2026-11-28"
+      },
+      {
+        "starred_by": "SharkEzz",
         "nameWithOwner": "enwove/flyx",
         "url": "https://github.com/enwove/flyx",
         "language": "C++",
@@ -543,6 +582,45 @@
         "language": "CSS",
         "stars": 2,
         "description": "打开浏览器，收听喜欢的电台。支持电脑与手机、多个播放源、自定义电台和分类收藏。",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null,
+        "first_seen": "2026-11-28"
+      },
+      {
+        "starred_by": "zechengz",
+        "nameWithOwner": "Handshake-AI-Research/ATLAS-Finance",
+        "url": "https://github.com/Handshake-AI-Research/ATLAS-Finance",
+        "language": "Python",
+        "stars": 15,
+        "description": "ATLAS Finance: Evaluating AI agents inside a bank",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null,
+        "first_seen": "2026-11-28"
+      },
+      {
+        "starred_by": "zechengz",
+        "nameWithOwner": "microsoft/work-iq",
+        "url": "https://github.com/microsoft/work-iq",
+        "language": "JavaScript",
+        "stars": 1070,
+        "description": "MCP Server and CLI for accessing Work IQ",
+        "is_fork": false,
+        "parent": null,
+        "parent_url": null,
+        "parent_stars": null,
+        "first_seen": "2026-11-28"
+      },
+      {
+        "starred_by": "zechengz",
+        "nameWithOwner": "Softeria/ms-365-mcp-server",
+        "url": "https://github.com/Softeria/ms-365-mcp-server",
+        "language": "TypeScript",
+        "stars": 1176,
+        "description": "A Model Context Protocol (MCP) server for interacting with Microsoft 365 and Microsoft Office services through the Graph API",
         "is_fork": false,
         "parent": null,
         "parent_url": null,

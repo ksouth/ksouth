@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>@ksouth list of starred repos: Mac OSX/iOS</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fff;
+    --fg: #111;
+    --muted: #6b6b6b;
+    --rule: #e3e3e3;
+    --strong: #c9c9c9;
+    --accent: #0000C8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0e;
+      --fg: #e9e9e9;
+      --muted: #9b9b9b;
+      --rule: #2b2b2b;
+      --strong: #3a3a3a;
+      --accent: #1800F8;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 13px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-variant-numeric: tabular-nums;
+  }
+  main { max-width: 900px; margin: 0 auto; padding: 28px 20px 56px; }
+  header { padding-bottom: 15px; border-bottom: 1px solid var(--strong); }
+  nav { margin-bottom: 12px; color: var(--muted); font-size: 12px; }
+  nav a { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--strong); }
+  h1 { margin: 0 0 4px; font-size: 18px; font-weight: 600; }
+  h1 .owner-link, .byline a { color: var(--accent); }
+  .byline { margin: 0 0 5px; color: var(--muted); font-size: 12px; }
+  h2 { margin: 0 0 5px; font-size: 14px; font-weight: 600; }
+  p { margin: 0; }
+  .description, .count { color: var(--muted); }
+  .description:empty { display: none; }
+  .count { margin-top: 5px; font-size: 12px; }
+  .repository-count { color: var(--accent); }
+  .sort-controls { display: flex; align-items: center; gap: 8px; padding-top: 16px; }
+  .sort-controls label, .field label { color: var(--muted); font-size: 12px; }
+  select, input[type="search"] {
+    min-height: 32px; padding: 5px 8px; border: 1px solid var(--strong); border-radius: 3px;
+    background: var(--bg); color: var(--fg); font: inherit; font-size: 12px;
+  }
+  select:focus, input[type="search"]:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .see-also { margin-top: 6px; color: var(--muted); font-size: 12px; }
+  .see-also a { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--strong); }
+  .list-rows { margin: 14px 0 0; padding: 0; list-style: none; }
+  .list-row { padding: 9px 0; border-bottom: 1px solid var(--rule); }
+  .list-row-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+  .list-name { color: var(--accent); font-size: 14px; font-weight: 550; text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .list-name:hover { border-bottom-color: var(--accent); }
+  .list-count { color: var(--muted); font-size: 12px; }
+  .list-description { margin-top: 2px; color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
+  .repos { margin: 0; padding: 0; list-style: none; }
+  .repos li { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  .repo { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; }
+  .repo > a { color: var(--accent); font-size: 16px; font-weight: 550; text-decoration: none; border-bottom: 1px solid var(--strong); overflow-wrap: anywhere; }
+  .repo > span { color: var(--muted); font-size: 14px; }
+  .repo span a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .repo-controls { display: grid; grid-template-columns: minmax(220px, 1fr) auto; gap: 10px; align-items: end; padding: 16px 0 10px; }
+  .field { display: grid; gap: 4px; }
+  .field input[type="search"] { width: 100%; }
+  .repo-controls .field:last-of-type { min-width: 190px; }
+  .result-count { grid-column: 1 / -1; color: var(--muted); font-size: 12px; }
+  .repo-meta { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 5px; color: var(--muted); font-size: 13px; }
+  .repo-meta .stars { color: var(--fg); }
+  .repo-item .description { margin-top: 4px; overflow-wrap: anywhere; font-size: 14px; }
+  .topics { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+  .topic, .topic-more { padding: 1px 6px; border: 1px solid var(--accent); border-radius: 999px; background: transparent; color: var(--muted); font: inherit; font-size: 10px; line-height: 1.5; cursor: pointer; }
+  .topic[aria-pressed="true"] { background: var(--accent); color: #fff; }
+  .topic-more { color: var(--accent); }
+  .topic-hidden:not([hidden]) { display: flex; flex-basis: 100%; flex-wrap: wrap; gap: 4px; }
+  .topic:focus-visible, .topic-more:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .empty { padding: 18px 0; color: var(--muted); }
+  footer { margin-top: 24px; padding-top: 12px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; }
+  footer a { color: var(--fg); }
+  @media (max-width: 560px) {
+    main { padding: 20px 14px 40px; }
+    .repo-controls { grid-template-columns: 1fr; }
+    .result-count { grid-column: 1; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <nav><a href="../../index.html">Dashboard</a> · <a href="../index.html">All star lists</a></nav>
+    <h1><a class="owner-link" href="https://github.com/ksouth">@ksouth</a> list of starred repos: Mac OSX/iOS</h1>
+<p class="byline">A GitHub star list, by <a href="https://github.com/ksouth">@ksouth</a>.</p>
+    <p class="description">Relevant to the use of Mac computers, phones, devices. Software, mostly, probably.</p>
+    <p class="count">23 public repositories</p>
+    
+  </header>
+  <ol class="repos"><li><div class="repo"><a href="https://github.com/openclaw/Peekaboo" target="_blank" rel="noopener">Peekaboo</a><span>by <a href="https://github.com/openclaw" target="_blank" rel="noopener">openclaw</a></span></div><p class="description">Peekaboo is a macOS CLI &amp; optional MCP server that enables AI agents to capture screenshots of applications, or the entire system, with optional visual question answering through local or remote AI models.</p><span class="language">Swift</span></li><li><div class="repo"><a href="https://github.com/anthropics/ClaudeForFoundationModels" target="_blank" rel="noopener">ClaudeForFoundationModels</a><span>by <a href="https://github.com/anthropics" target="_blank" rel="noopener">anthropics</a></span></div><p class="description">Claude support for Apple Foundation Models</p><span class="language">Swift</span></li><li><div class="repo"><a href="https://github.com/popmechanic/VibesOS" target="_blank" rel="noopener">VibesOS</a><span>by <a href="https://github.com/popmechanic" target="_blank" rel="noopener">popmechanic</a></span></div><p class="description">A GUI for Claude Code that makes it easy to vibe code simple, un-hackable apps</p><span class="language">HTML</span></li><li><div class="repo"><a href="https://github.com/popmechanic/loom" target="_blank" rel="noopener">loom</a><span>by <a href="https://github.com/popmechanic" target="_blank" rel="noopener">popmechanic</a></span></div><p class="description">Claude Code plugin: build web apps using claude -p as the runtime</p></li><li><div class="repo"><a href="https://github.com/stablyai/orca" target="_blank" rel="noopener">orca</a><span>by <a href="https://github.com/stablyai" target="_blank" rel="noopener">stablyai</a></span></div><p class="description">Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.</p><span class="language">TypeScript</span></li><li><div class="repo"><a href="https://github.com/interplains/Zero-Breach-Toolkit" target="_blank" rel="noopener">Zero-Breach-Toolkit</a><span>by <a href="https://github.com/interplains" target="_blank" rel="noopener">interplains</a></span></div><p class="description">Free, offline checks for known mercenary spyware on Windows, Mac, Linux, iPhone and Android - plus the doors left open, suspicious links, emails, files and QR codes, your accounts, home network and nearby trackers. Apps with a window, 27 languages. Nothing leaves your computer.</p><span class="language">Python</span></li><li><div class="repo"><a href="https://github.com/Riley-Coyote/mnemos-mcp" target="_blank" rel="noopener">mnemos-mcp</a><span>by <a href="https://github.com/Riley-Coyote" target="_blank" rel="noopener">Riley-Coyote</a></span></div><p class="description">Continuity for the agent itself. An MCP server that gives an AI agent a memory of its own, written in its own words and kept on your machine, so it wakes as itself every session.</p><span class="language">Python</span></li><li><div class="repo"><a href="https://github.com/Keys-Wasserman/Imagination-Studio-by-keys-Wasserman" target="_blank" rel="noopener">Imagination-Studio-by-keys-Wasserman</a><span>by <a href="https://github.com/Keys-Wasserman" target="_blank" rel="noopener">Keys-Wasserman</a></span></div><p class="description">Imagination Studio by keys+Wasserman powered by TensorFold: an AI film studio for Mac and NVIDIA DGX Spark. Plan a film like a crew (Slate workflow by Sam Wasserman), render Qwen-Image-2.1 / FLUX3-K pictures and MiniMax H3 / FastH3 video with sound on TensorFold.</p><span class="language">Python</span></li><li><div class="repo"><a href="https://github.com/Generated-Computers/Locals" target="_blank" rel="noopener">Locals</a><span>by <a href="https://github.com/Generated-Computers" target="_blank" rel="noopener">Generated-Computers</a></span></div><p class="description">Run many AI agents at once on your Mac, up to 3x faster.</p><span class="language">Python</span></li><li><div class="repo"><a href="https://github.com/anthropics/claude-code" target="_blank" rel="noopener">claude-code</a><span>by <a href="https://github.com/anthropics" target="_blank" rel="noopener">anthropics</a></span></div><p class="description">Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.</p><span class="language">TypeScript</span></li><li><div class="repo"><a href="https://github.com/ProtonVPN/ios-mac-app" target="_blank" rel="noopener">ios-mac-app</a><span>by <a href="https://github.com/ProtonVPN" target="_blank" rel="noopener">ProtonVPN</a></span></div><p class="description">Official ProtonVPN iOS and macOS app</p><span class="language">Swift</span></li><li><div class="repo"><a href="https://github.com/ProtonMail/ios-mail" target="_blank" rel="noopener">ios-mail</a><span>by <a href="https://github.com/ProtonMail" target="_blank" rel="noopener">ProtonMail</a></span></div><p class="description">Secure email that protects your privacy</p><span class="language">Swift</span></li><li><div class="repo"><a href="https://github.com/humanitas-labs/parrot" target="_blank" rel="noopener">parrot</a><span>by <a href="https://github.com/humanitas-labs" target="_blank" rel="noopener">humanitas-labs</a></span></div><p class="description">Ultra-minimalist macOS dictation.</p><span class="language">Swift</span></li><li><div class="repo"><a href="https://github.com/humanitas-labs/sirius" target="_blank" rel="noopener">sirius</a><span>by <a href="https://github.com/humanitas-labs" target="_blank" rel="noopener">humanitas-labs</a></span></div><p class="description">Ambient intelligence for macOS.</p><span class="language">Swift</span></li><li><div class="repo"><a href="https://github.com/humanitas-labs/paper" target="_blank" rel="noopener">paper</a><span>by <a href="https://github.com/humanitas-labs" target="_blank" rel="noopener">humanitas-labs</a></span></div><p class="description">Ultra-minimalist markdown editor for macOS.</p><span class="language">Swift</span></li><li><div class="repo"><a href="https://github.com/humanitas-labs/quill" target="_blank" rel="noopener">quill</a><span>by <a href="https://github.com/humanitas-labs" target="_blank" rel="noopener">humanitas-labs</a></span></div><p class="description">Ultra-minimalist macOS recording + transcription.</p><span class="language">Swift</span></li><li><div class="repo"><a href="https://github.com/JerryZLiu/Dayflow" target="_blank" rel="noopener">Dayflow</a><span>by <a href="https://github.com/JerryZLiu" target="_blank" rel="noopener">JerryZLiu</a></span></div><p class="description">The automatic work journal/time tracker. Privately turns your screen into a timeline of what you actually accomplished. Open-source and local-first.</p><span class="language">Swift</span></li><li><div class="repo"><a href="https://github.com/fathah/hermes-desktop" target="_blank" rel="noopener">hermes-desktop</a><span>by <a href="https://github.com/fathah" target="_blank" rel="noopener">fathah</a></span></div><p class="description">Desktop Companion for Hermes Agent</p><span class="language">TypeScript</span></li><li><div class="repo"><a href="https://github.com/standardnotes/app" target="_blank" rel="noopener">app</a><span>by <a href="https://github.com/standardnotes" target="_blank" rel="noopener">standardnotes</a></span></div><p class="description">Think fearlessly with end-to-end encrypted notes and files. For issues, visit https://standardnotes.com/forum or https://standardnotes.com/help.</p><span class="language">TypeScript</span></li><li><div class="repo"><a href="https://github.com/vory-dev/vory" target="_blank" rel="noopener">vory</a><span>by <a href="https://github.com/vory-dev" target="_blank" rel="noopener">vory-dev</a></span></div><span class="language">Swift</span></li><li><div class="repo"><a href="https://github.com/kgoedecke/promptclip" target="_blank" rel="noopener">promptclip</a><span>by <a href="https://github.com/kgoedecke" target="_blank" rel="noopener">kgoedecke</a></span></div><p class="description">🤖 A prompt manager for MacOS built with Tauri ♉️</p><span class="language">TypeScript</span></li><li><div class="repo"><a href="https://github.com/inaturalist/INaturalistIOS" target="_blank" rel="noopener">INaturalistIOS</a><span>by <a href="https://github.com/inaturalist" target="_blank" rel="noopener">inaturalist</a></span></div><p class="description">iNaturalist iOS app</p><span class="language">Objective-C</span></li><li><div class="repo"><a href="https://github.com/manaflow-ai/cmux" target="_blank" rel="noopener">cmux</a><span>by <a href="https://github.com/manaflow-ai" target="_blank" rel="noopener">manaflow-ai</a></span></div><p class="description">Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.</p><span class="language">Swift</span></li></ol>
+  <footer>Public repositories only · Updated 2026-11-28 22:01 AEDT (Australia/Melbourne)</footer>
+</main>
+
+</body>
+</html>
