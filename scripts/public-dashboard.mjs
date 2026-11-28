@@ -22,7 +22,7 @@ const OUT_LISTS = path.join(ROOT, 'docs', 'lists');
 const TEMPLATE = path.join(ROOT, 'scripts', 'dashboard.template.html');
 const LIST_TEMPLATE = path.join(ROOT, 'scripts', 'lists.template.html');
 
-const BATCH_SIZE = 20;
+const BATCH_SIZE = 10;
 const REPOS_PER_USER = 5;
 const BATCH_PAUSE_MS = 900;
 const FOLLOWED_WINDOW_DAYS = 30;
@@ -336,7 +336,7 @@ function formatStars(value) {
   return new Intl.NumberFormat('en-AU').format(value);
 }
 
-function listItemMarkup(repo) {
+function listItemMarkup(repo, index = 0) {
   const [owner, name] = repo.nameWithOwner.split('/', 2);
   const stars = repo.isFork
     ? repo.parentStars === null || repo.parentStars === undefined
@@ -346,26 +346,34 @@ function listItemMarkup(repo) {
   const pushed = repo.pushedAt ? repo.pushedAt.slice(0, 10) : 'Unknown';
   const starred = repo.starredAt ? repo.starredAt.slice(0, 10) : 'Unknown';
   const description = repo.description ? `<p class="description">${escapeHtml(repo.description.replace(/\s+/g, ' ').trim())}</p>` : '';
-  const topicMarkup = repo.topics.slice(0, 4).map((topic) => `<span class="topic">${escapeHtml(topic.toLowerCase())}</span>`).join('');
-  const topicCount = repo.topicsCount ?? repo.topics.length;
-  const topicMore = topicCount > 4 ? `<span class="topic-more">+${topicCount - 4}</span>` : '';
-  const topics = topicMarkup || topicMore ? `<div class="topics">${topicMarkup}${topicMore}</div>` : '';
+  const topics = repo.topics.map((topic) => topic.toLowerCase());
+  const topicButton = (topic) =>
+    `<button type="button" class="topic" data-topic="${escapeHtml(topic)}" aria-label="Filter by topic ${escapeHtml(topic)}" aria-pressed="false">${escapeHtml(topic)}</button>`;
+  const visibleTopics = topics.slice(0, 6).map(topicButton).join('');
+  const hiddenTopics = topics.slice(6);
+  const hiddenId = `topic-hidden-${index}`;
+  const topicMore = hiddenTopics.length
+    ? `<button type="button" class="topic-more" data-count="${hiddenTopics.length}" aria-controls="${hiddenId}" aria-expanded="false" aria-label="Show ${hiddenTopics.length} more topics for ${escapeHtml(repo.nameWithOwner)}">+${hiddenTopics.length}</button><div class="topic-hidden" id="${hiddenId}" hidden>${hiddenTopics.map(topicButton).join('')}</div>`
+    : '';
+  const topicMarkup = visibleTopics || topicMore ? `<div class="topics">${visibleTopics}${topicMore}</div>` : '';
   const search = [owner, name, repo.description, repo.topics.join(' ')].join(' ').toLocaleLowerCase();
-  return `<li class="repo-item" data-name="${escapeHtml(name)}" data-owner="${escapeHtml(owner)}" data-stars="${repo.sortStars}" data-pushed="${escapeHtml(repo.pushedAt || '')}" data-search="${escapeHtml(search)}"><div class="repo"><a href="${escapeHtml(repo.url)}" target="_blank" rel="noopener">${escapeHtml(name)}</a><span>by <a href="https://github.com/${escapeHtml(owner)}" target="_blank" rel="noopener">${escapeHtml(owner)}</a></span></div><div class="repo-meta"><span class="stars">${stars}</span><span>Last push: ${pushed}</span><span>Starred: ${starred}</span></div>${description}${topics}</li>`;
+  return `<li class="repo-item" data-name="${escapeHtml(name)}" data-owner="${escapeHtml(owner)}" data-stars="${repo.sortStars}" data-pushed="${escapeHtml(repo.pushedAt || '')}" data-search="${escapeHtml(search)}" data-topics="${escapeHtml(JSON.stringify(topics))}"><div class="repo"><a href="${escapeHtml(repo.url)}" target="_blank" rel="noopener">${escapeHtml(name)}</a><span>by <a href="https://github.com/${escapeHtml(owner)}" target="_blank" rel="noopener">${escapeHtml(owner)}</a></span></div><div class="repo-meta"><span class="stars">${stars}</span><span>Last push: ${pushed}</span><span>Starred: ${starred}</span></div>${description}${topicMarkup}</li>`;
 }
 
-function renderListPage({ title, description, count, content, dashboardHref, listsHref, generatedAt, script = '' }) {
+function renderListPage({ title, headingHtml, byline = '', description, count, countHtml, content, dashboardHref, listsHref, generatedAt, script = '' }) {
   const values = {
     TITLE: escapeHtml(title),
+    HEADING: headingHtml ?? escapeHtml(title),
+    BYLINE: byline,
     DESCRIPTION: escapeHtml(description),
-    COUNT: escapeHtml(count),
+    COUNT: countHtml ?? escapeHtml(count),
     CONTENT: content,
     SCRIPT: script,
     DASHBOARD_HREF: escapeHtml(dashboardHref),
     LISTS_HREF: escapeHtml(listsHref),
     GENERATED_AT: escapeHtml(generatedAt),
   };
-  return fs.readFileSync(LIST_TEMPLATE, 'utf8').replace(/__(TITLE|DESCRIPTION|COUNT|CONTENT|SCRIPT|DASHBOARD_HREF|LISTS_HREF|GENERATED_AT)__/g, (_, key) => values[key]);
+  return fs.readFileSync(LIST_TEMPLATE, 'utf8').replace(/__(TITLE|HEADING|BYLINE|DESCRIPTION|COUNT|CONTENT|SCRIPT|DASHBOARD_HREF|LISTS_HREF|GENERATED_AT)__/g, (_, key) => values[key]);
 }
 
 function listControlsScript() {
@@ -377,12 +385,16 @@ function listControlsScript() {
   var sort = document.getElementById("repo-sort");
   var count = document.getElementById("repo-count");
   var empty = document.getElementById("repo-empty");
+  var activeTopic = null;
   function byName(a, b) {
     return a.dataset.name.localeCompare(b.dataset.name, undefined, { sensitivity: "base" }) || a.dataset.owner.localeCompare(b.dataset.owner, undefined, { sensitivity: "base" });
   }
   function render() {
     var query = search.value.trim().toLocaleLowerCase();
-    var visible = rows.filter(function (row) { return row.dataset.search.indexOf(query) >= 0; });
+    var visible = rows.filter(function (row) {
+      var topics = JSON.parse(row.dataset.topics || "[]");
+      return row.dataset.search.indexOf(query) >= 0 && (!activeTopic || topics.indexOf(activeTopic) >= 0);
+    });
     visible.sort(function (a, b) {
       if (sort.value === "name") return byName(a, b);
       if (sort.value === "owner") return a.dataset.owner.localeCompare(b.dataset.owner, undefined, { sensitivity: "base" }) || byName(a, b);
@@ -392,7 +404,30 @@ function listControlsScript() {
     list.replaceChildren.apply(list, visible);
     count.textContent = "Showing " + visible.length + " of " + rows.length + " repositories";
     empty.hidden = visible.length > 0;
+    rows.forEach(function (row) {
+      row.querySelectorAll(".topic").forEach(function (chip) {
+        chip.setAttribute("aria-pressed", String(chip.dataset.topic === activeTopic));
+      });
+    });
   }
+  list.addEventListener("click", function (event) {
+    var more = event.target.closest(".topic-more");
+    if (more && list.contains(more)) {
+      var extra = document.getElementById(more.getAttribute("aria-controls"));
+      var expanded = more.getAttribute("aria-expanded") === "true";
+      var amount = Number(more.dataset.count);
+      var row = more.closest(".repo-item");
+      extra.hidden = expanded;
+      more.setAttribute("aria-expanded", String(!expanded));
+      more.textContent = (expanded ? "+" : "−") + amount;
+      more.setAttribute("aria-label", (expanded ? "Show " : "Hide ") + amount + " more topics for " + row.dataset.owner + "/" + row.dataset.name);
+      return;
+    }
+    var chip = event.target.closest(".topic");
+    if (!chip || !list.contains(chip)) return;
+    activeTopic = activeTopic === chip.dataset.topic ? null : chip.dataset.topic;
+    render();
+  });
   search.addEventListener("input", render);
   sort.addEventListener("change", render);
   render();
@@ -417,7 +452,7 @@ function writeListPages(lists, starred, generatedAt) {
     const attributes = sortable
       ? ` data-sortable="true" data-name="${escapeHtml(name)}" data-count="${count}"`
       : ' data-sortable="false"';
-    return `<a class="list-card" href="./${escapeHtml(slug)}/"${attributes}><h2>${escapeHtml(name)}</h2><p>${escapeHtml(description || 'No description.')}</p><span class="card-count">${count} public repositories</span></a>`;
+    return `<a class="list-card" href="./${escapeHtml(slug)}/"${attributes}><h2>${escapeHtml(name)}</h2><p>${escapeHtml(description || 'No description.')}</p><span class="card-count"><span class="repository-count">${count}</span> public repositories</span></a>`;
   };
   const sortedLists = [...lists].sort((a, b) => b.items.length - a.items.length || a.name.localeCompare(b.name));
   const cards = sortedLists.map((list) => card(list.name, list.slug, list.description, list.items.length, true));
@@ -441,8 +476,9 @@ function writeListPages(lists, starred, generatedAt) {
 })();
 </script>`;
   const hubHtml = renderListPage({
-    title: 'GitHub star lists',
-    description: `Browse ${lists.length} public lists and the public stars not filed into any of them.`,
+    title: '@ksouth GitHub star lists',
+    headingHtml: `<a class="owner-link" href="https://github.com/${OWNER}">@${OWNER}</a> GitHub star lists`,
+    description: `Browse ${lists.length} topical lists and the stars not filed into any of them.`,
     count: `${lists.length} lists · ${unfiled.length} unfiled stars`,
     content: `<div class="sort-controls"><label for="list-sort">Sort lists</label><select id="list-sort" aria-label="Sort the public star lists"><option value="count" selected>Most repositories</option><option value="name">Name</option></select></div><section class="list-grid" id="list-grid" aria-label="Public star lists">${cards.join('')}</section>`,
     script: sortScript,
@@ -457,8 +493,9 @@ function writeListPages(lists, starred, generatedAt) {
     const content = `<div class="repo-controls"><div class="field"><label for="repo-search">Search</label><input id="repo-search" type="search" placeholder="Name, owner, description or topics" aria-label="Search repositories"></div><div class="field"><label for="repo-sort">Sort by</label><select id="repo-sort" aria-label="Sort repositories"><option value="pushed" selected>Last push (newest)</option><option value="name">Repo name (A–Z)</option><option value="owner">Owner (A–Z)</option><option value="stars">Stars (most)</option></select></div><p class="result-count" id="repo-count" aria-live="polite">Showing ${list.items.length} of ${list.items.length} repositories</p></div><ol class="repos" id="repo-list">${items}</ol><p class="empty" id="repo-empty" hidden>${list.items.length ? 'No repositories match these filters.' : 'This list has no public repositories.'}</p>`;
     const html = renderListPage({
       title: list.name,
-      description: list.description || 'A public GitHub star list.',
-      count: `${list.items.length} public repositories`,
+      byline: `<p class="byline">A GitHub star list, by <a href="https://github.com/${OWNER}">@${OWNER}</a>.</p>`,
+      description: list.description || '',
+      countHtml: `<span class="repository-count">${list.items.length}</span> public repositories`,
       content,
       script: listControlsScript(),
       dashboardHref: '../../index.html',
