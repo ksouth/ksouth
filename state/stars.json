@@ -604,6 +604,11 @@
     "starred_by": "AgentSparko",
     "starred_at": "2026-11-25T22:17:56Z"
   },
+  "AgentSparko/Atlas3DSS/atlas-ingine": {
+    "first_seen": "2026-11-28",
+    "starred_by": "AgentSparko",
+    "starred_at": "2026-11-27T21:50:16Z"
+  },
   "AgentSparko/garythebat/vllm-overlay-switch": {
     "first_seen": "2026-11-14",
     "starred_by": "AgentSparko",
@@ -989,6 +994,11 @@
     "starred_by": "alpaim",
     "starred_at": "2026-11-14T10:10:56Z"
   },
+  "alpaim/eisenzopf/rvoip": {
+    "first_seen": "2026-11-28",
+    "starred_by": "alpaim",
+    "starred_at": "2026-11-27T16:30:08Z"
+  },
   "alpaim/Leviidev/Henge": {
     "first_seen": "2026-11-06",
     "starred_by": "alpaim",
@@ -1149,6 +1159,11 @@
     "starred_by": "AmintaCCCP",
     "starred_at": "2026-11-25T12:58:31Z"
   },
+  "AmintaCCCP/Furina-he/gitskins": {
+    "first_seen": "2026-11-28",
+    "starred_by": "AmintaCCCP",
+    "starred_at": "2026-11-27T15:30:35Z"
+  },
   "AmintaCCCP/guangshu100/BidMaster-Pro": {
     "first_seen": "2026-11-27",
     "starred_by": "AmintaCCCP",
@@ -1179,10 +1194,30 @@
     "starred_by": "AmintaCCCP",
     "starred_at": "2026-11-25T04:07:30Z"
   },
+  "AmintaCCCP/Re13orn/IPA-Decrypt": {
+    "first_seen": "2026-11-28",
+    "starred_by": "AmintaCCCP",
+    "starred_at": "2026-11-27T15:35:58Z"
+  },
+  "AmintaCCCP/Reukix/Reloc": {
+    "first_seen": "2026-11-28",
+    "starred_by": "AmintaCCCP",
+    "starred_at": "2026-11-27T14:10:16Z"
+  },
   "AmintaCCCP/StevewJin/biz-agent": {
     "first_seen": "2026-11-25",
     "starred_by": "AmintaCCCP",
     "starred_at": "2026-11-23T12:51:44Z"
+  },
+  "AmintaCCCP/wzc520pyfm/open-intelligent-ui": {
+    "first_seen": "2026-11-28",
+    "starred_by": "AmintaCCCP",
+    "starred_at": "2026-11-27T15:35:36Z"
+  },
+  "AmintaCCCP/YuanMouJun/yuanmou-ppt-skill": {
+    "first_seen": "2026-11-28",
+    "starred_by": "AmintaCCCP",
+    "starred_at": "2026-11-27T15:32:40Z"
   },
   "AmintaCCCP/yuhuan-dev/antigravity-usage-monitor": {
     "first_seen": "2026-11-26",
@@ -3834,6 +3869,11 @@
     "starred_by": "coygeek",
     "starred_at": "2026-11-24T16:58:00Z"
   },
+  "coygeek/agentnativeinc/v2": {
+    "first_seen": "2026-11-28",
+    "starred_by": "coygeek",
+    "starred_at": "2026-11-27T22:39:59Z"
+  },
   "coygeek/code-charity/youtube": {
     "first_seen": "2026-11-21",
     "starred_by": "coygeek",
@@ -3953,6 +3993,11 @@
     "first_seen": "2026-09-29",
     "starred_by": "CrazyNicolas",
     "starred_at": "2026-09-29T09:11:20Z"
+  },
+  "crazywriter1/crazywriter1/Celestia-Basic-Nft-Deploy": {
+    "first_seen": "2026-11-28",
+    "starred_by": "crazywriter1",
+    "starred_at": "2023-05-16T20:05:09Z"
   },
   "crazywriter1/crazywriter1/Checkers": {
     "first_seen": "2026-03-11",
@@ -4314,6 +4359,11 @@
     "starred_by": "davanstrien",
     "starred_at": "2026-11-26T16:44:14Z"
   },
+  "davanstrien/lhoestq/nano-xet": {
+    "first_seen": "2026-11-28",
+    "starred_by": "davanstrien",
+    "starred_at": "2026-11-27T15:31:52Z"
+  },
   "davanstrien/lightonai/LightOnOCR": {
     "first_seen": "2026-11-25",
     "starred_by": "davanstrien",
@@ -4333,6 +4383,11 @@
     "first_seen": "2026-11-26",
     "starred_by": "davanstrien",
     "starred_at": "2026-11-25T09:21:54Z"
+  },
+  "davanstrien/OmniJev/Flide": {
+    "first_seen": "2026-11-28",
+    "starred_by": "davanstrien",
+    "starred_at": "2026-11-27T12:29:19Z"
   },
   "daveredrum/apple-aiml-research/ml-depth-pro-2": {
     "first_seen": "2026-11-26",
@@ -5564,6 +5619,11 @@
     "starred_by": "Extraltodeus",
     "starred_at": "2026-09-27T03:01:16Z"
   },
+  "Extraltodeus/ltdrdata/ComfyUI-Inspire-Pack": {
+    "first_seen": "2026-11-28",
+    "starred_by": "Extraltodeus",
+    "starred_at": "2026-11-27T16:36:34Z"
+  },
   "Extraltodeus/lyramakesmusic/neuron-explorer": {
     "first_seen": "2026-10-29",
     "starred_by": "Extraltodeus",
@@ -5588,6 +5648,11 @@
     "first_seen": "2026-11-25",
     "starred_by": "Extraltodeus",
     "starred_at": "2026-11-24T12:19:01Z"
+  },
+  "Extraltodeus/TodePond/Whatever": {
+    "first_seen": "2026-11-28",
+    "starred_by": "Extraltodeus",
+    "starred_at": "2026-11-27T10:02:29Z"
   },
   "Extraltodeus/vrgamegirl19/comfyui-vrgamedevgirl": {
     "first_seen": "2026-11-25",
@@ -7463,6 +7528,11 @@
     "first_seen": "2024-11-29",
     "starred_by": "jackhogan",
     "starred_at": "2024-11-29T17:51:32Z"
+  },
+  "jacoblee93/jacoblee93/agent-overwatch": {
+    "first_seen": "2026-11-28",
+    "starred_by": "jacoblee93",
+    "starred_at": "2026-11-28T01:50:15Z"
   },
   "jacoblee93/langchain-ai/langsmith-codex-plugins": {
     "first_seen": "2026-07-13",
@@ -9604,6 +9674,11 @@
     "starred_by": "koala73",
     "starred_at": "2026-11-24T18:06:37Z"
   },
+  "koala73/SamuelZ12/research-sources": {
+    "first_seen": "2026-11-28",
+    "starred_by": "koala73",
+    "starred_at": "2026-11-28T02:53:29Z"
+  },
   "koala73/sandbox-quantum/switch": {
     "first_seen": "2026-11-19",
     "starred_by": "koala73",
@@ -9683,6 +9758,11 @@
     "first_seen": "2026-11-25",
     "starred_by": "kocaemre",
     "starred_at": "2026-11-24T06:36:33Z"
+  },
+  "kocaemre/sresarehumantoo/ARTEX-CC": {
+    "first_seen": "2026-11-28",
+    "starred_by": "kocaemre",
+    "starred_at": "2026-11-27T13:04:45Z"
   },
   "kocaemre/Wh0am123/MCP-Kali-Server": {
     "first_seen": "2026-11-15",
@@ -10069,6 +10149,11 @@
     "starred_by": "levzzz5154",
     "starred_at": "2026-11-19T15:22:41Z"
   },
+  "levzzz5154/Cirno-Labs/opentouhou": {
+    "first_seen": "2026-11-28",
+    "starred_by": "levzzz5154",
+    "starred_at": "2026-11-27T20:52:44Z"
+  },
   "levzzz5154/Dawnforger/occultism-horizon": {
     "first_seen": "2026-11-22",
     "starred_by": "levzzz5154",
@@ -10089,10 +10174,30 @@
     "starred_by": "levzzz5154",
     "starred_at": "2026-11-26T16:44:46Z"
   },
+  "levzzz5154/isac322/kwin-mcp": {
+    "first_seen": "2026-11-28",
+    "starred_by": "levzzz5154",
+    "starred_at": "2026-11-27T14:18:41Z"
+  },
   "levzzz5154/ItsNotRexed/Leonida": {
     "first_seen": "2026-11-22",
     "starred_by": "levzzz5154",
     "starred_at": "2026-11-21T17:39:31Z"
+  },
+  "levzzz5154/KleberMotta/OptiScaler-DLSS5-MFG-RTX40": {
+    "first_seen": "2026-11-28",
+    "starred_by": "levzzz5154",
+    "starred_at": "2026-11-27T14:24:45Z"
+  },
+  "levzzz5154/SamuelZ12/research-sources": {
+    "first_seen": "2026-11-28",
+    "starred_by": "levzzz5154",
+    "starred_at": "2026-11-27T17:38:41Z"
+  },
+  "levzzz5154/tangency-labs/solidcraft": {
+    "first_seen": "2026-11-28",
+    "starred_by": "levzzz5154",
+    "starred_at": "2026-11-27T10:51:53Z"
   },
   "levzzz5154/tristanbuckmaster/navier-stokes": {
     "first_seen": "2026-11-20",
@@ -10153,6 +10258,11 @@
     "first_seen": "2025-11-19",
     "starred_by": "LimaRAF",
     "starred_at": "2025-11-19T10:42:03Z"
+  },
+  "LingyuZhi/adongwanai/AgentGuide": {
+    "first_seen": "2026-11-28",
+    "starred_by": "LingyuZhi",
+    "starred_at": "2026-11-27T11:31:19Z"
   },
   "LingyuZhi/alphaXiv/OpenResearch": {
     "first_seen": "2026-11-05",
@@ -10643,6 +10753,11 @@
     "first_seen": "2026-11-25",
     "starred_by": "lzt404",
     "starred_at": "2026-11-23T15:42:38Z"
+  },
+  "lzt404/suoha888/Trader-Archives": {
+    "first_seen": "2026-11-28",
+    "starred_by": "lzt404",
+    "starred_at": "2026-11-27T18:27:49Z"
   },
   "lzt404/UnderleveledBuilder/awesome-short-drama-skills": {
     "first_seen": "2026-11-19",
@@ -11274,6 +11389,11 @@
     "starred_by": "mdsumner",
     "starred_at": "2026-11-24T02:02:54Z"
   },
+  "mdsumner/erkamyaman/rust-anything": {
+    "first_seen": "2026-11-28",
+    "starred_by": "mdsumner",
+    "starred_at": "2026-11-27T23:58:41Z"
+  },
   "mdsumner/hypertidy/shallows": {
     "first_seen": "2026-11-26",
     "starred_by": "mdsumner",
@@ -11463,6 +11583,11 @@
     "first_seen": "2026-11-26",
     "starred_by": "MiaAI-Lab",
     "starred_at": "2026-11-25T09:11:53Z"
+  },
+  "MiaAI-Lab/javierbits/repobeagle": {
+    "first_seen": "2026-11-28",
+    "starred_by": "MiaAI-Lab",
+    "starred_at": "2026-11-27T23:37:22Z"
   },
   "MiaAI-Lab/Keys-Wasserman/Imagination-Studio-by-keys-Wasserman": {
     "first_seen": "2026-11-07",
@@ -12414,6 +12539,11 @@
     "starred_by": "ncoop57",
     "starred_at": "2026-11-12T04:26:45Z"
   },
+  "ncoop57/AnswerDotAI/rustymd": {
+    "first_seen": "2026-11-28",
+    "starred_by": "ncoop57",
+    "starred_at": "2026-11-27T12:35:07Z"
+  },
   "ncoop57/hanxiao/omni-macos": {
     "first_seen": "2026-10-13",
     "starred_by": "ncoop57",
@@ -13354,10 +13484,20 @@
     "starred_by": "PiotrCzapla",
     "starred_at": "2026-10-18T21:22:27Z"
   },
+  "PiotrCzapla/MatthiasValvekens/pyHanko": {
+    "first_seen": "2026-11-28",
+    "starred_by": "PiotrCzapla",
+    "starred_at": "2026-11-27T18:10:06Z"
+  },
   "PiotrCzapla/mattpocock/skills": {
     "first_seen": "2026-10-10",
     "starred_by": "PiotrCzapla",
     "starred_at": "2026-10-10T22:44:31Z"
+  },
+  "PiotrCzapla/pithings/unkernel": {
+    "first_seen": "2026-11-28",
+    "starred_by": "PiotrCzapla",
+    "starred_at": "2026-11-28T00:30:32Z"
   },
   "piotrostr/0xPlaygrounds/rig-onchain-kit": {
     "first_seen": "2025-02-06",
@@ -15149,6 +15289,11 @@
     "starred_by": "SauersML",
     "starred_at": "2026-08-26T02:47:02Z"
   },
+  "SauersML/SauersML/neural-pairing": {
+    "first_seen": "2026-11-28",
+    "starred_by": "SauersML",
+    "starred_at": "2026-11-27T18:30:59Z"
+  },
   "saurabhdash2512/bitsandbytes-foundation/bitsandbytes": {
     "first_seen": "2022-08-29",
     "starred_by": "saurabhdash2512",
@@ -15544,6 +15689,11 @@
     "starred_by": "serengil",
     "starred_at": "2026-11-17T19:35:03Z"
   },
+  "serengil/f/family-migration-story": {
+    "first_seen": "2026-11-28",
+    "starred_by": "serengil",
+    "starred_at": "2026-11-27T15:51:25Z"
+  },
   "serengil/neo4j/neo4j-graphrag-python": {
     "first_seen": "2025-12-11",
     "starred_by": "serengil",
@@ -15759,6 +15909,11 @@
     "starred_by": "SharkEzz",
     "starred_at": "2026-11-14T19:39:20Z"
   },
+  "SharkEzz/enwove/flyx": {
+    "first_seen": "2026-11-28",
+    "starred_by": "SharkEzz",
+    "starred_at": "2026-11-27T16:41:12Z"
+  },
   "SharkEzz/GoogleChrome/modern-web-guidance": {
     "first_seen": "2026-11-13",
     "starred_by": "SharkEzz",
@@ -15783,6 +15938,11 @@
     "first_seen": "2026-11-14",
     "starred_by": "SharkEzz",
     "starred_at": "2026-11-14T17:28:13Z"
+  },
+  "SharkEzz/xerj-org/xerj": {
+    "first_seen": "2026-11-28",
+    "starred_by": "SharkEzz",
+    "starred_at": "2026-11-27T16:53:42Z"
   },
   "shawaj/Erwin-Schrodinger-Token/ewn-box-opener": {
     "first_seen": "2024-10-02",
@@ -16481,6 +16641,11 @@
   },
   "sxu99/SpectrAI-Initiative/InnoClaw": {
     "first_seen": "2026-11-26",
+    "starred_by": "sxu99",
+    "starred_at": "2026-03-20T12:21:41Z"
+  },
+  "sxu99/SpectrAI-Initiative/InnoScale": {
+    "first_seen": "2026-11-28",
     "starred_by": "sxu99",
     "starred_at": "2026-03-20T12:21:41Z"
   },
