@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Followed repos — ksouth</title>
+<title>Things people I follow make and star – by @ksouth</title>
 <style>
   :root {
     --bg: #fff;
@@ -11,7 +11,7 @@
     --muted: #6b6b6b;
     --rule: #e3e3e3;
     --strong: #c9c9c9;
-    --accent: #b3261e;
+    --accent: #0000C8;
     --field: #fafafa;
     --on: #111;
     --onfg: #fff;
@@ -23,7 +23,7 @@
       --muted: #9b9b9b;
       --rule: #2b2b2b;
       --strong: #3a3a3a;
-      --accent: #f0736a;
+      --accent: #1800F8;
       --field: #161616;
       --on: #e9e9e9;
       --onfg: #111;
@@ -41,10 +41,11 @@
   main { max-width: 900px; margin: 0 auto; padding: 28px 20px 56px; }
   header { padding-bottom: 15px; border-bottom: 1px solid var(--strong); }
   h1 { margin: 0 0 3px; font-size: 15px; font-weight: 600; }
+  h1 a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--strong); }
   h2 { margin: 0; font-size: 13px; font-weight: 600; }
   p { margin: 0; }
   .meta { color: var(--muted); font-size: 12px; }
-  .back { display: inline-block; color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--strong); margin-bottom: 11px; }
+  .meta a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); }
   .stats { display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 1px solid var(--strong); }
   .stat { padding: 13px 14px 13px 0; }
   .stat + .stat { border-left: 1px solid var(--rule); padding-left: 14px; }
@@ -52,13 +53,18 @@
   .value { margin-top: 2px; font-size: 21px; font-weight: 500; }
   .controls { display: grid; gap: 9px; padding: 16px 0 12px; }
   .row { display: flex; gap: 8px; flex-wrap: wrap; }
-  input[type="search"], input[type="date"], select {
+  input[type="search"], select {
     min-height: 30px; padding: 5px 7px; border: 1px solid var(--strong); border-radius: 3px;
     background: var(--field); color: var(--fg); font: inherit; font-size: 12.5px;
   }
   input[type="search"] { flex: 1 1 260px; min-width: 0; }
   input:focus, select:focus, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
-  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .view-buttons, .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .view-button {
+    min-height: 36px; padding: 7px 12px; border: 1px solid var(--strong); border-radius: 0; cursor: pointer;
+    background: transparent; color: var(--fg); font: inherit; font-size: 13px; font-weight: 550;
+  }
+  .view-button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent); color: #fff; }
   .chip {
     padding: 6px 10px; border: 1px solid var(--strong); border-radius: 999px; cursor: pointer;
     background: transparent; color: var(--fg); font: inherit; font-size: 12px; line-height: 1;
@@ -66,18 +72,24 @@
   .chip[aria-pressed="true"] { border-color: var(--on); background: var(--on); color: var(--onfg); }
   .chip .count { margin-left: 4px; opacity: .65; }
   .result-count { color: var(--muted); font-size: 12px; }
-  .day { padding-top: 14px; margin-top: 4px; border-top: 1px solid var(--strong); scroll-margin-top: 14px; }
+  .day { padding-top: 17px; margin-top: 6px; border-top: 1px solid var(--strong); scroll-margin-top: 14px; }
   .day-head { display: flex; align-items: baseline; gap: 9px; margin-bottom: 3px; }
+  .day-head h2 { color: var(--accent); font-size: 23px; font-weight: 600; line-height: 1.2; }
   .day-count { color: var(--muted); font-size: 12px; }
-  ul { list-style: none; margin: 0; padding: 0; }
-  li { display: grid; grid-template-columns: minmax(110px, 1fr) auto; gap: 2px 12px; padding: 8px 0; border-top: 1px solid var(--rule); }
-  .repo { font-weight: 500; }
-  .repo a { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--strong); }
+  .day-table { width: 100%; table-layout: fixed; border-collapse: collapse; }
+  .day-table col.repo-column { width: 48%; }
+  .day-table col.stars-column { width: 18%; }
+  .day-table col.language-column { width: 14%; }
+  .day-table col.type-column { width: 20%; }
+  .day-table th, .day-table td { padding: 8px 8px 8px 0; border-top: 1px solid var(--rule); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+  .day-table th { color: var(--muted); font-size: 10px; font-weight: 500; text-transform: uppercase; letter-spacing: .05em; }
+  .day-table td { font-size: 12.5px; }
+  .repo { font-weight: 500; overflow-wrap: anywhere; }
+  .repo a { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--strong); overflow-wrap: anywhere; }
   .repo a:hover { border-bottom-color: var(--fg); }
   .owner { color: var(--muted); font-weight: 400; }
-  .facts { grid-column: 2; grid-row: 1; color: var(--muted); text-align: right; font-size: 11.5px; }
-  .description { grid-column: 1 / -1; color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
-  .type { color: var(--fg); }
+  .description { margin-top: 3px; color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
+  .stars, .language, .type { color: var(--muted); }
   .empty, .status { padding: 20px 0; color: var(--muted); }
   .status[hidden], .empty[hidden], .day[hidden] { display: none; }
   footer { margin-top: 24px; padding-top: 12px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; }
@@ -87,39 +99,37 @@
     .stat { padding: 11px 9px 11px 0; }
     .stat + .stat { padding-left: 9px; }
     .value { font-size: 18px; }
-    li { grid-template-columns: 1fr; gap: 2px; }
-    .facts { grid-column: 1; grid-row: auto; text-align: left; }
-    .description { grid-column: 1; }
+    .day-head h2 { font-size: 21px; }
+    .day-table th, .day-table td { padding-right: 5px; font-size: 11.5px; }
+    .day-table th { font-size: 9px; }
   }
 </style>
 </head>
 <body>
 <main>
   <header>
-    <a class="back" href="../index.html">← Dashboard</a>
-    <h1>Things people I follow make and star</h1>
-    <p class="meta">A public-only, day-by-day log. Newest day first.</p>
+    <h1>Things people I follow make and star – by <a href="https://github.com/ksouth">@ksouth</a></h1>
+    <p class="meta">A day-by-day log, sort by repos or stars or both. Newest day first.</p>
+    <p class="meta">See also: <a href="https://ksouth.github.io/ksouth/">repo inventory →</a> <a href="https://ksouth.github.io/ksouth/lists/">starred lists →</a> <a href="https://ksouth.github.io/ksouth/created/">created repos →</a></p>
   </header>
 
   <section class="stats" aria-label="History totals">
-    <div class="stat"><div class="label" id="total-label">Repos logged</div><div class="value" id="total-items">—</div></div>
+    <div class="stat"><div class="label" id="total-label">Updates logged</div><div class="value" id="total-items">—</div></div>
     <div class="stat"><div class="label">People</div><div class="value" id="total-people">—</div></div>
     <div class="stat"><div class="label">Days with news</div><div class="value" id="total-days">—</div></div>
   </section>
 
   <section class="controls" aria-label="Filter the history">
-    <div class="chips" id="stream-chips" role="group" aria-label="Choose the activity stream"></div>
+    <div class="view-buttons" id="stream-chips" role="group" aria-label="Choose what to view"></div>
     <div class="row">
       <input type="search" id="search" placeholder="Search repo names and descriptions" aria-label="Search repo names and descriptions">
       <select id="person" aria-label="Filter by person"><option value="">All people</option></select>
-      <label class="meta" for="jump">Jump to date</label>
-      <input type="date" id="jump" aria-label="Jump to date">
     </div>
     <div class="chips" id="type-chips" role="group" aria-label="Filter by repo type"></div>
     <p class="result-count" id="result-count"></p>
   </section>
 
-  <p class="status" id="status">Loading the public history…</p>
+  <p class="status" id="status">Loading the history…</p>
   <p class="empty" id="empty" hidden>No items match these filters.</p>
   <div id="days"></div>
 
@@ -130,7 +140,7 @@
 <script>
 (function () {
   var histories = { repos: [], stars: [] };
-  var stream = "repos";
+  var stream = "all";
   var filters = { search: "", person: "", type: "all" };
   var status = document.getElementById("status");
   var daysNode = document.getElementById("days");
@@ -150,9 +160,35 @@
     });
   }
 
-  function historyForStream() { return histories[stream]; }
-  function ownerOf(item) { return stream === "repos" ? item.owner : item.starred_by; }
-  function repoName(item) { return stream === "repos" ? item.name : item.nameWithOwner; }
+  function historyForStream() {
+    if (stream !== "all") {
+      return histories[stream].map(function (day) {
+        return { date: day.date, items: day.items.map(function (item) { return Object.assign({}, item, { _stream: stream }); }) };
+      });
+    }
+    var byDate = new Map();
+    ["repos", "stars"].forEach(function (kind) {
+      histories[kind].forEach(function (day) {
+        if (!byDate.has(day.date)) byDate.set(day.date, { date: day.date, items: [] });
+        byDate.get(day.date).items.push.apply(byDate.get(day.date).items, day.items.map(function (item) { return Object.assign({}, item, { _stream: kind }); }));
+      });
+    });
+    return Array.from(byDate.values()).map(function (day) {
+      day.items.sort(function (a, b) { return ownerOf(a).localeCompare(ownerOf(b)) || repoName(a).localeCompare(repoName(b)); });
+      return day;
+    }).sort(function (a, b) { return b.date.localeCompare(a.date); });
+  }
+  function ownerOf(item) { return item._stream === "repos" ? item.owner : item.starred_by; }
+  function repoName(item) { return item._stream === "repos" ? item.name : item.nameWithOwner; }
+
+  function matchesSearchAndPerson(item) {
+    if (filters.person && ownerOf(item) !== filters.person) return false;
+    if (filters.search) {
+      var hay = (repoName(item) + " " + (item.description || "")).toLowerCase();
+      if (hay.indexOf(filters.search) < 0) return false;
+    }
+    return true;
+  }
 
   function updatePeople() {
     var items = historyForStream().flatMap(function (day) { return day.items; });
@@ -162,13 +198,9 @@
   }
 
   function passes(item) {
-    if (filters.person && ownerOf(item) !== filters.person) return false;
+    if (!matchesSearchAndPerson(item)) return false;
     if (stream === "repos" && filters.type === "source" && item.type !== "source") return false;
     if (stream === "repos" && filters.type === "fork" && item.type !== "fork") return false;
-    if (filters.search) {
-      var hay = (repoName(item) + " " + (item.description || "")).toLowerCase();
-      if (hay.indexOf(filters.search) < 0) return false;
-    }
     return true;
   }
 
@@ -176,26 +208,28 @@
     var history = historyForStream();
     var allItems = history.flatMap(function (day) { return day.items; });
     var visibleCount = allItems.filter(passes).length;
+    document.getElementById("total-label").textContent = stream === "repos" ? "Repos logged" : stream === "stars" ? "Stars logged" : "Updates logged";
     total.textContent = allItems.length;
     peopleTotal.textContent = new Set(allItems.map(ownerOf)).size;
     dayTotal.textContent = history.length;
-    count.textContent = visibleCount + " of " + allItems.length + (stream === "repos" ? " repos" : " stars");
+    count.textContent = visibleCount + " of " + allItems.length + (stream === "repos" ? " repos" : stream === "stars" ? " stars" : " updates");
     empty.hidden = visibleCount !== 0;
 
     var streamCounts = { repos: histories.repos.reduce(function (sum, day) { return sum + day.items.length; }, 0), stars: histories.stars.reduce(function (sum, day) { return sum + day.items.length; }, 0) };
-    streamChips.innerHTML = [["repos", "New repos", streamCounts.repos], ["stars", "New stars", streamCounts.stars]].map(function (entry) {
-      return '<button type="button" class="chip" data-stream="' + entry[0] + '" aria-pressed="' + (stream === entry[0]) + '">' + entry[1] + '<span class="count">' + entry[2] + "</span></button>";
+    streamChips.innerHTML = [["repos", "View Added Repos", streamCounts.repos], ["stars", "View Added Stars", streamCounts.stars], ["all", "View All", streamCounts.repos + streamCounts.stars]].map(function (entry) {
+      return '<button type="button" class="view-button" data-stream="' + entry[0] + '" aria-pressed="' + (stream === entry[0]) + '">' + entry[1] + '<span class="count"> ' + entry[2] + "</span></button>";
     }).join("");
 
+    var matchingItems = allItems.filter(matchesSearchAndPerson);
     var typeCounts = {
-      all: allItems.filter(function (item) { return (!filters.person || ownerOf(item) === filters.person) && (!filters.search || (repoName(item) + " " + (item.description || "")).toLowerCase().indexOf(filters.search) >= 0); }).length,
-      source: allItems.filter(function (item) { return item.type === "source" && (!filters.person || ownerOf(item) === filters.person) && (!filters.search || (repoName(item) + " " + (item.description || "")).toLowerCase().indexOf(filters.search) >= 0); }).length,
-      fork: allItems.filter(function (item) { return item.type === "fork" && (!filters.person || ownerOf(item) === filters.person) && (!filters.search || (repoName(item) + " " + (item.description || "")).toLowerCase().indexOf(filters.search) >= 0); }).length
+      all: matchingItems.length,
+      source: matchingItems.filter(function (item) { return item.type === "source"; }).length,
+      fork: matchingItems.filter(function (item) { return item.type === "fork"; }).length
     };
     chips.hidden = stream !== "repos";
     if (stream === "repos") {
       chips.innerHTML = [
-        ["all", "All"], ["source", "New repos"], ["fork", "Forks"]
+        ["all", "All types"], ["source", "Source repos"], ["fork", "Forks"]
       ].map(function (entry) {
         return '<button type="button" class="chip" data-type="' + entry[0] + '" aria-pressed="' + (filters.type === entry[0]) + '">' +
           entry[1] + '<span class="count">' + typeCounts[entry[0]] + "</span></button>";
@@ -206,21 +240,18 @@
       var items = day.items.filter(passes);
       if (!items.length) return '<section class="day" id="day-' + esc(day.date) + '" hidden></section>';
       var nPeople = new Set(items.map(ownerOf)).size;
-      var itemLabel = stream === "repos" ? "new repo" : "new star";
+      var itemLabel = stream === "repos" ? "new repo" : stream === "stars" ? "new star" : "update";
+      var relation = stream === "stars" ? "by " : "from ";
       return '<section class="day" id="day-' + esc(day.date) + '">' +
-        '<div class="day-head"><h2>' + esc(day.date) + '</h2><span class="day-count">' + items.length + ' ' + itemLabel + (items.length === 1 ? '' : 's') + (stream === "repos" ? ' from ' : ' by ') + nPeople + ' people</span></div>' +
-        '<ul>' + items.map(function (item) {
-          var facts = [];
-          if (stream === "repos") facts.push('<span class="type">' + esc(item.type === "fork" ? 'fork of ' + (item.parent || 'another repo') : 'new repo') + '</span>');
-          else facts.push('<span class="type">starred</span>');
-          if (item.language) facts.push(esc(item.language));
-          facts.push((item.stars || 0) + ' star' + (item.stars === 1 ? '' : 's'));
-          return '<li data-key="' + esc((stream === "repos" ? item.owner : item.starred_by) + '/' + repoName(item)) + '">' +
-            '<div class="repo"><span class="owner">' + esc(ownerOf(item)) + ' / </span><a href="' + esc(item.url) + '" target="_blank" rel="noopener">' + esc(repoName(item)) + '</a></div>' +
-            '<div class="facts">' + facts.join(' · ') + '</div>' +
-            (item.description ? '<div class="description">' + esc(item.description.replace(/\s+/g, ' ').trim()) + '</div>' : '') +
-            '</li>';
-        }).join("") + '</ul></section>';
+        '<div class="day-head"><h2>' + esc(day.date) + '</h2><span class="day-count">' + items.length + ' ' + itemLabel + (items.length === 1 ? '' : 's') + ' ' + relation + nPeople + (nPeople === 1 ? ' person' : ' people') + '</span></div>' +
+        '<table class="day-table"><colgroup><col class="repo-column"><col class="stars-column"><col class="language-column"><col class="type-column"></colgroup>' +
+        '<thead><tr><th scope="col">Repo</th><th scope="col">Stars</th><th scope="col">Language</th><th scope="col">Type</th></tr></thead><tbody>' + items.map(function (item) {
+          var owner = item._stream === "repos" ? '<span class="owner">' + esc(ownerOf(item)) + ' / </span>' : '';
+          var type = item._stream === "stars" ? "starred" : "new repo";
+          return '<tr><td><div class="repo">' + owner + '<a href="' + esc(item.url) + '" target="_blank" rel="noopener">' + esc(repoName(item)) + '</a></div>' +
+            (item.description ? '<div class="description">' + esc(item.description.replace(/\s+/g, ' ').trim()) + '</div>' : '') + '</td>' +
+            '<td class="stars">' + (Number(item.stars) || 0) + ' ★</td><td class="language">' + esc(item.language || '') + '</td><td class="type">' + type + '</td></tr>';
+        }).join("") + '</tbody></table></section>';
     }).join("");
   }
 
@@ -253,9 +284,6 @@
     filters.search = "";
     search.value = "";
     updatePeople();
-    document.getElementById("total-label").textContent = stream === "repos" ? "Repos logged" : "Stars logged";
-    search.placeholder = stream === "repos" ? "Search repo names and descriptions" : "Search repo names and descriptions";
-    search.setAttribute("aria-label", search.placeholder);
     render();
   });
   chips.addEventListener("click", function (event) {
@@ -263,12 +291,6 @@
     if (!button) return;
     filters.type = button.getAttribute("data-type");
     render();
-  });
-  document.getElementById("jump").addEventListener("change", function (event) {
-    if (!event.target.value) return;
-    var section = document.getElementById("day-" + event.target.value);
-    if (section) section.scrollIntoView({ behavior: "smooth", block: "start" });
-    else status.hidden = false, status.textContent = "There is no logged news on " + event.target.value + ".";
   });
 })();
 </script>
