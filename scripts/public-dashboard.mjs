@@ -582,19 +582,11 @@ async function main() {
     act: activityFor(repo, now),
   }));
 
-  const languages = new Map();
-  for (const row of rows) {
-    if (!row.l) continue;
-    languages.set(row.l, (languages.get(row.l) ?? 0) + 1);
-  }
-  const topLanguage = [...languages.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0]?.[0] ?? '';
-
   const summary = {
     generated_at: startedAt.toISOString(),
     total_public_repos: rows.length,
     new_last_7_days: rows.filter((row) => Date.parse(`${row.c}T00:00:00Z`) >= now - 7 * DAY).length,
     active_last_30_days: rows.filter((row) => row.act === 'Active').length,
-    top_language: topLanguage,
   };
 
   const meta = {
