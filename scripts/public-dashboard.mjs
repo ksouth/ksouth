@@ -13,13 +13,13 @@ import path from 'node:path';
 
 const OWNER = 'ksouth';
 const ROOT = path.resolve(import.meta.dirname, '..');
-const OUT_HTML = path.join(ROOT, 'docs', 'index.html');
+const OUT_HTML = path.join(ROOT, 'docs', 'repos', 'index.html');
 const OUT_SUMMARY = path.join(ROOT, 'docs', 'data', 'summary.json');
 const OUT_HISTORY = path.join(ROOT, 'docs', 'data', 'history.json');
 const OUT_STAR_HISTORY = path.join(ROOT, 'docs', 'data', 'star-history.json');
 const OUT_STAR_STATE = path.join(ROOT, 'state', 'stars.json');
 const OUT_REPO_STATE = path.join(ROOT, 'state', 'repos.json');
-const OUT_LISTS = path.join(ROOT, 'docs', 'lists');
+const OUT_LISTS = path.join(ROOT, 'docs', 'repos', 'lists');
 const TEMPLATE = path.join(ROOT, 'scripts', 'dashboard.template.html');
 const LIST_TEMPLATE = path.join(ROOT, 'scripts', 'lists.template.html');
 
@@ -377,7 +377,7 @@ function writeListPages(lists, starred, generatedAt) {
     count: `${lists.length} lists · ${unfiled.length} unfiled stars`,
     content: `<div class="sort-controls"><label for="list-sort">Sort lists</label><select id="list-sort" aria-label="Sort the public star lists"><option value="count" selected>Most repositories</option><option value="name">Name</option></select></div><ol class="list-rows" id="list-rows" aria-label="Public star lists">${rows.join('')}</ol>`,
     nav: '<nav><a href="../index.html">Dashboard</a></nav>',
-    seeAlso: '<p class="see-also">See also: <a href="https://ksouth.github.io/ksouth/">repo inventory →</a> · <a href="https://ksouth.github.io/ksouth/feed/">following feed →</a> · <a href="https://ksouth.github.io/ksouth/created/">created repos →</a></p>',
+    seeAlso: '<p class="see-also">See also: <a href="https://ksouth.github.io/ksouth/repos/">repo inventory →</a> · <a href="https://ksouth.github.io/ksouth/repos/feed/">following feed →</a> · <a href="https://ksouth.github.io/ksouth/repos/created/">created repos →</a></p>',
     generatedAt,
     script: `<script>${sortScript}</script>`,
   });

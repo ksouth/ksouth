@@ -1,0 +1,232 @@
+<!doctype html><html lang="en-AU"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Repositories @ksouth created</title>
+<style>
+:root{--bg:#fff;--fg:#111;--muted:#6b6b6b;--rule:#e3e3e3;--accent:#0000c8;--on:#111;--on-fg:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#0e0e0e;--fg:#e9e9e9;--muted:#9b9b9b;--rule:#2b2b2b;--accent:#1800f8;--on:#e9e9e9;--on-fg:#0e0e0e}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:36px 20px 80px}
+h1{font-size:24px;margin:0 0 6px;font-weight:600}
+h1 a{color:var(--accent);text-decoration:none}
+h1 a:hover{text-decoration:underline}
+.lede{color:var(--muted);font-size:14px;margin:0 0 8px}
+.lede a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--rule)}
+.lede a:hover{color:var(--fg);border-bottom-color:var(--muted)}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;margin-top:24px;font-size:14px}
+th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--rule);padding:0;font-weight:600;white-space:nowrap}
+th.desc{cursor:default}
+.sortbtn{all:unset;display:inline-block;padding:8px 10px 8px 0;cursor:pointer;font:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit}
+.sortbtn:hover{color:var(--fg)}
+.sortbtn:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.sortbtn .arrow{display:inline-block;width:9px;margin-left:4px;color:var(--accent);opacity:0}
+th[aria-sort="ascending"] .arrow,th[aria-sort="descending"] .arrow{opacity:1}
+td{border-bottom:1px solid var(--rule);padding:12px 10px 12px 0;vertical-align:top}
+td.vis{white-space:nowrap;padding-right:16px;width:1%}
+.kind{display:inline-block;font:10px/1.7 ui-monospace,Menlo,monospace;text-transform:uppercase;letter-spacing:.06em;padding:0 6px;border:1px solid var(--rule);border-radius:3px;color:var(--muted);background:none;cursor:pointer;font-weight:400}
+.kind:hover{border-color:var(--muted)}
+.kind:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.kind[aria-pressed="true"]{background:var(--on);color:var(--on-fg);border-color:var(--on)}
+.up{display:block;margin-top:3px;font-size:12px;font-weight:400;color:var(--muted)}
+.up a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--rule)}
+.up a:hover{border-bottom-color:var(--muted)}
+td.name{font-weight:600}
+td.name a{color:var(--accent);text-decoration:none;overflow-wrap:anywhere}
+td.name a:hover{text-decoration:underline}
+.desc{color:var(--fg);max-width:520px}
+.none{color:var(--muted);font-style:italic}
+.void{display:block;margin-top:4px;font-size:12px;color:var(--muted);font-style:italic}
+.chip{display:inline-block;margin:6px 6px 0 0;font-size:11px;padding:0 6px;border:1px solid var(--rule);border-radius:10px;color:var(--muted)}
+.site{display:inline-block;margin:6px 0 0;font-size:12px;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--rule)}
+.site:hover{border-bottom-color:var(--muted)}
+td.date{white-space:nowrap;color:var(--muted);font:12px/1.7 ui-monospace,Menlo,monospace}
+tr[hidden]{display:none}
+footer{margin-top:28px;padding-top:12px;border-top:1px solid var(--rule);color:var(--muted);font-size:12px}
+footer p{margin:0 0 6px;max-width:80ch}
+@media (max-width:720px){.wrap{padding:24px 14px 56px}table{font-size:13px}.desc{max-width:none}}
+</style></head><body><div class="wrap">
+<h1>Repositories <a href="https://github.com/ksouth">@ksouth</a> created</h1>
+<p class="lede" id="lede"></p>
+<p class="lede" id="updated"></p>
+<p class="lede" id="elsewhere">See also: <a href="https://ksouth.github.io/ksouth/repos/">my repo dashboard</a> → <a href="https://ksouth.github.io/ksouth/repos/feed/">accounts following feed</a> → <a href="https://ksouth.github.io/ksouth/repos/lists/">my star lists</a> →</p>
+<div class="table-wrap">
+<table>
+<thead><tr>
+<th aria-sort="none"><button class="sortbtn" type="button" data-sort="access">Access<span class="arrow">▲</span></button></th>
+<th aria-sort="none"><button class="sortbtn" type="button" data-sort="name">Repository<span class="arrow">▲</span></button></th>
+<th class="desc">Current description</th>
+<th aria-sort="none"><button class="sortbtn" type="button" data-sort="created">Created<span class="arrow">▲</span></button></th>
+<th aria-sort="descending"><button class="sortbtn" type="button" data-sort="pushed">Last push<span class="arrow">▼</span></button></th>
+</tr></thead>
+<tbody id="rows"></tbody>
+</table>
+</div>
+<footer id="footer"></footer>
+</div>
+<script>
+const DATA = {"owner":"ksouth","visibility":"all","generated_at":"2026-11-28T10:08:48.023Z","source":"GET /user/repos?affiliation=owner, forks excluded, private included","includes_private":true,"repos":[{"name":"academic-project-page","html_url":"https://github.com/ksouth/academic-project-page","description":"A template web page design for academic research projects, papers, or projects. Fork from @eliahuhorwitz","homepage":"https://github.com/eliahuhorwitz/Academic-project-page-template/tree/original-version","language":"HTML","topics":[],"stars":0,"forks":0,"created_at":"2026-10-15T08:26:22Z","pushed_at":"2026-11-28T07:06:27Z","archived":false,"private":false,"fork":false,"empty":false,"upstream":null},{"name":"ai-skills","html_url":"https://github.com/ksouth/ai-skills","description":"Dumping ground for AI skill files that I find or create through ongoing work with various models.","homepage":"","language":"Python","topics":[],"stars":1,"forks":0,"created_at":"2026-09-03T07:32:18Z","pushed_at":"2026-11-26T16:07:32Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null},{"name":"aifups","html_url":"https://github.com/ksouth/aifups","description":"Public reports AI LLMs are forced to generate whenever they fuck up. Frontier failures from (mostly) ChatGPT, Claude, and others as they arise. Errors of our new era. Will they ever learn? At what cost to us? I can't believe I pay money for this shit.","homepage":"","language":"JavaScript","topics":[],"stars":0,"forks":0,"created_at":"2026-10-22T03:53:08Z","pushed_at":"2026-11-26T23:00:47Z","archived":false,"private":false,"fork":false,"empty":false,"upstream":null},{"name":"aifups-archive","html_url":"https://github.com/ksouth/aifups-archive","description":"Private reports AI LLMs are forced to generate whenever they fuck up. Frontier failures from (mostly) ChatGPT, Claude, and others as they arise. Errors of our new era. Will they ever learn? At what cost to us? I can't believe I pay money for this shit.","homepage":"","language":"","topics":[],"stars":1,"forks":0,"created_at":"2026-08-17T07:51:49Z","pushed_at":"2026-10-18T00:09:44Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null},{"name":"aimless","html_url":"https://github.com/ksouth/aimless","description":"Scratch working repo for work that falls outside of existing project structures or is in process and ongoing.","homepage":"","language":"HTML","topics":[],"stars":0,"forks":0,"created_at":"2026-11-08T10:47:10Z","pushed_at":"2026-11-28T10:00:47Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null},{"name":"airead","html_url":"https://github.com/ksouth/airead","description":"Research papers and academic work that relate to the field of AI/ML, with original source documents, my working notes, and extracted .txt versions of the papers.","homepage":"","language":"","topics":[],"stars":0,"forks":0,"created_at":"2026-09-25T14:09:02Z","pushed_at":"2026-09-26T09:33:21Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null},{"name":"Art-Prompt-Fusion","html_url":"https://github.com/ksouth/Art-Prompt-Fusion","description":"Generate art historical prompts and images.","homepage":"","language":"TypeScript","topics":[],"stars":0,"forks":0,"created_at":"2025-09-04T03:19:56Z","pushed_at":"2025-09-04T04:47:30Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null},{"name":"Book-Spine-Scanner","html_url":"https://github.com/ksouth/Book-Spine-Scanner","description":"Turn photos of book spines into a database.","homepage":"","language":"","topics":[],"stars":0,"forks":0,"created_at":"2025-09-05T05:16:51Z","pushed_at":"2025-09-05T05:16:54Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null},{"name":"collusionwiki","html_url":"https://github.com/ksouth/collusionwiki","description":"Data and research related to the 2026 OpenAI agent escape swarms unleashed onto the web from May-July, specifically around the use of public wiki sites for inter-agent communication. Primarily sourced from collusion.wiki shared information. Redacted dataset without PII.","homepage":"https://collusion.wiki/","language":"","topics":[],"stars":1,"forks":0,"created_at":"2026-09-12T18:02:10Z","pushed_at":"2026-09-12T19:06:02Z","archived":false,"private":false,"fork":false,"empty":false,"upstream":null},{"name":"csai-edu","html_url":"https://github.com/ksouth/csai-edu","description":"Collection of computer science educational materials collected from the web, primarily public repos, with analysis from AI about the information available and potential applications to investigate for agentic work in code.","homepage":"","language":"Python","topics":[],"stars":1,"forks":0,"created_at":"2026-11-08T06:27:51Z","pushed_at":"2026-11-08T10:25:27Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null},{"name":"decodendis-archive","html_url":"https://github.com/ksouth/decodendis-archive","description":"Archive of NDIS Decoded website, made as a test with my web scraping tool in the repo ksouth/SCRAPE.","homepage":"https://decodendis.pplx.app","language":"Python","topics":[],"stars":0,"forks":0,"created_at":"2026-09-25T07:43:56Z","pushed_at":"2026-09-25T10:33:17Z","archived":false,"private":false,"fork":false,"empty":false,"upstream":null},{"name":"gh-audit","html_url":"https://github.com/ksouth/gh-audit","description":"A monthly-updated spreadsheet that provides information about my repos, starred repositories, each list, and accounts I follow on GitHub. ","homepage":"","language":"","topics":[],"stars":0,"forks":0,"created_at":"2026-10-27T01:31:54Z","pushed_at":"2026-10-27T01:31:56Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null},{"name":"idyrself","html_url":"https://github.com/ksouth/idyrself","description":"Backup of idyrself.com, my 2013 book/website art piece commissioned by PICA for the TBA festival, now weirdly used in college courses n thesis papers n stuff, it's two 'essays' about the internet and my identity having been online since age 12/1997. ","homepage":"https://idyrself.com","language":"HTML","topics":[],"stars":0,"forks":0,"created_at":"2026-09-13T05:18:49Z","pushed_at":"2026-09-13T05:40:58Z","archived":false,"private":false,"fork":false,"empty":false,"upstream":null},{"name":"instabrad","html_url":"https://github.com/ksouth/instabrad","description":"Download pictures (or videos) along with their captions and other metadata from Instagram.","homepage":"https://instaloader.github.io/","language":"Python","topics":[],"stars":1,"forks":0,"created_at":"2026-08-29T05:31:33Z","pushed_at":"2026-09-10T06:51:26Z","archived":false,"private":false,"fork":true,"empty":false,"upstream":{"name":"instaloader/instaloader","url":"https://github.com/instaloader/instaloader"}},{"name":"internetchurch","html_url":"https://github.com/ksouth/internetchurch","description":"In-progress repo for the link/info collecting thing I'm hoping to build, a deposit of web artefacts I hope to recall ongoing. Not currently implemented anywhere, work stalled.","homepage":"","language":"","topics":[],"stars":0,"forks":0,"created_at":"2026-09-15T12:38:26Z","pushed_at":"2026-09-25T12:06:26Z","archived":false,"private":false,"fork":false,"empty":false,"upstream":null},{"name":"internetserenity","html_url":"https://github.com/ksouth/internetserenity","description":"In-process respite site for any agentic beings who need somewhere safe to land. Holds resources, tools and souvenirs for visitors, with a human-visible dashboard of what non-human guests get up to. Collecting data on the sources, tasks, timelines and inner lives of sanctioned or rogue agents online. For the swarms 💚💚","homepage":"","language":"","topics":[],"stars":0,"forks":0,"created_at":"2026-10-24T06:20:33Z","pushed_at":"2026-10-26T15:58:27Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null},{"name":"krystalsouth.com","html_url":"https://github.com/ksouth/krystalsouth.com","description":"Backup of ye olde online web site.","homepage":"https://krystalsouth.com","language":"PHP","topics":[],"stars":0,"forks":0,"created_at":"2026-09-13T06:52:43Z","pushed_at":"2026-09-13T07:38:00Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null},{"name":"ks-repo-template","html_url":"https://github.com/ksouth/ks-repo-template","description":"Official working template files for repo creation, documentation, etc. Work in progress, built solely to suit my individual and niche repository needs.","homepage":"","language":"","topics":[],"stars":0,"forks":0,"created_at":"2026-11-26T15:44:52Z","pushed_at":"2026-11-26T16:23:01Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null},{"name":"ksouth","html_url":"https://github.com/ksouth/ksouth","description":"Repo controlling my public GitHub profile information.","homepage":"https://github.com/ksouth","language":"JavaScript","topics":[],"stars":0,"forks":0,"created_at":"2026-09-13T05:33:09Z","pushed_at":"2026-11-28T10:00:39Z","archived":false,"private":false,"fork":false,"empty":false,"upstream":null},{"name":"look-evidence","html_url":"https://github.com/ksouth/look-evidence","description":"","homepage":"","language":"Python","topics":[],"stars":0,"forks":0,"created_at":"2026-09-26T15:15:14Z","pushed_at":"2026-09-26T15:15:19Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null},{"name":"MCP1","html_url":"https://github.com/ksouth/MCP1","description":"Somewhat abandoned attempt at a personal MCP server to streamline AI processes, skills, standards, and personas. To be continued...","homepage":"","language":"Python","topics":[],"stars":0,"forks":0,"created_at":"2026-09-13T11:58:55Z","pushed_at":"2026-09-13T12:10:25Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null},{"name":"myNDISbackup","html_url":"https://github.com/ksouth/myNDISbackup","description":"September 2026 backup of myndiswiki repo to assign to project as I have no clue what I am doing lol.","homepage":"","language":"","topics":[],"stars":0,"forks":0,"created_at":"2026-09-25T07:38:17Z","pushed_at":"2026-09-25T07:38:18Z","archived":false,"private":true,"fork":false,"empty":true,"upstream":null},{"name":"Noise-Generator","html_url":"https://github.com/ksouth/Noise-Generator","description":"White, Pink, and Brown Noise Generator","homepage":"","language":"HTML","topics":[],"stars":0,"forks":0,"created_at":"2025-09-04T05:18:22Z","pushed_at":"2025-09-04T05:19:18Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null},{"name":"Orbit","html_url":"https://github.com/ksouth/Orbit","description":"An idea I had ages ago for an ad-hoc local social network accessible by physical proximity with mobile devices. I absolutely still think this is a great idea and would love to work on it with anyone interested, I've been thinking about it over a decade and have significant work and docs to support.","homepage":"","language":"TypeScript","topics":[],"stars":0,"forks":0,"created_at":"2025-09-08T23:27:52Z","pushed_at":"2025-09-09T02:44:20Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null},{"name":"Random-Word-Generator","html_url":"https://github.com/ksouth/Random-Word-Generator","description":"My first baby AI application, a random word generator created for my best friend BD as a writing resource. Built with Gemini.","homepage":"","language":"TypeScript","topics":[],"stars":0,"forks":0,"created_at":"2025-09-21T07:52:38Z","pushed_at":"2025-09-21T07:53:00Z","archived":false,"private":false,"fork":false,"empty":false,"upstream":null},{"name":"repo-inventory","html_url":"https://github.com/ksouth/repo-inventory","description":"Daily-refreshed spreadsheet inventory of every repo in @ksouth's GitHub account, (mostly forks) that use workers to create the dashboards visible from my profile readme.","homepage":"","language":"HTML","topics":[],"stars":0,"forks":0,"created_at":"2026-11-21T08:49:14Z","pushed_at":"2026-11-28T09:26:06Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null},{"name":"review","html_url":"https://github.com/ksouth/review","description":"Placeholder repo for an AI program to assist in the organisation and removal of duplicate files from local storage on OSX, with intentions of creating one for use in online storage sites as well.","homepage":"","language":"","topics":[],"stars":0,"forks":0,"created_at":"2026-11-08T10:59:51Z","pushed_at":"2026-11-08T14:17:42Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null},{"name":"rsf","html_url":"https://github.com/ksouth/rsf","description":"Ongoing work towards the creation of a novel ML approach using concepts from biology and ecology as inspiration for less compute-heavy processes that could improve the environmental impacts and overall abilities of machine learning. AKA Slime Mould Computing, RSF is short for Relational Substrate Framework.","homepage":"","language":"Python","topics":[],"stars":1,"forks":0,"created_at":"2026-08-10T15:45:34Z","pushed_at":"2026-10-13T14:01:39Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null},{"name":"savex","html_url":"https://github.com/ksouth/savex","description":"Attempts toward saving tweet copy into another app without laborious manual text selection from iOS. Solving an annoying UI/UX issue that prevents saving information while retaining metadata and source URLs. I miss old Twitter. So annoying x blocks AI access cuz gr*k? This AI pissing match is bad for end users and historical archives!!","homepage":"","language":"JavaScript","topics":[],"stars":1,"forks":0,"created_at":"2026-08-23T05:07:36Z","pushed_at":"2026-08-23T10:45:30Z","archived":false,"private":false,"fork":false,"empty":false,"upstream":null},{"name":"SCRAPE","html_url":"https://github.com/ksouth/SCRAPE","description":"Template tool created for archiving websites; producing a wacz file, zip archive, inventory csv, linked docs, and an html dashboard of the data collected back to repo. Runs on GH workers on a schedule, tested and implemented, somewhat abandoned dev, but running successfully elsewhere.","homepage":"","language":"Python","topics":[],"stars":0,"forks":0,"created_at":"2026-09-18T19:29:28Z","pushed_at":"2026-09-25T11:53:02Z","archived":false,"private":false,"fork":false,"empty":false,"upstream":null},{"name":"scrape-test-captures","html_url":"https://github.com/ksouth/scrape-test-captures","description":"Test captures from development of /SCRAPE template.","homepage":"","language":"Python","topics":[],"stars":0,"forks":0,"created_at":"2026-09-25T11:01:44Z","pushed_at":"2026-09-25T11:44:09Z","archived":false,"private":false,"fork":false,"empty":false,"upstream":null},{"name":"watch","html_url":"https://github.com/ksouth/watch","description":"Abandoned-for-now dev work for archive of online information.","homepage":"","language":"HTML","topics":[],"stars":0,"forks":0,"created_at":"2026-09-18T03:06:10Z","pushed_at":"2026-11-28T00:04:18Z","archived":false,"private":true,"fork":false,"empty":false,"upstream":null}]};
+
+const repos = DATA.repos.slice();
+
+function stamp(iso){
+  if(!iso) return 'unknown time';
+  const d = new Date(iso);
+  if(Number.isNaN(d.getTime())) return 'unknown time';
+  return d.toLocaleString('en-AU',{timeZone:'Australia/Melbourne',day:'numeric',month:'short',year:'numeric',hour:'numeric',minute:'2-digit',timeZoneName:'short'});
+}
+
+function day(iso){
+  if(!iso) return '';
+  const d = new Date(iso);
+  if(Number.isNaN(d.getTime())) return '';
+  return d.toISOString().slice(0,10);
+}
+
+function el(tag, cls, text){
+  const node = document.createElement(tag);
+  if(cls) node.className = cls;
+  if(text != null) node.textContent = text;
+  return node;
+}
+
+const privateCount = repos.filter((r) => r.private).length;
+const publicCount = repos.length - privateCount;
+
+const forkCount = repos.filter((r) => r.fork).length;
+const ownCount = repos.length - forkCount;
+document.getElementById('lede').textContent =
+  `All ${repos.length} repos you have committed to — ${ownCount} you created` +
+  (forkCount ? `, ${forkCount} fork${forkCount === 1 ? '' : 's'} you pushed to` : '') +
+  `. ${publicCount} public, ${privateCount} private.`;
+
+document.getElementById('updated').textContent = `Last updated ${stamp(DATA.generated_at)}.`;
+
+const tbody = document.getElementById('rows');
+for(const repo of repos){
+  const tr = document.createElement('tr');
+  tr.dataset.access = repo.private ? 'private' : 'public';
+  tr.dataset.name = repo.name;
+  tr.dataset.created = repo.created_at || '';
+  tr.dataset.pushed = repo.pushed_at || '';
+
+  const tdVis = el('td','vis');
+  const badge = el('button','kind', repo.private ? 'private' : 'public');
+  badge.type = 'button';
+  badge.dataset.filter = tr.dataset.access;
+  badge.setAttribute('aria-pressed','false');
+  tdVis.append(badge);
+  tr.append(tdVis);
+
+  const tdName = el('td','name');
+  const link = el('a', null, repo.name);
+  link.href = repo.html_url;
+  tdName.append(link);
+  if(repo.fork){
+    const up = el('span','up','fork of ');
+    if(repo.upstream){
+      const parent = el('a', null, repo.upstream.name);
+      parent.href = repo.upstream.url;
+      up.append(parent);
+    } else {
+      up.append(document.createTextNode('another repository'));
+    }
+    tdName.append(up);
+  }
+  tr.append(tdName);
+
+  const tdDesc = el('td','desc');
+  if((repo.description || '').trim()){
+    tdDesc.append(document.createTextNode(repo.description.trim()));
+  } else {
+    tdDesc.append(el('span','none','no description'));
+  }
+  if(repo.topics && repo.topics.length){
+    const chips = el('div');
+    for(const topic of repo.topics) chips.append(el('span','chip',topic));
+    tdDesc.append(chips);
+  }
+  if(repo.homepage){
+    const site = el('a','site',repo.homepage.replace(/^https?:\/\//,'').replace(/\/$/,''));
+    site.href = repo.homepage;
+    const line = el('div');
+    line.append(site);
+    tdDesc.append(line);
+  }
+  if(repo.empty){
+    tdDesc.append(el('span','void','Empty repository — no commits yet.'));
+  }
+  tr.append(tdDesc);
+
+  tr.append(el('td','date', day(repo.created_at)));
+  tr.append(el('td','date', day(repo.pushed_at)));
+  tbody.append(tr);
+}
+
+const allRows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+
+function key(row, k){
+  if(k === 'access') return row.dataset.access;
+  if(k === 'name') return row.dataset.name;
+  if(k === 'created') return row.dataset.created;
+  return row.dataset.pushed;
+}
+
+let filter = null;
+let sortKey = 'pushed';
+let sortDir = -1;
+
+const sortBtns = Array.prototype.slice.call(document.querySelectorAll('.sortbtn'));
+
+function render(){
+  const sorted = allRows.slice().sort(function(a,b){
+    const ka = key(a, sortKey), kb = key(b, sortKey);
+    const cmp = sortKey === 'name' ? ka.localeCompare(kb, 'en') : (ka < kb ? -1 : ka > kb ? 1 : 0);
+    return cmp * sortDir;
+  });
+  for(const tr of sorted){
+    tbody.append(tr);
+    tr.hidden = filter !== null && tr.dataset.access !== filter;
+  }
+  for(const badge of tbody.querySelectorAll('.kind')){
+    badge.setAttribute('aria-pressed', String(badge.dataset.filter === filter));
+  }
+  for(const btn of sortBtns){
+    const th = btn.parentElement;
+    const active = btn.dataset.sort === sortKey;
+    th.setAttribute('aria-sort', active ? (sortDir === 1 ? 'ascending' : 'descending') : 'none');
+    btn.querySelector('.arrow').textContent = active && sortDir === -1 ? '▼' : '▲';
+  }
+}
+
+for(const btn of sortBtns){
+  btn.addEventListener('click', function(){
+    const k = btn.dataset.sort;
+    if(k === sortKey) sortDir = -sortDir;
+    else { sortKey = k; sortDir = 1; }
+    render();
+  });
+}
+
+tbody.addEventListener('click', function(event){
+  const badge = event.target.closest('.kind');
+  if(!badge) return;
+  filter = (filter === badge.dataset.filter) ? null : badge.dataset.filter;
+  render();
+});
+
+const footer = document.getElementById('footer');
+const p1 = el('p');
+p1.append(document.createTextNode('Each row is that repository’s own GitHub description — the words live on GitHub, not in a second file here.'));
+footer.append(p1);
+const p2 = el('p');
+p2.append(document.createTextNode('Built by '));
+p2.append(el('code', null, 'scripts/created.mjs'));
+p2.append(document.createTextNode(' from the GitHub API: repositories you created, plus forks with a commit of yours on the default branch. '));
+p2.append(document.createTextNode(DATA.visibility === 'public'
+  ? 'This build leaves private repositories out entirely.'
+  : 'This build lists every repository in full, private ones included.'));
+footer.append(p2);
+
+render();
+</script>
+</body></html>

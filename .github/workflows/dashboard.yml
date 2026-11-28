@@ -1,6 +1,6 @@
 name: Public dashboard
 
-# Keeps the GitHub Pages dashboard at https://ksouth.github.io/ksouth/ current.
+# Keeps the GitHub Pages dashboard at https://ksouth.github.io/ksouth/repos/ current.
 # Public data only, no secrets, no dependencies — this job must keep working even
 # if everything else in the account changes. It never opens issues and never
 # touches the private repo-inventory repository.

@@ -9,7 +9,7 @@ Instagram: [@KrystalSouth](https://www.instagram.com/Krystalsouth)<br>
 LinkedIn: [krystalsouth](https://www.linkedin.com/in/krystalsouth/)<br>
 YouTube: [@KrystalSouth](https://www.youtube.com/@KrystalSouth)<br>
 <br>
-I keep a [public repository dashboard](https://ksouth.github.io/ksouth/), [a list of the repositories I created](https://ksouth.github.io/ksouth/created/), and a day-by-day [log of new repos and stars from people I follow.](https://ksouth.github.io/ksouth/feed/) I love [adding stars to topical lists](https://ksouth.github.io/ksouth/lists/) to gather repos aligned with my interests like [AI](https://ksouth.github.io/ksouth/lists/ai/), [archiving](https://ksouth.github.io/ksouth/lists/archiving/), and [art](https://ksouth.github.io/ksouth/lists/art/).<br>
+I keep a [public repository dashboard](https://ksouth.github.io/ksouth/repos/), [a list of the repositories I created](https://ksouth.github.io/ksouth/repos/created/), and a day-by-day [log of new repos and stars from people I follow.](https://ksouth.github.io/ksouth/repos/feed/) I love [adding stars to topical lists](https://ksouth.github.io/ksouth/repos/lists/) to gather repos aligned with my interests like [AI](https://ksouth.github.io/ksouth/repos/lists/ai/), [archiving](https://ksouth.github.io/ksouth/repos/lists/archiving/), and [art](https://ksouth.github.io/ksouth/repos/lists/art/).<br>
 <br>
 I've been on GitHub since 2013 but I am only now learning how to use it!!!! I love to see what people are creating with code and data. I'm a Mac OSX/iOS user and only really know html and css but I am exploring new languages with AI, for better or worse.<br>
 

@@ -1,6 +1,6 @@
 name: Created repositories page
 
-# Keeps https://ksouth.github.io/ksouth/created/ current: the repositories
+# Keeps https://ksouth.github.io/ksouth/repos/created/ current: the repositories
 # ksouth created, plus forks she has pushed work into, private ones included as
 # metadata. Needs INVENTORY_TOKEN, a user token, because /user/repos refuses the
 # built-in GITHUB_TOKEN with 403. Without the secret this job warns and leaves
@@ -33,13 +33,13 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.INVENTORY_TOKEN || secrets.GITHUB_TOKEN }}
           HAS_INVENTORY_TOKEN: ${{ secrets.INVENTORY_TOKEN != '' }}
-        run: node scripts/created.mjs --out=docs/created/index.html
+        run: node scripts/created.mjs --out=docs/repos/created/index.html
 
       - name: Commit and push if anything changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/created data/created.json
+          git add docs/repos/created data/created.json
           if git diff --cached --quiet; then
             echo "Nothing changed since the last run."
             exit 0
