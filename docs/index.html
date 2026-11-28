@@ -42,9 +42,11 @@
   }
   main { max-width: 1080px; margin: 0 auto; padding: 28px 20px 56px; }
   h1 { font-size: 15px; font-weight: 600; margin: 0 0 3px; letter-spacing: 0.01em; }
+  h1 a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); }
   h2 { font-size: 12px; font-weight: 600; margin: 0 0 2px; text-transform: uppercase; letter-spacing: 0.06em; }
   h2 .h2-note { color: var(--muted); font-weight: 400; text-transform: none; letter-spacing: 0; margin-left: 6px; }
   .meta { margin: 0; color: var(--muted); font-size: 12px; }
+  .meta a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); }
   header { padding-bottom: 16px; border-bottom: 1px solid var(--rule-strong); }
 
   .tiles { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--rule-strong); }
@@ -125,9 +127,10 @@
 <body>
 <main>
   <header>
-    <h1>Repo inventory — ksouth</h1>
+    <h1>Repo inventory — <a href="https://github.com/ksouth">@ksouth</a></h1>
     <p class="meta">Generated <span id="generated">…</span> (Australia/Melbourne)</p>
-    <p class="meta"><a href="lists/">Browse public star lists →</a></p>
+    <p class="meta"><a href="lists/">Browse star lists →</a></p>
+    <p class="meta"><a href="https://ksouth.github.io/ksouth/feed/">Following feed →</a></p>
   </header>
 
   <section class="tiles" aria-label="Totals">
